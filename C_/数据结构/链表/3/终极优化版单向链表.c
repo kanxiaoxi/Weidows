@@ -2,22 +2,22 @@
  * @Author: Weidows
  * @Date: 2020-05-03 01:18:32
  * @LastEditors: Weidows
- * @LastEditTime: 2020-06-06 22:03:43
- * @FilePath: \demo\C_\æ•°æ®ç»“æ„\é“¾è¡¨\3\ç»ˆæä¼˜åŒ–ç‰ˆå•å‘é“¾è¡¨.c
- * 3.ç»ˆæä¼˜åŒ–ç‰ˆå•å‘é“¾è¡¨
+ * @LastEditTime: 2020-06-06 23:43:03
+ * @FilePath: \demo\C_\Êı¾İ½á¹¹\Á´±í\3\ÖÕ¼«ÓÅ»¯°æµ¥ÏòÁ´±í.c
+ * 3.ÖÕ¼«ÓÅ»¯°æµ¥ÏòÁ´±í
  */
 
-//åº“
+//¿â
     #include<stdio.h>
     #include<stdlib.h>
     #define LengthOfName 50
     
-//å‡½æ•° && struct && typedef
+//º¯Êı && struct && typedef
     typedef struct stu{
-        long long int id;                     //é“¾è¡¨æ•°æ®åŸŸ-å­¦å·
-        char name[LengthOfName];   //é“¾è¡¨æ•°æ®åŸŸ-å§“å
-        struct stu *next;                   //é“¾è¡¨æŒ‡é’ˆåŸŸ,æŒ‡å‘ä¸‹ä¸€ä¸ªèŠ‚ç‚¹
-    } NODE;                                     //æŠŠstruct stuå‘½åä¸ºNODE
+        long long int id;                     //Á´±íÊı¾İÓò-Ñ§ºÅ
+        char name[LengthOfName];   //Á´±íÊı¾İÓò-ĞÕÃû
+        struct stu *next;                   //Á´±íÖ¸ÕëÓò,Ö¸ÏòÏÂÒ»¸ö½Úµã
+    } NODE;                                     //°Ñstruct stuÃüÃûÎªNODE
 
     NODE *create_list(int);
     void print(NODE *);
@@ -26,12 +26,12 @@
 
 int main()
 {
-    //åˆ›å»ºåˆå§‹åŒ–
+    //´´½¨³õÊ¼»¯
         int n;
-        printf("è¾“å…¥æƒ³è¦åˆ›å»ºçš„èŠ‚ç‚¹ä¸ªæ•°: ");
+        printf("ÊäÈëÏëÒª´´½¨µÄ½Úµã¸öÊı: ");
         scanf("%d", &n);
         NODE *head = create_list(n);
-    //å‡½æ•°åŠŸèƒ½æµ‹è¯•
+    //º¯Êı¹¦ÄÜ²âÊÔ
         insert_change_Node(head, 2);
         // head=list_reversed(head);
         print(head);
@@ -39,17 +39,17 @@ int main()
     return 0;
 }
 
-//å°¾æ’æ³•åˆ›å»ºé“¾è¡¨(è¿”å›å¤´ || å°¾)
+//Î²²å·¨´´½¨Á´±í(·µ»ØÍ· || Î²)
     NODE *create_list(int n){
         NODE *head, *node, *end;
         head = (NODE *)malloc(sizeof(NODE));
         end = head;
         for (int i = 0; i < n;i++){
             node = (NODE *)malloc(sizeof(NODE));
-            printf("åˆ†åˆ«è¾“å…¥ç¬¬%dä¸ªID,name : ", i + 1);
+            printf("·Ö±ğÊäÈëµÚ%d¸öID,name : ", i + 1);
             scanf("%lld %s", &node->id, &node->name);
-            end->next = node;   //endæ˜¯ä¸Šä¸ªèŠ‚ç‚¹,ä»¤å…¶æŒ‡å‘å½“å‰èŠ‚ç‚¹
-            end = node;             //è®©endæŒ‡å‘å½“å‰èŠ‚ç‚¹
+            end->next = node;   //endÊÇÉÏ¸ö½Úµã,ÁîÆäÖ¸Ïòµ±Ç°½Úµã
+            end = node;             //ÈÃendÖ¸Ïòµ±Ç°½Úµã
         }
         end->next = NULL;
         while(n!=0){
@@ -57,32 +57,32 @@ int main()
             setbuf(stdin, NULL);
             char choice = getchar();
             switch(choice){
-                case 'H':   //æ— breakæ„æ€å°±æ˜¯H/héƒ½æ‰§è¡Œä¸‹é¢çš„å‘½ä»¤
+                case 'H':   //ÎŞbreakÒâË¼¾ÍÊÇH/h¶¼Ö´ĞĞÏÂÃæµÄÃüÁî
                 case 'h': return head; break;
                 case 'E':
                 case 'e': return end; break;
-                default : printf("è¾“å…¥é”™è¯¯.è¯·é‡è¯•.\n"); break;
+                default : printf("ÊäÈë´íÎó.ÇëÖØÊÔ.\n"); break;
             }
         }
     }
 
-//è¾“å‡ºé“¾è¡¨
+//Êä³öÁ´±í
     void print(NODE *head){
-        NODE *p = head->next; //foråˆå§‹æ¡ä»¶åŸŸå†…æ— æ³•åŒæ—¶å®šä¹‰å¤šä¸ªä¸åŒç±»å‹çš„å˜é‡
+        NODE *p = head->next; //for³õÊ¼Ìõ¼şÓòÄÚÎŞ·¨Í¬Ê±¶¨Òå¶à¸ö²»Í¬ÀàĞÍµÄ±äÁ¿
         for (int j = 1; p != NULL; j++, p = p->next){
-            printf("ç¬¬%dä¸ªèŠ‚ç‚¹:%lld\t%s\n", j, p->id, p->name);
+            printf("µÚ%d¸ö½Úµã:%lld\t%s\n", j, p->id, p->name);
         }
     }
 
-//æ’å…¥(åæ’) && ä¿®æ”¹é“¾è¡¨
+//²åÈë(ºó²å) && ĞŞ¸ÄÁ´±í
     void insert_change_Node(NODE *headList,int n){
-        NODE *p = headList;     //åˆ›å»ºNODEç±»å‹çš„ç§»åŠ¨æŒ‡é’ˆp
+        NODE *p = headList;     //´´½¨NODEÀàĞÍµÄÒÆ¶¯Ö¸Õëp
         for(int i=0;i<n;i++,p=p->next){
             if(p->next==NULL){
                 printf("%dth node hasn't found!\n",n);
                 return;
             }
-        } //åˆ¤æ–­æ˜¯å¦å­˜åœ¨å¹¶æŠŠpæŒ‡å‘ç¬¬nèŠ‚ç‚¹
+        } //ÅĞ¶ÏÊÇ·ñ´æÔÚ²¢°ÑpÖ¸ÏòµÚn½Úµã
         char choice = 0;
         while (choice != 'i' || choice != 'c' || choice !='I' || choice != 'C'){
             printf("insert or change node? input 'i' or 'c':");
@@ -100,33 +100,33 @@ int main()
                 }
                 case 'C' :
                 case 'c' :{
-                    printf("è¯·è¾“å…¥ä¿®æ”¹åçš„æ•°æ®:");
+                    printf("ÇëÊäÈëĞŞ¸ÄºóµÄÊı¾İ:");
                     scanf("%lld %s", &p->id, &p->name);
                     return;
                 }
                 default:
-                    printf("è¾“å…¥é”™è¯¯.è¯·é‡è¯•.\n");
+                    printf("ÊäÈë´íÎó.ÇëÖØÊÔ.\n");
                     continue;
             }
         }
     }
     
-//å€’ç½®é“¾è¡¨
+//µ¹ÖÃÁ´±í
     NODE *list_reversed(NODE *List){
-        if(List==NULL || List->next==NULL) {    //ä¿è¯é“¾è¡¨éç©º
-            printf("é“¾è¡¨è¿‡å°,æ— æ³•å€’ç½®.\n");
+        if(List==NULL || List->next==NULL) {    //±£Ö¤Á´±í·Ç¿Õ
+            printf("Á´±í¹ıĞ¡,ÎŞ·¨µ¹ÖÃ.\n");
             return List;
         }else{
             NODE *forword = List, *temp = List->next, *next = List->next, *head = (NODE *)malloc(sizeof(NODE));
             while(next!=NULL){
-                next = next->next;          //nextå‰è¿›
-                temp->next = forword;   //æŒ‡é’ˆåè½¬
-                forword = temp;              //forwordå‰è¿›
-                temp = next;                    //tempå‰è¿›
+                next = next->next;          //nextÇ°½ø
+                temp->next = forword;   //Ö¸Õë·´×ª
+                forword = temp;              //forwordÇ°½ø
+                temp = next;                    //tempÇ°½ø
             }
-            (List->next)->next = NULL;  //åŸç¬¬äºŒä¸ªèŠ‚ç‚¹æŒ‡å‘NULL
-            free(List);     //åŸå¤´èŠ‚ç‚¹æ¸…é™¤
-            head->next = forword;   //æ–°å¤´èŠ‚ç‚¹è¿æ¥ä¸Š
+            (List->next)->next = NULL;  //Ô­µÚ¶ş¸ö½ÚµãÖ¸ÏòNULL
+            free(List);     //Ô­Í·½ÚµãÇå³ı
+            head->next = forword;   //ĞÂÍ·½ÚµãÁ¬½ÓÉÏ
             return head;
         }
     }

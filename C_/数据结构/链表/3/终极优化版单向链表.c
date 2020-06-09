@@ -2,7 +2,7 @@
  * @Author: Weidows
  * @Date: 2020-05-03 01:18:32
  * @LastEditors: Weidows
- * @LastEditTime: 2020-06-06 23:43:03
+ * @LastEditTime: 2020-06-09 19:58:01
  * @FilePath: \demo\C_\数据结构\链表\3\终极优化版单向链表.c
  * 3.终极优化版单向链表
  */
@@ -27,15 +27,54 @@
 int main()
 {
     //创建初始化
-        int n;
-        printf("输入想要创建的节点个数: ");
-        scanf("%d", &n);
-        NODE *head = create_list(n);
-    //函数功能测试
-        insert_change_Node(head, 2);
-        // head=list_reversed(head);
-        print(head);
-        
+        char *Choice_menu[4]={
+            "\n************************************************************",
+            "\n0: 输出链表/退出.\t1 :插入/修改链表.\t2: 倒置链表.",
+            "\n3: ",
+            "\n************************************************************\n",
+        };  //函数选择菜单
+        int n = 0, choice_num = 1;  //初始化时链表节点数n,指令数choice_num
+        do{     //保险循环
+            printf("输入想要创建的节点个数: ");
+            scanf("%d", &n);
+        } while (n < 0);
+        NODE *Linked_list = create_list(n); //此处已经录入第一批数据,链表成型
+
+    //功能函数调用
+    while(choice_num!=0){   
+        printf("%s %s %s %s请输入想实现的功能序号:"
+            ,Choice_menu[0],Choice_menu[1],Choice_menu[2],Choice_menu[3]);
+        scanf("%d", &choice_num);
+        switch(choice_num){
+            case 0:{
+                printf("按任意键输出链表 或者输入e退出程序,请输入:");
+                setbuf(stdin, NULL);    //清空缓冲区
+                char choice = (char)getchar();
+                if(choice=='e' || choice=='E')  //输入e或E退出所有
+                    printf("谢谢使用!");
+                else{
+                    print(Linked_list);
+                    choice_num = 1; //置于非0状态,循环程序继续
+                }
+                break;
+            }
+            case 1:{
+                int n = 0;
+                printf("请输入对第几(N)号节点操作:");
+                scanf("%d", &n);
+                insert_change_Node(Linked_list, n);
+                break;
+            }
+            case 2:{
+                list_reversed(Linked_list);
+                break;
+            }
+            default:{
+                printf("输入错误,请重试.\n");
+                break;
+            }
+        }
+    }
     return 0;
 }
 
@@ -52,18 +91,14 @@ int main()
             end = node;             //让end指向当前节点
         }
         end->next = NULL;
-        while(n!=0){
-            printf("return head or end? Input 'h' or 'e':");
+        //选择返回指针
+            printf("press any key return head\tor press 'e' to return end:");
             setbuf(stdin, NULL);
             char choice = getchar();
-            switch(choice){
-                case 'H':   //无break意思就是H/h都执行下面的命令
-                case 'h': return head; break;
-                case 'E':
-                case 'e': return end; break;
-                default : printf("输入错误.请重试.\n"); break;
-            }
-        }
+            if(choice=='e' || choice=='E')
+                return end;
+            else
+                return head;
     }
 
 //输出链表
@@ -79,8 +114,10 @@ int main()
         NODE *p = headList;     //创建NODE类型的移动指针p
         for(int i=0;i<n;i++,p=p->next){
             if(p->next==NULL){
-                printf("%dth node hasn't found!\n",n);
-                return;
+                printf("%dth node hasn't found!\n Input N again or press nothing  to exit :",n);
+                scanf("%d", &n);    //重置n
+                i = 0;
+                p = headList;   //都重置
             }
         } //判断是否存在并把p指向第n节点
         char choice = 0;
@@ -117,7 +154,8 @@ int main()
             printf("链表过小,无法倒置.\n");
             return List;
         }else{
-            NODE *forword = List, *temp = List->next, *next = List->next, *head = (NODE *)malloc(sizeof(NODE));
+            NODE *forword = List, *temp = List->next, *next = List->next,
+                *head = (NODE *)malloc(sizeof(NODE));
             while(next!=NULL){
                 next = next->next;          //next前进
                 temp->next = forword;   //指针反转

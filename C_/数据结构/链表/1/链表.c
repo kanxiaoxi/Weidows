@@ -2,10 +2,10 @@
  * @Author: Weidows
  * @Date: 2020-05-29 00:42:58
  * @LastEditors: Weidows
- * @LastEditTime: 2020-05-29 00:42:59
- * @FilePath: \demo\C\数据结构\1.链表(涉及插入(头插法) & 排序).c
- */ 
-//1.链表(涉及插入(头插法) & 排序)
+ * @LastEditTime: 2020-06-10 22:25:32
+ * @FilePath: \demo\C_\数据结构\链表\1\1.链表(涉及插入(头插法) & 排序).c
+ * 1.链表(涉及插入(头插法) & 排序)
+ */
 //库
     #include<stdio.h>
     #include<stdlib.h>
@@ -15,7 +15,7 @@
         char name[20];
         int num;
         int math;
-    }Class1;          //(结构体声明或定义必须放在前面,不然有可能编译无法识别)
+    }Class1;          //(结构体声明或定义必须放在前面,不然编译无法识别)
 
     typedef struct Node{    //在结构体内部不能用NODE,只能用此处Node
         int data;  //用下方外层构造结构方式修改简单快捷

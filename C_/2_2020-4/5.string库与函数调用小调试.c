@@ -2,8 +2,8 @@
  * @Author: Weidows
  * @Date: 2020-05-29 00:29:29
  * @LastEditors: Weidows
- * @LastEditTime: 2020-05-29 00:29:29
- * @FilePath: \demo\C\2_2020-4\5.string库与函数调用小调试.c
+ * @LastEditTime: 2020-06-10 22:54:31
+ * @FilePath: \demo\C_\2_2020-4\5.string库与函数调用小调试.c
  */ 
 //库
     #include<stdio.h>
@@ -120,7 +120,7 @@ int main(int argc,char const *argv[]){
             printf("strlen_like=%d\n", strlen_test_like(c,c));
 
         //
-        //strcmp  test,cmp=compare返回值:=0 c=d, 正c>d, 负c<d
+        //strcmp  test,返回值:0 c=d, 正c>d, 负c<d
             printf("strcmp(c,d)=%d  ", strcmp(c, d));
             printf("strcmp_like(c, d)=%d  ", strcmp_like(c, d));
             printf("strcmp_like(c, e)=%d\n", strcmp_like(c, e));

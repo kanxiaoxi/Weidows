@@ -2,15 +2,16 @@
  * @Author: Weidows
  * @Date: 2020-05-03 01:18:32
  * @LastEditors: Weidows
- * @LastEditTime: 2020-06-10 11:40:46
+ * @LastEditTime: 2020-06-11 18:33:37
  * @FilePath: \demo\C_\数据结构\链表\3\终极优化版单向链表.c
  * 3.终极优化版单向链表
  */
 
 //库
     #include<stdio.h>
-    #include<stdlib.h>
-    #define LengthOfName 8
+    #include<string.h>      //strcmp用到
+    #include<stdlib.h>      //malloc申请内存,system函数调用
+    #define LengthOfName 10
     
 //函数 && struct && typedef
     typedef struct stu{
@@ -23,31 +24,37 @@
     void print(NODE *);
     void insert_change_Node(NODE *,int);
     void *list_reversed(NODE *);
+    void Delete_node(NODE *);
 
 int main()
 {
+    //欢迎
     //创建初始化
-        char *Choice_menu[4]={  //指针数组,作为函数选择菜单
+        char *Choice_menu[5]={  //指针数组,作为函数选择菜单
             "\n************************************************************",
-            "\n0: 输出链表/退出.\t1 :插入/修改链表.\t2: 倒置链表.",
-            "\n3: ",
+            "\n0: 输出链表/退出.\t1 :插入/修改节点.\t2: 倒置链表.",
+            "\n3: 删除节点",
             "\n************************************************************\n",
+            "\n                   单向链表数据管理系统\n",
         };  
-        int n = 0, choice_num = 1;  //初始化时链表节点数n,指令数choice_num
+        int n = 0, choice_num = -1;  //初始化时链表节点数n,指令数choice_num
+        system("cls");
+        printf("欢迎使用!\n%s%s", Choice_menu[4], Choice_menu[3]);
         do{     //保险循环,确保n>0
-            printf("输入想要创建的节点个数: ");
+            printf("输入链表初始化要创建的节点个数: ");
             scanf("%d", &n);
         } while (n < 0);
         NODE *Linked_list = create_list(n); //此处创建并录入第一批数据,链表成型
 
     //功能函数调用
     while(choice_num!=0){   //初始化时定义了choice_num
+        system("cls");
         printf("%s %s %s %s请输入想实现的功能序号:"
             ,Choice_menu[0],Choice_menu[1],Choice_menu[2],Choice_menu[3]);
         scanf("%d", &choice_num);
         switch(choice_num){
             case 0:{
-                printf("按任意键输出链表 或者输入q退出程序,请输入:");
+                printf("按任意键输出链表 或者输入'Q'退出程序,请输入:");
                 setbuf(stdin, NULL);    //清空缓冲区
                 char choice = (char)getchar();
                 if(choice=='q' || choice=='Q')  //输入e或E退出所有
@@ -59,8 +66,8 @@ int main()
                 break;
             }
             case 1:{
-                int n = 0;
                 printf("请输入对第几(N)号节点操作:");
+                int n = 0;
                 scanf("%d", &n);
                 insert_change_Node(Linked_list, n);
                 break;
@@ -69,11 +76,17 @@ int main()
                 list_reversed(Linked_list);
                 break;
             }
-            default:{
-                printf("输入错误,请重试.\n");
+            case 3:{
+                Delete_node(Linked_list);
                 break;
             }
+            default:{
+                printf("输入错误,请重试.\n");
+                continue;
+            }
         }
+        system("pause");    //暂停,用于确认信息
+        system("cls");          //清屏
     }
     return 0;   //保险起见把终止放在外面
 }
@@ -160,4 +173,57 @@ int main()
             (List->next)->next = NULL;  //原第二个节点指向NULL
             List->next = backward;
         }
+    }
+    
+//删除节点
+    void Delete_node(NODE *List){
+        NODE *pointer = List->next, *pointer_back = List; //创建移动指针
+        long long int Del_num = 0, Del_id = 0;
+        char *Del_name = "", choice = 0;
+        while(choice==0){
+            printf("A: 节点序号\tB: id\tC: name 请输入筛查类型:");
+            setbuf(stdin, NULL);
+            switch(choice=getchar()){
+                case 'a':
+                case 'A':{
+                    printf("输入要删除的节点序号:");
+                    scanf("%lld", &Del_num);
+                    break;
+                }
+                case 'b':
+                case 'B':{
+                    printf("输入要删除节点的id:");
+                    scanf("%lld", &Del_id);
+                    break;
+                }
+                case 'c':
+                case 'C':{
+                    printf("输入要删除节点的name:");
+                    scanf("%s", &Del_name);
+                    break;
+                }
+                default:{
+                    printf("输入错误,请重试.\n");
+                    choice = 0;
+                    continue;
+                }
+            }
+        }
+        for (int i = 1; pointer != NULL; i++,
+        pointer_back = pointer, pointer = pointer->next){   //一直向后计数移动
+            if ( i == Del_num || pointer->id == Del_id ||
+            strcmp(Del_name, pointer->name)==0 ){
+                printf("Press any key to confirm deleting\t%dth node: %lld %s,\tor press 'E' to stop:",i,pointer->id,pointer->name);
+                setbuf(stdin, NULL);
+                choice=getchar();
+                if(choice=='e' || choice == 'E'){
+                    return;
+                }else{
+                    pointer_back->next = pointer->next;
+                    free(pointer);
+                    return;
+                }
+            }
+        }
+        printf("Appointed data not found!\n");
     }

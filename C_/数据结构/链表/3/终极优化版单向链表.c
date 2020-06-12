@@ -2,7 +2,7 @@
  * @Author: Weidows
  * @Date: 2020-05-03 01:18:32
  * @LastEditors: Weidows
- * @LastEditTime: 2020-06-11 18:33:37
+ * @LastEditTime: 2020-06-12 13:29:14
  * @FilePath: \demo\C_\数据结构\链表\3\终极优化版单向链表.c
  * 3.终极优化版单向链表
  */
@@ -20,22 +20,23 @@
         struct stu *next;                   //链表指针域,指向下一个节点
     } NODE;                                     //把struct stu命名为NODE
 
-    NODE *create_list(int);
-    void print(NODE *);
-    void insert_change_Node(NODE *,int);
-    void *list_reversed(NODE *);
-    void Delete_node(NODE *);
+    NODE *create_list(int); //初始化链表并录入第一批int n个节点
+    void print(NODE *);     //对传入的链表输出
+    void insert_change_Node(NODE *, int); //对传入的链表的第int n个节点处插入或修改
+    void *list_reversed(NODE *);          //对传入的链表倒置
+    void Delete_node(NODE *);          //对传入的链表以序号、id、name三种方式筛查删除
+    int Node_length(NODE *);           //对传入的链表统计节点个数并返回节点数
+    void Sort_List(NODE *);               //对传入的链表进行冒泡排序
 
 int main()
 {
-    //欢迎
     //创建初始化
         char *Choice_menu[5]={  //指针数组,作为函数选择菜单
             "\n************************************************************",
-            "\n0: 输出链表/退出.\t1 :插入/修改节点.\t2: 倒置链表.",
-            "\n3: 删除节点",
+            "\n0: 输出链表/退出.\t1:插入/修改节点.\t2: 倒置链表.",
+            "\n3: 删除节点\t\t4:统计节点数.\t\t5.按ID排序",
             "\n************************************************************\n",
-            "\n                   单向链表数据管理系统\n",
+            "\n                   单向链表数据管理系统\n",  //后加的,懒的改顺序了
         };  
         int n = 0, choice_num = -1;  //初始化时链表节点数n,指令数choice_num
         system("cls");
@@ -49,7 +50,7 @@ int main()
     //功能函数调用
     while(choice_num!=0){   //初始化时定义了choice_num
         system("cls");
-        printf("%s %s %s %s请输入想实现的功能序号:"
+        printf("%s %s %s %s %s请输入想实现的功能序号:",Choice_menu[4]
             ,Choice_menu[0],Choice_menu[1],Choice_menu[2],Choice_menu[3]);
         scanf("%d", &choice_num);
         switch(choice_num){
@@ -58,7 +59,7 @@ int main()
                 setbuf(stdin, NULL);    //清空缓冲区
                 char choice = (char)getchar();
                 if(choice=='q' || choice=='Q')  //输入e或E退出所有
-                    printf("谢谢使用!");
+                    printf("谢谢使用!\t");
                 else{
                     print(Linked_list);
                     choice_num = 1; //置于非0状态,循环程序继续
@@ -78,6 +79,14 @@ int main()
             }
             case 3:{
                 Delete_node(Linked_list);
+                break;
+            }
+            case 4:{
+                printf("总计节点数为 %d 个.\n", Node_length(Linked_list));
+                break;
+            }
+            case 5:{
+                Sort_List(Linked_list);
                 break;
             }
             default:{
@@ -139,7 +148,7 @@ int main()
             char choice = getchar();
             if(choice=='i' || choice=='I'){     //插入
                 NODE *insertNode =(NODE *)malloc(sizeof(NODE));
-                printf("input data: ID & name :");
+                printf("input id: ID & name :");
                 scanf("%lld %s", &insertNode->id, &insertNode->name);
                 insertNode->next = p->next;
                 p->next = insertNode;
@@ -225,5 +234,46 @@ int main()
                 }
             }
         }
-        printf("Appointed data not found!\n");
+        printf("Appointed id not found!\n");
+    }
+
+//统计节点个数
+    int Node_length(NODE *Linked_list){
+        NODE *pointer = Linked_list;
+        int cnt = 0;
+        while(pointer->next != NULL){
+            pointer = pointer->next;
+            cnt++;
+        }
+        return cnt;
+    }
+
+//对链表中的元素进行排序--冒泡排序
+    void Sort_List(NODE *Linked_list){
+        for (NODE *p = Linked_list->next; p != NULL; p = p->next){
+            for (NODE *q = p->next; q != NULL; q = q->next){
+                if(p->id>q->id){
+                    int temp_id = p->id;
+                    p->id = q->id;
+                    q->id = temp_id;
+                    char temp_name[LengthOfName] = "";
+                    strcpy(temp_name, p->name); //strcpy中不要用*s表示字符串数组
+                    strcpy(p->name, q->name);
+                    strcpy(q->name, temp_name);
+
+                    /*错误交换节点  */
+                        // NODE *temp_1 = q;
+                        // NODE *temp_2 = q_former;
+                        // q_former->next = p_former->next;
+                        // q->next = p->next;
+                        // p->next = temp_1->next;
+                        // p_former->next = temp_2->next;
+
+                    /*二维指针容易出错(如下) */
+                        // char **str_1 = (char *)&p->name, **str_2 = (char *)&q->name, **str_temp = (char *)&p->name;
+                        // str_1 = str_2;
+                        // str_2 = str_temp;
+                }
+            }
+        }
     }

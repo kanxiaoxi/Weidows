@@ -41,7 +41,8 @@
 			"typeinfo": "cpp",
 			"utility": "cpp",
 			"thread": "cpp",
-			"stdio.h": "c"
+			"stdio.h": "c",
+			"cmath": "c"
 		},
 		"emmet.syntaxProfiles": {
 			"vue": "html",
@@ -57,6 +58,7 @@
 			"less",
 			"pug"
 		],
-		"workbench.activityBar.visible": true
+		"workbench.activityBar.visible": true,
+		"commentTranslate.targetLanguage": "zh-CN"
 	}
 }

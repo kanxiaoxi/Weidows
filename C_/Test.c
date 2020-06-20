@@ -2,11 +2,11 @@
  * @Author: Weidows
  * @Date: 2020-06-02 11:02:20
  * @LastEditors: Weidows
- * @LastEditTime: 2020-06-11 23:11:23
+ * @LastEditTime: 2020-06-20 15:54:04
  * @FilePath: \demo\C_\Test.c
  */
 //¿â
-    #include <stdio.h>
+#include <stdio.h>
 //º¯Êý && struct && typedef
 
 int main()

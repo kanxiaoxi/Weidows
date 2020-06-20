@@ -2,7 +2,7 @@
  * @Author: Weidows
  * @Date: 2020-05-03 01:18:32
  * @LastEditors: Weidows
- * @LastEditTime: 2020-06-12 13:29:14
+ * @LastEditTime: 2020-06-14 10:01:20
  * @FilePath: \demo\C_\数据结构\链表\3\终极优化版单向链表.c
  * 3.终极优化版单向链表
  */
@@ -57,7 +57,7 @@ int main()
             case 0:{
                 printf("按任意键输出链表 或者输入'Q'退出程序,请输入:");
                 setbuf(stdin, NULL);    //清空缓冲区
-                char choice = (char)getchar();
+                char choice = getchar();
                 if(choice=='q' || choice=='Q')  //输入e或E退出所有
                     printf("谢谢使用!\t");
                 else{
@@ -239,10 +239,9 @@ int main()
 
 //统计节点个数
     int Node_length(NODE *Linked_list){
-        NODE *pointer = Linked_list;
         int cnt = 0;
-        while(pointer->next != NULL){
-            pointer = pointer->next;
+        while(Linked_list->next != NULL){
+            Linked_list = Linked_list->next;
             cnt++;
         }
         return cnt;

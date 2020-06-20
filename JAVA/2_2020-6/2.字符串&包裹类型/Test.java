@@ -2,7 +2,7 @@
  * @Author: Weidows
  * @Date: 2020-06-01 00:04:03
  * @LastEditors: Weidows
- * @LastEditTime: 2020-06-02 01:01:05
+ * @LastEditTime: 2020-06-20 18:16:38
  * @FilePath: \demo\JAVA\2_2020-6\2.字符串&包裹类型\Test.java
  */ 
 import java.util.Scanner;
@@ -11,8 +11,7 @@ public class Test {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         /** java中math函数调用类似C语言 */
-        System.out.println("一:"+Math.abs(-12) +" \t" + Math.round(10.645) + "\t" 
-                + Math.random() * 100 + "\t" + Math.pow(2, 3));
+        System.out.println("一:"+Math.abs(-12) +" \t" + Math.round(10.645) + "\t" + Math.random() * 100 + "\t" + Math.pow(2, 3));
         
         String s = "Hello World";
         String s_1 = new String("Hello World"); //两种创建方式
@@ -47,7 +46,7 @@ public class Test {
                         System.out.print(loc + "\t");
                         loc = s.indexOf(findChar,loc+1); //从loc+1的位置再开始找
                     }
-        /*输入类型
+        /* 输入类型
             int a = in.nextInt();
             double b = in.nextDouble();
             String c = in.next();   //读下一个单词,直到(空格,Tab,换行)

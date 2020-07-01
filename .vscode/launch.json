@@ -10,6 +10,20 @@
         },
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Display",
+            "request": "launch",
+            "mainClass": "Display",
+            "projectName": "demo_8e307b6b"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Display",
+            "request": "launch",
+            "mainClass": "newdisplay.Display",
+            "projectName": "demo_8e307b6b"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Test",
             "request": "launch",
             "mainClass": "Test",

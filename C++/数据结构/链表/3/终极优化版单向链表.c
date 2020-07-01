@@ -2,8 +2,8 @@
  * @Author: Weidows
  * @Date: 2020-05-03 01:18:32
  * @LastEditors: Weidows
- * @LastEditTime: 2020-06-14 10:01:20
- * @FilePath: \demo\C_\数据结构\链表\3\终极优化版单向链表.c
+ * @LastEditTime: 2020-06-30 13:59:37
+ * @FilePath: \demo\C++\数据结构\链表\3\终极优化版单向链表.c
  * 3.终极优化版单向链表
  */
 

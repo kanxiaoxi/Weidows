@@ -1,7 +1,12 @@
 {
 	"folders": [
 		{
+			"name": "Weidows",
 			"path": "."
+		},
+		{
+			"name": "Crosstalk-rainbow-fart",
+			"path": "..\\Github\\Crosstalk-rainbow-fart"
 		}
 	],
 	"settings": {

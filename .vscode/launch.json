@@ -5,6 +5,20 @@
             "type": "java",
             "name": "CodeLens (Launch) - Display",
             "request": "launch",
+            "mainClass": "newdisplay.Display",
+            "projectName": "Weidows_bfd97da"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Display",
+            "request": "launch",
+            "mainClass": "Display",
+            "projectName": "Weidows_bfd97da"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Display",
+            "request": "launch",
             "mainClass": "display.Display",
             "projectName": "demo_8e307b6b"
         },

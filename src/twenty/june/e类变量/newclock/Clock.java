@@ -2,8 +2,8 @@
  * @Author: Weidows
  * @Date: 2020-06-23 19:58:42
  * @LastEditors: Weidows
- * @LastEditTime: 2020-07-01 11:05:07
- * @FilePath: \demo\src\twenty\june\e类变量\clock\Clock.java
+ * @LastEditTime: 2020-07-02 15:19:41
+ * @FilePath: \Weidows\src\twenty\june\e类变量\newclock\Clock.java
  */
 package newclock;
 import newdisplay.Display;

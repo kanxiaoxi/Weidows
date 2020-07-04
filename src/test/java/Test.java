@@ -2,7 +2,7 @@
  * @Author: Weidows
  * @Date: 2020-05-03 01:18:34
  * @LastEditors: Weidows
- * @LastEditTime: 2020-07-02 18:35:11
+ * @LastEditTime: 2020-07-04 16:48:27
  * @FilePath: \Weidows\src\test\java\Test.java
  */ 
 import java.util.Scanner;

@@ -64,6 +64,7 @@
 			"pug"
 		],
 		"workbench.activityBar.visible": true,
-		"commentTranslate.targetLanguage": "zh-CN"
+		"commentTranslate.targetLanguage": "zh-CN",
+		"liveServer.settings.multiRootWorkspaceName": "Weidows"
 	}
 }

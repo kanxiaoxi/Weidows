@@ -3,6 +3,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Notebook",
+            "request": "launch",
+            "mainClass": "notebook.Notebook",
+            "projectName": "Weidows_bfd97da"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Notebook",
+            "request": "launch",
+            "mainClass": "Notebook",
+            "projectName": "Weidows_bfd97da"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Display",
             "request": "launch",
             "mainClass": "newdisplay.Display",

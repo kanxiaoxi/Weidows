@@ -2,8 +2,8 @@
  * @Author: Weidows
  * @Date: 2020-06-23 19:58:42
  * @LastEditors: Weidows
- * @LastEditTime: 2020-07-02 15:19:41
- * @FilePath: \Weidows\src\twenty\june\eÀà±äÁ¿\newclock\Clock.java
+ * @LastEditTime: 2020-07-08 10:54:02
+ * @FilePath: \Weidows\src\twenty\june\eç±»å˜é‡\newclock\Clock.java
  */
 package newclock;
 import newdisplay.Display;
@@ -11,9 +11,9 @@ import newdisplay.Display;
 public class Clock {
     private Display hour = new Display(24);
     private Display minute = new Display(60);
-    public static int step = 0;/**Àà±äÁ¿,Æä±¾ÉíÊôÓÚÀà,¿ÉÒÔ´´½¨²»Í¬¶ÔÏó¹²Í¬¹ÜÀí */
+    public static int step = 0;/**ç±»å˜é‡,å…¶æœ¬èº«å±äºç±»,å¯ä»¥åˆ›å»ºä¸åŒå¯¹è±¡å…±åŒç®¡ç† */
 
-    public static void f() {    /**staticÀàº¯Êı,Í¬ÉÏ,ÁíÍâ´Ëº¯ÊıÄÚÖ»ÄÜÓÃstaticµÄ³ÉÔ±±äÁ¿,±ÈÈçstep,ÆäËûµÄ²»ÄÜÓÃ.ÁíÍâÀàº¯ÊıÃ»ÓĞthis,thisÊÇÌØÖ¸±¾¶ÔÏó,Ààº¯ÊıÊÇÀàµÄ */
+    public static void f() {    /**staticç±»å‡½æ•°,åŒä¸Š,å¦å¤–æ­¤å‡½æ•°å†…åªèƒ½ç”¨staticçš„æˆå‘˜å˜é‡,æ¯”å¦‚step,å…¶ä»–çš„ä¸èƒ½ç”¨.å¦å¤–ç±»å‡½æ•°æ²¡æœ‰this,thisæ˜¯ç‰¹æŒ‡æœ¬å¯¹è±¡,ç±»å‡½æ•°æ˜¯ç±»çš„ */
         step++;
     }
     public void start() {

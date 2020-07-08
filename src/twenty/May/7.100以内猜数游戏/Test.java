@@ -2,28 +2,28 @@
  * @Author: Weidows
  * @Date: 2020-05-29 01:15:59
  * @LastEditors: Weidows
- * @LastEditTime: 2020-07-01 16:23:09
- * @FilePath: \demo\src\twenty\May\7.100ÒÔÄÚ²ÂÊıÓÎÏ·\Test.java
- * 100ÒÔÄÚ²ÂÊıÓÎÏ·
+ * @LastEditTime: 2020-07-08 10:51:39
+ * @FilePath: \Weidows\src\twenty\May\7.100ä»¥å†…çŒœæ•°æ¸¸æˆ\Test.java
+ * 100ä»¥å†…çŒœæ•°æ¸¸æˆ
  */ 
 import java.util.Scanner;
 
 public class Test {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        int number = (int) (Math.random() * 100 + 1); // randomÉú³É[0,1)
+        int number = (int) (Math.random() * 100 + 1); // randomç”Ÿæˆ[0,1)
         int a = 0;
         int cont = 0;
-        System.out.println("¿ªÊ¼");
+        System.out.println("å¼€å§‹");
         do {
-            System.out.print("ÇëÊäÈë:");
+            System.out.print("è¯·è¾“å…¥:");
             a = in.nextInt();
             cont++;
             if (a > number)
-                System.out.println("Æ«´ó");
+                System.out.println("åå¤§");
             else
-                System.out.println("Æ«Ğ¡");
+                System.out.println("åå°");
         } while (a != number);
-        System.out.println("²Â¶ÔÁË,²ÂÁË" + cont + "´Î");
+        System.out.println("çŒœå¯¹äº†,çŒœäº†" + cont + "æ¬¡");
     }
 }

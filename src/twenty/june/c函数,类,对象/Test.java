@@ -2,13 +2,13 @@
  * @Author: Weidows
  * @Date: 2020-06-02 01:03:55
  * @LastEditors: Weidows
- * @LastEditTime: 2020-06-20 18:04:31
- * @FilePath: \demo\JAVA\2_2020-6\3.º¯Êý\Test.java
+ * @LastEditTime: 2020-07-08 10:52:50
+ * @FilePath: \Weidows\src\twenty\june\cå‡½æ•°,ç±»,å¯¹è±¡\Test.java
  */ 
 import java.util.Scanner;
 
 public class Test {
-    public static boolean ifPrime(int i) {  //¾ÙÀýµÄº¯Êý
+    public static boolean ifPrime(int i) {  //ä¸¾ä¾‹çš„å‡½æ•°
         boolean isPrime = true;
         for (int j = 2; j < i; j++) {
             if (j % j == 0) {
@@ -20,9 +20,9 @@ public class Test {
     }
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        VendingMachine vm = new VendingMachine(); /*ÐÂ½¨vmÕâ¸ö¶ÔÏó(¹ÜÀíÕß)±ÈÈç
-            VendingMachine vm1=vm; ÕâÑùvmÓëvm1¹²Í¬¹ÜÀíÊý¾ÝÁË
-            ÓÃÍ¬Ò»¸öÀànew¶à¸ö¶ÔÏó¸÷×Ô¹ÜÀí²»Í¬Êý¾Ý*/
+        VendingMachine vm = new VendingMachine(); /*æ–°å»ºvmè¿™ä¸ªå¯¹è±¡(ç®¡ç†è€…)æ¯”å¦‚
+            VendingMachine vm1=vm; è¿™æ ·vmä¸Žvm1å…±åŒç®¡ç†æ•°æ®äº†
+            ç”¨åŒä¸€ä¸ªç±»newå¤šä¸ªå¯¹è±¡å„è‡ªç®¡ç†ä¸åŒæ•°æ®*/
         vm.showPrompt();
         vm.showBalance();
         vm.insertMoney(100);
@@ -31,11 +31,11 @@ public class Test {
     }
 }
 
-class VendingMachine {  //Íâ²¿Àà:¶¨ÒåÁËÊÛ»õ»úÕâ¸öÀà,¿ÉÒÔÐ´½øtestÄÚ²¿,¹¦ÄÜÏàÍ¬
-    int price = 80, balance, total;     /* ¶¨ÒåÔÚº¯ÊýÍâµÄ½Ð³ÉÔ±±äÁ¿,ÄÚ²¿µÄ½Ð±¾µØ±äÁ¿
-    ³ÉÔ±±äÁ¿Éú´æÆÚÊÇ¶ÔÏóµÄÉú´æÆÚ,×÷ÓÃÓòÊÇÀàÄÚ²¿µÄ³ÉÔ±º¯Êý
-    ÁíÍâÒ»¶¨Òª×¢ÒâJavaÖÐ±¾µØ±äÁ¿Èç¹ûÃ»ÓÐ³õÊ¼»¯¸³ÖµÄÇ¸ö±äÁ¿ÊÇ²»ÄÜÊ¹ÓÃµÄ(³ö´í)
-    µ«ÊÇÀàÀïÃæµÄ³ÉÔ±±äÁ¿Ä¬ÈÏ³õÊ¼ÖµÊÇ0 */
+class VendingMachine {  //å¤–éƒ¨ç±»:å®šä¹‰äº†å”®è´§æœºè¿™ä¸ªç±»,å¯ä»¥å†™è¿›testå†…éƒ¨,åŠŸèƒ½ç›¸åŒ
+    int price = 80, balance, total;     /* å®šä¹‰åœ¨å‡½æ•°å¤–çš„å«æˆå‘˜å˜é‡,å†…éƒ¨çš„å«æœ¬åœ°å˜é‡
+    æˆå‘˜å˜é‡ç”Ÿå­˜æœŸæ˜¯å¯¹è±¡çš„ç”Ÿå­˜æœŸ,ä½œç”¨åŸŸæ˜¯ç±»å†…éƒ¨çš„æˆå‘˜å‡½æ•°
+    å¦å¤–ä¸€å®šè¦æ³¨æ„Javaä¸­æœ¬åœ°å˜é‡å¦‚æžœæ²¡æœ‰åˆå§‹åŒ–èµ‹å€¼é‚£ä¸ªå˜é‡æ˜¯ä¸èƒ½ä½¿ç”¨çš„(å‡ºé”™)
+    ä½†æ˜¯ç±»é‡Œé¢çš„æˆå‘˜å˜é‡é»˜è®¤åˆå§‹å€¼æ˜¯0 */
 
     void showPrompt() {
         System.out.println("Welcome");
@@ -49,18 +49,18 @@ class VendingMachine {  //Íâ²¿Àà:¶¨ÒåÁËÊÛ»õ»úÕâ¸öÀà,¿ÉÒÔÐ´½øtestÄÚ²¿,¹¦ÄÜÏàÍ¬
         System.out.println(balance);
     }
 
-    void test(int price) { //²âÊÔº¯Êý
-        this.price = price; //ÕâÀïµÄthis¾ÍÊÇ·ÃÎÊÀàÄÚ²¿(º¯ÊýÍâ²¿)µÄ±äÁ¿
+    void test(int price) { //æµ‹è¯•å‡½æ•°
+        this.price = price; //è¿™é‡Œçš„thiså°±æ˜¯è®¿é—®ç±»å†…éƒ¨(å‡½æ•°å¤–éƒ¨)çš„å˜é‡
     }
 
-    VendingMachine() { /*¹¹Ôìº¯Êý,²»ÄÜ´ø·µ»ØÖµ,Ãû×ÖºÍÀàµÄÃû×ÖÒ»Ñù
-                        ÔÚnew¶ÔÏóÊ±×Ô¶¯Ö´ÐÐ´Ëº¯Êý*/
+    VendingMachine() { /*æž„é€ å‡½æ•°,ä¸èƒ½å¸¦è¿”å›žå€¼,åå­—å’Œç±»çš„åå­—ä¸€æ ·
+                        åœ¨newå¯¹è±¡æ—¶è‡ªåŠ¨æ‰§è¡Œæ­¤å‡½æ•°*/
         total = 0;
     }
 
     VendingMachine(
-            int price) { /*º¯ÊýÖØÔØ,¹¹Ôìº¯Êý¿ÉÒÔÓÐ¶à¸ö,µ«²ÎÊý²»ÄÜÏàÍ¬,new¶ÔÏóÊ±³ÌÐò¸ù¾Ý´«²ÎÅÐ¶Ïµ÷ÓÃÄÄ¸ö¹¹Ôìº¯Êý(ÐèÒª×¢ÒâÈç¹û²ÎÊýÀàÐÍ²»Æ¥Åäint¿ÉÒÔ×Ô¶¯×ª»»³Édouble,µ«ÊÇdouble²»ÄÜ×ª»»³Éint)*/
-        this(); //µ÷ÓÃÄÄ¸öÃ»²ÎÊýµÄ¹¹Ôìº¯Êý,ÇÒÖ»ÄÜÔÚ¹¹Ôìº¯ÊýµÚÒ»ÐÐÐ´,ÇÒÖ»ÄÜÓÃÒ»´Î
+            int price) { /*å‡½æ•°é‡è½½,æž„é€ å‡½æ•°å¯ä»¥æœ‰å¤šä¸ª,ä½†å‚æ•°ä¸èƒ½ç›¸åŒ,newå¯¹è±¡æ—¶ç¨‹åºæ ¹æ®ä¼ å‚åˆ¤æ–­è°ƒç”¨å“ªä¸ªæž„é€ å‡½æ•°(éœ€è¦æ³¨æ„å¦‚æžœå‚æ•°ç±»åž‹ä¸åŒ¹é…intå¯ä»¥è‡ªåŠ¨è½¬æ¢æˆdouble,ä½†æ˜¯doubleä¸èƒ½è½¬æ¢æˆint)*/
+        this(); //è°ƒç”¨å“ªä¸ªæ²¡å‚æ•°çš„æž„é€ å‡½æ•°,ä¸”åªèƒ½åœ¨æž„é€ å‡½æ•°ç¬¬ä¸€è¡Œå†™,ä¸”åªèƒ½ç”¨ä¸€æ¬¡
         this.price = price;
     }
 

@@ -3,7 +3,7 @@
  * @Date: 2020-06-20 18:18:06
  * @LastEditors: Weidows
  * @LastEditTime: 2020-07-01 11:26:49
- * @FilePath: \demo\src\twenty\june\eÀà±äÁ¿\newdisplay\Display.java
+ * @FilePath: \demo\src\twenty\june\eç±»å˜é‡\newdisplay\Display.java
  */
 package newdisplay;
 import java.util.Scanner;
@@ -27,10 +27,10 @@ public class Display {
     public int getvalue() {
         return value;
 }
-    public static void main(String[] args) {    /**mainÒ²ÊÇÀàº¯Êı */
+    public static void main(String[] args) {    /**mainä¹Ÿæ˜¯ç±»å‡½æ•° */
         Scanner in = new Scanner(System.in);
-        Clock.step += 1; /**Àà±äÁ¿²»ÓÃ´´½¨¶ÔÏóÒ²¿ÉÒÔÖ±½Ó·ÃÎÊ
-                         ÁíÍâÏñÊÇÕâÖÖÖ±½ÓÈ«³Æ,²»ÓÃimport°üÒ²¶Ô */
-        Clock.f();    /**Ààº¯ÊıÖ±½Óµ÷ÓÃ,ÓÃ²»µ½¶ÔÏó,µ«ÊÇĞèÒªÖ¸Ã÷ÀàÃû */
+        Clock.step += 1; /**ç±»å˜é‡ä¸ç”¨åˆ›å»ºå¯¹è±¡ä¹Ÿå¯ä»¥ç›´æ¥è®¿é—®
+                         å¦å¤–åƒæ˜¯è¿™ç§ç›´æ¥å…¨ç§°,ä¸ç”¨importåŒ…ä¹Ÿå¯¹ */
+        Clock.f();    /**ç±»å‡½æ•°ç›´æ¥è°ƒç”¨,ç”¨ä¸åˆ°å¯¹è±¡,ä½†æ˜¯éœ€è¦æŒ‡æ˜ç±»å */
     }
 }

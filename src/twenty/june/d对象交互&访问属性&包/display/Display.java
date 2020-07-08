@@ -2,18 +2,18 @@
  * @Author: Weidows
  * @Date: 2020-06-20 18:18:06
  * @LastEditors: Weidows
- * @LastEditTime: 2020-07-01 10:40:42
- * @FilePath: \demo\src\twenty\june\d¶ÔÏó½»»¥&·ÃÎÊÊôĞÔ&°ü\display\Display.java
+ * @LastEditTime: 2020-07-08 10:53:07
+ * @FilePath: \Weidows\src\twenty\june\då¯¹è±¡äº¤äº’&è®¿é—®å±æ€§&åŒ…\display\Display.java
  */
-package display;    /**°üÃû,°üÄÚµÄ.javaÎÄ¼şÃû¿ÉÒÔÊ××ÖÄ¸´óĞ´,Ãû×ÖËæÒâ */
-import clock.Clock;     /**µ¼Èë¸ñÊ½:°üÃû+ÎÄ¼şÃû(ÀàÃû) */
+package display;    /**åŒ…å,åŒ…å†…çš„.javaæ–‡ä»¶åå¯ä»¥é¦–å­—æ¯å¤§å†™,åå­—éšæ„ */
+import clock.Clock;     /**å¯¼å…¥æ ¼å¼:åŒ…å+æ–‡ä»¶å(ç±»å) */
 import java.util.Scanner;
 
 public class Display {
     private int value = 0;
     private int limit = 0;
 
-    public Display(int limit) {    //¹¹Ôìº¯Êı,²»ÄÜ´ø·µ»ØÖµ,¿ÉÒÔĞ´public»òprivate
+    public Display(int limit) {    //æ„é€ å‡½æ•°,ä¸èƒ½å¸¦è¿”å›å€¼,å¯ä»¥å†™publicæˆ–private
         this.limit = limit;
     }
 
@@ -27,9 +27,9 @@ public class Display {
     public int getvalue() {
         return value;
 }
-    public static void main(String[] args) {/**²»ÄÜÓÃcode runnerÅÜ,³ö´í */
+    public static void main(String[] args) {/**ä¸èƒ½ç”¨code runnerè·‘,å‡ºé”™ */
         Scanner in = new Scanner(System.in);
-        Clock clock = new Clock();  /**Clock()ÊÇClockÀàÖĞÄ¬ÈÏ´øÓĞµÄ¹¹Ôìº¯Êı */
+        Clock clock = new Clock();  /**Clock()æ˜¯Clockç±»ä¸­é»˜è®¤å¸¦æœ‰çš„æ„é€ å‡½æ•° */
         clock.start();
     }
 }

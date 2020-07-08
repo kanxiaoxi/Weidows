@@ -2,20 +2,20 @@
  * @Author: Weidows
  * @Date: 2020-05-29 01:15:59
  * @LastEditors: Weidows
- * @LastEditTime: 2020-07-01 16:39:48
- * @FilePath: \demo\src\twenty\May\9.¼ÆËã×î´ó¹«Ô¼ÊıµÄ·½·¨methods_of_calculating_Max_common_divisor\Test.java
- * ¼ÆËã×î´ó¹«Ô¼ÊıµÄ·½·¨methods_of_calculating_Max_common_divisor
+ * @LastEditTime: 2020-07-08 10:52:01
+ * @FilePath: \Weidows\src\twenty\May\9.è®¡ç®—æœ€å¤§å…¬çº¦æ•°çš„æ–¹æ³•methods_of_calculating_Max_common_divisor\Test.java
+ * è®¡ç®—æœ€å¤§å…¬çº¦æ•°çš„æ–¹æ³•methods_of_calculating_Max_common_divisor
  */ 
 import java.util.Scanner;
 
 public class Test {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        {// Ò»:Õ·×ªÏà³ı·¨(Å·¼¸ÀïµÂ·¨,½ÏÓÅËã·¨)
+        {// ä¸€:è¾—è½¬ç›¸é™¤æ³•(æ¬§å‡ é‡Œå¾·æ³•,è¾ƒä¼˜ç®—æ³•)
             int a = in.nextInt();
             int b = in.nextInt();
             int temp = 0;
-            if (a > b) { // È·±£a´óbĞ¡,¶şÖĞÓĞÁíÒ»ÖÖ·½·¨
+            if (a > b) { // ç¡®ä¿aå¤§bå°,äºŒä¸­æœ‰å¦ä¸€ç§æ–¹æ³•
                 int c = a;
                 a = b;
                 b = c;
@@ -26,23 +26,23 @@ public class Test {
                 b = temp;
                 temp = a % b;
             }
-            System.out.println("×î´ó¹«Ô¼ÊıÊÇ:" + b);
+            System.out.println("æœ€å¤§å…¬çº¦æ•°æ˜¯:" + b);
         }
 
-        {// ¶ş:Çî¾Ù·¨(forÑ­»·½ÏĞ¡µÄÊıÇóÓà,¼ÆËãÁ¿´ó)
+        {// äºŒ:ç©·ä¸¾æ³•(forå¾ªç¯è¾ƒå°çš„æ•°æ±‚ä½™,è®¡ç®—é‡å¤§)
             int a = in.nextInt();
             int b = in.nextInt();
-            int result = 0; //javaÇ¿³õÊ¼»¯,ÓÃÇ°±ØĞë³õÊ¼»¯
-            int max = a > b ? a : b; // µÚÈı·½³é³öÈ¥max
-            b = a > b ? b : a; // ×îĞ¡¸øb
-            a = max; // max¸øa
+            int result = 0; //javaå¼ºåˆå§‹åŒ–,ç”¨å‰å¿…é¡»åˆå§‹åŒ–
+            int max = a > b ? a : b; // ç¬¬ä¸‰æ–¹æŠ½å‡ºå»max
+            b = a > b ? b : a; // æœ€å°ç»™b
+            a = max; // maxç»™a
             for (int i = b; i > 0; i--) {
                 if (a % i == 0 && b % i == 0) {
-                    result = i; // ²»ÄÜÖ±½Ó¶¨Òåint result=iÕâÑùÊ¹ÓÃ,»á±¨´í(CÓïÑÔ¿ÉÒÔ)
+                    result = i; // ä¸èƒ½ç›´æ¥å®šä¹‰int result=iè¿™æ ·ä½¿ç”¨,ä¼šæŠ¥é”™(Cè¯­è¨€å¯ä»¥)
                     break;
                 }
             }
-            System.out.println("×î´ó¹«Ô¼ÊıÊÇ:" + result);
+            System.out.println("æœ€å¤§å…¬çº¦æ•°æ˜¯:" + result);
         }
     }
 }

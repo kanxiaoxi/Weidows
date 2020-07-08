@@ -2,27 +2,27 @@
  * @Author: Weidows
  * @Date: 2020-05-29 01:15:59
  * @LastEditors: Weidows
- * @LastEditTime: 2020-07-01 16:12:44
- * @FilePath: \demo\src\twenty\May\5.¼¶Áª&&¶þ²æÊ÷ÌØswitchºÍCÓïÑÔÒ»Ñù\Test.java
- * ¼¶Áª && ¶þ²æÊ÷   ÌØÊâ:switchºÍCÓïÑÔÒ»Ñù
+ * @LastEditTime: 2020-07-08 10:51:24
+ * @FilePath: \Weidows\src\twenty\May\5.çº§è”&&äºŒå‰æ ‘ç‰¹switchå’ŒCè¯­è¨€ä¸€æ ·\Test.java
+ * çº§è” && äºŒå‰æ ‘   ç‰¹æ®Š:switchå’ŒCè¯­è¨€ä¸€æ ·
  */ 
 import java.util.Scanner;
 
 public class Test {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        System.out.println("·Ö±ðÊäÈëx,y,z");
+        System.out.println("åˆ†åˆ«è¾“å…¥x,y,z");
         int x = in.nextInt();
         int y = in.nextInt();
         int z = in.nextInt();
         int max = 0;
-        // ¼¶Áª¶þ²æÊ÷
+        // çº§è”äºŒå‰æ ‘
         if (x > y) {
-            if (x > z) // Èç¹ûÎ´¼Ó{},ÄÇÃ´ifÖ»ÓÃifÏÂÒ»ÐÐ,¼´Ê¹ÏÂÏÂÐÐµÄËõ½øÏàÍ¬
+            if (x > z) // å¦‚æžœæœªåŠ {},é‚£ä¹ˆifåªç”¨ifä¸‹ä¸€è¡Œ,å³ä½¿ä¸‹ä¸‹è¡Œçš„ç¼©è¿›ç›¸åŒ
                 max = x;
-            else // elseºÍ×î½üµÄifÆ¥Åä,¼´Ê¹Ëõ½ø²»Í¬
+            else // elseå’Œæœ€è¿‘çš„ifåŒ¹é…,å³ä½¿ç¼©è¿›ä¸åŒ
                 max = z;
-        } else { // ÕâÀï×îºÃ±ðÐ´³Éelse if,Ó°Ïì³ÌÐò¿É¶ÁÐÔ
+        } else { // è¿™é‡Œæœ€å¥½åˆ«å†™æˆelse if,å½±å“ç¨‹åºå¯è¯»æ€§
             if (y > z)
                 max = y;
             else

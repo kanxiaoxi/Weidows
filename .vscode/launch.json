@@ -3,6 +3,83 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Room",
+            "request": "launch",
+            "mainClass": "castle.Room",
+            "projectName": "Weidows_bfd97da"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - foreach",
+            "request": "launch",
+            "mainClass": "foreach",
+            "projectName": "Weidows_bfd97da"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Game",
+            "request": "launch",
+            "mainClass": "castle.Game",
+            "projectName": "Weidows_bfd97da"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Game",
+            "request": "launch",
+            "mainClass": "Game",
+            "projectName": "Weidows_bfd97da"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - DataBase",
+            "request": "launch",
+            "mainClass": "DataBase",
+            "projectName": "Weidows_bfd97da"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - CD",
+            "request": "launch",
+            "mainClass": "dome.CD",
+            "projectName": "Weidows_bfd97da"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - DataBase",
+            "request": "launch",
+            "mainClass": "dome.DataBase",
+            "projectName": "Weidows_bfd97da"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - DVD",
+            "request": "launch",
+            "mainClass": "DVD",
+            "projectName": "Weidows_bfd97da"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - DateBase",
+            "request": "launch",
+            "mainClass": "dome.DateBase",
+            "projectName": "Weidows_bfd97da"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - DateBase",
+            "request": "launch",
+            "mainClass": "DateBase",
+            "projectName": "Weidows_bfd97da"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Test",
+            "request": "launch",
+            "mainClass": "Test",
+            "projectName": "Weidows_bfd97da"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Notebook",
             "request": "launch",
             "mainClass": "notebook.Notebook",

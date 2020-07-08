@@ -2,9 +2,9 @@
  * @Author: Weidows
  * @Date: 2020-07-04 10:39:19
  * @LastEditors: Weidows
- * @LastEditTime: 2020-07-04 17:38:23
- * @FilePath: \Weidows\src\twenty\june\gForeachÑ­»·\foreach.java
- * for-eachÑ­»·(ÔöÇ¿ĞÍforÑ­»·) && Object·ºĞÍ
+ * @LastEditTime: 2020-07-08 10:41:16
+ * @FilePath: \Weidows\src\twenty\july\aForeachå¾ªç¯\foreach.java
+ * for-eachå¾ªç¯(å¢å¼ºå‹forå¾ªç¯) && Objectæ³›å‹
  */
 
 import java.util.ArrayList;
@@ -12,33 +12,33 @@ import java.util.ArrayList;
 public class foreach {
     static String[] strs = { "aaa", "bbb", "ccc" };
     public static void main(String[] args) {
-        ArrayList list = new ArrayList();// ´´½¨ArrayList¼¯ºÏ
-        list.add(10086);// Ïò¸Ã¼¯ºÏÖĞÌí¼ÓÔªËØ
-        list.add("ÄãºÃ");
+        ArrayList list = new ArrayList();// åˆ›å»ºArrayListé›†åˆ
+        list.add(10086);// å‘è¯¥é›†åˆä¸­æ·»åŠ å…ƒç´ 
+        list.add("ä½ å¥½");
         list.add('a');
         list.add("bbbb");
         /**
-         * ÔöÇ¿forÑ­»·(for-eachÑ­»·)
-         * ¶ÔÓÚlistÖĞÃ¿¸öobject½øĞĞ²Ù×÷,ÏñÊÇ¶Ô´ËÇé¿ö,°ÑObject»»³ÉString,Æä²Ù×÷²¢²»ÊÇÖ»¶ÔString,¶øÊÇ»á±¨´í,ÒòÎªÊı¾İÀàĞÍ²»Í¬(ObjectÊÇ·ºĞÍ)
+         * å¢å¼ºforå¾ªç¯(for-eachå¾ªç¯)
+         * å¯¹äºlistä¸­æ¯ä¸ªobjectè¿›è¡Œæ“ä½œ,åƒæ˜¯å¯¹æ­¤æƒ…å†µ,æŠŠObjectæ¢æˆString,å…¶æ“ä½œå¹¶ä¸æ˜¯åªå¯¹String,è€Œæ˜¯ä¼šæŠ¥é”™,å› ä¸ºæ•°æ®ç±»å‹ä¸åŒ(Objectæ˜¯æ³›å‹)
          */
-        for (Object obj : list) {// Ê¹ÓÃÔöÇ¿forÑ­»·±éÀú¼¯ºÏ
-            System.out.print(obj + "\t");// È¡³ö²¢´òÓ¡¼¯ºÏÖĞµÄÔªËØ
+        for (Object obj : list) {// ä½¿ç”¨å¢å¼ºforå¾ªç¯éå†é›†åˆ
+            System.out.print(obj + "\t");// å–å‡ºå¹¶æ‰“å°é›†åˆä¸­çš„å…ƒç´ 
         }
         
         
-    /**²âÊÔ2.for-eachÊÇ(Î±)Ö»¶ÁÑ­»·,²»ÄÜĞŞ¸ÄÊı¾İ.
-     * Ô­ÒòÊÇÆäÖ»ÊÇ½«ÁÙÊ±±äÁ¿strÖØ¶¨ÏòÁË,Î´ĞŞ¸ÄÊı×éµÄ.
-     * ËäÈ»ÎŞ·¨¾­ÓÉÁÙÊ±±äÁ¿Ö±½ÓĞŞ¸ÄÊı¾İ,µ«ÊÇ¿ÉÒÔÍ¨¹ıÁÙÊ±±äÁ¿µ÷ÓÃº¯ÊıÖ®ÀàµÄ²Ù×÷¼ä½ÓĞŞ¸Ä
-     * ±ÈÈç¶ÔÓÚstrsÊı×éstrÊÇ"¸´ÖÆ"¹ØÏµ,¶øµ±strÊÇÄ³¶ÔÏóµÄ¹ÜÀíÕßÊ±¿ÉÒÔĞŞ¸Ä¶ÔÏóµÄÊı¾İ
+    /**æµ‹è¯•2.for-eachæ˜¯(ä¼ª)åªè¯»å¾ªç¯,ä¸èƒ½ä¿®æ”¹æ•°æ®.
+     * åŸå› æ˜¯å…¶åªæ˜¯å°†ä¸´æ—¶å˜é‡stré‡å®šå‘äº†,æœªä¿®æ”¹æ•°ç»„çš„.
+     * è™½ç„¶æ— æ³•ç»ç”±ä¸´æ—¶å˜é‡ç›´æ¥ä¿®æ”¹æ•°æ®,ä½†æ˜¯å¯ä»¥é€šè¿‡ä¸´æ—¶å˜é‡è°ƒç”¨å‡½æ•°ä¹‹ç±»çš„æ“ä½œé—´æ¥ä¿®æ”¹
+     * æ¯”å¦‚å¯¹äºstrsæ•°ç»„stræ˜¯"å¤åˆ¶"å…³ç³»,è€Œå½“stræ˜¯æŸå¯¹è±¡çš„ç®¡ç†è€…æ—¶å¯ä»¥ä¿®æ”¹å¯¹è±¡çš„æ•°æ®
     */
         for (String str : strs) {
             str = "ddd";
         }
-        System.out.println("foreachÑ­»·ĞŞ¸ÄºóµÄÊı×é:" + strs[0] + "," + strs[1] + "," + strs[2]);
-        // forÑ­»·±éÀúÊı×é
+        System.out.println("foreachå¾ªç¯ä¿®æ”¹åçš„æ•°ç»„:" + strs[0] + "," + strs[1] + "," + strs[2]);
+        // forå¾ªç¯éå†æ•°ç»„
         for (int i = 0; i < strs.length; i++) {
             strs[i] = "ddd";
         }
-        System.out.println("forÑ­»·ĞŞ¸ÄºóµÄÊı×é:" + strs[0] + "," + strs[1] + "," + strs[2]);
+        System.out.println("forå¾ªç¯ä¿®æ”¹åçš„æ•°ç»„:" + strs[0] + "," + strs[1] + "," + strs[2]);
     }
 }

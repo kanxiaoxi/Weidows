@@ -2,24 +2,24 @@
  * @Author: Weidows
  * @Date: 2020-05-29 01:15:59
  * @LastEditors: Weidows
- * @LastEditTime: 2020-07-01 16:18:47
- * @FilePath: \demo\src\twenty\May\6.ÓĞ¹ØwhileÑ­»·¤ÎÖªÊ¶µã&&Ğ¡ÊµÀı\Test.java
- * ÓĞ¹ØwhileÑ­»·¤ÎÖªÊ¶µã&&Ğ¡ÊµÀı
+ * @LastEditTime: 2020-07-08 10:51:31
+ * @FilePath: \Weidows\src\twenty\May\6.æœ‰å…³whileå¾ªç¯ã®çŸ¥è¯†ç‚¹&&å°å®ä¾‹\Test.java
+ * æœ‰å…³whileå¾ªç¯ã®çŸ¥è¯†ç‚¹&&å°å®ä¾‹
  */ 
 import java.util.Scanner;
 
 public class Test {
     public static void main(String[] args) {
-        /* do-whileÑ­»·(Ö±½Ó½øÑ­»·Ìå,Ö´ĞĞÒ»±éºóÅĞ¶ÏÌõ¼ş)
+        /* do-whileå¾ªç¯(ç›´æ¥è¿›å¾ªç¯ä½“,æ‰§è¡Œä¸€éååˆ¤æ–­æ¡ä»¶)
         do{
             xxx;
-        }while(xxx); ×¢ÒâÕâÖÖÇ°ÃæÓĞ¸ödo,whileºóÓĞ·ÖºÅ";"
+        }while(xxx); æ³¨æ„è¿™ç§å‰é¢æœ‰ä¸ªdo,whileåæœ‰åˆ†å·";"
         
-        whileÑ­»·
+        whileå¾ªç¯
         while (xxx) {
             xxx;
         } 
-        ×ÜÌå¸úCÓïÑÔÒ»Ñù*/
+        æ€»ä½“è·ŸCè¯­è¨€ä¸€æ ·*/
 
         Scanner in = new Scanner(System.in);
         int number = 0;
@@ -31,6 +31,6 @@ public class Test {
             cont++;
             number = in.nextInt();
         }
-        System.out.println("Æ½¾ùÊı=" + (double) sum / cont);
+        System.out.println("å¹³å‡æ•°=" + (double) sum / cont);
     }
 }

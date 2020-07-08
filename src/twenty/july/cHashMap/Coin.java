@@ -2,7 +2,7 @@
  * @Author: Weidows
  * @Date: 2020-07-04 18:51:22
  * @LastEditors: Weidows
- * @LastEditTime: 2020-07-04 19:36:35
+ * @LastEditTime: 2020-07-08 10:54:36
  * @FilePath: \Weidows\src\twenty\july\cHashMap\Coin.java
  */
 import java.util.HashMap;
@@ -11,23 +11,23 @@ import java.util.Scanner;
 public class Coin {
     private HashMap<Integer, String> coinName = new HashMap<Integer, String>();
     /**
-     * IntegerÊÇintµÄ°ü¹üÀàĞÍ,ÓÉÊ××ÖÄ¸´óĞ´¿ÉÒÔ¿´³öÆä±Èint¸ß¼¶,²»ÄÜÓÃint´úÌæ
+     * Integeræ˜¯intçš„åŒ…è£¹ç±»å‹,ç”±é¦–å­—æ¯å¤§å†™å¯ä»¥çœ‹å‡ºå…¶æ¯”inté«˜çº§,ä¸èƒ½ç”¨intä»£æ›¿
      */
     public Coin() {
         /**
-         * ÓëÆäËûÈİÆ÷²»Í¬,HashMapÌí¼ÓÔªËØµ÷ÓÃµÄº¯ÊıÔ­ĞÍÊÇput(key,string)
+         * ä¸å…¶ä»–å®¹å™¨ä¸åŒ,HashMapæ·»åŠ å…ƒç´ è°ƒç”¨çš„å‡½æ•°åŸå‹æ˜¯put(key,string)
          */
         coinName.put(1, "penny");
         coinName.put(10, "dime");
         coinName.put(25, "quarter");
-        coinName.put(50, "°ëÃÀÔª");
+        coinName.put(50, "åŠç¾å…ƒ");
         coinName.put(50, "half-dollar");//
     }
 
     public String getName(int amount) {
         /**
-         * HashMap²éÕÒÔªËØÒ²ÊÇget(key),
-         * Ã»ÕÒµ½µÄÇé¿öÏÂ·µ»ØÖµÊÇNULL(Ã¿¸öHashÔªËØÊÇÒ»¸ö¶ÔÏó,Ã»ÓĞÄÇ¸ö¶ÔÏó¾ÍÊÇNULL)
+         * HashMapæŸ¥æ‰¾å…ƒç´ ä¹Ÿæ˜¯get(key),
+         * æ²¡æ‰¾åˆ°çš„æƒ…å†µä¸‹è¿”å›å€¼æ˜¯NULL(æ¯ä¸ªHashå…ƒç´ æ˜¯ä¸€ä¸ªå¯¹è±¡,æ²¡æœ‰é‚£ä¸ªå¯¹è±¡å°±æ˜¯NULL)
          */
         if (coinName.containsKey(amount))
             return coinName.get(amount);
@@ -37,16 +37,16 @@ public class Coin {
 
     public void printHashMap() {
         /**
-         * HashMapÓĞ¸ö³ÉÔ±º¯ÊıkeySet(),×÷ÓÃÊÇ°Ñkey×éºÏ³ÉÒ»¸öHashSet²¢·µ»Ø
-         * ÓÚÊÇÕâÀï¾ÍÊÇ:HashMapÈİÆ÷coinNameµ÷ÓÃkeySet()·µ»ØÒ»¸öHashSet,
-         * Õâ¸öHashSetÔÙµ÷ÓÃsize()·µ»Ø´óĞ¡(Ò²µÈÍ¬ÓÚHashMapÔªËØÊıÁ¿)
+         * HashMapæœ‰ä¸ªæˆå‘˜å‡½æ•°keySet(),ä½œç”¨æ˜¯æŠŠkeyç»„åˆæˆä¸€ä¸ªHashSetå¹¶è¿”å›
+         * äºæ˜¯è¿™é‡Œå°±æ˜¯:HashMapå®¹å™¨coinNameè°ƒç”¨keySet()è¿”å›ä¸€ä¸ªHashSet,
+         * è¿™ä¸ªHashSetå†è°ƒç”¨size()è¿”å›å¤§å°(ä¹Ÿç­‰åŒäºHashMapå…ƒç´ æ•°é‡)
          * 
-         * HashMapÒ²¿ÉÒÔÖ±½Óprint,ÓëArrayListºÍHashSetÇø±ğÊÇHashMapÊÇ{}
+         * HashMapä¹Ÿå¯ä»¥ç›´æ¥print,ä¸ArrayListå’ŒHashSetåŒºåˆ«æ˜¯HashMapæ˜¯{}
          */
         System.out.println(coinName.keySet().size() + "\t" + coinName);
     }
 
-    public void printHashMap_1() {/* ±éÀúHashMap·½·¨ */
+    public void printHashMap_1() {/* éå†HashMapæ–¹æ³• */
         for (Integer i : coinName.keySet()) {
             System.out.println(i + "\t" + coinName.get(i));
         }

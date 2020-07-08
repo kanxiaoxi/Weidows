@@ -2,13 +2,13 @@
  * @Author: Weidows
  * @Date: 2020-06-23 19:58:42
  * @LastEditors: Weidows
- * @LastEditTime: 2020-06-23 23:16:55
- * @FilePath: \demo\JAVA\b_20_Jun\d_¶ÔÏó½»»¥\clock\Clock.java
+ * @LastEditTime: 2020-07-08 10:53:00
+ * @FilePath: \Weidows\src\twenty\june\då¯¹è±¡äº¤äº’&è®¿é—®å±æ€§&åŒ…\clock\Clock.java
  */ 
 package clock;
 
-/**ÔÚÄ³¸ö°üÏÂµÄËùÓĞ.javaÔ´ÎÄ¼şĞèÒª¼ÓÉÏpackage °üÃû(µ¥¸öÔ´ÎÄ¼ş¿ÉÒÔÊ¡ÂÔ
- * ÇÒ°üÃûÊ××ÖÄ¸±ØĞëĞ¡Ğ´,Ê××ÖÄ¸²»ÄÜÊÇÊı×Ö,ËùÓĞjavaÏîÄ¿ÎÄ¼şÂ·¾¶Ö»ÄÜÓÃÏÂ»®Ïß) */
+/**åœ¨æŸä¸ªåŒ…ä¸‹çš„æ‰€æœ‰.javaæºæ–‡ä»¶éœ€è¦åŠ ä¸Špackage åŒ…å(å•ä¸ªæºæ–‡ä»¶å¯ä»¥çœç•¥
+ * ä¸”åŒ…åé¦–å­—æ¯å¿…é¡»å°å†™,é¦–å­—æ¯ä¸èƒ½æ˜¯æ•°å­—,æ‰€æœ‰javaé¡¹ç›®æ–‡ä»¶è·¯å¾„åªèƒ½ç”¨ä¸‹åˆ’çº¿) */
 
 import display.Display;
 
@@ -16,21 +16,21 @@ public class Clock {
     private Display hour = new Display(24);
     private Display minute = new Display(60);
 
-    /** ÕâÖÖÒÔ¶ÔÏóÎª³ÉÔ±±äÁ¿µÄĞèÒªnew
-     * privateÖ»ÄÜĞŞÊÎÀàÀïÃæ³ÉÔ±±äÁ¿ºÍ³ÉÔ±º¯Êı,×÷ÓÃÊÇÊ¹ÆäÔÚÀàÍâÃæÎŞ·¨·ÃÎÊ
-     * ÈçÍâÃæclock.hour¾ÍÎŞ·¨·ÃÎÊµ½,Ïà·´public¿ÉÒÔ·ÃÎÊºÍÊ¹ÓÃ;
-     * Èç¹ûÃ»ÓĞĞ´public»òÕßprivate,ÄÇÀàĞÍ¾ÍÊÇfriendly,ÆäÖ»ÄÜÔÚÍ¬Ò»¸ö°ü
-     * (¿ÉÒÔÀí½âÎªÒ»¸öÎÄ¼ş¼ĞÄ¿Â¼ÏÂ)Àï¿ÉÒÔ·ÃÎÊÊ¹ÓÃ
-     * ÁíÍâ»¹ÓĞÒ»ÖÖprotected,ÔÚ¼Ì³ĞÖĞ»á½²µ½
+    /** è¿™ç§ä»¥å¯¹è±¡ä¸ºæˆå‘˜å˜é‡çš„éœ€è¦new
+     * privateåªèƒ½ä¿®é¥°ç±»é‡Œé¢æˆå‘˜å˜é‡å’Œæˆå‘˜å‡½æ•°,ä½œç”¨æ˜¯ä½¿å…¶åœ¨ç±»å¤–é¢æ— æ³•è®¿é—®
+     * å¦‚å¤–é¢clock.hourå°±æ— æ³•è®¿é—®åˆ°,ç›¸åpublicå¯ä»¥è®¿é—®å’Œä½¿ç”¨;
+     * å¦‚æœæ²¡æœ‰å†™publicæˆ–è€…private,é‚£ç±»å‹å°±æ˜¯friendly,å…¶åªèƒ½åœ¨åŒä¸€ä¸ªåŒ…
+     * (å¯ä»¥ç†è§£ä¸ºä¸€ä¸ªæ–‡ä»¶å¤¹ç›®å½•ä¸‹)é‡Œå¯ä»¥è®¿é—®ä½¿ç”¨
+     * å¦å¤–è¿˜æœ‰ä¸€ç§protected,åœ¨ç»§æ‰¿ä¸­ä¼šè®²åˆ°
      */
     
     public void start() {
-        while (true) { // ×¢ÒâÕâ¸ö²»ÄÜĞ´³Éwhile(1),²»¶Ô
+        while (true) { // æ³¨æ„è¿™ä¸ªä¸èƒ½å†™æˆwhile(1),ä¸å¯¹
             minute.increase();
             if (minute.getvalue() == 0) {
                 hour.increase();
             }
-            System.out.printf("%02d:%02d\n", hour.getvalue(), minute.getvalue());/** Õâ¸öÉñtm¸úCÓïÑÔÒ»Ñù */
+            System.out.printf("%02d:%02d\n", hour.getvalue(), minute.getvalue());/** è¿™ä¸ªç¥tmè·ŸCè¯­è¨€ä¸€æ · */
         }
     }
 }

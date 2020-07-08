@@ -2,16 +2,16 @@
  * @Author: Weidows
  * @Date: 2020-05-29 01:15:59
  * @LastEditors: Weidows
- * @LastEditTime: 2020-07-01 16:31:24
- * @FilePath: \demo\src\twenty\May\8.Êä³önumÖ®Ç°µÄËØÊı && ÁãÇ®´ÕÕûÎÊÌâ\Test.java
- * Êä³önumÖ®Ç°µÄËØÊı && ÁãÇ®´ÕÕûÎÊÌâ
+ * @LastEditTime: 2020-07-08 10:51:52
+ * @FilePath: \Weidows\src\twenty\May\8.è¾“å‡ºnumä¹‹å‰çš„ç´ æ•° && é›¶é’±å‡‘æ•´é—®é¢˜\Test.java
+ * è¾“å‡ºnumä¹‹å‰çš„ç´ æ•° && é›¶é’±å‡‘æ•´é—®é¢˜
  */ 
 import java.util.Scanner;
 
 public class Test {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        // ËØÊı
+        // ç´ æ•°
         int num = in.nextInt();
         for (int n = 2; n < num; n++) {
             boolean isPrime = true;
@@ -22,19 +22,19 @@ public class Test {
                 }
             }
             if (isPrime == true)
-                System.out.print(n + "\t"); // printlnÊÇÊä³öºó´ø¸öln»»ĞĞ,\tÖÆ±í·û
+                System.out.print(n + "\t"); // printlnæ˜¯è¾“å‡ºåå¸¦ä¸ªlnæ¢è¡Œ,\tåˆ¶è¡¨ç¬¦
         }
-        // ÁãÇ®´ÕÕûÎÊÌâ(Ğ¡Ç®ÔÚÍâ,´óÇ®ÔÚÄÚ)
-        System.out.println(); // »»ĞĞ
+        // é›¶é’±å‡‘æ•´é—®é¢˜(å°é’±åœ¨å¤–,å¤§é’±åœ¨å†…)
+        System.out.println(); // æ¢è¡Œ
         int amount = in.nextInt();
-        OUT: // ±êºÅ,¸úÌø×ª²»Í¬
+        OUT: // æ ‡å·,è·Ÿè·³è½¬ä¸åŒ
         for (int one = 0; one <= amount; one++) {
             for (int five = 0; five <= amount / 5; five++) {
                 for (int ten = 0; ten <= amount / 10; ten++) {
                     for (int twenty = 0; twenty <= amount / 20; twenty++) {
                         if (one + five * 5 + ten * 10 + twenty * 20 == amount) {
-                            System.out.println(one + "ÕÅÒ»Ôª," + five + "ÕÅÎåÔª," + ten + "ÕÅÊ®Ôª," + twenty + "ÕÅ¶şÊ®Ôª  ->" + amount + "Ôª.");
-                            break OUT; // °ÑOUT±ê¼ÇµÄÑ­»·Ìå½áÊø,ÕâÀïÊÇÕÒµ½Ò»ÖÖ¾Í½áÊø,Ò²¿ÉÒÔÈ¥µô´ËĞĞÊä³öËùÓĞ·½°¸
+                            System.out.println(one + "å¼ ä¸€å…ƒ," + five + "å¼ äº”å…ƒ," + ten + "å¼ åå…ƒ," + twenty + "å¼ äºŒåå…ƒ  ->" + amount + "å…ƒ.");
+                            break OUT; // æŠŠOUTæ ‡è®°çš„å¾ªç¯ä½“ç»“æŸ,è¿™é‡Œæ˜¯æ‰¾åˆ°ä¸€ç§å°±ç»“æŸ,ä¹Ÿå¯ä»¥å»æ‰æ­¤è¡Œè¾“å‡ºæ‰€æœ‰æ–¹æ¡ˆ
                         }
                     }
                 }

@@ -2,22 +2,22 @@
  * @Author: Weidows
  * @Date: 2020-05-29 01:12:47
  * @LastEditors: Weidows
- * @LastEditTime: 2020-07-01 15:59:48
- * @FilePath: \demo\src\twenty\May\3.ÊäÈëÊä³öºÍ¼ÆËã\test.java
- * 3.ÊäÈëÊä³öºÍ¼ÆËã
+ * @LastEditTime: 2020-07-08 10:51:02
+ * @FilePath: \Weidows\src\twenty\May\3.è¾“å…¥è¾“å‡ºå’Œè®¡ç®—\test.java
+ * 3.è¾“å…¥è¾“å‡ºå’Œè®¡ç®—
  */ 
-import java.util.Scanner; //import ScannerÀà
+import java.util.Scanner; //import Scannerç±»
 
 public class test {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in); // ¹¹ÔìÒ»¸ö·½·¨(¶ÔÏó):in
-        int index = in.nextInt(); // ×¢ÒânextIntºÍnextLine²»Ò»Ñù
+        Scanner in = new Scanner(System.in); // æ„é€ ä¸€ä¸ªæ–¹æ³•(å¯¹è±¡):in
+        int index = in.nextInt(); // æ³¨æ„nextIntå’ŒnextLineä¸ä¸€æ ·
         System.out.println(index);
 
         double foot = in.nextInt();
-        double inch = in.nextDouble(); // int¸ødouble¿ÉÒÔ,double¸øint²»ĞĞ
+        double inch = in.nextDouble(); // intç»™doubleå¯ä»¥,doubleç»™intä¸è¡Œ
         System.out.println((foot + inch / 12) * 0.3048);
-        // ÔËËãÏÈºó
+        // è¿ç®—å…ˆå
         int result = 2;
         result = (result = result * 2) * 6 * (result = 3 + result);// 4*6*7
         System.out.println(result); // result=168

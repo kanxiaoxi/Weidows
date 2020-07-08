@@ -3,9 +3,9 @@
  * @Author: Weidows
  * @Date: 2020-05-29 01:13:53
  * @LastEditors: Weidows
- * @LastEditTime: 2020-07-01 16:21:18
- * @FilePath: \demo\src\twenty\May\4.¸¡µãÊý && ±È½Ï\Test.java
- * ¸¡µãÊý && ±È½Ï
+ * @LastEditTime: 2020-07-08 10:51:17
+ * @FilePath: \Weidows\src\twenty\May\4.æµ®ç‚¹æ•° && æ¯”è¾ƒ\Test.java
+ * æµ®ç‚¹æ•° && æ¯”è¾ƒ
  */ 
 import java.util.Scanner;
 
@@ -14,8 +14,8 @@ public class Test {
         Scanner in = new Scanner(System.in);
         double a = 1.0;
         double b = 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1;
-        System.out.println(a == b); // ¸¡µãÊý´æÔÚÎó²î
+        System.out.println(a == b); // æµ®ç‚¹æ•°å­˜åœ¨è¯¯å·®
         System.err.println("a==b?" + ((a - b) < 0.00001));
-        // ¿ÉÒÔÓÃ¾«È·¶ÈÀ´ÅÐ¶Ï,¶ÔÓÚÕâÖÖ×Ö·û´®+ÔËËãµÄÊä³ö·½Ê½,ÈçÅöµ½'+'ÎóÅÐ,Ì×Ò»²ã()¾ÍÐÐ
+        // å¯ä»¥ç”¨ç²¾ç¡®åº¦æ¥åˆ¤æ–­,å¯¹äºŽè¿™ç§å­—ç¬¦ä¸²+è¿ç®—çš„è¾“å‡ºæ–¹å¼,å¦‚ç¢°åˆ°'+'è¯¯åˆ¤,å¥—ä¸€å±‚()å°±è¡Œ
     }
 }

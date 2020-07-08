@@ -2,54 +2,54 @@
  * @Author: Weidows
  * @Date: 2020-06-01 00:04:03
  * @LastEditors: Weidows
- * @LastEditTime: 2020-06-20 18:16:38
- * @FilePath: \demo\JAVA\2_2020-6\2.×Ö·û´®&°ü¹üÀàĞÍ\Test.java
+ * @LastEditTime: 2020-07-08 10:52:34
+ * @FilePath: \Weidows\src\twenty\june\aå­—ç¬¦ä¸²&åŒ…è£¹ç±»å‹\Test.java
  */ 
 import java.util.Scanner;
 
 public class Test {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        /** javaÖĞmathº¯Êıµ÷ÓÃÀàËÆCÓïÑÔ */
-        System.out.println("Ò»:"+Math.abs(-12) +" \t" + Math.round(10.645) + "\t" + Math.random() * 100 + "\t" + Math.pow(2, 3));
+        /** javaä¸­mathå‡½æ•°è°ƒç”¨ç±»ä¼¼Cè¯­è¨€ */
+        System.out.println("ä¸€:"+Math.abs(-12) +" \t" + Math.round(10.645) + "\t" + Math.random() * 100 + "\t" + Math.pow(2, 3));
         
         String s = "Hello World";
-        String s_1 = new String("Hello World"); //Á½ÖÖ´´½¨·½Ê½
-        System.out.println("¶ş:"+s+"\t"+s_1);
-        /**×Ö·û´®µÄ´´½¨,StringÊ××ÖÄ¸´óĞ´±íÃ÷ÆäÊµÒ»¸öÀà,´´½¨Ò»¸ö StringÀàµÄ¶ÔÏós,
-         * ¶øÇÒsÕâ¸ö¶ÔÏóÊÇHello WorldµÄ¹ÜÀíÕß¶ø·ÇËùÓĞÕß
-         * StringÕâ¸öÀà¿ÉÒÔÓÃ+Á¬½Ó,Àı:"Hello"+"World"="HelloWorld"
-         * ÁíÍâ,javaÖĞ×Ö·û´®¸ÅÄîÏàÍ¬ÓÚCÓïÑÔÖĞµÄÖ¸Õë,Æä±¾ÉíÊÇÒ»¸öµØÖ·ËùÒÔs==s_1±ØÊÇfalse
-         * ĞèÒª¶ÔÄÚÈİ±¾Éí½øĞĞ²Ù×÷Ê±ĞèÒªÓÃ¶ÔÏóµÄ·½·¨ */
+        String s_1 = new String("Hello World"); //ä¸¤ç§åˆ›å»ºæ–¹å¼
+        System.out.println("äºŒ:"+s+"\t"+s_1);
+        /**å­—ç¬¦ä¸²çš„åˆ›å»º,Stringé¦–å­—æ¯å¤§å†™è¡¨æ˜å…¶å®ä¸€ä¸ªç±»,åˆ›å»ºä¸€ä¸ª Stringç±»çš„å¯¹è±¡s,
+         * è€Œä¸”sè¿™ä¸ªå¯¹è±¡æ˜¯Hello Worldçš„ç®¡ç†è€…è€Œéæ‰€æœ‰è€…
+         * Stringè¿™ä¸ªç±»å¯ä»¥ç”¨+è¿æ¥,ä¾‹:"Hello"+"World"="HelloWorld"
+         * å¦å¤–,javaä¸­å­—ç¬¦ä¸²æ¦‚å¿µç›¸åŒäºCè¯­è¨€ä¸­çš„æŒ‡é’ˆ,å…¶æœ¬èº«æ˜¯ä¸€ä¸ªåœ°å€æ‰€ä»¥s==s_1å¿…æ˜¯false
+         * éœ€è¦å¯¹å†…å®¹æœ¬èº«è¿›è¡Œæ“ä½œæ—¶éœ€è¦ç”¨å¯¹è±¡çš„æ–¹æ³• */
 
-        //×Ö·û´®µÄÒ»Ğ©·½·¨
-            //equalsÅĞ¶ÏÄÚÈİÊÇ·ñÏàÍ¬,×Ö·û´®µÄlengthÓëÊı×é²»Í¬,ĞèÒªÔÚºóÃæ¼Ó¸öÀ¨ºÅ
-                System.out.println("Èı:"+s.equals(s_1) + "\t" + s.length());
-            //×Ö·û¶ÁÈ¡_1    charAt( int index)
-                System.out.print("ËÄ:");
+        //å­—ç¬¦ä¸²çš„ä¸€äº›æ–¹æ³•
+            //equalsåˆ¤æ–­å†…å®¹æ˜¯å¦ç›¸åŒ,å­—ç¬¦ä¸²çš„lengthä¸æ•°ç»„ä¸åŒ,éœ€è¦åœ¨åé¢åŠ ä¸ªæ‹¬å·
+                System.out.println("ä¸‰:"+s.equals(s_1) + "\t" + s.length());
+            //å­—ç¬¦è¯»å–_1    charAt( int index)
+                System.out.print("å››:");
                 for (int i = 0; i < s.length(); i++)
-                    System.out.print(s.charAt(i));    //×¢ÒâÊÇ´Ó0~(n-1)
+                    System.out.print(s.charAt(i));    //æ³¨æ„æ˜¯ä»0~(n-1)
                 System.out.println();
                 
-            //×Ö·û¶ÁÈ¡_2    substring(int beginIndex,int endIndex )
+            //å­—ç¬¦è¯»å–_2    substring(int beginIndex,int endIndex )
                 System.out.print("substring:  "+s.substring(2) + "\t");
-                System.out.println(s.substring(2, 4)); //×¢ÒâÊÇ´Ó2¿ªÊ¼µ½4Ö®Ç°->23
+                System.out.println(s.substring(2, 4)); //æ³¨æ„æ˜¯ä»2å¼€å§‹åˆ°4ä¹‹å‰->23
 
-            //²éÕÒ×Ö·û´®    indexOf()
-                System.out.print(s.indexOf('e') +"\t"); //ÕÒµ¥¸ö×Ö·û,ÕÒ²»µ½·µ»Ø-1
-                System.out.print(s.indexOf("llo") + "\t"); //×Ö·û´®Êä³öÊÇÊ××ÖÄ¸Î»ÖÃ
+            //æŸ¥æ‰¾å­—ç¬¦ä¸²    indexOf()
+                System.out.print(s.indexOf('e') +"\t"); //æ‰¾å•ä¸ªå­—ç¬¦,æ‰¾ä¸åˆ°è¿”å›-1
+                System.out.print(s.indexOf("llo") + "\t"); //å­—ç¬¦ä¸²è¾“å‡ºæ˜¯é¦–å­—æ¯ä½ç½®
                 
-                //Ğ¡ÊµÀı:ÕÒµ½ÎŞÏŞ³¤×Ö·û´®ÖĞÄ³¸ö×Ö·ûËùÓĞÎ»ÖÃ²¢Êä³ö
+                //å°å®ä¾‹:æ‰¾åˆ°æ— é™é•¿å­—ç¬¦ä¸²ä¸­æŸä¸ªå­—ç¬¦æ‰€æœ‰ä½ç½®å¹¶è¾“å‡º
                     char findChar='o';
                     int loc=s.indexOf(findChar);
                     while (loc != -1) {
                         System.out.print(loc + "\t");
-                        loc = s.indexOf(findChar,loc+1); //´Óloc+1µÄÎ»ÖÃÔÙ¿ªÊ¼ÕÒ
+                        loc = s.indexOf(findChar,loc+1); //ä»loc+1çš„ä½ç½®å†å¼€å§‹æ‰¾
                     }
-        /* ÊäÈëÀàĞÍ
+        /* è¾“å…¥ç±»å‹
             int a = in.nextInt();
             double b = in.nextDouble();
-            String c = in.next();   //¶ÁÏÂÒ»¸öµ¥´Ê,Ö±µ½(¿Õ¸ñ,Tab,»»ĞĞ)
-            String c_1 = in.nextLine(); //¶ÁÏÂÒ»ÕûĞĞ */
+            String c = in.next();   //è¯»ä¸‹ä¸€ä¸ªå•è¯,ç›´åˆ°(ç©ºæ ¼,Tab,æ¢è¡Œ)
+            String c_1 = in.nextLine(); //è¯»ä¸‹ä¸€æ•´è¡Œ */
     }
 }

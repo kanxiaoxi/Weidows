@@ -2,16 +2,16 @@
  * @Author: Weidows
  * @Date: 2020-05-29 01:11:22
  * @LastEditors: Weidows
- * @LastEditTime: 2020-07-01 15:56:35
- * @FilePath: \demo\src\twenty\May\2.¶ÔÏóºÍ¹¹ÔìÆ÷\Puppy.java
+ * @LastEditTime: 2020-07-08 10:50:52
+ * @FilePath: \Weidows\src\twenty\May\2.å¯¹è±¡å’Œæ„é€ å™¨\Puppy.java
  */ 
 public class Puppy {
     public Puppy(String name) {
-        System.out.println("Ğ¡¹·µÄÃû×ÖÊÇ:" + name);
+        System.out.println("å°ç‹—çš„åå­—æ˜¯:" + name);
     }
 
     public static void main(final String[] args) {
         Puppy myPuppy = new Puppy("tonny");
-        /* Ç°Ò»¸öPuppyÊÇÀàÃû,ºóÒ»¸öÊÇµ÷ÓÃ¹¹Ôìº¯Êı */
+        /* å‰ä¸€ä¸ªPuppyæ˜¯ç±»å,åä¸€ä¸ªæ˜¯è°ƒç”¨æ„é€ å‡½æ•° */
     }
 }

@@ -2,42 +2,42 @@
  * @Author: Weidows
  * @Date: 2020-07-03 10:09:58
  * @LastEditors: Weidows
- * @LastEditTime: 2020-07-04 18:36:55
- * @FilePath: \Weidows\src\twenty\june\f¶ÔÏóÈİÆ÷\notebook\Notebook.java
+ * @LastEditTime: 2020-07-08 10:54:27
+ * @FilePath: \Weidows\src\twenty\july\bå¯¹è±¡å®¹å™¨\notebook\Notebook.java
  */ 
-package notebook;/* ´øpackage¾ÍĞèÒªdebuggerÔËĞĞÁË */
+package notebook;/* å¸¦packageå°±éœ€è¦debuggerè¿è¡Œäº† */
 
 import java.util.ArrayList;
 import java.util.HashSet;
 
 public class Notebook {
-    // ÓÃÈİÆ÷ÀàÔÚNotebookÀàÄÚ´´½¨Ò»¸öprivate³ÉÔ±¶ÔÏónotes
+    // ç”¨å®¹å™¨ç±»åœ¨Notebookç±»å†…åˆ›å»ºä¸€ä¸ªprivateæˆå‘˜å¯¹è±¡notes
     private ArrayList<String> notes = new ArrayList<String>();
-    /* ¶Á×÷ArrayList all String ,½Ğ×ö·¶ĞÍÀà(ÈİÆ÷Àà)
-     * ÈİÆ÷ÀàÓĞÁ½¸öÀàĞÍ:ÈİÆ÷µÄÀàĞÍ && ÔªËØµÄÀàĞÍ
-     * 1.ArrayList¾ÍÊÇÈİÆ÷µÄÀàĞÍ(»¹ÓĞÆäËûÈİÆ÷Àà)
-     * 2.<>ÀïÃæµÄ¾ÍÊÇÕâ¸öÈİÆ÷notesÎ¨Ò»´æ´¢µÄÀàĞÍ(ÔªËØµÄÀàĞÍ)
-     * 3.Èç¹ûÈ¥µô<String>ÔòÈİÆ÷¿ÉÈİÄÉÈÎÒâÀàĞÍÊı¾İ,±ÈÈçArrayList list=new ArrrayList()*/
+    /* è¯»ä½œArrayList all String ,å«åšèŒƒå‹ç±»(å®¹å™¨ç±»)
+     * å®¹å™¨ç±»æœ‰ä¸¤ä¸ªç±»å‹:å®¹å™¨çš„ç±»å‹ && å…ƒç´ çš„ç±»å‹
+     * 1.ArrayListå°±æ˜¯å®¹å™¨çš„ç±»å‹(è¿˜æœ‰å…¶ä»–å®¹å™¨ç±»)
+     * 2.<>é‡Œé¢çš„å°±æ˜¯è¿™ä¸ªå®¹å™¨noteså”¯ä¸€å­˜å‚¨çš„ç±»å‹(å…ƒç´ çš„ç±»å‹)
+     * 3.å¦‚æœå»æ‰<String>åˆ™å®¹å™¨å¯å®¹çº³ä»»æ„ç±»å‹æ•°æ®,æ¯”å¦‚ArrayList list=new ArrrayList()*/
     private HashSet<String> notes_1 = new HashSet<String>();
     
     /**
-     * HashSetÕâ¸öÈİÆ÷ÓëArrayListÀàËÆ,²»Í¬ÊÇÆä²»ÄÜÖØ¸´×°ÏàÍ¬Êı¾İ,ÇÒÊı¾İÎŞĞò
-     * ¼ÈÈ»ËûÊÇÎŞĞòµÄ,ÄÇÃ´¾ÍÎŞ·¨Ê¹ÓÃindex¶¨Î»Êı¾İ
+     * HashSetè¿™ä¸ªå®¹å™¨ä¸ArrayListç±»ä¼¼,ä¸åŒæ˜¯å…¶ä¸èƒ½é‡å¤è£…ç›¸åŒæ•°æ®,ä¸”æ•°æ®æ— åº
+     * æ—¢ç„¶ä»–æ˜¯æ— åºçš„,é‚£ä¹ˆå°±æ— æ³•ä½¿ç”¨indexå®šä½æ•°æ®
      */
     
     public void add(String s) {
         notes.add(s);
         notes_1.add(s);
-        // notes.add(10); JavaÕâÀïÇø·ÖintºÍ²åÈë,²»ÄÜ½ÓÊÕÊı×Ö
+        // notes.add(10); Javaè¿™é‡ŒåŒºåˆ†intå’Œæ’å…¥,ä¸èƒ½æ¥æ”¶æ•°å­—
     }
 
     public void add(String s, int location) {
         notes.add(location, s);
-        /* ÉÏÒ»¸öÒÔ¼°Õâ¸ö³ÉÔ±º¯ÊıÖĞÓÃµ½µÄaddÊÇÈİÆ÷Àà´ø¸ønotesµÄ */
+        /* ä¸Šä¸€ä¸ªä»¥åŠè¿™ä¸ªæˆå‘˜å‡½æ•°ä¸­ç”¨åˆ°çš„addæ˜¯å®¹å™¨ç±»å¸¦ç»™notesçš„ */
     }
 
     public int getSize() {
-        return notes.size();/* Àà´øµÄ³ÉÔ±º¯Êı */
+        return notes.size();/* ç±»å¸¦çš„æˆå‘˜å‡½æ•° */
     }
 
     public String getNote(int index) {
@@ -48,20 +48,20 @@ public class Notebook {
         notes.remove(index);
     }
 
-    public String[] list() {/* °ÑÈİÆ÷ÄÚÊı¾İ±ä³ÉÊı×é²¢·µ»Ø */
+    public String[] list() {/* æŠŠå®¹å™¨å†…æ•°æ®å˜æˆæ•°ç»„å¹¶è¿”å› */
         String[] a = new String[notes.size()];
         /*
         for (int i = 0; i < notes.size(); i++) {
             a[i] = notes.get(i);
-        }  °ÑÈİÆ÷´«µİ¸ø×Ö·û´®Êı×éa
+        }  æŠŠå®¹å™¨ä¼ é€’ç»™å­—ç¬¦ä¸²æ•°ç»„a
         */
-        notes.toArray(a);/* Ê¹ÓÃ¿âµÄ·½·¨,Ö±½ÓÄÜ°ÑÈİÆ÷´«µİ¸øarray */
+        notes.toArray(a);/* ä½¿ç”¨åº“çš„æ–¹æ³•,ç›´æ¥èƒ½æŠŠå®¹å™¨ä¼ é€’ç»™array */
         return a;
     }
 
     public void printString() {
-        /* ÈİÆ÷¿ÉÒÔÒÔ[A,B]µÄĞÎÊ½Ö±½ÓÊä³ö,print¿ÉÒÔÊ¶±ğ(ÖØÒª)
-        µ«ÊÇ²»ÄÜÖ±½ÓÊä³ö¶ÔÏó,print²»Ê¶±ğ,»áÊä³ö¸ö°üÃû+publicÀàÃû(ÎÄ¼şÃû)+@xxxxµÄ¶«Î÷
+        /* å®¹å™¨å¯ä»¥ä»¥[A,B]çš„å½¢å¼ç›´æ¥è¾“å‡º,printå¯ä»¥è¯†åˆ«(é‡è¦)
+        ä½†æ˜¯ä¸èƒ½ç›´æ¥è¾“å‡ºå¯¹è±¡,printä¸è¯†åˆ«,ä¼šè¾“å‡ºä¸ªåŒ…å+publicç±»å(æ–‡ä»¶å)+@xxxxçš„ä¸œè¥¿
          */
         System.out.print("\nArrayList:"+this.notes+"\t");
         System.out.println("HashSet:"+this.notes_1);
@@ -69,25 +69,25 @@ public class Notebook {
 
     public String toString() {
         /**
-         * public String toString()Õâ¸ö³ÉÔ±º¯Êı¾ÍÊÇ¿ØÖÆÊä³ö¶ÔÏóÊ±µÄÄÚÈİ
-         * ±ÈÈçÈİÆ÷Àà¾Í»á´øÓĞÕâÃ´¸öº¯Êı,ÓÚÊÇprint¿ÉÒÔÖ±½ÓÊä³öÈİÆ÷
-         * ÀàËÆº¯Êı´ø»ØµÄ·µ»ØÖµ,Õâ¸öÊÇÊä³ö¶ÔÏóÊ±printÄ¬ÈÏÈ¥ÕÒµÄº¯Êı
-         * Ã»ÓĞ×Ô¶¨ÒåÕâ¸öµÄÀànew³öÀ´µÄ¶ÔÏóÊä³öÊ±²»»á±¨´íµ«»á³öÀ´Ææ¹ÖµÄ½á¹û
+         * public String toString()è¿™ä¸ªæˆå‘˜å‡½æ•°å°±æ˜¯æ§åˆ¶è¾“å‡ºå¯¹è±¡æ—¶çš„å†…å®¹
+         * æ¯”å¦‚å®¹å™¨ç±»å°±ä¼šå¸¦æœ‰è¿™ä¹ˆä¸ªå‡½æ•°,äºæ˜¯printå¯ä»¥ç›´æ¥è¾“å‡ºå®¹å™¨
+         * ç±»ä¼¼å‡½æ•°å¸¦å›çš„è¿”å›å€¼,è¿™ä¸ªæ˜¯è¾“å‡ºå¯¹è±¡æ—¶printé»˜è®¤å»æ‰¾çš„å‡½æ•°
+         * æ²¡æœ‰è‡ªå®šä¹‰è¿™ä¸ªçš„ç±»newå‡ºæ¥çš„å¯¹è±¡è¾“å‡ºæ—¶ä¸ä¼šæŠ¥é”™ä½†ä¼šå‡ºæ¥å¥‡æ€ªçš„ç»“æœ
          */
         return "HelloWorld!";
     }
     public static void main(String[] args) {
-        Notebook nb = new Notebook();/* new¶ÔÏónb,ÄÚº¬Ò»¸öÈİÆ÷Àà */
+        Notebook nb = new Notebook();/* newå¯¹è±¡nb,å†…å«ä¸€ä¸ªå®¹å™¨ç±» */
         nb.add("first");
         nb.add("second");
-        nb.add("second");/* ×°ÖØ¸´Êı¾İHashSet²»»á±¨´í */
+        nb.add("second");/* è£…é‡å¤æ•°æ®HashSetä¸ä¼šæŠ¥é”™ */
         System.out.println(nb.getSize()+"\t"+nb.getNote(1));
         
-        String[] a = nb.list();/* °ÑÈİÆ÷´«µİ¸ø×Ö·û´®Êı×é */
+        String[] a = nb.list();/* æŠŠå®¹å™¨ä¼ é€’ç»™å­—ç¬¦ä¸²æ•°ç»„ */
         for (String s : a) {
             System.out.print(s+"\t");
         }
-        nb.printString();/* µ÷ÓÃÈİÆ÷Êä³öº¯Êı */
+        nb.printString();/* è°ƒç”¨å®¹å™¨è¾“å‡ºå‡½æ•° */
         System.out.println(nb);
     }
 }

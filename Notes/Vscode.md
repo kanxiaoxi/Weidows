@@ -2,8 +2,8 @@
  * @Author: Weidows
  * @Date: 2020-05-27 19:28:49
  * @LastEditors: Weidows
- * @LastEditTime: 2020-05-28 23:54:50
- * @FilePath: \demo\Vscode.md
+ * @LastEditTime: 2020-07-09 18:33:07
+ * @FilePath: \Weidows\Notes\Vscode.md
 --> 
 # VScode 15个享受推荐
 ## 前言
@@ -28,6 +28,8 @@
 ## 美化推荐
 ### Chinese (Simplified) Language Pack for Visual Studio Code
 这个不解释,中国人看**中国字**顺眼就对了
+### Shades of Purple
+看起来紫气东来的一个主题
 ### background
 可以让主窗口出来个偷看的小东方(默认情况下,可以自行修改),主要是**养眼使用**.
 ### Material Icon Theme

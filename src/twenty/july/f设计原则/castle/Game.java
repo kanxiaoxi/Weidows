@@ -2,7 +2,7 @@
  * @Author: Weidows
  * @Date: 2020-07-08 08:30:19
  * @LastEditors: Weidows
- * @LastEditTime: 2020-07-08 10:43:33
+ * @LastEditTime: 2020-07-08 11:58:36
  * @FilePath: \Weidows\src\twenty\july\f设计原则\castle\Game.java
  */
 package castle;
@@ -82,8 +82,10 @@ public class Game {
 
         while (true) {
             System.out.print("输入动作:");
-            String line = in.nextLine();
-            String[] words = line.split(" ");//根据空格把line分成数组
+            //短语分词(好方法)
+                String line = in.nextLine();
+                //根据空格把line分成数组
+                String[] words = line.split(" ");
             if(words[0].equals("help"))
                 game.printHelp();
             else if(words[0].equals("go"))

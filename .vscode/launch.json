@@ -10,16 +10,23 @@
         },
         {
             "type": "java",
-            "name": "CodeLens (Launch) - Notebook",
+            "name": "CodeLens (Launch) - CellMachine",
             "request": "launch",
-            "mainClass": "notebook.Notebook",
+            "mainClass": "cellmachine.CellMachine",
             "projectName": "Weidows_bfd97da"
         },
         {
             "type": "java",
-            "name": "CodeLens (Launch) - Notebook",
+            "name": "CodeLens (Launch) - foreach",
             "request": "launch",
-            "mainClass": "Notebook",
+            "mainClass": "foreach",
+            "projectName": "Weidows_bfd97da"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - GuessNum",
+            "request": "launch",
+            "mainClass": "GuessNum",
             "projectName": "Weidows_bfd97da"
         },
         {
@@ -31,9 +38,9 @@
         },
         {
             "type": "java",
-            "name": "CodeLens (Launch) - foreach",
+            "name": "CodeLens (Launch) - CellMachine",
             "request": "launch",
-            "mainClass": "foreach",
+            "mainClass": "CellMachine",
             "projectName": "Weidows_bfd97da"
         },
         {

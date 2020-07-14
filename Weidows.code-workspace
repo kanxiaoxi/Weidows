@@ -1,70 +1,133 @@
 {
-	"folders": [
-		{
-			"name": "Weidows",
-			"path": "."
-		},
-		{
-			"name": "Crosstalk-rainbow-fart",
-			"path": "..\\Github\\Crosstalk-rainbow-fart"
-		}
-	],
-	"settings": {
-		"git.ignoreLimitWarning": true,
-		"files.associations": {
-			"*.cjson": "jsonc",
-			"*.wxss": "css",
-			"*.wxs": "javascript",
-			"ostream": "cpp",
-			"iostream": "cpp",
-			"array": "cpp",
-			"*.tcc": "cpp",
-			"cctype": "cpp",
-			"clocale": "cpp",
-			"cstdint": "cpp",
-			"cstdio": "cpp",
-			"cstdlib": "cpp",
-			"cstring": "cpp",
-			"cwchar": "cpp",
-			"cwctype": "cpp",
-			"unordered_map": "cpp",
-			"vector": "cpp",
-			"exception": "cpp",
-			"fstream": "cpp",
-			"functional": "cpp",
-			"initializer_list": "cpp",
-			"iosfwd": "cpp",
-			"istream": "cpp",
-			"limits": "cpp",
-			"new": "cpp",
-			"sstream": "cpp",
-			"stdexcept": "cpp",
-			"streambuf": "cpp",
-			"system_error": "cpp",
-			"type_traits": "cpp",
-			"tuple": "cpp",
-			"typeinfo": "cpp",
-			"utility": "cpp",
-			"thread": "cpp",
-			"stdio.h": "c",
-			"cmath": "c"
-		},
-		"emmet.syntaxProfiles": {
-			"vue": "html",
-			"vue-html": "html"
-		},
-		"emmet.includeLanguages": {
-			"vue-html": "html",
-			"vue": "html",
-			"javascript": "javascriptreact"
-		},
-		"emmet.excludeLanguages": [
-			"markdown",
-			"less",
-			"pug"
-		],
-		"workbench.activityBar.visible": true,
-		"commentTranslate.targetLanguage": "zh-CN",
-		"liveServer.settings.multiRootWorkspaceName": "Weidows"
-	}
+    "folders": [
+        {
+            "name": "Weidows",
+            "path": "."
+        },
+        {
+            "name": "Crosstalk-rainbow-fart",
+            "path": "..\\Github\\Crosstalk-rainbow-fart"
+        }
+    ],
+    "settings": {
+        "git.ignoreLimitWarning": true,
+        "files.associations": {
+            "*.cjson": "jsonc",
+            "*.wxss": "css",
+            "*.wxs": "javascript",
+            "ostream": "cpp",
+            "iostream": "cpp",
+            "array": "cpp",
+            "*.tcc": "cpp",
+            "cctype": "cpp",
+            "clocale": "cpp",
+            "cstdint": "cpp",
+            "cstdio": "cpp",
+            "cstdlib": "cpp",
+            "cstring": "cpp",
+            "cwchar": "cpp",
+            "cwctype": "cpp",
+            "unordered_map": "cpp",
+            "vector": "cpp",
+            "exception": "cpp",
+            "fstream": "cpp",
+            "functional": "cpp",
+            "initializer_list": "cpp",
+            "iosfwd": "cpp",
+            "istream": "cpp",
+            "limits": "cpp",
+            "new": "cpp",
+            "sstream": "cpp",
+            "stdexcept": "cpp",
+            "streambuf": "cpp",
+            "system_error": "cpp",
+            "type_traits": "cpp",
+            "tuple": "cpp",
+            "typeinfo": "cpp",
+            "utility": "cpp",
+            "thread": "cpp",
+            "stdio.h": "c",
+            "cmath": "c"
+        },
+        "emmet.syntaxProfiles": {
+            "vue": "html",
+            "vue-html": "html"
+        },
+        "emmet.includeLanguages": {
+            "vue-html": "html",
+            "vue": "html",
+            "javascript": "javascriptreact"
+        },
+        "emmet.excludeLanguages": [
+            "markdown",
+            "less",
+            "pug"
+        ],
+        "workbench.activityBar.visible": true,
+        "commentTranslate.targetLanguage": "zh-CN",
+        "liveServer.settings.multiRootWorkspaceName": "Weidows",
+        "java.dependency.packagePresentation": "flat",
+        "java.dependency.syncWithFolderExplorer": true,
+        "maven.view": "hierarchical"
+    },
+    "launch": {
+        "version": "0.2.0",
+        "configurations": [
+            {
+                "type": "java",
+                "name": "Debug (Launch) - Current File",
+                "request": "launch",
+                "mainClass": "${file}"
+            },
+            {
+                "type": "java",
+                "name": "Debug (Launch)-CellMachine<Weidows_bfd97da>",
+                "request": "launch",
+                "mainClass": "CellMachine",
+                "projectName": "Weidows_bfd97da"
+            },
+            {
+                "type": "java",
+                "name": "Debug (Launch)-Notebook<Weidows_bfd97da>",
+                "request": "launch",
+                "mainClass": "Notebook",
+                "projectName": "Weidows_bfd97da"
+            },
+            {
+                "type": "java",
+                "name": "Debug (Launch)-Test<Weidows_bfd97da>",
+                "request": "launch",
+                "mainClass": "Test",
+                "projectName": "Weidows_bfd97da"
+            },
+            {
+                "type": "java",
+                "name": "Debug (Launch)-Game<Weidows_bfd97da>",
+                "request": "launch",
+                "mainClass": "castle.Game",
+                "projectName": "Weidows_bfd97da"
+            },
+            {
+                "type": "java",
+                "name": "Debug (Launch)-Room<Weidows_bfd97da>",
+                "request": "launch",
+                "mainClass": "castle.Room",
+                "projectName": "Weidows_bfd97da"
+            },
+            {
+                "type": "java",
+                "name": "Debug (Launch)-Game<Weidows_bfd97da>(1)",
+                "request": "launch",
+                "mainClass": "newcastle.Game",
+                "projectName": "Weidows_bfd97da"
+            },
+            {
+                "type": "java",
+                "name": "Debug (Launch)-Room<Weidows_bfd97da>(1)",
+                "request": "launch",
+                "mainClass": "newcastle.Room",
+                "projectName": "Weidows_bfd97da"
+            }
+        ]
+    }
 }

@@ -36,7 +36,7 @@
  * @Author: Weidows
  * @Date: 2020-06-06 23:12:42
  * @LastEditors: Weidows
- * @LastEditTime: 2020-07-09 11:44:59
+ * @LastEditTime: 2020-07-14 12:00:35
  * @FilePath: \Weidows\README.md
  -->
 
@@ -49,22 +49,26 @@
 * 这仓库就是一学习笔记,没啥可看的,看名字就能明白,需要找啥自取就行
 ## 资源提示 
 
-* [.vscode](./.vscode/)目录里有我的VScode设置文件,已经搭建好C/C++,Python,Java,Node.js,HTML5 开发环境
+* [.vscode](./.vscode/)目录里有我的VScode设置文件,已经搭建好:
+C/C++ , Python , Java , Node.js , HTML5(与配置文件非相关) 开发环境...
 
-* [.vscode/images](./.vscode/images/)里面有竖屏涩图(狗头),目前整理有崩坏三的和Warframe的(用来做VScode超越鼓励师URL图)
+* [.vscode/images](./.vscode/images/)里面有竖屏 **涩图** (狗头,用来做VScode超越鼓励师URL图),目前整理有:
+崩坏三 , Warframe , 狂三(Kurumi) , 海贼王(Onepiece) , unknown ...
 
-* [Python](./Python/)目录里面有个520表白的单文件源码,作者是别人(开源了),在此给路人行个方便...
+* [Python](./Python/)目录里面有个520表白(Claim Love.py)的单文件源码,作者是别人(开源了),在此给路人行个方便...
 
-* 其他目录比如C++和src目录分别对应[C/C++](./C++/)和[Java](./src/),内有一些简单算法和数据结构题和作业,都有注释,需要的话自取
+* 其他目录比如C++ language和java src目录分别对应[C/C++](./C++ language/)和[Java](./java src/),内有一些简单算法和数据结构题和作业,都有注释,需要的话自取
 
-* [Notes](./Notes/)目录有一些其他语言的花里胡哨...以及Markdown文件(各种随笔)
+* [Others](./Others/)目录有一些其他语言的花里胡哨...以及Markdown等文件(各种随笔)
 
 * 暂无其他  loading...
 
 
 # #二.鄙人项目推荐
 * [VScode彩虹屁-相声语音包](https://github.com/2984539695/Crosstalk-rainbow-fart)
-
+* 尚未立项:
+  * [VScode插件推荐](./Others/Vscode.md)
+  * 
 * 暂无其他  loading...
 
 ---

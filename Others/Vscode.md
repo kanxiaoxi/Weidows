@@ -2,82 +2,82 @@
  * @Author: Weidows
  * @Date: 2020-05-27 19:28:49
  * @LastEditors: Weidows
- * @LastEditTime: 2020-07-14 11:59:48
+ * @LastEditTime: 2020-07-14 14:11:56
  * @FilePath: \Weidows\Others\Vscode.md
 --> 
 <h1 align="center">
-?? VScode¿ª·¢»·¾³ÅäÖÃ ??
+â­ï¸ VScodeå¼€å‘çŽ¯å¢ƒé…ç½® â­ï¸
 </h1>
 
-# #Ò».Ç°ÑÔ
-Ý°ÁÙ´Ë´¦µÄÓ¦¸ÃÊÇ¶¼ÖªµÀ [**VScode**](https://code.visualstudio.com)  ÊÇÔõÑùÒ»¸ö*±à¼­Æ÷* ÁË,ÔÙ´Ë´¦¸½ÉÏ[ÊµÓÃ](#¶þ.ÊµÓÃÍÆ¼ö) [ÃÀ»¯](#Èý.ÃÀ»¯ÍÆ¼ö) [Âë×Ö](#ËÄ.Âë×ÖÍÆ¼ö)µÄÍÆ¼ö,Ï£ÍûÏ²»¶!
+# #ä¸€.å‰è¨€
+èŽ…ä¸´æ­¤å¤„çš„åº”è¯¥æ˜¯éƒ½çŸ¥é“ [**VScode**](https://code.visualstudio.com)  æ˜¯æ€Žæ ·ä¸€ä¸ª*ç¼–è¾‘å™¨* äº†,å†æ­¤å¤„é™„ä¸Š[å®žç”¨](#äºŒ.å®žç”¨æŽ¨è) [ç¾ŽåŒ–](#ä¸‰.ç¾ŽåŒ–æŽ¨è) [ç å­—](#å››.ç å­—æŽ¨è)çš„æŽ¨è,å¸Œæœ›å–œæ¬¢!
 
 ---
-# #¶þ.ÊµÓÃÍÆ¼ö
+# #äºŒ.å®žç”¨æŽ¨è
 * ## Bookmarks
-  * ÈÃ²à±ßÀ¸³öÀ´¸öÊéÇ©°´Å¥,¹¦ÄÜºÍÃû×ÖÒ»Ñù,¾ÍÊÇ¿ÉÒÔÔÚÄ³¸öµØ·½**×öÒ»¸ö¿ÉÒÔÆðÃû×ÖµÄÊéÇ©**
-Ïà¶Ô±ÈÓÐÏàËÆµÄ²å¼þ*TODO Highlight*ºÍ*Todo Tree*,ÕâÁ½¸öÊÇÁîÐ´ÁËTODOµÄµØ·½¸ßÁÁ/±»±ê¼Ç,ÓÉÓÚ±ê¼Ç²»ÄÜÆðÃû×Ö,ËùÒÔ¸öÈË¸üÏ²»¶¿É±êÊ¶ÐÔµÄBookmarks.
+  * è®©ä¾§è¾¹æ å‡ºæ¥ä¸ªä¹¦ç­¾æŒ‰é’®,åŠŸèƒ½å’Œåå­—ä¸€æ ·,å°±æ˜¯å¯ä»¥åœ¨æŸä¸ªåœ°æ–¹**åšä¸€ä¸ªå¯ä»¥èµ·åå­—çš„ä¹¦ç­¾**
+ç›¸å¯¹æ¯”æœ‰ç›¸ä¼¼çš„æ’ä»¶*TODO Highlight*å’Œ*Todo Tree*,è¿™ä¸¤ä¸ªæ˜¯ä»¤å†™äº†TODOçš„åœ°æ–¹é«˜äº®/è¢«æ ‡è®°,ç”±äºŽæ ‡è®°ä¸èƒ½èµ·åå­—,æ‰€ä»¥ä¸ªäººæ›´å–œæ¬¢å¯æ ‡è¯†æ€§çš„Bookmarks.
 * ## Code Spelling Checker
-  * Õâ¸ö²å¼þ¾ÍºÜÓÐÒâË¼ÁË,Ëü¿ÉÒÔ**¼ì²éÎÄ¼þÖÐµ¥´ÊµÄÆ´Ð´´íÎó**,²¢¿ÉÒÔ**Ìá³öÐÞ¸Ä·½°¸**,Ð´´ú* Âë,Ð´md,ÉõÖÁÐ´txtµÈµÈ¶¼¿ÉÒÔÓÃµ½
+  * è¿™ä¸ªæ’ä»¶å°±å¾ˆæœ‰æ„æ€äº†,å®ƒå¯ä»¥**æ£€æŸ¥æ–‡ä»¶ä¸­å•è¯çš„æ‹¼å†™é”™è¯¯**,å¹¶å¯ä»¥**æå‡ºä¿®æ”¹æ–¹æ¡ˆ**,å†™ä»£* ç ,å†™md,ç”šè‡³å†™txtç­‰ç­‰éƒ½å¯ä»¥ç”¨åˆ°
 * ## Code Time
-  * Õâ¸ö²å¼þ¿ÉÒÔ**¼ÇÂ¼¶ÔÎÄ¼þ²Ù×÷µÄÊ±¼ä**(Ö»ÊÇ´ò¿ªÎÄ¼þÃ»ÓÐ¶¯µÄÇé¿öÏÂ²»»á¼ÆÊ±),¶Ô¸öÈË¶øÑÔ¿ÉÒÔÍ³¼ÆÑ§Ï°Âë×ÖÊ±¼ä,¿ÉÒÔµÇÂ¼¹È¸è»òGithub½øÐÐÍ¬²½
+  * è¿™ä¸ªæ’ä»¶å¯ä»¥**è®°å½•å¯¹æ–‡ä»¶æ“ä½œçš„æ—¶é—´**(åªæ˜¯æ‰“å¼€æ–‡ä»¶æ²¡æœ‰åŠ¨çš„æƒ…å†µä¸‹ä¸ä¼šè®¡æ—¶),å¯¹ä¸ªäººè€Œè¨€å¯ä»¥ç»Ÿè®¡å­¦ä¹ ç å­—æ—¶é—´,å¯ä»¥ç™»å½•è°·æ­Œæˆ–Githubè¿›è¡ŒåŒæ­¥
 * ## Comment Translate
-  * ¸öÈË×îÏ²»¶µÄ×ÛºÏÐÔ½ÏÇ¿µÄ**·­Òë²å¼þ**,Ö§³Ö»®´Ê·­Òë,ÔÚ×¢ÊÍÉÏÐü¸¡·­Òë,¶ÎÂä·­Òë....ËÙ¶ÈºÍÖÊÁ¿ºÜÓÅÐã
-* ## Remote - SSH ºÍ Remote - SSH: Editing Configuration Files
-  * ÕâÁ©ÊÇÀ¦°ó°²×°µÄ(¸öÈËÒÉ»óÎªÊ²Ã´²»Åª³ÉÒ»¸ö),Ë«ÉúµÄ,ÉÙÁËÄÄ¸ö¶¼²»ºÃÓÃ,×÷ÓÃÖ÷ÒªÊÇ**sshÔ¶³ÌÁ¬½Ó**,¿ÉÒÔÈÃVScode¹ÜÀíÔ¶³Ì»úÉÏµÄÎÄ¼þ/´úÂë...
+  * ä¸ªäººæœ€å–œæ¬¢çš„ç»¼åˆæ€§è¾ƒå¼ºçš„**ç¿»è¯‘æ’ä»¶**,æ”¯æŒåˆ’è¯ç¿»è¯‘,åœ¨æ³¨é‡Šä¸Šæ‚¬æµ®ç¿»è¯‘,æ®µè½ç¿»è¯‘....é€Ÿåº¦å’Œè´¨é‡å¾ˆä¼˜ç§€
+* ## Remote - SSH å’Œ Remote - SSH: Editing Configuration Files
+  * è¿™ä¿©æ˜¯æ†ç»‘å®‰è£…çš„(ä¸ªäººç–‘æƒ‘ä¸ºä»€ä¹ˆä¸å¼„æˆä¸€ä¸ª),åŒç”Ÿçš„,å°‘äº†å“ªä¸ªéƒ½ä¸å¥½ç”¨,ä½œç”¨ä¸»è¦æ˜¯**sshè¿œç¨‹è¿žæŽ¥**,å¯ä»¥è®©VScodeç®¡ç†è¿œç¨‹æœºä¸Šçš„æ–‡ä»¶/ä»£ç ...
 * ## Settings Sync
-  * ÓÃÓÚ**Í¬²½VScode²å¼þºÍÉèÖÃ**,ÔÚGithub GistÉÏ½¨Á¢Ò»¸öÓÃÓÚ´æ·ÅVScodeÍ¬²½ÉèÖÃµÄ±¸·ÝÔÆ,**·Ç³£ÓÐÓÃ**,±ÈÈçÏµÍ³±À»µ»òÕßÐèÒªÒÆÖ²VScodeÊ±,ÓÃËü°´¼¸¸ö¼ü¾ÍOKÁË
+  * ç”¨äºŽ**åŒæ­¥VScodeæ’ä»¶å’Œè®¾ç½®**,åœ¨Github Gistä¸Šå»ºç«‹ä¸€ä¸ªç”¨äºŽå­˜æ”¾VScodeåŒæ­¥è®¾ç½®çš„å¤‡ä»½äº‘,**éžå¸¸æœ‰ç”¨**,æ¯”å¦‚ç³»ç»Ÿå´©åæˆ–è€…éœ€è¦ç§»æ¤VScodeæ—¶,ç”¨å®ƒæŒ‰å‡ ä¸ªé”®å°±OKäº†
 * Power Mode
-  * ÔÚÂë×ÖÊ±ÇÃÈëÎÄ×Öºó¹â±ê²úÉú¶¯»­,ºÜºÃ¿´(µ«ÊÇ»áÓÐµã¿¨¶ÙÏÖÏó)
+  * åœ¨ç å­—æ—¶æ•²å…¥æ–‡å­—åŽå…‰æ ‡äº§ç”ŸåŠ¨ç”»,å¾ˆå¥½çœ‹(ä½†æ˜¯ä¼šæœ‰ç‚¹å¡é¡¿çŽ°è±¡)
 
 ---
-# #Èý.ÃÀ»¯ÍÆ¼ö
+# #ä¸‰.ç¾ŽåŒ–æŽ¨è
 * ## Chinese (Simplified) Language Pack for Visual Studio Code
-  * Õâ¸ö²»½âÊÍ,ÖÐ¹úÈË¿´**ÖÐ¹ú×Ö**Ë³ÑÛ¾Í¶ÔÁË
+  * è¿™ä¸ªä¸è§£é‡Š,ä¸­å›½äººçœ‹**ä¸­å›½å­—**é¡ºçœ¼å°±å¯¹äº†
 * ## Shades of Purple
-  * ¿´ÆðÀ´×ÏÆø¶«À´µÄÒ»¸öÖ÷Ìâ
+  * çœ‹èµ·æ¥ç´«æ°”ä¸œæ¥çš„ä¸€ä¸ªä¸»é¢˜
 * ## Tinacious Design 
-  * ¸öÈË×îÏ²»¶µÄÖ÷Ìâ,Ö»ÒªÊÇRGB+Cyberpunk·ç¸ñÎüÒýÎÒ
+  * ä¸ªäººæœ€å–œæ¬¢çš„ä¸»é¢˜,åªè¦æ˜¯RGB+Cyberpunké£Žæ ¼å¸å¼•æˆ‘
 * ## background
-  * ¿ÉÒÔÈÃÖ÷´°¿Ú³öÀ´¸öÍµ¿´µÄÐ¡¶«·½(Ä¬ÈÏÇé¿öÏÂ,¿ÉÒÔ×ÔÐÐÐÞ¸Ä),Ö÷ÒªÊÇ**ÑøÑÛÊ¹ÓÃ**.
+  * å¯ä»¥è®©ä¸»çª—å£å‡ºæ¥ä¸ªå·çœ‹çš„å°ä¸œæ–¹(é»˜è®¤æƒ…å†µä¸‹,å¯ä»¥è‡ªè¡Œä¿®æ”¹),ä¸»è¦æ˜¯**å…»çœ¼ä½¿ç”¨**.
 * ## Material Icon Theme
-  * ²à±ßÀ¸µÄ×ÊÔ´¹ÜÀíÆ÷ÖÐµÄ**ÎÄ¼þ**ÃÇ³¤³öÁË**Í·Ïñ**,¸ü¼ÓºÃÈÏÁËÄØ...
-  * ÁíÍâ²å¼þÉÌµêËÑË÷iconÒ²¿ÉÒÔÕÒµ½ÆäËûÑùÊ½µÄÍ¼±ê°ü,¿´¸öÈËÏ²ºÃÁË..
+  * ä¾§è¾¹æ çš„èµ„æºç®¡ç†å™¨ä¸­çš„**æ–‡ä»¶**ä»¬é•¿å‡ºäº†**å¤´åƒ**,æ›´åŠ å¥½è®¤äº†å‘¢...
+  * å¦å¤–æ’ä»¶å•†åº—æœç´¢iconä¹Ÿå¯ä»¥æ‰¾åˆ°å…¶ä»–æ ·å¼çš„å›¾æ ‡åŒ…,çœ‹ä¸ªäººå–œå¥½äº†..
 * ## Vibrancy
-  * Áî**VScodeÃ«²£Á§ÐÍÍ¸Ã÷**,¿ÉÑ¡ÔñÍ¸Ã÷¶ÈºÍ·ÇÍ¸Ã÷ÇøÓò
+  * ä»¤**VScodeæ¯›çŽ»ç’ƒåž‹é€æ˜Ž**,å¯é€‰æ‹©é€æ˜Žåº¦å’Œéžé€æ˜ŽåŒºåŸŸ
 * ## Rainbow Fart
-  * ²»ÄÜËãÊÇÃÀ»¯°É..µ«Ö»ÄÜ·ÅÕâÁË...´ò¿ªä¯ÀÀÆ÷Ò»¸ö¸¨ÖúÐÔÒ³Ãæ,ÊÚÈ¨ºóÔÚÄãÂë×Ö´¥·¢Ä³Ð©¹Ø¼ü×ÖÊ±»á²¥·Å "¹ÄÀø" ÐÍ»°Óï,¾ßÌå¿ÉÒÔ²Î¿¼ÎÒµÄÁíÒ»¸öÏîÄ¿
-* ## ³¬Ô½¹ÄÀøÊ¦
-  * VScode¿ªÆô×´Ì¬Ã¿Ò»Ð¡Ê±(Ä¬ÈÏÇé¿öÏÂ,¿ÉÒÔ¸ü¸ÄÉèÖÃ)³öÏÖÑî³¬Ô½Ò³ÃæÀ´¹ÄÀøÄã,Ò²¿ÉÒÔ¸ü¸ÄÉèÖÃ¿ØÖÆ³öÏÖÆäËû»­ÃæºÍÎÄ×Ö(±¾ÈËÁíÒ»¸öÏîÄ¿Ò²ÓÐ½éÉÜ)
+  * ä¸èƒ½ç®—æ˜¯ç¾ŽåŒ–å§..ä½†åªèƒ½æ”¾è¿™äº†...æ‰“å¼€æµè§ˆå™¨ä¸€ä¸ªè¾…åŠ©æ€§é¡µé¢,æŽˆæƒåŽåœ¨ä½ ç å­—è§¦å‘æŸäº›å…³é”®å­—æ—¶ä¼šæ’­æ”¾ "é¼“åŠ±" åž‹è¯è¯­,å…·ä½“å¯ä»¥å‚è€ƒæˆ‘çš„å¦ä¸€ä¸ªé¡¹ç›®
+* ## è¶…è¶Šé¼“åŠ±å¸ˆ
+  * VScodeå¼€å¯çŠ¶æ€æ¯ä¸€å°æ—¶(é»˜è®¤æƒ…å†µä¸‹,å¯ä»¥æ›´æ”¹è®¾ç½®)å‡ºçŽ°æ¨è¶…è¶Šé¡µé¢æ¥é¼“åŠ±ä½ ,ä¹Ÿå¯ä»¥æ›´æ”¹è®¾ç½®æŽ§åˆ¶å‡ºçŽ°å…¶ä»–ç”»é¢å’Œæ–‡å­—(æœ¬äººå¦ä¸€ä¸ªé¡¹ç›®ä¹Ÿæœ‰ä»‹ç»)
 * ## koroFileHeader
-  * ÔÚnewÎÄ¼þÊ±ÔÚÎÄ¼þÍ·²¿¼ÓÉÏ×÷Õß,ÐÂ½¨ºÍ¸ü¸ÄÈÕÆÚ,ÎÄ¼þÄ¿Â¼µÈÐÅÏ¢(Ò²¿ÉÊÖ¶¯Ìí¼Ó)
-ÁíÒ»¸öÓÐÈ¤¹¦ÄÜÊÇ¿ÉÒÔÒ»¼üÌí¼Ó×Ö·û»­!Ã»É¶ÓÃµ«Í¦ÓÐÒâË¼µÄ...
+  * åœ¨newæ–‡ä»¶æ—¶åœ¨æ–‡ä»¶å¤´éƒ¨åŠ ä¸Šä½œè€…,æ–°å»ºå’Œæ›´æ”¹æ—¥æœŸ,æ–‡ä»¶ç›®å½•ç­‰ä¿¡æ¯(ä¹Ÿå¯æ‰‹åŠ¨æ·»åŠ )
+å¦ä¸€ä¸ªæœ‰è¶£åŠŸèƒ½æ˜¯å¯ä»¥ä¸€é”®æ·»åŠ å­—ç¬¦ç”»!æ²¡å•¥ç”¨ä½†æŒºæœ‰æ„æ€çš„...
 
 ---
-# #ËÄ.Âë×ÖÍÆ¼ö
+# #å››.ç å­—æŽ¨è
 
 * ## Bracket Pair Colorizer
-  * Ö»ÒªÂë×ÖÊ±ÓÃµ½´óÖÐÐ¡À¨ºÅ,ÎÒ¾ÍÍÆ¼ö¸ãÉÏËü,Ëü¿ÉÒÔÈÃ²»Í¬¶ÔÀ¨ºÅ±ê¼Ç**²»Í¬ÑÕÉ«**À´Çø·Ö¿ª,¶øÇÒÁ½Åä¶ÔµÄÀ¨ºÅ»á**±ê³öËõ½øÏß**
+  * åªè¦ç å­—æ—¶ç”¨åˆ°å¤§ä¸­å°æ‹¬å·,æˆ‘å°±æŽ¨èæžä¸Šå®ƒ,å®ƒå¯ä»¥è®©ä¸åŒå¯¹æ‹¬å·æ ‡è®°**ä¸åŒé¢œè‰²**æ¥åŒºåˆ†å¼€,è€Œä¸”ä¸¤é…å¯¹çš„æ‹¬å·ä¼š**æ ‡å‡ºç¼©è¿›çº¿**
 * ## Code Runner
-  * ÔÚ½çÃæÓÒÉÏ½Ç³öÏÖÈý½ÇÐÎ°´Å¥,ËüÔÊÐíÔÚ±àÒëµ÷ÊÔ»·¾³ÒÑ¾­´îÅäºÃµÄÇé¿öÏÂ**Ê¹VScode²úÉúIDEµÄ* ×÷ÓÃ**
+  * åœ¨ç•Œé¢å³ä¸Šè§’å‡ºçŽ°ä¸‰è§’å½¢æŒ‰é’®,å®ƒå…è®¸åœ¨ç¼–è¯‘è°ƒè¯•çŽ¯å¢ƒå·²ç»æ­é…å¥½çš„æƒ…å†µä¸‹**ä½¿VScodeäº§ç”ŸIDEçš„* ä½œç”¨**
 * ## Markdown All in One
-  * ¹¦ÄÜÔÚÃû×ÖÖÐÌåÏÖÁË,¿ÉÒÔÔÚVScodeÖÐ**´ò¿ª/Ð´/Ô¤ÀÀ.mdÎÄ¼þ**,VScode°ætypora
+  * åŠŸèƒ½åœ¨åå­—ä¸­ä½“çŽ°äº†,å¯ä»¥åœ¨VScodeä¸­**æ‰“å¼€/å†™/é¢„è§ˆ.mdæ–‡ä»¶**,VScodeç‰ˆtypora
 * ## Path Intellisense
-  * ÔÚÂë×ÖÊ±ºÍÖÕ¶Ëµ÷ÊÔÊ±¿ÉÒÔ·½±ã**²¹È«Ä¿Â¼Â·¾¶**µÄÐ¡²å¼þ,Ä³Ð©ÓïÑÔÏÂ²»ÊÜÖØÊÓ,µ«²»ÄÜÃ»ÓÐ!
+  * åœ¨ç å­—æ—¶å’Œç»ˆç«¯è°ƒè¯•æ—¶å¯ä»¥æ–¹ä¾¿**è¡¥å…¨ç›®å½•è·¯å¾„**çš„å°æ’ä»¶,æŸäº›è¯­è¨€ä¸‹ä¸å—é‡è§†,ä½†ä¸èƒ½æ²¡æœ‰!
 * ## TabNine
-  * ÊÇ¸ö"Ð¡ÇÉ"µÄ(Êµ¼ÊÉÏ´ò¿ªVScodeÊ±Õ¼ÓÃÄÚ´æG+,¾ßÌå¿´ÏîÄ¿´óÐ¡ÁË) **´úÂë²¹È«**µÄ²å¼þ,²»Í¬µÄÊÇËü¿ÉÒÔ½èÖú²Î¿¼ÉÏÏÂÎÄ,ÏîÄ¿ÖÐµÄÏàËÆÓï¾ä½øÐÐÍÆ¼ö²¹È«(±ÈÓïÑÔ×Ô´øµÄ¸üÇ¿´ó,²»³åÍ»,Õâ¸öÊÇÕû¾äÐÍ²¹È«,²»ÏÓÆúÂÔ¿¨µÄ»°Êµ¼ÊºÜºÃÓÃ)
+  * æ˜¯ä¸ª"å°å·§"çš„(å®žé™…ä¸Šæ‰“å¼€VScodeæ—¶å ç”¨å†…å­˜G+,å…·ä½“çœ‹é¡¹ç›®å¤§å°äº†) **ä»£ç è¡¥å…¨**çš„æ’ä»¶,ä¸åŒçš„æ˜¯å®ƒå¯ä»¥å€ŸåŠ©å‚è€ƒä¸Šä¸‹æ–‡,é¡¹ç›®ä¸­çš„ç›¸ä¼¼è¯­å¥è¿›è¡ŒæŽ¨èè¡¥å…¨(æ¯”è¯­è¨€è‡ªå¸¦çš„æ›´å¼ºå¤§,ä¸å†²çª,è¿™ä¸ªæ˜¯æ•´å¥åž‹è¡¥å…¨,ä¸å«Œå¼ƒç•¥å¡çš„è¯å®žé™…å¾ˆå¥½ç”¨)
 * ## indent-rainbow
-  * ÔÚËõ½øÇøÓò²úÉú²»Í¬ÑÕÉ«µÄ"É«¿é",ÔÚËõ½ø²»±ê×¼Ê±Ò²»á±äÉ«ÌáÐÑ,**ºÜÊµÓÃ!**
+  * åœ¨ç¼©è¿›åŒºåŸŸäº§ç”Ÿä¸åŒé¢œè‰²çš„"è‰²å—",åœ¨ç¼©è¿›ä¸æ ‡å‡†æ—¶ä¹Ÿä¼šå˜è‰²æé†’,**å¾ˆå®žç”¨!**
 * ## Better Comments
-  * Ìí¼Ó×¢ÊÍÊ±ÔÚÃ¿ÐÐ×¢ÊÍµÚÒ»¸ö×Ö·ûÐ´"!?*"µÈ×Ö·û»á¸ÃÐÐÈÃ×¢ÊÍ±äÉ«,ÓÐÒ»¶¨ÔöÇ¿ÔÄ¶ÁÐ§¹û
+  * æ·»åŠ æ³¨é‡Šæ—¶åœ¨æ¯è¡Œæ³¨é‡Šç¬¬ä¸€ä¸ªå­—ç¬¦å†™"!?*"ç­‰å­—ç¬¦ä¼šè¯¥è¡Œè®©æ³¨é‡Šå˜è‰²,æœ‰ä¸€å®šå¢žå¼ºé˜…è¯»æ•ˆæžœ
 
 ---
-# #N.·´À¡ & ³ö´¦
-**Èç¹ûÄÄÀïÓÐç¢Â©ÇëÔÚÆÀÂÛÖ¸Õý,»¶Ó­ÌÖÂÛ**
+# #N.åé¦ˆ & å‡ºå¤„
+**å¦‚æžœå“ªé‡Œæœ‰çº°æ¼è¯·åœ¨è¯„è®ºæŒ‡æ­£,æ¬¢è¿Žè®¨è®º**
 
-* Î¢ÐÅ:     QQ2984539695
+* å¾®ä¿¡:     QQ2984539695
 
-* [**ÓÊÏä:  2984539695@qq.com / UTsuKo27@qq.com**](mail.qq.com)
+* [**é‚®ç®±:  2984539695@qq.com / UTsuKo27@qq.com**](mail.qq.com)
 
 * [**QQ  2984539695**](https://qm.qq.com/cgi-bin/qm/qr?k=3ycBtwX25IMFisvKoD8NIyNBMofXBFFu&noverify=0)
 
@@ -85,6 +85,6 @@
 
 * [**Gitee  @Weidows**](https://gitee.com/Weidows2984539695) 
 
-* [**CSDN  @Weidows©I**](https://me.csdn.net/qq_39823295)
+* [**CSDN  @WeidowsãŠ£**](https://me.csdn.net/qq_39823295)
 
-* [**Bilibili  @ŠCÁù±ÒµÄÃû×Ö**](https://space.bilibili.com/38283369)
+* [**Bilibili  @å¥€å…­å¸çš„åå­—**](https://space.bilibili.com/38283369)

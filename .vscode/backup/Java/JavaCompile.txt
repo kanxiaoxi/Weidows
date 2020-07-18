@@ -1,0 +1,8 @@
+1、java   -cp    即为-classpath 
+  eg.   java -cp C:\workspace  HelloWorld      
+ 运行该路径下的HelloWorld的可执行文件
+
+2、javac    -sourcepath  指定原始码（.java文件）的路径
+                 -d  指定编译后位码（.class文件）的存放路径
+eg.  javac  -sourcepath src -d classes src/Main.java     
+编译在src下的Main.java，将生成的.class文件放入classes目录下

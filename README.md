@@ -36,7 +36,7 @@
  * @Author: Weidows
  * @Date: 2020-06-06 23:12:42
  * @LastEditors: Weidows
- * @LastEditTime: 2020-07-14 14:06:43
+ * @LastEditTime: 2020-07-18 13:08:45
  * @FilePath: \Weidows\README.md
  -->
 
@@ -51,6 +51,7 @@
 
 * [.vscode](./.vscode/)目录里有我的VScode设置文件,已经搭建好:
 C/C++ , Python , Java , Node.js , HTML5(与配置文件非相关) 开发环境...
+[.vscode/backup](./.vscode/backup)里面有开发环境所需要的配置文件,安装包,压缩包和介绍等...
 
 * [.vscode/images](./.vscode/images/)里面有竖屏 **涩图** (狗头,用来做VScode超越鼓励师URL图),目前整理有:
 崩坏三 , Warframe , 狂三(Kurumi) , 海贼王(Onepiece) , unknown ...

@@ -1,11 +1,9 @@
 {
     "folders": [
         {
-            "name": "Weidows",
             "path": "."
         },
         {
-            "name": "Crosstalk-rainbow-fart",
             "path": "..\\Github\\Crosstalk-rainbow-fart"
         }
     ],
@@ -68,7 +66,8 @@
         "liveServer.settings.multiRootWorkspaceName": "Weidows",
         "java.dependency.packagePresentation": "flat",
         "java.dependency.syncWithFolderExplorer": true,
-        "maven.view": "hierarchical"
+        "maven.view": "flat",
+        "java.configuration.updateBuildConfiguration": "automatic"
     },
     "launch": {
         "version": "0.2.0",

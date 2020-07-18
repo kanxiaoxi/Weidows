@@ -1,0 +1,33 @@
+命令行（管理员模式）代码：
+	reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Kernel" /v DisableTsx /t REG_DWORD /d 0 /f
+
+API  
+	39a845774744bc7e541cfcf56bc856426e388f8b
+
+Java环境: 
+	VScode中Java环境异常时先尝试在命令面板Clean the Java language sever Workspace
+	新建JAVA_HOME, 变量值  D:\Game\Demo\AdoptOpenJDK\
+	Path里面添加 %JAVA_HOME%\bin
+	同上CLASSPATH(比较新的不用)	.;%Java_Home%\bin;%Java_Home%\lib\dt.jar;%Java_Home%\lib\tools.jar
+	创建jre: 进入JDK根目录管理员模式输入
+		bin\jlink.exe --module-path jmods --add-modules java.desktop --output jre
+Maven环境:
+	新建M2_HOME  D:\Game\Demo\apache-maven-3.6.3
+	新建MAVEN_HOME  D:\Game\Demo\apache-maven-3.6.3
+	Path中+	%M2_HOME%\bin
+	Path中+ MAVEN_HOME\bin
+C/C++环境: 
+	在Path中添加  D:\Game\Demo\Dev-Cpp\MinGW64\bin
+
+
+Git环境:
+	Path中+	D:\Game\Demo\Git\cmd
+
+
+Node.JS环境:
+	Path中+	D:\Game\Demo\Node.js\
+
+
+Python环境:
+	Path中+	D:\Game\Demo\Python\
+		D:\Game\Demo\Python\Scripts\

@@ -1,0 +1,3 @@
+json中$fileNameWithoutExt就是不带扩展名
+
+json中写路径用\\或者/都行,后者适用性比较广泛

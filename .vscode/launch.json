@@ -2,55 +2,6 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "java",
-            "name": "CodeLens (Launch) - Game",
-            "request": "launch",
-            "mainClass": "Game",
-            "projectName": "Weidows_bfd97da"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - CellMachine",
-            "request": "launch",
-            "mainClass": "cellmachine.CellMachine",
-            "projectName": "Weidows_bfd97da"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - foreach",
-            "request": "launch",
-            "mainClass": "foreach",
-            "projectName": "Weidows_bfd97da"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - GuessNum",
-            "request": "launch",
-            "mainClass": "GuessNum",
-            "projectName": "Weidows_bfd97da"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Test",
-            "request": "launch",
-            "mainClass": "Test",
-            "projectName": "Weidows_bfd97da"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - CellMachine",
-            "request": "launch",
-            "mainClass": "CellMachine",
-            "projectName": "Weidows_bfd97da"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Game",
-            "request": "launch",
-            "mainClass": "newcastle.Game",
-            "projectName": "Weidows_bfd97da"
-        },
-        {
             "name": "Python: 当前文件",
             "type": "python",
             "request": "launch",

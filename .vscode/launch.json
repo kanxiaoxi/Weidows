@@ -2,6 +2,76 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "CodeLens (Launch) - Puppy",
+            "request": "launch",
+            "mainClass": "twenty.may.object_generator.Puppy",
+            "projectName": "Java"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Test",
+            "request": "launch",
+            "mainClass": "twenty.june.array.Test",
+            "projectName": "Java"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Coin",
+            "request": "launch",
+            "mainClass": "twenty.july.hashmap.Coin",
+            "projectName": "Java"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - foreach",
+            "request": "launch",
+            "mainClass": "twenty.july.foreach.foreach",
+            "projectName": "Java"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - GuessNum",
+            "request": "launch",
+            "mainClass": "twenty.may.guess_num.GuessNum",
+            "projectName": "Java"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Game",
+            "request": "launch",
+            "mainClass": "twenty.july.design_principle.newcastle.Game",
+            "projectName": "Java"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Test",
+            "request": "launch",
+            "mainClass": "twenty.may.calculating_max_common_divisor.Test",
+            "projectName": "Java"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - CD",
+            "request": "launch",
+            "mainClass": "twenty.july.inheritanceandpolymorphism.dome.CD",
+            "projectName": "Java"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - foreach",
+            "request": "launch",
+            "mainClass": "twenty.july.aforeach.foreach",
+            "projectName": "Java"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Test",
+            "request": "launch",
+            "mainClass": "test.Test",
+            "projectName": "Java"
+        },
+        {
             "name": "Python: 当前文件",
             "type": "python",
             "request": "launch",

@@ -66,7 +66,7 @@
         "liveServer.settings.multiRootWorkspaceName": "Weidows",
         "java.dependency.packagePresentation": "flat",
         "java.dependency.syncWithFolderExplorer": true,
-        "maven.view": "flat",
+        "maven.view": "hierarchical",
         "java.configuration.updateBuildConfiguration": "automatic"
     }
 }

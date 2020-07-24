@@ -36,16 +36,17 @@
  * @Author: Weidows
  * @Date: 2020-05-03 01:18:34
  * @LastEditors: Weidows
- * @LastEditTime: 2020-07-18 16:40:08
+ * @LastEditTime: 2020-07-24 10:46:10
  * @FilePath: \Weidows\Java\src\main\java\test\Test.java
  */
 package test;
+
 import java.util.Scanner;
 
 public class Test {
-    public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        
-        in.close();
-    }
+  public static void main(String[] args) {
+    Scanner in = new Scanner(System.in);
+    
+    in.close();
+  }
 }

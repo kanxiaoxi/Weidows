@@ -1,103 +1,124 @@
 {
     "version": "0.2.0",
     "configurations": [
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Puppy",
-            "request": "launch",
-            "mainClass": "twenty.may.object_generator.Puppy",
-            "projectName": "Java"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Test",
-            "request": "launch",
-            "mainClass": "twenty.june.array.Test",
-            "projectName": "Java"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Coin",
-            "request": "launch",
-            "mainClass": "twenty.july.hashmap.Coin",
-            "projectName": "Java"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - foreach",
-            "request": "launch",
-            "mainClass": "twenty.july.foreach.foreach",
-            "projectName": "Java"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - GuessNum",
-            "request": "launch",
-            "mainClass": "twenty.may.guess_num.GuessNum",
-            "projectName": "Java"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Game",
-            "request": "launch",
-            "mainClass": "twenty.july.design_principle.newcastle.Game",
-            "projectName": "Java"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Test",
-            "request": "launch",
-            "mainClass": "twenty.may.calculating_max_common_divisor.Test",
-            "projectName": "Java"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - CD",
-            "request": "launch",
-            "mainClass": "twenty.july.inheritanceandpolymorphism.dome.CD",
-            "projectName": "Java"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - foreach",
-            "request": "launch",
-            "mainClass": "twenty.july.aforeach.foreach",
-            "projectName": "Java"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Test",
-            "request": "launch",
-            "mainClass": "test.Test",
-            "projectName": "Java"
-        },
-        {
-            "name": "Python: 当前文件",
-            "type": "python",
-            "request": "launch",
-            "program": "${file}",
-            "console": "integratedTerminal"
-        },
-        {
-            "name": "C/C++",
-            "type": "cppdbg",
-            "request": "launch",
-            "program": "${fileDirname}/${fileBasenameNoExtension}.exe",
-            "args": [],
-            "stopAtEntry": false,
-            "cwd": "${workspaceFolder}",
-            "environment": [],
-            "externalConsole": true,
-            "MIMode": "gdb",
-            "miDebuggerPath": "D:/Game/Demo/Dev-Cpp/MinGW64/bin/gdb.exe",
-            "preLaunchTask": "g++",
-            "setupCommands": [
-                {
-                    "description": "Enable pretty-printing for gdb",
-                    "text": "-enable-pretty-printing",
-                    "ignoreFailures": true
-                }
-            ]
-        }
+      {
+        "type": "java",
+        "name": "CodeLens (Launch) - CellMachine",
+        "request": "launch",
+        "mainClass": "twenty.july.data_depart_behave.cellmachine.CellMachine",
+        "projectName": "Java"
+      },
+      {
+        "type": "java",
+        "name": "CodeLens (Launch) - FoxAndRabbit",
+        "request": "launch",
+        "mainClass": "twenty.july.my_interface.fox_and_rabbit.FoxAndRabbit",
+        "projectName": "Java"
+      },
+      {
+        "type": "java",
+        "name": "CodeLens (Launch) - View",
+        "request": "launch",
+        "mainClass": "twenty.july.myabstract.field.View",
+        "projectName": "Java"
+      },
+      {
+        "type": "java",
+        "name": "CodeLens (Launch) - Puppy",
+        "request": "launch",
+        "mainClass": "twenty.may.object_generator.Puppy",
+        "projectName": "Java"
+      },
+      {
+        "type": "java",
+        "name": "CodeLens (Launch) - Test",
+        "request": "launch",
+        "mainClass": "twenty.june.array.Test",
+        "projectName": "Java"
+      },
+      {
+        "type": "java",
+        "name": "CodeLens (Launch) - Coin",
+        "request": "launch",
+        "mainClass": "twenty.july.hashmap.Coin",
+        "projectName": "Java"
+      },
+      {
+        "type": "java",
+        "name": "CodeLens (Launch) - foreach",
+        "request": "launch",
+        "mainClass": "twenty.july.foreach.foreach",
+        "projectName": "Java"
+      },
+      {
+        "type": "java",
+        "name": "CodeLens (Launch) - GuessNum",
+        "request": "launch",
+        "mainClass": "twenty.may.guess_num.GuessNum",
+        "projectName": "Java"
+      },
+      {
+        "type": "java",
+        "name": "CodeLens (Launch) - Game",
+        "request": "launch",
+        "mainClass": "twenty.july.design_principle.newcastle.Game",
+        "projectName": "Java"
+      },
+      {
+        "type": "java",
+        "name": "CodeLens (Launch) - Test",
+        "request": "launch",
+        "mainClass": "twenty.may.calculating_max_common_divisor.Test",
+        "projectName": "Java"
+      },
+      {
+        "type": "java",
+        "name": "CodeLens (Launch) - CD",
+        "request": "launch",
+        "mainClass": "twenty.july.inheritanceandpolymorphism.dome.CD",
+        "projectName": "Java"
+      },
+      {
+        "type": "java",
+        "name": "CodeLens (Launch) - foreach",
+        "request": "launch",
+        "mainClass": "twenty.july.aforeach.foreach",
+        "projectName": "Java"
+      },
+      {
+        "type": "java",
+        "name": "CodeLens (Launch) - Test",
+        "request": "launch",
+        "mainClass": "test.Test",
+        "projectName": "Java"
+      },
+      {
+        "name": "Python: 当前文件",
+        "type": "python",
+        "request": "launch",
+        "program": "${file}",
+        "console": "integratedTerminal"
+      },
+      {
+        "name": "C/C++",
+        "type": "cppdbg",
+        "request": "launch",
+        "program": "${fileDirname}/${fileBasenameNoExtension}.exe",
+        "args": [],
+        "stopAtEntry": false,
+        "cwd": "${workspaceFolder}",
+        "environment": [],
+        "externalConsole": false,
+        "MIMode": "gdb",
+        "miDebuggerPath": "D:/Game/Demo/Dev-Cpp/MinGW64/bin/gdb.exe",
+        "preLaunchTask": "g++",
+        "setupCommands": [
+          {
+            "description": "Enable pretty-printing for gdb",
+            "text": "-enable-pretty-printing",
+            "ignoreFailures": true
+          }
+        ]
+      }
     ]
 }

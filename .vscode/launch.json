@@ -3,6 +3,55 @@
     "configurations": [
       {
         "type": "java",
+        "name": "CodeLens (Launch) - ArrayIndex",
+        "request": "launch",
+        "mainClass": "twenty.july.exception.ArrayIndex",
+        "projectName": "Java"
+      },
+      {
+        "type": "java",
+        "name": "CodeLens (Launch) - KCB",
+        "request": "launch",
+        "mainClass": "twenty.july.class_schedule.KCB",
+        "projectName": "Java"
+      },
+      {
+        "type": "java",
+        "name": "CodeLens (Launch) - PrimitiveTypeTest",
+        "request": "launch",
+        "mainClass": "twenty.may.data_type.PrimitiveTypeTest",
+        "projectName": "Java"
+      },
+      {
+        "type": "java",
+        "name": "CodeLens (Launch) - View",
+        "request": "launch",
+        "mainClass": "twenty.july.control_inversion.field.View",
+        "projectName": "Java"
+      },
+      {
+        "type": "java",
+        "name": "CodeLens (Launch) - View",
+        "request": "launch",
+        "mainClass": "twenty.july.data_depart_behave.field.View",
+        "projectName": "Java"
+      },
+      {
+        "type": "java",
+        "name": "CodeLens (Launch) - Animal",
+        "request": "launch",
+        "mainClass": "twenty.july.control_inversion.animal.Animal",
+        "projectName": "Java"
+      },
+      {
+        "type": "java",
+        "name": "CodeLens (Launch) - FoxAndRabbit",
+        "request": "launch",
+        "mainClass": "twenty.july.control_inversion.fox_and_rabbit.FoxAndRabbit",
+        "projectName": "Java"
+      },
+      {
+        "type": "java",
         "name": "CodeLens (Launch) - CellMachine",
         "request": "launch",
         "mainClass": "twenty.july.data_depart_behave.cellmachine.CellMachine",

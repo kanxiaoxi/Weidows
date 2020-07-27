@@ -36,7 +36,7 @@
  * @Author: Weidows
  * @Date: 2020-06-06 23:12:42
  * @LastEditors: Weidows
- * @LastEditTime: 2020-07-24 15:05:08
+ * @LastEditTime: 2020-07-25 17:51:52
  * @FilePath: \Weidows\README.md
  -->
 
@@ -60,7 +60,9 @@ C/C++ , Python , Java , Node.js , HTML5(与配置文件非相关) 开发环境..
   崩坏三(Honkai3) , 星际战甲(Warframe) , 狂三(Kurumi) , 海贼王(Onepiece) , unknown ...
 
 * [Java](./Java/src/main/java/)里面是根据浙大翁凯老师的课程做的源代码笔记
-  * 1.[Java](./Java/src/main/java/twenty/july/my_interface/)这个是翁凯老师课程6.3的源代码内容,中国大学MOOC上没有给出,老师的讲解也不全面,网上的资源都...甚至还有10RMB出售的(大醉),此处给出送给有缘人:)
+  * 1.[狐狸与兔子源码](./Java/src/main/java/twenty/july/my_interface/)/[图片](./Java/src/main/java/twenty/july/my_interface/接口,狐狸与兔子/Cells%20173751.png)这个是翁凯老师课程6.3(狐狸与兔子)的源代码内容,中国大学MOOC上没有给出,老师的讲解也不全面,网上的资源都...甚至还有10RMB出售的(大醉),此处给出送给有缘人:)
+  另外,还有[细胞自动机源码](./Java/src/main/java/twenty/july/data_depart_behave/) / [下一章7.x的狐狸与兔子源码](./Java/src/main/java/twenty/july/control_inversion/)
+  小小诚意,不求Star了,一起共勉!
 
 * [Python](./Python/)
   * 1.目录里面有个520表白(Claim Love.py)的单文件源码,作者是别人(开源了),在此给路人行个方便...

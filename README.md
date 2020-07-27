@@ -36,12 +36,12 @@
  * @Author: Weidows
  * @Date: 2020-06-06 23:12:42
  * @LastEditors: Weidows
- * @LastEditTime: 2020-07-25 17:51:52
+ * @LastEditTime: 2020-07-27 15:44:59
  * @FilePath: \Weidows\README.md
  -->
 
 <h1 align="center">
-⭐️ Weidow's 🌈Mind ⭐️
+⭐️ Weidow's 🌈の Garden ⭐️
 </h1>
 
 <center>

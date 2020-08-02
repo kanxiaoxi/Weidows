@@ -36,7 +36,7 @@
  * @Author: Weidows
  * @Date: 2020-06-06 23:12:42
  * @LastEditors: Weidows
- * @LastEditTime: 2020-07-27 17:41:49
+ * @LastEditTime: 2020-08-01 23:02:37
  * @FilePath: \Weidows\README.md
  -->
 
@@ -60,7 +60,7 @@ C/C++ , Python , Java , Node.js , HTML5(与配置文件非相关) 开发环境..
   * [.vscode/backup](./.vscode/backup)里面有开发环境所需要的配置文件,安装包,压缩包和介绍等...
 
   * [.vscode/images](./.vscode/images/)里面有竖屏 **涩图** (狗头,用来做VScode超越鼓励师URL图),目前整理有:
-  崩坏三(Honkai3) , 星际战甲(Warframe) , 狂三(Kurumi) , 海贼王(Onepiece) , unknown ...
+  崩坏三(Honkai3) , 星际战甲(Warframe) , 狂三(Kurumi) , 海贼王(Onepiece) , 表情包 , unknown 等等...
 
 * [Java](./Java/src/main/java/)里面是根据浙大翁凯老师的课程做的源代码笔记
   * 1.[狐狸与兔子源码](./Java/src/main/java/twenty/july/my_interface/)/[图片](./Java/src/main/java/twenty/july/my_interface/接口,狐狸与兔子/Cells%20173751.png)这个是翁凯老师课程6.3(狐狸与兔子)的源代码内容,中国大学MOOC上没有给出,老师的讲解也不全面,网上的资源都...甚至还有10RMB出售的(大醉),此处给出送给有缘人:)
@@ -73,8 +73,11 @@ C/C++ , Python , Java , Node.js , HTML5(与配置文件非相关) 开发环境..
 * [C++](./C++/)内有一些简单算法和数据结构题和作业,都有注释,需要的话自取
   * 1.[链表](./C++/Data_struct/LinkedList/) 分有123,3里面是带界面的最终版本
 
-* [Others](./Others/)目录有一些其他语言的花里胡哨...以及Markdown等文件(各种随笔)
+* [Others](./Others/)目录有一些其他语言的花里胡哨...以及Markdown等文件(各种随笔 & 他人项目)
   * 1.[VScode插件推荐](./Others/MarkDown/Vscode.md)
+  
+  * 2.[2016年世界编程大赛状元作品(这可不是我的啊!!!)](./Others/hg_fermi-paradox-20161105)
+      ![展示图](./Others/hg_fermi-paradox-20161105/screenshot.png)
 
 * 暂无其他  loading...
 <center>
@@ -83,6 +86,9 @@ C/C++ , Python , Java , Node.js , HTML5(与配置文件非相关) 开发环境..
 </center>
 
 * [VScode彩虹屁-相声语音包](https://github.com/2984539695/Crosstalk-rainbow-fart)
+
+* [GitHub隐藏功能:自定义profile显示内容](https://github.com/2984539695/2984539695)
+
 * 尚未立项:
   * [VScode插件推荐](./Others/MarkDown/Vscode.md)
   * 

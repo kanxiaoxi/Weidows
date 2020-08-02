@@ -3,6 +3,41 @@
     "configurations": [
       {
         "type": "java",
+        "name": "CodeLens (Launch) - textStream",
+        "request": "launch",
+        "mainClass": "twenty.august.text_io_stream.textStream",
+        "projectName": "Java"
+      },
+      {
+        "type": "java",
+        "name": "CodeLens (Launch) - StreamFilter",
+        "request": "launch",
+        "mainClass": "twenty.august.stream.StreamFilter",
+        "projectName": "Java"
+      },
+      {
+        "type": "java",
+        "name": "CodeLens (Launch) - FileIoStream",
+        "request": "launch",
+        "mainClass": "twenty.august.stream.FileIoStream",
+        "projectName": "Java"
+      },
+      {
+        "type": "java",
+        "name": "CodeLens (Launch) - IoStream",
+        "request": "launch",
+        "mainClass": "twenty.august.stream.IoStream",
+        "projectName": "Java"
+      },
+      {
+        "type": "java",
+        "name": "CodeLens (Launch) - NewArrayIndex",
+        "request": "launch",
+        "mainClass": "twenty.july.exception.NewArrayIndex",
+        "projectName": "Java"
+      },
+      {
+        "type": "java",
         "name": "CodeLens (Launch) - ArrayIndex",
         "request": "launch",
         "mainClass": "twenty.july.exception.ArrayIndex",

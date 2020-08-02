@@ -12,32 +12,27 @@
  * @Author: Weidows
  * @Date: 2020-07-24 14:07:43
  * @LastEditors: Weidows
- * @LastEditTime: 2020-07-24 15:04:27
+ * @LastEditTime: 2020-07-28 11:20:57
  * @FilePath: \Weidows\Others\MarkDown\AboutMe.md
  -->
 
 <h1 align="center">
 ⭐️ Weidow's 🌈Info ⭐️
 
-</h1>
+[*微信: QQ2984539695 二维码*](/.vscode/images/QRcode/WeChat.png)
 
+[*邮箱: 2984539695@qq.com / UTsuKo27@qq.com*](mail.qq.com)
 
-<center>
+[*QQ  2984539695*](https://qm.qq.com/cgi-bin/qm/qr?k=3ycBtwX25IMFisvKoD8NIyNBMofXBFFu&noverify=0) / [二维码](/.vscode/images/QRcode/QQ.jpg)
 
-## [**微信:     QQ2984539695 二维码**](/.vscode/images/QRcode/WeChat.png)
+[*Github @Weidows*](https://github.com/2984539695)
 
-## [**邮箱:  2984539695@qq.com / UTsuKo27@qq.com**](mail.qq.com)
+[*Gitee  @Weidows*](https://gitee.com/Weidows2984539695) 
 
-## [**QQ  2984539695**](https://qm.qq.com/cgi-bin/qm/qr?k=3ycBtwX25IMFisvKoD8NIyNBMofXBFFu&noverify=0) / [二维码](/.vscode/images/QRcode/QQ.jpg)
+[*CSDN  @Weidows㊣*](https://me.csdn.net/qq_39823295) / [二维码](/.vscode/images/QRcode/CSDN.jpg)
 
-## [**Github @Weidows**](https://github.com/2984539695)
-
-## [**Gitee  @Weidows**](https://gitee.com/Weidows2984539695) 
-
-## [**CSDN  @Weidows㊣**](https://me.csdn.net/qq_39823295) / [二维码](/.vscode/images/QRcode/CSDN.jpg)
-
-## [**Bilibili  @奀六币的名字**](https://space.bilibili.com/38283369) / [二维码](/.vscode/images/QRcode/Bilibili.jpg)
+[*Bilibili  @奀六币的名字*](https://space.bilibili.com/38283369) / [二维码](/.vscode/images/QRcode/Bilibili.jpg)
 
 ![摸鱼](/.vscode/images/unknown/QQ图片20200624160634.jpg)
 
-</center>
+</h1>

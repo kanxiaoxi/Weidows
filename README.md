@@ -36,67 +36,65 @@
  * @Author: Weidows
  * @Date: 2020-06-06 23:12:42
  * @LastEditors: Weidows
- * @LastEditTime: 2020-08-07 21:26:25
+ * @LastEditTime: 2020-08-08 23:52:09
  * @FilePath: \Weidows\README.md
  -->
 
 <h1 align="center">
 
-⭐️ Weidow's 🌈の Garden ⭐️
-
-[*个人网页(My individual website)*](https://2984539695.github.io/2984539695/)
+  [*个人网页(Individual website)*](https://2984539695.github.io/2984539695/)
+  
+  ![不安](https://raw.githubusercontent.com/2984539695/Weidows/master/.vscode/images/ComicExpression/5fa9b8812822cbb106e68986c0799b7d44f5da23.jpg) ⭐️ Weidow's 🌈の Garden ⭐️ ![酸了](https://raw.githubusercontent.com/2984539695/Weidows/master/.vscode/images/ComicExpression/2909d2b0795b59041abfbc00d49d6048d646cbe2.jpg)
 </h1>
 
-<center>
-
-# #一.简介よ (Brief Intro)
+# 一.简介よ (Brief Intro)
     这仓库就是一学习笔记,没啥可看的,看名字就能明白,需要找啥自取就行
-</center>
 
-### 🌈资源提示よ :)
+## 🌈资源提示よ :)
 
-* [.vscode](./.vscode/)目录里有我的VScode设置文件,已经搭建好:
-C/C++ , Python , Java , Node.js , HTML5(与配置文件非相关) 开发环境...
-  * [.vscode/backup](./.vscode/backup)里面有开发环境所需要的配置文件,安装包,压缩包和介绍等...
+  * [.vscode](./.vscode/)目录里有我的VScode设置文件,已经搭建好:
+  C/C++ , Python , Java , Node.js , HTML5(与配置文件非相关) 开发环境...
+  
+    * [.vscode/backup](./.vscode/backup)里面有开发环境所需要的配置文件,安装包,压缩包和介绍等...
 
-  * [.vscode/images](./.vscode/images/)里面有竖屏 **涩图** (狗头,用来做VScode超越鼓励师URL图),目前整理有:
-  崩坏三(Honkai3) , 星际战甲(Warframe) , 狂三(Kurumi) , 海贼王(Onepiece) , 表情包 , unknown 等等...
+    * [.vscode/images](./.vscode/images/)里面有横/竖屏 **涩图** (狗头,用来做VScode超越鼓励师URL图),目前整理有:  
+    绿色植物(PrettyGreen) , 崩坏三(Honkai3) , 星际战甲(Warframe) , 狂三(Kurumi) , 海贼王(Onepiece) , 表情包 , unknown 等等...
 
-* [Java](./Java/src/main/java/)里面是根据浙大翁凯老师的课程做的源代码笔记
-  * 1.[狐狸与兔子源码](./Java/src/main/java/twenty/july/my_interface/)/[图片](./Java/src/main/java/twenty/july/my_interface/接口,狐狸与兔子/Cells%20173751.png)这个是翁凯老师课程6.3(狐狸与兔子)的源代码内容,中国大学MOOC上没有给出,老师的讲解也不全面,网上的资源都...甚至还有10RMB出售的(大醉),此处给出送给有缘人:)
-  另外,还有[细胞自动机源码](./Java/src/main/java/twenty/july/data_depart_behave/) / [下一章7.x的狐狸与兔子源码](./Java/src/main/java/twenty/july/control_inversion/)
-  小小诚意,不求Star了,一起共勉!
+  * [Java](./Java/src/main/java/)里面是根据浙大翁凯老师的课程做的源代码笔记
+  
+    * 1.[狐狸与兔子源码](./Java/src/main/java/twenty/july/my_interface/)/[图片](./Java/src/main/java/twenty/july/my_interface/接口,狐狸与兔子/Cells173751.png) 这个是翁凯老师课程6.3(狐狸与兔子)的源代码内容,中国大学MOOC上没有给出,老师的讲解也不全面,网上的资源都...甚至还有10RMB出售的(大醉),此处给出送给有缘人:)  
+    另外,还有[细胞自动机源码](./Java/src/main/java/twenty/july/data_depart_behave/) / [下一章7.x的狐狸与兔子源码](./Java/src/main/java/twenty/july/control_inversion/)  
+    小小诚意,不求Star了,一起共勉!
 
-* [Python](./Python/)
-  * 1.目录里面有个520表白(Claim Love.py)的单文件源码,作者是别人(开源了),在此给路人行个方便...
+  * [Python](./Python/)
+  
+    * 1.目录里面有个520表白(Claim Love.py)的单文件源码,作者是别人(开源了),在此给路人行个方便...
 
-* [C++](./C++/)内有一些简单算法和数据结构题和作业,都有注释,需要的话自取
-  * 1.[链表](./C++/Data_struct/LinkedList/) 分有123,3里面是带界面的最终版本
+  * [C++](./C++/)内有一些简单算法和数据结构题和作业,都有注释,需要的话自取
+    * 1.[链表](./C++/Data_struct/LinkedList/) 分有123,3里面是带界面的最终版本
 
-* [Others](./Others/)目录有一些其他语言的花里胡哨...以及Markdown等文件(各种随笔 & 他人项目)
-  * 1.[VScode插件推荐](./Others/MarkDown/Vscode.md)
+  * [Others](./Others/)目录有一些其他语言的花里胡哨...以及Markdown等文件(各种随笔 & 他人项目)
+    * 1.[VScode插件推荐](./Others/MarkDown/Vscode.md)
 
-  * 2.[2016年世界编程大赛状元作品(这可不是我的啊!!!)](./Others/hg_fermi-paradox-20161105)
-      ![展示图](./Others/hg_fermi-paradox-20161105/screenshot.png)
+    * 2.[2016年世界编程大赛状元作品(这可不是我的啊!!!)](./Others/hg_fermi-paradox-20161105)
+        ![展示图](./Others/hg_fermi-paradox-20161105/screenshot.png)
 
-* 暂无其他  loading...
-<center>
+  * 暂无其他  loading...
 
-# #二.鄙人项目推荐よ (Wanna Star:)
-</center>
 
-* [VScode彩虹屁-相声语音包](https://github.com/2984539695/Crosstalk-rainbow-fart)
+# 二.鄙人项目推荐よ (To Be Star != 2B Star:)
 
-* [GitHub隐藏功能:自定义profile显示内容](https://github.com/2984539695/2984539695)
+  * [VScode彩虹屁-相声语音包](https://github.com/2984539695/Crosstalk-rainbow-fart)
 
-* 尚未立项:
-  * [VScode插件推荐](./Others/MarkDown/Vscode.md)
-  *
-* 暂无其他  loading...
+  * [GitHub隐藏功能:自定义profile显示内容 & Github Page](https://github.com/2984539695/2984539695)
 
-<center>
+  * 尚未立项:
+    * [VScode插件推荐](./Others/MarkDown/Vscode.md)
+    *
+  * 暂无其他  loading...
 
-# #N.[反馈 & 出处 (Aboue me & Click me)](./Others/MarkDown/AboutMe.md)
-*如果哪里有纰漏请在评论指正,欢迎讨论*
-![HonkaiPrincess](./.vscode/images/Honkai3/[Nitrouzs]82409651.jpg)
-</center>
+# N.[反馈 & 出处 (Aboue me & Click me)](./Others/MarkDown/AboutMe.md)
+
+  *如果哪里有纰漏请在评论指正,欢迎讨论*
+
+  ![HonkaiPrincess](./.vscode/images/Honkai3/[Nitrouzs]82409651.jpg)

@@ -17,26 +17,26 @@
  *          \  \ `_.   \_ __\ /__ _/   .-` /  /
  *      =====`-.____`.___ \_____/___.-`___.-'=====
  *                        `=---='
- * 
- * 
+ *
+ *
  *      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- * 
+ *
  *            佛祖保佑       永不宕机     永无BUG
- * 
- *        佛曰:  
- *                写字楼里写字间，写字间里程序员；  
- *                程序人员写程序，又拿程序换酒钱。  
- *                酒醒只在网上坐，酒醉还来网下眠；  
- *                酒醉酒醒日复日，网上网下年复年。  
- *                但愿老死电脑间，不愿鞠躬老板前；  
- *                奔驰宝马贵者趣，公交自行程序员。  
- *                别人笑我忒疯癫，我笑自己命太贱；  
+ *
+ *        佛曰:
+ *                写字楼里写字间，写字间里程序员；
+ *                程序人员写程序，又拿程序换酒钱。
+ *                酒醒只在网上坐，酒醉还来网下眠；
+ *                酒醉酒醒日复日，网上网下年复年。
+ *                但愿老死电脑间，不愿鞠躬老板前；
+ *                奔驰宝马贵者趣，公交自行程序员。
+ *                别人笑我忒疯癫，我笑自己命太贱；
  *                不见满街漂亮妹，哪个归得程序员？
- * 
+ *
  * @Author: Weidows
  * @Date: 2020-06-06 23:12:42
  * @LastEditors: Weidows
- * @LastEditTime: 2020-08-01 23:02:37
+ * @LastEditTime: 2020-08-07 21:26:25
  * @FilePath: \Weidows\README.md
  -->
 
@@ -75,7 +75,7 @@ C/C++ , Python , Java , Node.js , HTML5(与配置文件非相关) 开发环境..
 
 * [Others](./Others/)目录有一些其他语言的花里胡哨...以及Markdown等文件(各种随笔 & 他人项目)
   * 1.[VScode插件推荐](./Others/MarkDown/Vscode.md)
-  
+
   * 2.[2016年世界编程大赛状元作品(这可不是我的啊!!!)](./Others/hg_fermi-paradox-20161105)
       ![展示图](./Others/hg_fermi-paradox-20161105/screenshot.png)
 
@@ -91,12 +91,12 @@ C/C++ , Python , Java , Node.js , HTML5(与配置文件非相关) 开发环境..
 
 * 尚未立项:
   * [VScode插件推荐](./Others/MarkDown/Vscode.md)
-  * 
+  *
 * 暂无其他  loading...
 
 <center>
 
 # #N.[反馈 & 出处 (Aboue me & Click me)](./Others/MarkDown/AboutMe.md)
 *如果哪里有纰漏请在评论指正,欢迎讨论*
-![Princess](./.vscode/images/Honkai3/[Nitrouzs]82409651.jpg)
+![HonkaiPrincess](./.vscode/images/Honkai3/[Nitrouzs]82409651.jpg)
 </center>

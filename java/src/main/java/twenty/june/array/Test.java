@@ -3,7 +3,7 @@
  * @Author: Weidows
  * @Date: 2020-05-03 01:18:34
  * @LastEditors: Weidows
- * @LastEditTime: 2020-07-18 16:48:13
+ * @LastEditTime: 2020-08-05 19:39:24
  * @FilePath: \Weidows\Java\src\main\java\twenty\june\array\Test.java
  * 数组
  */
@@ -14,9 +14,9 @@ public class Test {
         int[] numbers = new int[num];//未初始化,野数组
         int[] scores = { 1, 2, 3, 4, 5, 6, 7 };
         /**
-         * 创建数组格式,也可写成 int numbers[] = new int[num]; 
+         * 创建数组格式,也可写成 int numbers[] = new int[num];
          *用new创建数组java默认元素赋0值或NULL(重要),
-         * 不同于C语言,定义数组前num有确定整数就行,即使不是final类型; 
+         * 不同于C语言,定义数组前num有确定整数就行,即使不是final类型;
          * numbers[10] = 0; 报错,java会在运行时检查是否越界使用(C语言不检查)
          */
         char name = '刘';   //java中char可以是汉字(Unicode编码集支持)

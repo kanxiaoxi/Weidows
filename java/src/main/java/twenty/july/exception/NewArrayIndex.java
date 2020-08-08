@@ -2,7 +2,7 @@
  * @Author: Weidows
  * @Date: 2020-07-27 23:17:36
  * @LastEditors: Weidows
- * @LastEditTime: 2020-07-28 22:53:16
+ * @LastEditTime: 2020-08-02 12:01:07
  * @FilePath: \Weidows\Java\src\main\java\twenty\july\exception\NewArrayIndex.java
  */
 package twenty.july.exception;
@@ -54,10 +54,20 @@ public class NewArrayIndex {
   }
 }
 
-class OpenException extends Throwable { //*继承自Throwable
+class OpenException extends Throwable {
+
+  /**
+   *
+   */
+  private static final long serialVersionUID = 1760650211683836348L; //*继承自Throwable
 
 }
 
-class CloseException extends Exception { //*继承自Exception
+class CloseException extends Exception {
+
+  /**
+   *
+   */
+  private static final long serialVersionUID = -7771616778594864276L; //*继承自Exception
 
 }

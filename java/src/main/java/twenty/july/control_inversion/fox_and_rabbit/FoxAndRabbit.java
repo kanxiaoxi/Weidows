@@ -2,7 +2,7 @@
  * @Author: Weidows
  * @Date: 2020-07-20 18:40:10
  * @LastEditors: Weidows
- * @LastEditTime: 2020-07-25 18:34:24
+ * @LastEditTime: 2020-08-02 11:58:51
  * @FilePath: \Weidows\Java\src\main\java\twenty\july\control_inversion\fox_and_rabbit\FoxAndRabbit.java
  */
 package twenty.july.control_inversion.fox_and_rabbit;
@@ -126,6 +126,6 @@ public class FoxAndRabbit {
 
   public static void main(String[] args) {
     FoxAndRabbit fnr = new FoxAndRabbit(50);
-    // fnr.start(100);
+    fnr.start(100);
   }
 }

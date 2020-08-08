@@ -3,6 +3,27 @@
     "configurations": [
       {
         "type": "java",
+        "name": "CodeLens (Launch) - ObjectStream",
+        "request": "launch",
+        "mainClass": "twenty.august.stream_application.ObjectStream",
+        "projectName": "Java"
+      },
+      {
+        "type": "java",
+        "name": "CodeLens (Launch) - SocketStream",
+        "request": "launch",
+        "mainClass": "twenty.august.stream_application.SocketStream",
+        "projectName": "Java"
+      },
+      {
+        "type": "java",
+        "name": "CodeLens (Launch) - TextStream",
+        "request": "launch",
+        "mainClass": "twenty.august.text_io_stream.TextStream",
+        "projectName": "Java"
+      },
+      {
+        "type": "java",
         "name": "CodeLens (Launch) - textStream",
         "request": "launch",
         "mainClass": "twenty.august.text_io_stream.textStream",
@@ -10,163 +31,9 @@
       },
       {
         "type": "java",
-        "name": "CodeLens (Launch) - StreamFilter",
+        "name": "CodeLens (Launch) - NewClass",
         "request": "launch",
-        "mainClass": "twenty.august.stream.StreamFilter",
-        "projectName": "Java"
-      },
-      {
-        "type": "java",
-        "name": "CodeLens (Launch) - FileIoStream",
-        "request": "launch",
-        "mainClass": "twenty.august.stream.FileIoStream",
-        "projectName": "Java"
-      },
-      {
-        "type": "java",
-        "name": "CodeLens (Launch) - IoStream",
-        "request": "launch",
-        "mainClass": "twenty.august.stream.IoStream",
-        "projectName": "Java"
-      },
-      {
-        "type": "java",
-        "name": "CodeLens (Launch) - NewArrayIndex",
-        "request": "launch",
-        "mainClass": "twenty.july.exception.NewArrayIndex",
-        "projectName": "Java"
-      },
-      {
-        "type": "java",
-        "name": "CodeLens (Launch) - ArrayIndex",
-        "request": "launch",
-        "mainClass": "twenty.july.exception.ArrayIndex",
-        "projectName": "Java"
-      },
-      {
-        "type": "java",
-        "name": "CodeLens (Launch) - KCB",
-        "request": "launch",
-        "mainClass": "twenty.july.class_schedule.KCB",
-        "projectName": "Java"
-      },
-      {
-        "type": "java",
-        "name": "CodeLens (Launch) - PrimitiveTypeTest",
-        "request": "launch",
-        "mainClass": "twenty.may.data_type.PrimitiveTypeTest",
-        "projectName": "Java"
-      },
-      {
-        "type": "java",
-        "name": "CodeLens (Launch) - View",
-        "request": "launch",
-        "mainClass": "twenty.july.control_inversion.field.View",
-        "projectName": "Java"
-      },
-      {
-        "type": "java",
-        "name": "CodeLens (Launch) - View",
-        "request": "launch",
-        "mainClass": "twenty.july.data_depart_behave.field.View",
-        "projectName": "Java"
-      },
-      {
-        "type": "java",
-        "name": "CodeLens (Launch) - Animal",
-        "request": "launch",
-        "mainClass": "twenty.july.control_inversion.animal.Animal",
-        "projectName": "Java"
-      },
-      {
-        "type": "java",
-        "name": "CodeLens (Launch) - FoxAndRabbit",
-        "request": "launch",
-        "mainClass": "twenty.july.control_inversion.fox_and_rabbit.FoxAndRabbit",
-        "projectName": "Java"
-      },
-      {
-        "type": "java",
-        "name": "CodeLens (Launch) - CellMachine",
-        "request": "launch",
-        "mainClass": "twenty.july.data_depart_behave.cellmachine.CellMachine",
-        "projectName": "Java"
-      },
-      {
-        "type": "java",
-        "name": "CodeLens (Launch) - FoxAndRabbit",
-        "request": "launch",
-        "mainClass": "twenty.july.my_interface.fox_and_rabbit.FoxAndRabbit",
-        "projectName": "Java"
-      },
-      {
-        "type": "java",
-        "name": "CodeLens (Launch) - View",
-        "request": "launch",
-        "mainClass": "twenty.july.myabstract.field.View",
-        "projectName": "Java"
-      },
-      {
-        "type": "java",
-        "name": "CodeLens (Launch) - Puppy",
-        "request": "launch",
-        "mainClass": "twenty.may.object_generator.Puppy",
-        "projectName": "Java"
-      },
-      {
-        "type": "java",
-        "name": "CodeLens (Launch) - Test",
-        "request": "launch",
-        "mainClass": "twenty.june.array.Test",
-        "projectName": "Java"
-      },
-      {
-        "type": "java",
-        "name": "CodeLens (Launch) - Coin",
-        "request": "launch",
-        "mainClass": "twenty.july.hashmap.Coin",
-        "projectName": "Java"
-      },
-      {
-        "type": "java",
-        "name": "CodeLens (Launch) - foreach",
-        "request": "launch",
-        "mainClass": "twenty.july.foreach.foreach",
-        "projectName": "Java"
-      },
-      {
-        "type": "java",
-        "name": "CodeLens (Launch) - GuessNum",
-        "request": "launch",
-        "mainClass": "twenty.may.guess_num.GuessNum",
-        "projectName": "Java"
-      },
-      {
-        "type": "java",
-        "name": "CodeLens (Launch) - Game",
-        "request": "launch",
-        "mainClass": "twenty.july.design_principle.newcastle.Game",
-        "projectName": "Java"
-      },
-      {
-        "type": "java",
-        "name": "CodeLens (Launch) - Test",
-        "request": "launch",
-        "mainClass": "twenty.may.calculating_max_common_divisor.Test",
-        "projectName": "Java"
-      },
-      {
-        "type": "java",
-        "name": "CodeLens (Launch) - CD",
-        "request": "launch",
-        "mainClass": "twenty.july.inheritanceandpolymorphism.dome.CD",
-        "projectName": "Java"
-      },
-      {
-        "type": "java",
-        "name": "CodeLens (Launch) - foreach",
-        "request": "launch",
-        "mainClass": "twenty.july.aforeach.foreach",
+        "mainClass": "twenty.july.exception.NewClass",
         "projectName": "Java"
       },
       {

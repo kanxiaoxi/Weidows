@@ -67,6 +67,7 @@
         "java.dependency.packagePresentation": "flat",
         "java.dependency.syncWithFolderExplorer": true,
         "maven.view": "hierarchical",
-        "java.configuration.updateBuildConfiguration": "automatic"
+        "java.configuration.updateBuildConfiguration": "automatic",
+        "live2D.use": true
     }
 }

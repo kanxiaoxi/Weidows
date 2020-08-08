@@ -2,7 +2,7 @@
  * @Author: Weidows
  * @Date: 2020-08-01 12:33:50
  * @LastEditors: Weidows
- * @LastEditTime: 2020-08-01 13:38:35
+ * @LastEditTime: 2020-08-02 11:58:23
  * @FilePath: \Weidows\Java\src\main\java\twenty\august\stream\StreamFilter.java
  */
 package twenty.august.stream;
@@ -50,7 +50,7 @@ public class StreamFilter {
       DataInputStream dataIn = new DataInputStream(
           new BufferedInputStream(new FileInputStream("./Java/src/main/java/twenty/august/stream/c.dat")));
       //*此处再通过dataIn.read()读取数据,可以是readInt(),readChar()...
-      
+      dataIn.close();
     } catch (FileNotFoundException e) {
       e.printStackTrace();
     } catch (IOException e) {

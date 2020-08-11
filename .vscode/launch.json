@@ -3,6 +3,13 @@
     "configurations": [
       {
         "type": "java",
+        "name": "CodeLens (Launch) - SnakeGame",
+        "request": "launch",
+        "mainClass": "demos.snake_game.snake.SnakeGame",
+        "projectName": "Java"
+      },
+      {
+        "type": "java",
         "name": "CodeLens (Launch) - ObjectStream",
         "request": "launch",
         "mainClass": "twenty.august.stream_application.ObjectStream",

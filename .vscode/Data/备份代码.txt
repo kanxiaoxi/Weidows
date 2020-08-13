@@ -63,7 +63,7 @@ VScode快捷键
   插入文件头 Ctrl+ alt + i
   格式化 shift + alt + f
   选中当前行 Ctrl + l
-  
+
 
 VScode ycy URL
   竖屏:
@@ -105,3 +105,8 @@ VScode ycy URL
     "https://raw.githubusercontent.com/Weidows/Weidows/master/.vscode/images/Kurumi/22-161002235Q5b5.jpg",
     "https://raw.githubusercontent.com/Weidows/Weidows/master/.vscode/images/Onepiece/QQ%E5%9B%BE%E7%89%8720190624124419.jpg",
     "https://raw.githubusercontent.com/Weidows/Weidows/master/.vscode/images/unknown/QQ%E5%9B%BE%E7%89%8720200624160634.jpg"
+
+
+Node.JS 里npm包管理器换阿里源(阿里牛逼)
+  npm install -g cnpm --registry=https://registry.npm.taobao.org
+  换完之后npm install -> cnpm install

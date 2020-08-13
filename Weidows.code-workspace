@@ -1,11 +1,11 @@
 {
     "folders": [
-        {
-            "path": "."
-        },
-        {
-            "path": "..\\Github"
-        }
+      {
+        "path": "."
+      },
+      {
+        "path": "..\\Github"
+      }
     ],
     "settings": {
         "git.ignoreLimitWarning": true,

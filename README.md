@@ -42,7 +42,7 @@
 
 <h1 align="center">
 
-  [*个人网页(Individual website)*](https://2984539695.github.io/2984539695/)
+  [*个人网页(Individual website)*](https://Weidows.github.io/Weidows/)
 
   ![不安](./.vscode/images/ComicExpression/5fa9b8812822cbb106e68986c0799b7d44f5da23.jpg) ⭐️ Weidow's 🌈の Garden ⭐️ ![酸了](./.vscode/images/ComicExpression/2909d2b0795b59041abfbc00d49d6048d646cbe2.jpg)
 </h1>
@@ -126,9 +126,9 @@
 
 # 二.鄙人项目推荐よ (To Be Star != 2B Star:)
 
-  * [VScode彩虹屁-相声语音包](https://github.com/2984539695/Crosstalk-rainbow-fart)
+  * [VScode彩虹屁-相声语音包](https://github.com/Weidows/Crosstalk-rainbow-fart)
 
-  * [GitHub隐藏功能:自定义profile显示内容 & Github Page](https://github.com/2984539695/2984539695)
+  * [GitHub隐藏功能:自定义profile显示内容 & Github Page](https://github.com/Weidows/Weidows)
 
   * 尚未立项:
     * [VScode插件推荐](./Others/MarkDown/Vscode.md)

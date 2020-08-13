@@ -2,8 +2,8 @@
  * @Author: Weidows
  * @Date: 2020-05-27 19:28:49
  * @LastEditors: Weidows
- * @LastEditTime: 2020-07-14 14:11:56
- * @FilePath: \Weidows\Others\Vscode.md
+ * @LastEditTime: 2020-08-13 18:20:08
+ * @FilePath: \Weidows\Others\MarkDown\Vscode.md
 --> 
 <h1 align="center">
 ⭐️ VScode开发环境配置 ⭐️
@@ -75,15 +75,15 @@
 # #N.反馈 & 出处
 **如果哪里有纰漏请在评论指正,欢迎讨论**
 
-* 微信:     QQ2984539695
+* 微信:     QQWeidows
 
-* [**邮箱:  2984539695@qq.com / UTsuKo27@qq.com**](mail.qq.com)
+* [**邮箱:  Weidows@qq.com / UTsuKo27@qq.com**](mail.qq.com)
 
-* [**QQ  2984539695**](https://qm.qq.com/cgi-bin/qm/qr?k=3ycBtwX25IMFisvKoD8NIyNBMofXBFFu&noverify=0)
+* [**QQ  Weidows**](https://qm.qq.com/cgi-bin/qm/qr?k=3ycBtwX25IMFisvKoD8NIyNBMofXBFFu&noverify=0)
 
-* [**Github @Weidows**](https://github.com/2984539695)
+* [**Github @Weidows**](https://github.com/Weidows)
 
-* [**Gitee  @Weidows**](https://gitee.com/Weidows2984539695) 
+* [**Gitee  @Weidows**](https://gitee.com/WeidowsWeidows) 
 
 * [**CSDN  @Weidows㊣**](https://me.csdn.net/qq_39823295)
 

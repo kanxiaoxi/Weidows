@@ -2,8 +2,8 @@
  * @Author: Weidows
  * @Date: 2020-08-11 09:45:50
  * @LastEditors: Weidows
- * @LastEditTime: 2020-08-11 09:56:08
- * @FilePath: \Weidows\HTML\20-8\CSS\ClassKeyWords.md
+ * @LastEditTime: 2020-08-13 11:04:45
+ * @FilePath: \Weidows\CSS\Study\KeyPoints\ClassKeyWords.md
 -->
 # 命名规则
     简单来说完全可以使用Java或C语言的规范,可以使用连字符"-"链接单词增强辨识度,不要用汉字
@@ -54,7 +54,7 @@
     标志：logo
     登录：login
     登录条：loginbar
-    注册：regsiter
+    注册：register
     产品：products
     产品价格：productsPrices
     产品评论：productsReview
@@ -143,7 +143,7 @@
     品牌：brand
     规格：specification
     尺寸：size
-    生产厂家：manufacuturer
+    生产厂家：manufacturer
     型号：model
     产品标号：Item No
     技术指标：techniqueData

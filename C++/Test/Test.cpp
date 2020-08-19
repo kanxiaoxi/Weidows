@@ -36,14 +36,13 @@
  * @Author: Weidows
  * @Date: 2020-05-15 19:43:32
  * @LastEditors: Weidows
- * @LastEditTime: 2020-08-14 15:51:42
+ * @LastEditTime: 2020-08-19 00:14:54
  * @FilePath: \Weidows-Garden\C++\Test\Test.cpp
  */
-
 //!¿â
-  #include <math.h>
-  #include <stdio.h>
-  #include <stdlib.h> //*system,malloc...
+#include <math.h>
+#include <stdio.h>
+#include <stdlib.h> //*system,malloc...
 
 //!º¯Êý && struct && typedef
 

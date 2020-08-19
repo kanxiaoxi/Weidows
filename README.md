@@ -36,8 +36,8 @@
  * @Author: Weidows
  * @Date: 2020-06-06 23:12:42
  * @LastEditors: Weidows
- * @LastEditTime: 2020-08-11 11:08:10
- * @FilePath: \Weidows\README.md
+ * @LastEditTime: 2020-08-19 09:55:02
+ * @FilePath: \Weidows-Garden\README.md
  -->
 
 <h1 align="center">
@@ -58,7 +58,8 @@
     * [.vscode/backup](./.vscode/backup)里面有开发环境所需要的配置文件,安装包,压缩包和介绍等...  
 
     * [.vscode/images](./.vscode/images/)里面有横/竖屏 **涩图** (狗头,用来做VScode超越鼓励师URL图),目前整理有:  
-    绿色植物(PrettyGreen) , 崩坏三(Honkai3) , 星际战甲(Warframe) , 狂三(Kurumi) , 海贼王(Onepiece) , 表情包 , unknown 等等...
+    绿色植物(PrettyGreen) , 崩坏三(Honkai3) , 星际战甲(Warframe) , 狂三(Kurumi) , 海贼王(Onepiece) , 表情包 , unknown 等等...  
+    PS: 2020-8-18弃用VScode超越鼓励师换用另一个"超级鼓励师",但保留原有image及其路径 && 备用链接
 
     * [.vscode/Data](./.vscode/Data)里面有Vscode相关配置文件
       * [javaRunner](./.vscode/Data/javaRunner.cmd)由于CodeRunner只能运行单文件java程序,于是本人改编CodeRunner,使其勉强可以编译一个package(如果存在import包外的package会编译失败)  
@@ -67,6 +68,8 @@
 
             "java": "javac -encoding UTF-8 -cp ../ $fileName && cd.. && cmd /c D:\\Game\\Demo\\Weidows\\.vscode\\Data\\javaRunner.cmd $dirWithoutTrailingSlash,$fileNameWithoutExt"
 
+      * [Tinacious%20Design-color-theme](./.vscode/Data/Tinacious%20Design-color-theme.json) 这是结合了Tinacious%20Design-color-theme的代码颜色与CyberPunk+主题布局颜色的主题json文件,样式图片:  
+      ![样式](./.vscode/images/Screen/QQ截图20200819003032.jpg)
 
 <!-- !Java -->
   ## Java

@@ -98,15 +98,15 @@ index_img:
 default_top_img: https://i.loli.net/2020/05/01/IuWi8QbHvzjlOPw.jpg
 
 # the banner image of archive page
-archive_img: https://raw.githubusercontent.com/Weidows/Weidows-Garden/master/.vscode/images/PrettyGreen/NuPfKO.jpg
+archive_img: https://raw.githubusercontent.com/Weidows/Weidows/master/.vscode/images/PrettyGreen/NuPfKO.jpg
 
 # the banner image of tag page
 # note: tag page, not tags page (子標籤頁面的 top_img)
-tag_img: https://raw.githubusercontent.com/Weidows/Weidows-Garden/master/.vscode/images/PrettyGreen/NuPfKO.jpg
+tag_img: https://raw.githubusercontent.com/Weidows/Weidows/master/.vscode/images/PrettyGreen/NuPfKO.jpg
 
 # the banner image of category page
 # note: category page, not categories page (子分類頁面的 top_img)
-category_img: https://raw.githubusercontent.com/Weidows/Weidows-Garden/master/.vscode/images/PrettyGreen/NuPy5R.jpg
+category_img: https://raw.githubusercontent.com/Weidows/Weidows/master/.vscode/images/PrettyGreen/NuPy5R.jpg
 
 # If you are using hexo-douban, you can configure it (如果你有使用 hexo-douban,可配置這個)
 # douban:
@@ -185,10 +185,10 @@ reward:
   enable: true
   QR_code:
     - img: /img/wechat.jpg
-      link: https://raw.githubusercontent.com/Weidows/Weidows-Garden/master/.vscode/images/QRcode/wechat.jpg
+      link: https://raw.githubusercontent.com/Weidows/Weidows/master/.vscode/images/QRcode/wechat.jpg
       text: 微信
     - img: /img/alipay.jpg
-      link: https://raw.githubusercontent.com/Weidows/Weidows-Garden/master/.vscode/images/QRcode/alipay.jpg
+      link: https://raw.githubusercontent.com/Weidows/Weidows/master/.vscode/images/QRcode/alipay.jpg
       text: 支付宝
 
 # Related Articles
@@ -474,7 +474,7 @@ tag_ui: # 留空或 index
 # The formal of color: '#49B202'
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
 # White color will be shown as default
-background: url(https://raw.githubusercontent.com/Weidows/Weidows-Garden/master/.vscode/images/Fantasy/FiringBook.jpg)
+background: url(https://raw.githubusercontent.com/Weidows/Weidows/master/.vscode/images/Fantasy/FiringBook.jpg)
 
 # Show the footer background image (same as top_img)
 footer_bg: false

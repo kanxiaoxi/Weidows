@@ -36,7 +36,7 @@
  * @Author: Weidows
  * @Date: 2020-06-06 23:12:42
  * @LastEditors: Weidows
- * @LastEditTime: 2020-08-20 22:53:55
+ * @LastEditTime: 2020-08-20 23:45:39
  * @FilePath: \Weidows-Garden\Others\README.md
  -->
 
@@ -44,7 +44,7 @@
 
   [*个人网站(Individual website)*](https://Weidows.github.io/Weidows/)
 
-  ![不安](./.vscode/images/ComicExpression/5fa9b8812822cbb106e68986c0799b7d44f5da23.jpg) ⭐️ Weidow's 🌈の Garden ⭐️ ![酸了](./.vscode/images/ComicExpression/2909d2b0795b59041abfbc00d49d6048d646cbe2.jpg)
+  ![不安](./.vscode/images/ComicExpression/5fa9b8812822cbb106e68986c0799b7d44f5da23.jpg) ⭐️ Weidow's 🌈の Mind ⭐️ ![酸了](./.vscode/images/ComicExpression/2909d2b0795b59041abfbc00d49d6048d646cbe2.jpg)
 </h1>
 
 # 一.简介よ (Brief Intro)

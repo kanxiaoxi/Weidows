@@ -1,5 +1,10 @@
+.DS_Store
+Thumbs.db
+db.json
+*.log
 .vscode/update/Dev-Cpp 5.11 TDM-GCC 4.9.2 Setup.exe
 .vscode/update/Git-2.27.0-64-bit.exe
 .vscode/update/node-v13.12.0-x64.msi
 .vscode/update/python-3.8.3-amd64.exe
 .vscode/update/PowerShell-7.0.3-win-x64.msi
+Website/node_modules/

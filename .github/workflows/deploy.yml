@@ -13,8 +13,7 @@ jobs:
         run: |
           cd Website
           npm install
-          Hexo clean
-          Hexo g
+          npm run build
         env:
           CI: false
 

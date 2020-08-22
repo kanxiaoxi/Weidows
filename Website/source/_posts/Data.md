@@ -1,11 +1,13 @@
 ---
 title: Data:关于各类语言及技术栈的安装 && 使用
+tags: 备忘录
+categories: backup
 ---
 <!--
  * @Author: Weidows
  * @Date: 2020-08-19 00:38:26
  * @LastEditors: Weidows
- * @LastEditTime: 2020-08-22 11:58:46
+ * @LastEditTime: 2020-08-22 19:57:49
  * @FilePath: \Weidows\Website\source\_posts\Data.md
 -->
 
@@ -212,4 +214,17 @@ title: Data:关于各类语言及技术栈的安装 && 使用
   npm install valine --save
   npm install hexo-generator-search --save
   然后把主题里的_config.yml改改
+  ```
+  ## 文章标题
+  ```
+  title: # 网站标题
+  photos: # 封面图片
+  categories: # 分类
+  tags:  # 标签
+  subtitle: # 网站副标题
+  description: # 网站描述
+  keywords: # 网站关键词
+  author: # 网站作者
+  language: # 语言, 一般填 'zh-CN'
+  timezone: # 时区, 可以不填
   ```

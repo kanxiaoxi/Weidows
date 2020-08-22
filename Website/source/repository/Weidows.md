@@ -39,7 +39,7 @@ title: ⭐"Weidows"仓库简介⭐
  * @Author: Weidows
  * @Date: 2020-06-06 23:12:42
  * @LastEditors: Weidows
- * @LastEditTime: 2020-08-22 16:48:38
+ * @LastEditTime: 2020-08-22 17:38:45
  * @FilePath: \Weidows\Website\source\repository\Weidows.md
  -->
 <h1 align="center">
@@ -143,7 +143,7 @@ title: ⭐"Weidows"仓库简介⭐
 
 
 # 二.鄙人项目推荐よ (To Be Star != 2B Star:)
-  * [VScode彩虹屁-相声语音包](https://github.com/Weidows/Crosstalk-rainbow-fart)
+  * [VScode彩虹屁-相声语音包](https://Weidows.github.io/Weidows/repository/Crosstalk-rainbow-fart)
 
   * 尚未立项:
     * [VScode插件推荐](https://github.com/Weidows/Weidows/tree/master/Others/MarkDown/Vscode.md)

@@ -5,7 +5,7 @@ title: ⭐"Crosstalk-rainbow-fart"仓库简介⭐
  * @Author: Weidows
  * @Date: 2020-07-02 10:44:33
  * @LastEditors: Weidows
- * @LastEditTime: 2020-08-22 15:36:36
+ * @LastEditTime: 2020-08-22 17:33:45
  * @FilePath: \Weidows\Website\source\repository\Crosstalk-rainbow-fart.md
 --> 
 <h1 align="center">
@@ -15,7 +15,11 @@ title: ⭐"Crosstalk-rainbow-fart"仓库简介⭐
 </h1>
 <center>
 
-# [一.演示视频(点我)](https://www.bilibili.com/video/BV1bi4y1G7kb)
+# [一.演示视频](https://www.bilibili.com/video/BV1bi4y1G7kb)
+
+  <iframe src="//player.bilibili.com/player.html?aid=541127453&bvid=BV1bi4y1G7kb&cid=208071709&page=1" scrolling="no" border="1" frameborder="yes" framespacing="0" allowfullscreen="true" width="100%" height="600"> </iframe>  
+  
+  [音频文件](./Crosstalk/)在这里面,裁减了一些相声中的名场面和经典语句等等...希望能给您的持盘之手些许慰藉:)
     视频发布在B站上了,可以看看是否喜欢和安装  
     目前此语音包支持C/C++,Java,Python,Go,JavaScript等等语言
 
@@ -38,6 +42,6 @@ title: ⭐"Crosstalk-rainbow-fart"仓库简介⭐
 
 <center>
 
-# #N.[反馈 & 出处 (Aboue me & Click me)](https://github.com/Weidows/Weidows/blob/master/Others/MarkDown/AboutMe.md)
+# #N.[反馈 & 出处 (Aboue me & Click me)](https://Weidows.github.io/Weidows/about)
     后续可能会更新,同时欢迎有兴趣的提出修改意见或共同整改!
 </center>

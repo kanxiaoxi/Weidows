@@ -98,7 +98,7 @@ i:hover {
 
 ::-webkit-scrollbar-thumb {
     background-color: #e58a8a;
-    background-image: -webkit-linear-gradient( 45deg, rgba(107, 25, 25, 0.4) 25%, transparent 25%, transparent 50%, rgba(17, 170, 93, 0.4) 50%, rgba(18, 60, 160, 0.4) 75%, transparent 75%, transparent);
+    background-image: -webkit-linear-gradient( 45deg, rgba(221, 40, 40, 0.4) 25%, transparent 25%, transparent 50%, rgba(15, 240, 127, 0.4) 50%, rgba(25, 86, 228, 0.4) 75%, transparent 75%, transparent);
     border-radius: 2em;
 }
 

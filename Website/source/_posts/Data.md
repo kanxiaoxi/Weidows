@@ -5,8 +5,8 @@ title: Data:关于各类语言及技术栈的安装 && 使用
  * @Author: Weidows
  * @Date: 2020-08-19 00:38:26
  * @LastEditors: Weidows
- * @LastEditTime: 2020-08-19 17:36:04
- * @FilePath: \Weidows-Gardend:\Game\Demo\Github\Weidows\source\_posts\Data.md
+ * @LastEditTime: 2020-08-22 11:58:46
+ * @FilePath: \Weidows\Website\source\_posts\Data.md
 -->
 
 
@@ -106,58 +106,58 @@ title: Data:关于各类语言及技术栈的安装 && 使用
 # 八.GitHub 图片 URL
   ## 竖屏:
   ``` 
-      "https://raw.githubusercontent.com/Weidows/Weidows/master/.vscode/images/Honkai3/1(1).jpg",
-      "https://raw.githubusercontent.com/Weidows/Weidows/master/.vscode/images/Honkai3/QQ%E5%9B%BE%E7%89%8720200601181038.jpg",
-      "https://raw.githubusercontent.com/Weidows/Weidows/master/.vscode/images/Honkai3/QQ%E5%9B%BE%E7%89%8720200601181604.png",
-      "https://raw.githubusercontent.com/Weidows/Weidows/master/.vscode/images/Honkai3/QQ%E5%9B%BE%E7%89%8720200601181610.png",
-      "https://raw.githubusercontent.com/Weidows/Weidows/master/.vscode/images/Honkai3/QQ%E5%9B%BE%E7%89%8720200601181614.png",
-      "https://raw.githubusercontent.com/Weidows/Weidows/master/.vscode/images/Honkai3/QQ%E5%9B%BE%E7%89%8720200601181619.png",
-      "https://raw.githubusercontent.com/Weidows/Weidows/master/.vscode/images/Honkai3/QQ%E5%9B%BE%E7%89%8720200601181623.png",
-      "https://raw.githubusercontent.com/Weidows/Weidows/master/.vscode/images/Honkai3/QQ%E5%9B%BE%E7%89%8720200601181627.png",
-      "https://raw.githubusercontent.com/Weidows/Weidows/master/.vscode/images/Honkai3/QQ%E5%9B%BE%E7%89%8720200601181631.png",
-      "https://raw.githubusercontent.com/Weidows/Weidows/master/.vscode/images/Honkai3/QQ%E5%9B%BE%E7%89%8720200601181637.png",
-      "https://raw.githubusercontent.com/Weidows/Weidows/master/.vscode/images/Honkai3/QQ%E5%9B%BE%E7%89%8720200601181642.png",
-      "https://raw.githubusercontent.com/Weidows/Weidows/master/.vscode/images/Honkai3/QQ%E5%9B%BE%E7%89%8720200601181650.png",
-      "https://raw.githubusercontent.com/Weidows/Weidows/master/.vscode/images/Honkai3/QQ%E5%9B%BE%E7%89%8720200601181657.png",
-      "https://raw.githubusercontent.com/Weidows/Weidows/master/.vscode/images/Honkai3/QQ%E5%9B%BE%E7%89%8720200601181702.png",
-      "https://raw.githubusercontent.com/Weidows/Weidows/master/.vscode/images/Honkai3/%5BAB%5D75243073(1).jpg",
-      "https://raw.githubusercontent.com/Weidows/Weidows/master/.vscode/images/Honkai3/%5BAlset%5D78382279.jpg",
-      "https://raw.githubusercontent.com/Weidows/Weidows/master/.vscode/images/Honkai3/%5BNitrouzs%5D82409651.jpg",
-      "https://raw.githubusercontent.com/Weidows/Weidows/master/.vscode/images/Honkai3/%5BZuu_Ziii%5D73828182.jpg",
-      "https://raw.githubusercontent.com/Weidows/Weidows/master/.vscode/images/Honkai3/%5B%E5%8D%83%E9%9F%B5%5D79705001.jpg",
-      "https://raw.githubusercontent.com/Weidows/Weidows/master/.vscode/images/Honkai3/%5B%E6%97%A9%E6%99%A8%E7%9A%84%E7%8B%AE%E5%AD%90%5D76471319.jpg",
-      "https://raw.githubusercontent.com/Weidows/Weidows/master/.vscode/images/Warframe/-28678b86bf55d418.jpg",
-      "https://raw.githubusercontent.com/Weidows/Weidows/master/.vscode/images/Warframe/1556168563616.jpg",
-      "https://raw.githubusercontent.com/Weidows/Weidows/master/.vscode/images/Warframe/1578615153561.jpg",
-      "https://raw.githubusercontent.com/Weidows/Weidows/master/.vscode/images/Warframe/1580438941071.jpg",
-      "https://raw.githubusercontent.com/Weidows/Weidows/master/.vscode/images/Warframe/Screenshot_2019-10-29-14-16-29-84(1).jpg",
-      "https://raw.githubusercontent.com/Weidows/Weidows/master/.vscode/images/Warframe/Screenshot_2019-10-29-14-16-37-93(1).jpg",
-      "https://raw.githubusercontent.com/Weidows/Weidows/master/.vscode/images/Warframe/Screenshot_2019-10-29-14-16-45-98(1).jpg",
-      "https://raw.githubusercontent.com/Weidows/Weidows/master/.vscode/images/Warframe/Screenshot_2019-10-29-14-16-56-46(1).jpg",
-      "https://raw.githubusercontent.com/Weidows/Weidows/master/.vscode/images/Warframe/Screenshot_2019-10-29-14-17-03-16(1).jpg",
-      "https://raw.githubusercontent.com/Weidows/Weidows/master/.vscode/images/Warframe/Screenshot_2019-10-29-14-17-12-57(1).jpg",
-      "https://raw.githubusercontent.com/Weidows/Weidows/master/.vscode/images/Warframe/Screenshot_2019-10-29-14-17-20-58(1).jpg",
-      "https://raw.githubusercontent.com/Weidows/Weidows/master/.vscode/images/Warframe/Screenshot_2019-10-29-14-17-41-32(1).jpg",
-      "https://raw.githubusercontent.com/Weidows/Weidows/master/.vscode/images/Warframe/Screenshot_2019-10-29-14-17-50-59(1).jpg",
-      "https://raw.githubusercontent.com/Weidows/Weidows/master/.vscode/images/Warframe/Screenshot_2019-10-29-14-18-07-85(1).jpg",
-      "https://raw.githubusercontent.com/Weidows/Weidows/master/.vscode/images/Honkai3/QQ%E5%9B%BE%E7%89%8720200620235146.jpg",
-      "https://raw.githubusercontent.com/Weidows/Weidows/master/.vscode/images/Kurumi/22-161002235Q5b5.jpg",
-      "https://raw.githubusercontent.com/Weidows/Weidows/master/.vscode/images/Onepiece/QQ%E5%9B%BE%E7%89%8720190624124419.jpg",
-      "https://raw.githubusercontent.com/Weidows/Weidows/master/.vscode/images/unknown/QQ%E5%9B%BE%E7%89%8720200624160634.jpg"
+      "https://raw.githubusercontent.com/Weidows/Weidows/master/Website/Source/images/Honkai3/1(1).jpg",
+      "https://raw.githubusercontent.com/Weidows/Weidows/master/Website/Source/images/Honkai3/QQ%E5%9B%BE%E7%89%8720200601181038.jpg",
+      "https://raw.githubusercontent.com/Weidows/Weidows/master/Website/Source/images/Honkai3/QQ%E5%9B%BE%E7%89%8720200601181604.png",
+      "https://raw.githubusercontent.com/Weidows/Weidows/master/Website/Source/images/Honkai3/QQ%E5%9B%BE%E7%89%8720200601181610.png",
+      "https://raw.githubusercontent.com/Weidows/Weidows/master/Website/Source/images/Honkai3/QQ%E5%9B%BE%E7%89%8720200601181614.png",
+      "https://raw.githubusercontent.com/Weidows/Weidows/master/Website/Source/images/Honkai3/QQ%E5%9B%BE%E7%89%8720200601181619.png",
+      "https://raw.githubusercontent.com/Weidows/Weidows/master/Website/Source/images/Honkai3/QQ%E5%9B%BE%E7%89%8720200601181623.png",
+      "https://raw.githubusercontent.com/Weidows/Weidows/master/Website/Source/images/Honkai3/QQ%E5%9B%BE%E7%89%8720200601181627.png",
+      "https://raw.githubusercontent.com/Weidows/Weidows/master/Website/Source/images/Honkai3/QQ%E5%9B%BE%E7%89%8720200601181631.png",
+      "https://raw.githubusercontent.com/Weidows/Weidows/master/Website/Source/images/Honkai3/QQ%E5%9B%BE%E7%89%8720200601181637.png",
+      "https://raw.githubusercontent.com/Weidows/Weidows/master/Website/Source/images/Honkai3/QQ%E5%9B%BE%E7%89%8720200601181642.png",
+      "https://raw.githubusercontent.com/Weidows/Weidows/master/Website/Source/images/Honkai3/QQ%E5%9B%BE%E7%89%8720200601181650.png",
+      "https://raw.githubusercontent.com/Weidows/Weidows/master/Website/Source/images/Honkai3/QQ%E5%9B%BE%E7%89%8720200601181657.png",
+      "https://raw.githubusercontent.com/Weidows/Weidows/master/Website/Source/images/Honkai3/QQ%E5%9B%BE%E7%89%8720200601181702.png",
+      "https://raw.githubusercontent.com/Weidows/Weidows/master/Website/Source/images/Honkai3/%5BAB%5D75243073(1).jpg",
+      "https://raw.githubusercontent.com/Weidows/Weidows/master/Website/Source/images/Honkai3/%5BAlset%5D78382279.jpg",
+      "https://raw.githubusercontent.com/Weidows/Weidows/master/Website/Source/images/Honkai3/%5BNitrouzs%5D82409651.jpg",
+      "https://raw.githubusercontent.com/Weidows/Weidows/master/Website/Source/images/Honkai3/%5BZuu_Ziii%5D73828182.jpg",
+      "https://raw.githubusercontent.com/Weidows/Weidows/master/Website/Source/images/Honkai3/%5B%E5%8D%83%E9%9F%B5%5D79705001.jpg",
+      "https://raw.githubusercontent.com/Weidows/Weidows/master/Website/Source/images/Honkai3/%5B%E6%97%A9%E6%99%A8%E7%9A%84%E7%8B%AE%E5%AD%90%5D76471319.jpg",
+      "https://raw.githubusercontent.com/Weidows/Weidows/master/Website/Source/images/Warframe/-28678b86bf55d418.jpg",
+      "https://raw.githubusercontent.com/Weidows/Weidows/master/Website/Source/images/Warframe/1556168563616.jpg",
+      "https://raw.githubusercontent.com/Weidows/Weidows/master/Website/Source/images/Warframe/1578615153561.jpg",
+      "https://raw.githubusercontent.com/Weidows/Weidows/master/Website/Source/images/Warframe/1580438941071.jpg",
+      "https://raw.githubusercontent.com/Weidows/Weidows/master/Website/Source/images/Warframe/Screenshot_2019-10-29-14-16-29-84(1).jpg",
+      "https://raw.githubusercontent.com/Weidows/Weidows/master/Website/Source/images/Warframe/Screenshot_2019-10-29-14-16-37-93(1).jpg",
+      "https://raw.githubusercontent.com/Weidows/Weidows/master/Website/Source/images/Warframe/Screenshot_2019-10-29-14-16-45-98(1).jpg",
+      "https://raw.githubusercontent.com/Weidows/Weidows/master/Website/Source/images/Warframe/Screenshot_2019-10-29-14-16-56-46(1).jpg",
+      "https://raw.githubusercontent.com/Weidows/Weidows/master/Website/Source/images/Warframe/Screenshot_2019-10-29-14-17-03-16(1).jpg",
+      "https://raw.githubusercontent.com/Weidows/Weidows/master/Website/Source/images/Warframe/Screenshot_2019-10-29-14-17-12-57(1).jpg",
+      "https://raw.githubusercontent.com/Weidows/Weidows/master/Website/Source/images/Warframe/Screenshot_2019-10-29-14-17-20-58(1).jpg",
+      "https://raw.githubusercontent.com/Weidows/Weidows/master/Website/Source/images/Warframe/Screenshot_2019-10-29-14-17-41-32(1).jpg",
+      "https://raw.githubusercontent.com/Weidows/Weidows/master/Website/Source/images/Warframe/Screenshot_2019-10-29-14-17-50-59(1).jpg",
+      "https://raw.githubusercontent.com/Weidows/Weidows/master/Website/Source/images/Warframe/Screenshot_2019-10-29-14-18-07-85(1).jpg",
+      "https://raw.githubusercontent.com/Weidows/Weidows/master/Website/Source/images/Honkai3/QQ%E5%9B%BE%E7%89%8720200620235146.jpg",
+      "https://raw.githubusercontent.com/Weidows/Weidows/master/Website/Source/images/Kurumi/22-161002235Q5b5.jpg",
+      "https://raw.githubusercontent.com/Weidows/Weidows/master/Website/Source/images/Onepiece/QQ%E5%9B%BE%E7%89%8720190624124419.jpg",
+      "https://raw.githubusercontent.com/Weidows/Weidows/master/Website/Source/images/unknown/QQ%E5%9B%BE%E7%89%8720200624160634.jpg"
   ```
   ## 横屏:
   ``` 
-      "https://raw.githubusercontent.com/2984539695/Weidows/master/.vscode/images/PrettyGreen/Nu9goR.jpg",
-      "https://raw.githubusercontent.com/2984539695/Weidows/master/.vscode/images/PrettyGreen/Nu9RF1.jpg",
-      "https://raw.githubusercontent.com/2984539695/Weidows/master/.vscode/images/PrettyGreen/NuP226.jpg",
-      "https://raw.githubusercontent.com/2984539695/Weidows/master/.vscode/images/PrettyGreen/NuPcP1.jpg",
-      "https://raw.githubusercontent.com/2984539695/Weidows/master/.vscode/images/PrettyGreen/NuPfKO.jpg",
-      "https://raw.githubusercontent.com/2984539695/Weidows/master/.vscode/images/PrettyGreen/NuPg8x.jpg",
-      "https://raw.githubusercontent.com/2984539695/Weidows/master/.vscode/images/PrettyGreen/NuPhrD.jpg",
-      "https://raw.githubusercontent.com/2984539695/Weidows/master/.vscode/images/PrettyGreen/NuPrVJ.jpg",
-      "https://raw.githubusercontent.com/2984539695/Weidows/master/.vscode/images/PrettyGreen/NuPRxK.jpg",
-      "https://raw.githubusercontent.com/2984539695/Weidows/master/.vscode/images/PrettyGreen/NuPsa9.jpg",
-      "https://raw.githubusercontent.com/2984539695/Weidows/master/.vscode/images/PrettyGreen/NuPy5R.jpg",
+      "https://raw.githubusercontent.com/2984539695/Weidows/master/Website/Source/images/PrettyGreen/Nu9goR.jpg",
+      "https://raw.githubusercontent.com/2984539695/Weidows/master/Website/Source/images/PrettyGreen/Nu9RF1.jpg",
+      "https://raw.githubusercontent.com/2984539695/Weidows/master/Website/Source/images/PrettyGreen/NuP226.jpg",
+      "https://raw.githubusercontent.com/2984539695/Weidows/master/Website/Source/images/PrettyGreen/NuPcP1.jpg",
+      "https://raw.githubusercontent.com/2984539695/Weidows/master/Website/Source/images/PrettyGreen/NuPfKO.jpg",
+      "https://raw.githubusercontent.com/2984539695/Weidows/master/Website/Source/images/PrettyGreen/NuPg8x.jpg",
+      "https://raw.githubusercontent.com/2984539695/Weidows/master/Website/Source/images/PrettyGreen/NuPhrD.jpg",
+      "https://raw.githubusercontent.com/2984539695/Weidows/master/Website/Source/images/PrettyGreen/NuPrVJ.jpg",
+      "https://raw.githubusercontent.com/2984539695/Weidows/master/Website/Source/images/PrettyGreen/NuPRxK.jpg",
+      "https://raw.githubusercontent.com/2984539695/Weidows/master/Website/Source/images/PrettyGreen/NuPsa9.jpg",
+      "https://raw.githubusercontent.com/2984539695/Weidows/master/Website/Source/images/PrettyGreen/NuPy5R.jpg",
   ```
 
 

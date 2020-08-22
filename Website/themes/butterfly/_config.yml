@@ -98,15 +98,15 @@ index_img:
 default_top_img: https://i.loli.net/2020/05/01/IuWi8QbHvzjlOPw.jpg
 
 # the banner image of archive page
-archive_img: https://raw.githubusercontent.com/Weidows/Weidows/master/.vscode/images/PrettyGreen/NuPfKO.jpg
+archive_img: https://raw.githubusercontent.com/Weidows/Weidows/master/Website/source/images/PrettyGreen/NuPfKO.jpg
 
 # the banner image of tag page
 # note: tag page, not tags page (子標籤頁面的 top_img)
-tag_img: https://raw.githubusercontent.com/Weidows/Weidows/master/.vscode/images/PrettyGreen/NuPfKO.jpg
+tag_img: https://raw.githubusercontent.com/Weidows/Weidows/master/Website/source/images/PrettyGreen/NuPfKO.jpg
 
 # the banner image of category page
 # note: category page, not categories page (子分類頁面的 top_img)
-category_img: https://raw.githubusercontent.com/Weidows/Weidows/master/.vscode/images/PrettyGreen/NuPy5R.jpg
+category_img: https://raw.githubusercontent.com/Weidows/Weidows/master/Website/source/images/PrettyGreen/NuPy5R.jpg
 
 # If you are using hexo-douban, you can configure it (如果你有使用 hexo-douban,可配置這個)
 # douban:
@@ -185,10 +185,10 @@ reward:
   enable: true
   QR_code:
     - img: /img/wechat.jpg
-      link: https://raw.githubusercontent.com/Weidows/Weidows/master/.vscode/images/QRcode/wechat.jpg
+      link: https://raw.githubusercontent.com/Weidows/Weidows/master/Website/source/images/QRcode/wechat.jpg
       text: 微信
     - img: /img/alipay.jpg
-      link: https://raw.githubusercontent.com/Weidows/Weidows/master/.vscode/images/QRcode/alipay.jpg
+      link: https://raw.githubusercontent.com/Weidows/Weidows/master/Website/source/images/QRcode/alipay.jpg
       text: 支付宝
 
 # Related Articles
@@ -442,7 +442,7 @@ yandex_site_verification:
 # Notice: color value must in double quotes like "#000" or may cause error!
 
 theme_color:
-  enable: true
+  enable: false
   main: "#49B1F5"
   paginator: "#00c4b6"
   button_hover: "#FF7242"
@@ -474,7 +474,7 @@ tag_ui: # 留空或 index
 # The formal of color: '#49B202'
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
 # White color will be shown as default
-background: url(https://raw.githubusercontent.com/Weidows/Weidows/master/.vscode/images/Fantasy/FiringBook.jpg)
+background: url(https://raw.githubusercontent.com/Weidows/Weidows/master/Website/source/images/Fantasy/FiringBook.jpg)
 
 # Show the footer background image (same as top_img)
 footer_bg: false
@@ -599,11 +599,11 @@ aside:
     description: 
     button:
       icon: fab fa-github
-      text: Follow Me
-      link: https://github.com/xxxxxx
+      text: About Me
+      link: https://github.com/Weidows
   card_announcement:
     enable: true
-    content: 欢迎你!陌生人
+    content: 欢迎你陌生人! Welcome to Weidows Mind!
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all
@@ -615,7 +615,7 @@ aside:
   card_tags:
     enable: true
     limit: 40 # if set 0 will show all
-    color: false
+    color: true
   card_archives:
     enable: true
     type: monthly # yearly or monthly

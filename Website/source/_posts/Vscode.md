@@ -1,5 +1,5 @@
 ---
-title: Data:关于各类语言及技术栈的安装 && 使用
+title: VScode实用插件推荐
 tags: VScode
 categories: recommend
 ---
@@ -7,7 +7,7 @@ categories: recommend
  * @Author: Weidows
  * @Date: 2020-05-27 19:28:49
  * @LastEditors: Weidows
- * @LastEditTime: 2020-08-22 22:49:40
+ * @LastEditTime: 2020-08-22 22:56:57
  * @FilePath: \Weidows\Website\source\_posts\Vscode.md
 --> 
 <h1 align="center">
@@ -79,4 +79,4 @@ categories: recommend
 
   *如果哪里有纰漏请在评论指正,欢迎讨论*
   
-![希儿](../images/Honkai3/[千韵]79705001.jpg)
+![希儿](../images/Honkai3/xier.jpg)

@@ -15,8 +15,8 @@ menu: #导航栏
     - Music || /music/ || fas fa-music
     - Movie || /movies/ || fas fa-video
   仓库||fas fa-link:
-    - Weidows || /repository/Weidows/
-    - Crosstalk-rainbow-fart || /repository/Crosstalk-rainbow-fart/
+    - Weidows || /repository/Weidows
+    - Crosstalk-rainbow-fart || /repository/Crosstalk-rainbow-fart
   关于||fas fa-heart:
     - 我 || /about/ || fas fa-user
     - 友链 || /link/ || fas fa-heart

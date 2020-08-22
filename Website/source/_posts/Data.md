@@ -7,7 +7,7 @@ categories: backup
  * @Author: Weidows
  * @Date: 2020-08-19 00:38:26
  * @LastEditors: Weidows
- * @LastEditTime: 2020-08-22 19:57:49
+ * @LastEditTime: 2020-08-22 22:05:23
  * @FilePath: \Weidows\Website\source\_posts\Data.md
 -->
 
@@ -174,8 +174,8 @@ categories: backup
   ```
   ## 常用的Hexo 命令
   ``` 
-  npm install hexo -g #安装Hexo
-  npm update hexo -g #升级
+  cnpm install hexo -g #安装Hexo
+  cnpm update hexo -g #升级
   hexo init 博客名 #初始化博客
   npm uninstall hexo-xxx  #删除插件
   Hexo new page page名 #新建页面
@@ -195,7 +195,9 @@ categories: backup
   workflow作用只是把public/ deploy到gh-pages分支上,generate出public/仍需要在本地进行
   
   如果打开Hexo Server后报错(extends includes/layout.pug block content #recent-posts.recent-posts include includes/recent-posts.pug include includes/pagination.pug)
-    npm install hexo-renderer-pug hexo-renderer-stylus --save
+    cnpm install hexo-renderer-pug hexo-renderer-stylus --save
+
+  导航栏中的项目不能打tag和categories(编译报错)
   ```
   ## 安装Live2D (不能用cnpm 这俩二选一)
   ``` 
@@ -209,10 +211,11 @@ categories: backup
   启用模型:
     在/_config.yml里找到model.use改成想用的模型文件夹名
   ```
-  ## 启用comment && search
+  ## 启用comment && search && 字数统计
   ``` 
-  npm install valine --save
-  npm install hexo-generator-search --save
+  cnpm install valine --save
+  cnpm install hexo-generator-search --save
+  cnpm i --save hexo-wordcount
   然后把主题里的_config.yml改改
   ```
   ## 文章标题

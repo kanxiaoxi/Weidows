@@ -39,7 +39,7 @@ title: ⭐"Weidows"仓库简介⭐
  * @Author: Weidows
  * @Date: 2020-06-06 23:12:42
  * @LastEditors: Weidows
- * @LastEditTime: 2020-08-22 15:26:23
+ * @LastEditTime: 2020-08-22 16:13:21
  * @FilePath: \Weidows\Website\source\repository\Weidows.md
  -->
 <h1 align="center">
@@ -52,7 +52,7 @@ title: ⭐"Weidows"仓库简介⭐
     这仓库就是一学习笔记,没啥可看的,看名字就能明白,需要找啥自取就行
     需要注意的是本项目下markdown多数采用绝对URL路径引用(便于移植到GitHub-Pages),其他文件比如HTML可能使用的是相对引用(自己学习时写的笔记)
     URL前缀:
-      图: https://raw.githubusercontent.com/Weidows/Weidows/master
+      图: https://raw.githubusercontent.com/Weidows/Weidows/master/Website/Source/images
       链接: https://github.com/Weidows/Weidows/tree/master
   ## 🌈资源提示よ :)
 
@@ -155,4 +155,4 @@ title: ⭐"Weidows"仓库简介⭐
 
   *如果哪里有纰漏请在评论指正,欢迎讨论*
 
-  ![HonkaiPrincess](https://github.com/Weidows/Weidows/tree/master./images/Honkai3/[Nitrouzs]82409651.jpg)
+  ![HonkaiPrincess](https://raw.githubusercontent.com/Weidows/Weidows/master/Website/source/images/Honkai3/[Nitrouzs]82409651.jpg)

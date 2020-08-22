@@ -10,7 +10,7 @@ menu: #导航栏
   主页: / || fas fa-home
   归档: /archives/ || fas fa-archive
   标签: /tags/ || fas fa-tags
-  仓库: /categories/ || fas fa-folder-open
+  仓库||fas fa-folder-open:
     - Weidows || /repository/Weidows/
     - Crosstalk-rainbow-fart || /repository/Crosstalk-rainbow-fart/
   列表||fas fa-list:

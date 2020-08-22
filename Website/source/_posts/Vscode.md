@@ -1,9 +1,14 @@
+---
+title: Data:关于各类语言及技术栈的安装 && 使用
+tags: VScode
+categories: recommend
+---
 <!--
  * @Author: Weidows
  * @Date: 2020-05-27 19:28:49
  * @LastEditors: Weidows
- * @LastEditTime: 2020-08-13 18:20:08
- * @FilePath: \Weidows\Others\MarkDown\Vscode.md
+ * @LastEditTime: 2020-08-22 22:49:40
+ * @FilePath: \Weidows\Website\source\_posts\Vscode.md
 --> 
 <h1 align="center">
 ⭐️ VScode开发环境配置 ⭐️
@@ -25,8 +30,6 @@
   * 个人最喜欢的综合性较强的**翻译插件**,支持划词翻译,在注释上悬浮翻译,段落翻译....速度和质量很优秀
 * ## Remote - SSH 和 Remote - SSH: Editing Configuration Files
   * 这俩是捆绑安装的(个人疑惑为什么不弄成一个),双生的,少了哪个都不好用,作用主要是**ssh远程连接**,可以让VScode管理远程机上的文件/代码...
-* ## Settings Sync
-  * 用于**同步VScode插件和设置**,在Github Gist上建立一个用于存放VScode同步设置的备份云,**非常有用**,比如系统崩坏或者需要移植VScode时,用它按几个键就OK了
 * Power Mode
   * 在码字时敲入文字后光标产生动画,很好看(但是会有点卡顿现象)
 
@@ -72,19 +75,8 @@
   * 添加注释时在每行注释第一个字符写"!?*"等字符会该行让注释变色,有一定增强阅读效果
 
 ---
-# #N.反馈 & 出处
-**如果哪里有纰漏请在评论指正,欢迎讨论**
+# N.[反馈 & 出处 (Aboue me & Click me)](https://Weidows.github.io/Weidows/about)
 
-* 微信:     QQWeidows
-
-* [**邮箱:  Weidows@qq.com / UTsuKo27@qq.com**](mail.qq.com)
-
-* [**QQ  Weidows**](https://qm.qq.com/cgi-bin/qm/qr?k=3ycBtwX25IMFisvKoD8NIyNBMofXBFFu&noverify=0)
-
-* [**Github @Weidows**](https://github.com/Weidows)
-
-* [**Gitee  @Weidows**](https://gitee.com/WeidowsWeidows) 
-
-* [**CSDN  @Weidows㊣**](https://me.csdn.net/qq_39823295)
-
-* [**Bilibili  @奀六币的名字**](https://space.bilibili.com/38283369)
+  *如果哪里有纰漏请在评论指正,欢迎讨论*
+  
+![希儿](../images/Honkai3/[千韵]79705001.jpg)

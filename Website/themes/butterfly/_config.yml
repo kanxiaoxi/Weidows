@@ -8,18 +8,18 @@
 
 menu: #导航栏
   主页: / || fas fa-home
-  时间轴: /archives/ || fas fa-archive
-  标签: /tags/ || fas fa-tags
-  分类: /categories/ || fas fa-folder-open
+  时间轴: /archives || fas fa-archive
+  标签: /tags || fas fa-tags
+  分类: /categories || fas fa-folder-open
   列表||fas fa-list:
-    - Music || /music/ || fas fa-music
-    - Movie || /movies/ || fas fa-video
+    - Music || /music || fas fa-music
+    - Movie || /movie || fas fa-video
   仓库||fas fa-link:
     - Weidows || /repository/Weidows
     - Crosstalk-rainbow-fart || /repository/Crosstalk-rainbow-fart
   关于||fas fa-heart:
     - 我 || /about || fas fa-user
-    - 友链 || /link/ || fas fa-heart
+    - 友链 || /link || fas fa-heart
 
 # Code Blocks (代碼相關)
 # --------------------------------------
@@ -61,7 +61,7 @@ algolia_search:
 
 # Local search
 local_search:
-  enable: false
+  enable: true
   labels:
     input_placeholder: Search for Posts
     hits_empty: "We didn't find any results for the search: ${query}" # if there are no result
@@ -189,10 +189,10 @@ reward:
   enable: true
   QR_code:
     - img: /img/wechat.jpg
-      link: https://raw.githubusercontent.com/Weidows/Weidows/master/Website/source/images/QRcode/wechat.jpg
+      link: 
       text: 微信
     - img: /img/alipay.jpg
-      link: https://raw.githubusercontent.com/Weidows/Weidows/master/Website/source/images/QRcode/alipay.jpg
+      link: 
       text: 支付宝
 
 # Related Articles
@@ -322,7 +322,7 @@ utterances:
   issue_term: pathname
   # Theme: github-light/github-dark/github-dark-orange/icy-dark/dark-blue/photon-dark
   light_theme: github-light
-  dark_theme: photon-dark
+  dark_theme: github-dark-orange
 
 # Facebook Comments Plugin
 # https://developers.facebook.com/docs/plugins/comments/
@@ -446,7 +446,7 @@ yandex_site_verification:
 # Notice: color value must in double quotes like "#000" or may cause error!
 
 theme_color:
-  enable: true
+  enable: false
   main: "#49B1F5"
   paginator: "#00c4b6"
   button_hover: "#FF7242"
@@ -470,15 +470,15 @@ index_top_img_height:
 # The user interface setting of category and tag page (category和tag頁的UI設置)
 # index - same as Homepage UI (index 值代表 UI將與首頁的UI一樣)
 # default - same as archives UI 默認跟archives頁面UI一樣
-category_ui: # 留空或 index
-tag_ui: # 留空或 index
+category_ui:  # 留空或 index
+tag_ui:  # 留空或 index
 
 # Website Background (設置網站背景)
 # can set it to color or image (可設置圖片 或者 顔色)
 # The formal of color: '#49B202'
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
 # White color will be shown as default
-background: url(https://raw.githubusercontent.com/Weidows/Weidows/master/Website/source/images/Fantasy/FiringBook.jpg)
+background: url(https://gitee.com/Weidows2984539695/Weidows/raw/master/Website/source/images/Fantasy/FiringBook.jpg)
 
 # Show the footer background image (same as top_img)
 footer_bg: false
@@ -540,12 +540,12 @@ ClickShowText:
 
 # Default display mode (網站默認的顯示模式)
 # light (default) / dark
-display_mode: dark
+display_mode: light
 
 # Beautify (美化頁面顯示)
 beautify:
   enable: true
-  field: post # site/post
+  field: site # site/post
   title-prefix-icon: '\f0c1'
   title-prefix-icon-color: '#F47466'
 

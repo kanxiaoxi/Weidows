@@ -7,7 +7,7 @@ categories: backup
  * @Author: Weidows
  * @Date: 2020-08-19 00:38:26
  * @LastEditors: Weidows
- * @LastEditTime: 2020-08-23 13:02:13
+ * @LastEditTime: 2020-08-23 14:00:28
  * @FilePath: \Weidows\Website\source\_posts\Data.md
 -->
 
@@ -176,8 +176,8 @@ categories: backup
   ## Gitee
   * 图:  https://gitee.com/Weidows2984539695/Weidows/raw/master
   * 链接: https://gitee.com/Weidows2984539695/Weidows/blob/master
-  * 博客: http://weidows2984539695.gitee.io/weidows/
+  * 博客: http://weidows2984539695.gitee.io/weidows
   
   ## GitHub
-  * 图: https://raw.githubusercontent.com/Weidows/Weidows/master/Website/Source/images
+  * 图: https://raw.githubusercontent.com/Weidows/Weidows/master
   * 链接: https://github.com/Weidows/Weidows/tree/master

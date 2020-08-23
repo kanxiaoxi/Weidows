@@ -1,6 +1,7 @@
 ---
 title: ⭐"Weidows"仓库简介⭐
 subtitle: ⭐️Weidow's の Garden ⭐️ 个人主力commit的仓库,存放学习代码、demo等,同时作为GitHub-Pages主体仓库,兼profile展示内容
+banner: ../images/Humor/Cai.jpg
 ---
 <!--
  *                        _oo0oo_
@@ -40,13 +41,13 @@ subtitle: ⭐️Weidow's の Garden ⭐️ 个人主力commit的仓库,存放学
  * @Author: Weidows
  * @Date: 2020-06-06 23:12:42
  * @LastEditors: Weidows
- * @LastEditTime: 2020-08-23 14:43:08
+ * @LastEditTime: 2020-08-23 16:29:49
  * @FilePath: \Weidows\Website\source\repository\Weidows.md
  -->
 <h1 align="center">
 
-  [GitHub /](https://github.com/Weidows/Weidows)[/ Gitee](https://gitee.com/Weidows2984539695/Weidows) 中打开,此文章链接到Gitee
-  ![](../images/ComicExpression/5fa9b8812822cbb106e68986c0799b7d44f5da23.jpg) ⭐️ Weidow's 🌈の Mind ⭐️ ![](../images/ComicExpression/2909d2b0795b59041abfbc00d49d6048d646cbe2.jpg)  
+  ⭐️ Weidow's 🌈の Mind ⭐️
+  [GitHub /](https://github.com/Weidows/Weidows)[/ Gitee](https://gitee.com/Weidows2984539695/Weidows) 中打开,此文章链接到Gitee  
 </h1>
 
 # 一.简介よ (Brief Intro)

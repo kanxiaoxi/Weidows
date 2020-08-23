@@ -7,7 +7,7 @@ categories: recommend
  * @Author: Weidows
  * @Date: 2020-05-27 19:28:49
  * @LastEditors: Weidows
- * @LastEditTime: 2020-08-22 22:56:57
+ * @LastEditTime: 2020-08-23 14:54:00
  * @FilePath: \Weidows\Website\source\_posts\Vscode.md
 --> 
 <h1 align="center">
@@ -75,7 +75,7 @@ categories: recommend
   * 添加注释时在每行注释第一个字符写"!?*"等字符会该行让注释变色,有一定增强阅读效果
 
 ---
-# N.[反馈 & 出处 (Aboue me & Click me)](https://Weidows.github.io/Weidows/about)
+# N.[反馈 & 出处 (Aboue me & Click me)](http://weidows2984539695.gitee.io/weidows/about)
 
   *如果哪里有纰漏请在评论指正,欢迎讨论*
   

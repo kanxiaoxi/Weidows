@@ -202,17 +202,17 @@ related_post:
   date_type: updated # or created or updated 文章日期顯示創建日或者更新日
 
 # figcaption (圖片描述文字)
-photofigcaption: true
+photofigcaption: false
 
 # anchor
 # when you scroll in post, the URL will update according to header id.
-anchor: false
+anchor: true
 
 # Displays outdated notice for a post (文章過期提醒)
 noticeOutdate:
-  enable: false
+  enable: true
   style: flat # style: simple/flat
-  limit_day: 500 # When will it be shown
+  limit_day: 730 # When will it be shown
   position: top # position: top/bottom
   message_prev: It has been
   message_next: days since the last update, the content of the article may be outdated.
@@ -524,7 +524,7 @@ activate_power_mode:
 # Mouse click effects: fireworks (鼠標點擊效果: 煙火特效)
 fireworks:
   enable: true
-  zIndex: 9999 # -1 or 9999
+  zIndex: 7777 # -1 or 9999
 
 # Mouse click effects: Heart symbol (鼠標點擊效果: 愛心)
 click_heart: true
@@ -586,7 +586,7 @@ subtitle:
   # 如果有英文雙引號' " ',請使用轉義字元 &quot;
   # 開頭不允許轉義字元，如需要，請把整個句子用雙引號包住
   # 如果關閉打字效果，subtitle只會顯示sub的第一行文字
-  sub: Welcome to my Mind!
+  sub: 骚话结束,操练技术.
 
 # Loading Animation (加載動畫)
 preloader: true
@@ -678,11 +678,11 @@ darkmode:
 
 # medium-zoom
 # https://github.com/francoischalifour/medium-zoom
-medium_zoom: true
+medium_zoom: false
 
 # fancybox
 # http://fancyapps.com/fancybox/3/
-fancybox: false
+fancybox: true
 
 # Tag Plugins settings (標籤外掛)
 # --------------------------------------
@@ -718,7 +718,7 @@ pjax: false
 
 # Inject the css and script (aplayer/meting)
 aplayerInject:
-  enable: false
+  enable: true
   per_page: true
 
 # Snackbar (Toast Notification 彈窗)
@@ -742,7 +742,7 @@ instantpage: true
 # Insert a space between Chinese character and English character (中英文之間添加空格)
 pangu:
   enable: true
-  field: site # site/post
+  field: post # site/post
 
 # Lazyload (圖片懶加載)
 # https://github.com/verlok/lazyload

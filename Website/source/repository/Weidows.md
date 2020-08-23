@@ -41,13 +41,13 @@ banner: ../images/Humor/Cai.jpg
  * @Author: Weidows
  * @Date: 2020-06-06 23:12:42
  * @LastEditors: Weidows
- * @LastEditTime: 2020-08-23 16:29:49
+ * @LastEditTime: 2020-08-23 19:19:15
  * @FilePath: \Weidows\Website\source\repository\Weidows.md
  -->
 <h1 align="center">
 
-  ⭐️ Weidow's 🌈の Mind ⭐️
   [GitHub /](https://github.com/Weidows/Weidows)[/ Gitee](https://gitee.com/Weidows2984539695/Weidows) 中打开,此文章链接到Gitee  
+  ⭐️ Weidow's 🌈の Mind ⭐️
 </h1>
 
 # 一.简介よ (Brief Intro)

@@ -189,10 +189,10 @@ reward:
   enable: true
   QR_code:
     - img: /img/wechat.jpg
-      link: 
+      link: https://gitee.com/Weidows2984539695/Weidows/raw/master/Website/source/images/QRcode/wechat.jpg
       text: 微信
     - img: /img/alipay.jpg
-      link: 
+      link: https://gitee.com/Weidows2984539695/Weidows/raw/master/Website/source/images/QRcode/alipay.jpg
       text: 支付宝
 
 # Related Articles
@@ -540,7 +540,7 @@ ClickShowText:
 
 # Default display mode (網站默認的顯示模式)
 # light (default) / dark
-display_mode: dark
+display_mode: light
 
 # Beautify (美化頁面顯示)
 beautify:

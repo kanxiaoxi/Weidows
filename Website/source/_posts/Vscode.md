@@ -2,12 +2,13 @@
 title: VScode实用插件推荐
 tags: VScode
 categories: recommend
+cover: /images/post/VScode.jpg
 ---
 <!--
  * @Author: Weidows
  * @Date: 2020-05-27 19:28:49
  * @LastEditors: Weidows
- * @LastEditTime: 2020-08-23 14:54:00
+ * @LastEditTime: 2020-08-24 21:34:44
  * @FilePath: \Weidows\Website\source\_posts\Vscode.md
 --> 
 <h1 align="center">

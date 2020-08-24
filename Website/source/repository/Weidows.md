@@ -1,7 +1,5 @@
 ---
 title: ⭐"Weidows"仓库简介⭐
-subtitle: ⭐️Weidow's の Garden ⭐️ 个人主力commit的仓库,存放学习代码、demo等,同时作为GitHub-Pages主体仓库,兼profile展示内容
-banner: ../images/Humor/Cai.jpg
 ---
 <!--
  *                        _oo0oo_
@@ -41,7 +39,7 @@ banner: ../images/Humor/Cai.jpg
  * @Author: Weidows
  * @Date: 2020-06-06 23:12:42
  * @LastEditors: Weidows
- * @LastEditTime: 2020-08-23 19:19:15
+ * @LastEditTime: 2020-08-24 21:04:00
  * @FilePath: \Weidows\Website\source\repository\Weidows.md
  -->
 <h1 align="center">
@@ -60,7 +58,7 @@ banner: ../images/Humor/Cai.jpg
 <!-- !.vscode -->
   ## .vscode
   * [.vscode](https://gitee.com/Weidows2984539695/Weidows/blob/master/.vscode/)目录里有我的VScode设置文件,已经搭建好:
-  https://gitee.com/Weidows2984539695/Weidows/blob/master/C++ , Python , Java , Node.js , HTML5(与配置文件非相关) 开发环境...  
+  `C++ , Python , Java , Node.js , HTML5(与配置文件非相关)` 开发环境...  
     * [.vscode/backup](https://gitee.com/Weidows2984539695/Weidows/blob/master/.vscode/backup)里面有开发环境所需要的配置文件,安装包,压缩包和介绍等...  
   
     * [.vscode/Data](https://gitee.com/Weidows2984539695/Weidows/blob/master/.vscode/Data)里面有Vscode相关配置文件

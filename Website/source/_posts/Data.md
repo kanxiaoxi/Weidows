@@ -2,12 +2,13 @@
 title: Data:关于各类语言及技术栈的安装 && 使用
 tags: 备忘录
 categories: backup
+cover: /images/Humor/Cai.jpg
 ---
 <!--
  * @Author: Weidows
  * @Date: 2020-08-19 00:38:26
  * @LastEditors: Weidows
- * @LastEditTime: 2020-08-23 14:54:25
+ * @LastEditTime: 2020-08-24 21:16:09
  * @FilePath: \Weidows\Website\source\_posts\Data.md
 -->
 
@@ -16,7 +17,7 @@ categories: backup
   ``` 
   reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Kernel" /v DisableTsx /t REG_DWORD /d 0 /f
   ```
-
+---
 
 # 二.Java环境:
   ## JDK环境
@@ -35,21 +36,21 @@ categories: backup
   Path中+	%M2_HOME%\bin
   Path中+ MAVEN_HOME\bin
   ```
-
+---
 
 # 三.C/C++环境:
 
   ``` 
   在Path中添加  D:\Game\Demo\Dev-Cpp\MinGW64\bin
   ```
-
+---
 
 # 四.Git环境:
 
   ``` 
   Path中+	D:\Game\Demo\Git\cmd
   ```
-
+---
 
 # 五.Python环境:
   ``` 
@@ -57,11 +58,11 @@ categories: backup
     D:\Game\Demo\Python\
     D:\Game\Demo\Python\Scripts\
   ```
-
+---
 
 # 六.Powershell环境:
   ``` 
-  Path里面+ D:\Game\Demo\PowerShell\7\
+    Path里面+ D:\Game\Demo\PowerShell\7\
   ```
   ## 安装oh-my-posh && posh-git
   ``` 
@@ -70,22 +71,22 @@ categories: backup
   ```
   ## 安装PoshFuck (不必在意格式,Ctrl+C/V就行)
   ``` 
-  Set-ExecutionPolicy RemoteSigned
+    Set-ExecutionPolicy RemoteSigned
       iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/mattparkes/PoShFuck/master/Install-TheFucker.ps1'))
   ```
-  ## 启用主题及自动补全(五个全上)
+  ## 3. 启用主题及自动补全(五个全上)
   ``` 
-  ~/文档/PowerShell/Microsoft.PowerShell_profile.ps1  +
-    Import-Module oh-my-posh
-    Import-Module posh-git
-    Set-Theme Paradox
+    ~/文档/PowerShell/Microsoft.PowerShell_profile.ps1  +
+      Import-Module oh-my-posh
+      Import-Module posh-git
+      Set-Theme Paradox
 
-    ?Posh中Linux形式补全
-      Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete
-    ?类似theFuck,用法:fuck  fuck!  WTF  Get-Fucked
-      Import-Module PoShFuck
+      ?Posh中Linux形式补全
+        Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete
+      ?类似theFuck,用法:fuck  fuck!  WTF  Get-Fucked
+        Import-Module PoShFuck
   ```
-
+---
 
 # 七.VScode快捷键
   ``` 
@@ -102,83 +103,110 @@ categories: backup
   选中当前行 Ctrl + l
   插入标签Ctrl+alt+K
   ```
-
+---
 
 # 八.Node.JS环境
   ``` 
-  Path中+	D:\Game\Demo\Node.js\
+    Path中+	D:\Game\Demo\Node.js\
   ```
   ## npm包管理器换阿里源(阿里牛逼)
   ``` 
-  npm install -g cnpm --registry=https://registry.npm.taobao.org
-  换完之后npm install -> cnpm install
+    npm install -g cnpm --registry=https://registry.npm.taobao.org
+    换完之后npm install -> cnpm install
   ```
   ## 常用的Hexo 命令
   ``` 
-  cnpm install hexo -g #安装Hexo
-  cnpm update hexo -g #升级
-  hexo init 博客名 #初始化博客
-  npm uninstall hexo-xxx  #删除插件
-  Hexo new page page名 #新建页面
+    cnpm install hexo-cli -g #安装Hexo
+    cnpm update hexo -g #升级,先cnpm再npm
+    hexo init 博客名 #初始化博客
+    npm uninstall hexo-xxx  #删除插件
+    Hexo new page page名 #新建页面
   ```
   ## 安装deployer(这个不能用阿里源) && 编译部署
   ``` 
-  npm install hexo-deployer-git --save
+    npm install hexo-deployer-git --save
 
-  hexo clean
-  hexo g
-  hexo d
+    hexo clean
+    hexo g
+    hexo d
   ```
   ## 注意事项
   ``` 
-  注意如果repo命名时没加.github.io的后缀,那么只能deploy到gh-pages分支(否则出错)
+    注意如果repo命名时没加.github.io的后缀,那么只能deploy到gh-pages分支(否则出错)
 
-  workflow作用只是把public/ deploy到gh-pages分支上,generate出public/仍需要在本地进行
-  
-  如果打开Hexo Server后报错(extends includes/layout.pug block content #recent-posts.recent-posts include includes/recent-posts.pug include includes/pagination.pug)
-    cnpm install hexo-renderer-pug hexo-renderer-stylus --save
+    workflow作用只是把public/ deploy到gh-pages分支上,generate出public/仍需要在本地进行
+    
+    如果打开Hexo Server后报错(extends includes/layout.pug block content #recent-posts.recent-posts include includes/recent-posts.pug include includes/pagination.pug)
+      cnpm install hexo-renderer-pug hexo-renderer-stylus --save
 
-  导航栏中的项目不能打tag和categories(编译报错)
+    导航栏中的项目不能打tag和categories(编译报错),也不能进行cover更改(无效)
   ```
   ## 安装Live2D (不能用cnpm 这俩二选一)
   ``` 
-  yarn add hexo-helper-live2d
-  npm install --save hexo-helper-live2d
+    yarn add hexo-helper-live2d
+    npm install --save hexo-helper-live2d
 
-  导入模型: (导入后在node_modules里找相应文件夹,移动到/live2d_models/ 注意不能用npm)
-    白猫:cnpm install live2d-widget-model-tororo
-    黑猫:cnpm install live2d-widget-model-hijiki
+    导入模型: (导入后在node_modules里找相应文件夹,移动到/live2d_models/ 注意不能用npm)
+      白猫:cnpm install live2d-widget-model-tororo
+      黑猫:cnpm install live2d-widget-model-hijiki
 
-  启用模型:
-    在/_config.yml里找到model.use改成想用的模型文件夹名
+    启用模型:
+      在/_config.yml里找到model.use改成想用的模型文件夹名
   ```
   ## 启用comment && search && 字数统计
   ``` 
-  cnpm install valine --save
-  cnpm install hexo-generator-search --save
-  cnpm i --save hexo-wordcount
-  然后把主题里的_config.yml改改
+    cnpm install valine --save
+    cnpm install hexo-generator-search --save
+    cnpm i --save hexo-wordcount
+    然后把主题里的_config.yml改改
   ```
-  ## 文章标题
+  ## Hexo文章标题 & 格式
   ```
-  title: # 网站标题
-  photos: # 封面图片
-  categories: # 分类
-  tags:  # 标签
-  subtitle: # 网站副标题
-  description: # 网站描述
-  keywords: # 网站关键词
-  author: # 网站作者
-  language: # 语言, 一般填 'zh-CN'
-  timezone: # 时区, 可以不填
+    title: # 网站标题
+      categories: # 分类(只能单线)
+        - category_1
+        - category_1_1
+        - category_1_1_1
+      tags:  # 标签(可以多标)
+        - tag_1
+        - tag_2
+      type: "" # 指定这个页面的类型(比如categories/tags)
+      cover: # 封面图片,注意不能用../命令,双引号有无均可
+      comments: # 评论开关
+    #以下是没用过或无效的
+      subtitle: # 网站副标题,无效
+      description: # 网站描述
+      keywords: # 网站关键词
+      author: # 网站作者
+      language: # 语言, 一般填 'zh-CN'
+      timezone: # 时区, 可以不填
   ```
 ---
-# URL前缀: Gitee && GitHub
-  ## Gitee
-  * 图:  https://gitee.com/Weidows2984539695/Weidows/raw/master
-  * 链接: https://gitee.com/Weidows2984539695/Weidows/blob/master
-  * 博客: http://weidows2984539695.gitee.io/weidows
+
+# 九.API接口收藏
+  ## My URL前缀: Gitee && GitHub (旁人没啥用...)
+  ### Gitee:
+  * 图:  `https://gitee.com/Weidows2984539695/Weidows/raw/master`
+  * 链接: `https://gitee.com/Weidows2984539695/Weidows/blob/master`
+  * 博客: `http://weidows2984539695.gitee.io/weidows`
+  ### GitHub:
+  * 图: `https://raw.githubusercontent.com/Weidows/Weidows/master`
+  * 链接: `https://github.com/Weidows/Weidows/tree/master`
+    
+  ## 随机图片API
+  ### 横屏
+  * 二次元coser `https://uploadbeta.com/api/pictures/random/?key=二次元`
+  * 跟上边差不多都是三次元妹子.. `https://uploadbeta.com/api/pictures/random/?key=动漫`
+  * #小心身体-推女郎# `https://uploadbeta.com/api/pictures/random/?key=推女郎`
   
-  ## GitHub
-  * 图: https://raw.githubusercontent.com/Weidows/Weidows/master
-  * 链接: https://github.com/Weidows/Weidows/tree/master
+  ### 竖屏
+  
+  ### 未知 && 暂时不会用~
+  ```
+    风景随机图：http://pic.tsmp4.net/api/fengjing/img.php
+    女神随机图：http://pic.tsmp4.net/api/nvsheng/img.php
+    影视随机图：http://pic.tsmp4.net/api/yingshi/img.php
+    二次元随机图：http://pic.tsmp4.net/api/erciyuan/img.php
+    二次元随机图:http://www.dmoe.cc/random.php
+  ```
+---

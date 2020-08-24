@@ -1,13 +1,19 @@
 ---
-title: 一篇扫清:GitHub-Pages自动化部署 + github/gitee选择 + Hexo博客搭建 + 
-category: GitHub
-tag: 备忘录
+title: 一篇扫清:GitHub-Pages自动化部署 + github/gitee选择 + Hexo博客搭建
+category: 
+  - GitHub
+  - GitHub-Pages
+tag:
+  - 备忘录
+  - Hexo
+  - Website
+cover: /images/post/Hexo-Butteryfly.jpg
 ---
 <!--
  * @Author: Weidows
  * @Date: 2020-08-23 10:54:41
  * @LastEditors: Weidows
- * @LastEditTime: 2020-08-23 20:59:53
+ * @LastEditTime: 2020-08-24 21:40:34
  * @FilePath: \Weidows\Website\source\_posts\GitHub-Pages-deploy.md
 -->
 # 历史-2020-8: (如果你在找教程最好了解下历史:)

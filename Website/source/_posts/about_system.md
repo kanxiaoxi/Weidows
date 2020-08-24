@@ -2,12 +2,13 @@
 title: 关于安装系统硬盘&引导那些事
 categories: experience
 tags: 计算机系统
+cover: /images/post/about_system.jpg
 ---
 <!--
  * @Author: Weidows
  * @Date: 2020-08-23 20:49:52
  * @LastEditors: Weidows
- * @LastEditTime: 2020-08-23 20:52:55
+ * @LastEditTime: 2020-08-24 21:43:56
  * @FilePath: \Weidows\Website\source\_posts\about_system.md
 -->
 # 0x.前言:

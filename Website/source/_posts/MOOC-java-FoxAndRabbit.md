@@ -2,12 +2,13 @@
 title: MOOC浙大翁凯教授Java第六章狐狸与兔子源代码
 categories: experience
 tags: Java
+cover: https://raw.githubusercontent.com/Weidows/Weidows/master/java/src/main/java/twenty/july/my_interface/interface/Cells173751.png
 ---
 <!--
  * @Author: Weidows
  * @Date: 2020-08-23 20:54:56
  * @LastEditors: Weidows
- * @LastEditTime: 2020-08-23 20:57:36
+ * @LastEditTime: 2020-08-24 21:30:44
  * @FilePath: \Weidows\Website\source\_posts\MOOC-java-FoxAndRabbit.md
 -->
 

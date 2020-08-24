@@ -1,11 +1,12 @@
 ---
 title: ⭐ 关于我的联系方式 ⭐
+type: about
 ---
 <!--
  * @Author: Weidows
  * @Date: 2020-07-24 14:07:43
  * @LastEditors: Weidows
- * @LastEditTime: 2020-08-23 12:51:26
+ * @LastEditTime: 2020-08-24 21:15:15
  * @FilePath: \Weidows\Website\source\about.md
 -->
 <h1 align="center">

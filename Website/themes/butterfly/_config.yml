@@ -8,12 +8,14 @@
 
 menu: #导航栏
   主页: / || fas fa-home
-  时间轴: /archives || fas fa-archive
-  标签: /tags || fas fa-tags
-  分类: /categories || fas fa-folder-open
-  列表||fas fa-list:
-    - Music || /music || fas fa-music
-    - Movie || /movies || fas fa-video
+  博客三宝||:
+    - 标签 || /tags || fas fa-tags
+    - 分类 || /categories || fas fa-folder-open
+    - 时间轴 || /archives || fas fa-archive
+  兴趣||fas fa-list:
+    - 音乐 || /music || fas fa-music
+    - 电影 || /movies || fas fa-video
+    - 番剧 || /bangumis || fas fa-bangumis
   仓库||fas fa-link:
     - Weidows || /repository/Weidows
     - Crosstalk-rainbow-fart || /repository/Crosstalk-rainbow-fart
@@ -304,7 +306,7 @@ valine:
   pageSize: 10 # comment list page size
   avatar: monsterid # gravatar style https://valine.js.org/#/avatar
   lang: zh-CN # i18n: zh-CN/zh-TW/en/ja
-  placeholder: 留个脚印呗 # valine comment input placeholder (like: Please leave your footprints)
+  placeholder: 在7:00-23:59之间,扣下邮箱地址"应该"就会回复:) # valine comment input placeholder (like: Please leave your footprints)
   guest_info: nick,mail,link # valine comment header info (nick/mail/link)
   recordIP: true # Record reviewer IP
   serverURLs: # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)

@@ -3,9 +3,9 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: ⭐️Weidow's Page!⭐️
+title: ⭐️Weidows の Page⭐️
 subtitle: ''
-description: ''
+description: ただWeidow's Websiteだけ
 keywords: Weidows Page
 author: Weidows
 language: zh-CN
@@ -29,7 +29,7 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-skip_render:
+skip_render: navi/** # 这里会使navi下所有.md不被渲染
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -112,9 +112,18 @@ live2d:
     use: live2d-widget-model-tororo # 用到的模型文件夹名称
   display:
     position: left
-    width: 200
-    height: 350
+    width: 180
+    height: 300
   mobile:
     show: true
   react:
     opacity: 0.7
+
+bangumi:
+    enable: true 
+    path: /bangumis.html
+    vmid: 38283369  # 哔哩哔哩番剧页面的 vmid(uid)
+    title: '番 の 表'  # 页面的标题
+    quote: <h1 align="center">生命不息，追番不止！</h1> # 写在页面开头的一段话，支持 html 语法
+    show: 1 # 初始显示页面：0: 想看 , 1: 在看 , 2: 看过，默认为 1
+    loading: '/img/bangumi-loading.gif' # 图片加载完成前的 loading 图片

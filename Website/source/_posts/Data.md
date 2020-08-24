@@ -8,10 +8,9 @@ cover: /images/Humor/Cai.jpg
  * @Author: Weidows
  * @Date: 2020-08-19 00:38:26
  * @LastEditors: Weidows
- * @LastEditTime: 2020-08-24 21:16:09
+ * @LastEditTime: 2020-08-25 00:19:23
  * @FilePath: \Weidows\Website\source\_posts\Data.md
 -->
-
 
 # 一.命令行（管理员模式）代码：
   ``` 
@@ -108,78 +107,10 @@ cover: /images/Humor/Cai.jpg
 # 八.Node.JS环境
   ``` 
     Path中+	D:\Game\Demo\Node.js\
-  ```
-  ## npm包管理器换阿里源(阿里牛逼)
-  ``` 
-    npm install -g cnpm --registry=https://registry.npm.taobao.org
-    换完之后npm install -> cnpm install
-  ```
-  ## 常用的Hexo 命令
-  ``` 
-    cnpm install hexo-cli -g #安装Hexo
-    cnpm update hexo -g #升级,先cnpm再npm
-    hexo init 博客名 #初始化博客
-    npm uninstall hexo-xxx  #删除插件
-    Hexo new page page名 #新建页面
-  ```
-  ## 安装deployer(这个不能用阿里源) && 编译部署
-  ``` 
-    npm install hexo-deployer-git --save
-
-    hexo clean
-    hexo g
-    hexo d
-  ```
-  ## 注意事项
-  ``` 
-    注意如果repo命名时没加.github.io的后缀,那么只能deploy到gh-pages分支(否则出错)
-
-    workflow作用只是把public/ deploy到gh-pages分支上,generate出public/仍需要在本地进行
     
-    如果打开Hexo Server后报错(extends includes/layout.pug block content #recent-posts.recent-posts include includes/recent-posts.pug include includes/pagination.pug)
-      cnpm install hexo-renderer-pug hexo-renderer-stylus --save
-
-    导航栏中的项目不能打tag和categories(编译报错),也不能进行cover更改(无效)
-  ```
-  ## 安装Live2D (不能用cnpm 这俩二选一)
-  ``` 
-    yarn add hexo-helper-live2d
-    npm install --save hexo-helper-live2d
-
-    导入模型: (导入后在node_modules里找相应文件夹,移动到/live2d_models/ 注意不能用npm)
-      白猫:cnpm install live2d-widget-model-tororo
-      黑猫:cnpm install live2d-widget-model-hijiki
-
-    启用模型:
-      在/_config.yml里找到model.use改成想用的模型文件夹名
-  ```
-  ## 启用comment && search && 字数统计
-  ``` 
-    cnpm install valine --save
-    cnpm install hexo-generator-search --save
-    cnpm i --save hexo-wordcount
-    然后把主题里的_config.yml改改
-  ```
-  ## Hexo文章标题 & 格式
-  ```
-    title: # 网站标题
-      categories: # 分类(只能单线)
-        - category_1
-        - category_1_1
-        - category_1_1_1
-      tags:  # 标签(可以多标)
-        - tag_1
-        - tag_2
-      type: "" # 指定这个页面的类型(比如categories/tags)
-      cover: # 封面图片,注意不能用../命令,双引号有无均可
-      comments: # 评论开关
-    #以下是没用过或无效的
-      subtitle: # 网站副标题,无效
-      description: # 网站描述
-      keywords: # 网站关键词
-      author: # 网站作者
-      language: # 语言, 一般填 'zh-CN'
-      timezone: # 时区, 可以不填
+    npm包管理器换阿里源(阿里牛逼)
+      npm install -g cnpm --registry=https://registry.npm.taobao.org
+      换完之后npm install -> cnpm install
   ```
 ---
 

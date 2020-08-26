@@ -13,7 +13,7 @@ cover: https://gitee.com/Weidows2984539695/Weidows/raw/master/Website/public/ima
  * @Author: Weidows
  * @Date: 2020-08-25 00:05:52
  * @LastEditors: Weidows
- * @LastEditTime: 2020-08-26 22:21:34
+ * @LastEditTime: 2020-08-27 00:13:26
  * @FilePath: \Weidows\Website\source\_posts\backup\Hexo-plugin.md
 -->
 
@@ -40,16 +40,15 @@ cover: https://gitee.com/Weidows2984539695/Weidows/raw/master/Website/public/ima
 ---
 
 # 注意事项
-  ``` 
-    注意如果repo命名时没加.github.io的后缀,那么只能deploy到gh-pages分支(否则出错)
+  * 注意如果repo命名时没加.github.io的后缀,那么只能deploy到gh-pages分支(否则出错)
 
-    workflow作用只是把public/ deploy到gh-pages分支上,generate出public/仍需要在本地进行
+  * workflow作用只是把public/ deploy到gh-pages分支上,generate出public/仍需要在本地进行
     
-    如果打开Hexo Server后报错(extends includes/layout.pug block content #recent-posts.recent-posts include includes/recent-posts.pug include includes/pagination.pug)
+  * 如果打开Hexo Server后报错(extends includes/layout.pug block content #recent-posts.recent-posts include includes/recent-posts.pug include includes/pagination.pug)
       cnpm install hexo-renderer-pug hexo-renderer-stylus --save
 
-    导航栏中的项目不能打tag和categories(编译报错),也不能进行cover更改(无效)
-  ```
+  * 导航栏中的项目不能打tag和categories(编译报错),也不能进行cover更改(无效)
+  * 注意修改source的css或者js后进行generate不会刷新状态,需要删掉重新generate
 ---
 
 # 安装Live2D (不能用cnpm 这俩二选一)

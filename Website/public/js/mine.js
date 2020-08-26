@@ -2,8 +2,8 @@
  * @Author: Weidows
  * @Date: 2020-08-19 16:42:36
  * @LastEditors: Weidows
- * @LastEditTime: 2020-08-19 22:11:02
- * @FilePath: \Weidows-Gardend:\Game\Demo\Github\Weidows\themes\butterfly\source\js\mine.js
+ * @LastEditTime: 2020-08-26 17:09:43
+ * @FilePath: \Weidows\Website\themes\butterfly\source\js\mine.js
  */
 /**
  * Created by Lete on 2020/7/7.
@@ -20,7 +20,7 @@ var app = document.getElementById( 'footer' )
 app.removeAttribute( 'id' )
 
 /*添加图片top*/
-var top_up = "<img id='upj' class='upj' style='max-width: 1000%; transform: translate(-70px,-70px);' src='https://cdn.jsdelivr.net/gh/lete114/CDN/Use/up.gif' title='回到顶部' >"
+var top_up = "<img id='upj' class='upj' style='max-width: 500%; transform: translate(-70px,-70px);' src='https://cdn.jsdelivr.net/gh/lete114/CDN/Use/up.gif' title='回到顶部' >"
 /*添加到返回顶部按钮下*/
 document.getElementById( "go-up" ).innerHTML += top_up
 
@@ -69,3 +69,10 @@ function browserRedirect () {
     function stopp () { if ( staticx ) { var child = document.getElementById( "canvas_sakura" ); child.parentNode.removeChild( child ); window.cancelAnimationFrame( stop ); staticx = false } else { startSakura() } }
   }
 }
+
+/* Valine美化 */
+$("#veditor").focus(function(){$(this).css("background-image","none");});
+$("#veditor").blur(function(){
+  $( this ).css( "background-image","url(https://gitee.com/Weidows2984539695/Weidows/raw/master/Website/public/images/img/mao.gif)");
+  }
+);

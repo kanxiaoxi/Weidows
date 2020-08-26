@@ -1,39 +1,40 @@
 /*Lete个人博客颜色修改*/
 
 #page-header #site_title {
-    color: #80bdab;
+    color: #cf31ba;
 }
 /*页脚a标签字体颜色*/
-
 #footer-wrap a {
     color: #00c4b6;
 }
+
 /*修复添加up酱后图标上移的bug*/
-
-.fas {
+/* .fas {
     line-height: 2;
-}
-/*页脚自定义字段字体颜色*/
+} */
 
+/*页脚自定义字段字体颜色*/
 .footer_custom_text {
     color: #00c4b6;
 }
-/*a标签颜色*/
 
+/*a标签颜色*/
 a {
     color: #00c4b6;
 }
 /*头部文字颜色*/
 
 #nav a {
-    color: #f9f2f4;
+    color: #00ffea;
 }
 
 /*文章透明*/
 
-/* .layout_post>#post {
-    background: rgba(255, 255, 255, .9);
-} */
+.layout_post>#post {
+    background: rgba(255, 255, 255, 0.6);
+}
+
+
 /* 鼠标图标 */
 
 body {
@@ -89,6 +90,8 @@ i:hover {
 #nav .site-page:hover {
     cursor: url(https://cdn.jsdelivr.net/gh/lete114/CDN@1.0/Use/JkuClT.png), auto;
 }
+
+
 /* 滚动条 */
 
 ::-webkit-scrollbar {
@@ -97,8 +100,8 @@ i:hover {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #e58a8a;
-    background-image: -webkit-linear-gradient( 45deg, rgba(221, 40, 40, 0.4) 25%, transparent 25%, transparent 50%, rgba(15, 240, 127, 0.4) 50%, rgba(25, 86, 228, 0.4) 75%, transparent 75%, transparent);
+    background-color: #83c9d1;
+    background-image: -webkit-linear-gradient( 45deg, rgba(255, 0, 0, 0.78) 25%, transparent 25%, transparent 50%, rgba(255, 86, 232, 0.815) 50%, rgba(0, 76, 255, 0.4) 75%, transparent 75%, transparent);
     border-radius: 2em;
 }
 
@@ -108,5 +111,19 @@ i:hover {
 
 ::-moz-selection {
     color: #fff;
-    background-color: #e58a8a;
+    background-color: #ce70b9;
+}
+
+/* valine美化 */
+#veditor {
+	background-image: url(https://gitee.com/Weidows2984539695/Weidows/raw/master/Website/public/images/img/mao.gif);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: right;
+	background-color: rgba(255, 70, 70, 0.849);
+	resize: vertical
+}
+#veditor:focus{
+	background-position-y: 200px;
+	transition: all 0.2s ease-in-out 0s;
 }

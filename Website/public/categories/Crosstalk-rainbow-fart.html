@@ -1,0 +1,230 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="dark"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>⭐&quot;Crosstalk-rainbow-fart&quot;仓库简介⭐ | ⭐️Weidows の Page⭐️</title><meta name="description" content="⭐️ 相声🌈Rainbow-Fart语音包 ⭐️     GitHub &#x2F;&#x2F; Gitee 中打开,此文章链接到Gitee      一.演示视频         音频文件在这里面,裁减了一些相声中的名场面和经典语句等等…希望能给您的持盘之手些许慰藉:)    视频发布在B站上了,可以看看是否喜欢和安装    目前此语音包支持C&#x2F;C++,Java,Python,Go,JavaScript等"><meta name="keywords" content="Weidows Page"><meta name="author" content="Weidows"><meta name="copyright" content="Weidows"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/Weidows/images/img/favicon.png"><link rel="canonical" href="http://weidows2984539695.gitee.io/weidows/categories/Crosstalk-rainbow-fart"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta property="og:type" content="website"><meta property="og:title" content="⭐&quot;Crosstalk-rainbow-fart&quot;仓库简介⭐"><meta property="og:url" content="http://weidows2984539695.gitee.io/weidows/categories/Crosstalk-rainbow-fart"><meta property="og:site_name" content="⭐️Weidows の Page⭐️"><meta property="og:description" content="⭐️ 相声🌈Rainbow-Fart语音包 ⭐️     GitHub &#x2F;&#x2F; Gitee 中打开,此文章链接到Gitee      一.演示视频         音频文件在这里面,裁减了一些相声中的名场面和经典语句等等…希望能给您的持盘之手些许慰藉:)    视频发布在B站上了,可以看看是否喜欢和安装    目前此语音包支持C&#x2F;C++,Java,Python,Go,JavaScript等"><meta property="og:image" content="http://weidows2984539695.gitee.io/weidows/img/404.jpg"><meta property="article:published_time" content="2020-08-26T12:35:34.275Z"><meta property="article:modified_time" content="2020-08-26T12:35:34.275Z"><meta name="twitter:card" content="summary"><script>var activateDarkMode = function () {
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#000')
+  }
+}
+var activateLightMode = function () {
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff')
+  }
+}
+
+var getCookies = function (name) {
+  const value = `; ${document.cookie}`
+  const parts = value.split(`; ${name}=`)
+  if (parts.length === 2) return parts.pop().split(';').shift()
+}
+
+var autoChangeMode = 'false'
+var t = getCookies('theme')
+if (autoChangeMode === '1') {
+  var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+  var isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+  var isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+  if (t === undefined) {
+    if (isLightMode) activateLightMode()
+    else if (isDarkMode) activateDarkMode()
+    else if (isNotSpecified || hasNoSupport) {
+      console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+      var now = new Date()
+      var hour = now.getHours()
+      var isNight = hour <= 6 || hour >= 18
+      isNight ? activateDarkMode() : activateLightMode()
+    }
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+      if (Cookies.get('theme') === undefined) {
+        e.matches ? activateDarkMode() : activateLightMode()
+      }
+    })
+  } else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else if (autoChangeMode === '2') {
+  now = new Date()
+  hour = now.getHours()
+  isNight = hour <= 6 || hour >= 18
+  if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else {
+  if (t === 'dark') activateDarkMode()
+  else if (t === 'light') activateLightMode()
+}</script><link rel="stylesheet" href="/Weidows/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap"><script>var GLOBAL_CONFIG = { 
+  root: '/Weidows/',
+  hexoversion: '5.0.2',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: {"limitDay":365,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime_unit: '天',
+  runtime: true,
+  copyright: {"limitCount":10,"languages":{"author":"作者: Weidows","link":"链接: ","source":"来源: ⭐️Weidows の Page⭐️","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  ClickShowText: undefined,
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: undefined,
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  },
+  baiduPush: false,
+  highlightCopy: true,
+  highlightLang: true,
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isanchor: false    
+}</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: false,
+  isHome: false,
+  isHighlightShrink: false,
+  isSidebar: false,
+  postUpdate: '2020-08-26 20:35:34'
+}</script><noscript><style>
+#nav {
+  opacity: 1
+}
+.justified-gallery img {
+  opacity: 1
+}
+</style></noscript><link rel="stylesheet" href="./css/mine.css"><link rel="stylesheet" href="../css/mine.css"><link rel="stylesheet" href="../../css/mine.css"><link rel="stylesheet" href="../../../css/mine.css"><meta name="generator" content="Hexo 5.0.2"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" data-lazy-src="/Weidows/images/img/avatar.jpg" onerror="onerror=null;src='/images/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/Weidows/archives/"><div class="headline">文章</div><div class="length_num">8</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/Weidows/tags/"><div class="headline">标签</div><div class="length_num">8</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/Weidows/categories/"><div class="headline">分类</div><div class="length_num">6</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/Weidows/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 博客三宝</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/Weidows/tags"><i class="fa-fw fas fa-tags"></i><span> 标 签</span></a></li><li><a class="site-page" href="/Weidows/categories"><i class="fa-fw fas fa-folder-open"></i><span> 分 类</span></a></li><li><a class="site-page" href="/Weidows/archives"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-link"></i><span> 代码仓库</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/Weidows/categories/Weidows"><span> 此网站</span></a></li><li><a class="site-page" href="/Weidows/categories/Crosstalk-rainbow-fart"><span> 彩虹屁</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 兴趣爱好</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/Weidows/tags/music"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/Weidows/tags/movies"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page" href="/Weidows/tags/bangumis"><i class="fa-fw fas fa-bangumis"></i><span> 番剧</span></a></li><li><a class="site-page" href="/Weidows/tags/photos"><i class="fa-fw fas fa-bangumis"></i><span> 相册</span></a></li><li><a class="site-page" href="/Weidows/tags/games"><i class="fa-fw fas fa-bangum"></i><span> 游戏</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-heart"></i><span> 关于</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/Weidows/tags/about"><i class="fa-fw fas fa-user"></i><span> &lt;我&gt;</span></a></li><li><a class="site-page" href="/Weidows/tags/link"><i class="fa-fw fas fa-heart"></i><span> 友人帐</span></a></li><li><a class="site-page" href="/Weidows/tags/my_artitalk"><i class="fa-fw fa fa-comments-o"></i><span> 说 说</span></a></li><li><a class="site-page" href="/Weidows/tags/comment"><i class="fa-fw fas fa-bangumis"></i><span> 留言板</span></a></li></ul></div></div></div></div><div id="body-wrap"><div id="web_bg" data-type="photo"></div><header class="not-index-bg" id="page-header" style="background-image: url(/Weidows/images/post/Hexo-Butteryfly.jpg)"><nav id="nav"><span class="pull-left" id="blog_name"><a class="blog_title" id="site-name" href="/Weidows/">⭐️Weidows の Page⭐️</a></span><span class="pull-right menus"><div id="search_button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/Weidows/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 博客三宝</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/Weidows/tags"><i class="fa-fw fas fa-tags"></i><span> 标 签</span></a></li><li><a class="site-page" href="/Weidows/categories"><i class="fa-fw fas fa-folder-open"></i><span> 分 类</span></a></li><li><a class="site-page" href="/Weidows/archives"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-link"></i><span> 代码仓库</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/Weidows/categories/Weidows"><span> 此网站</span></a></li><li><a class="site-page" href="/Weidows/categories/Crosstalk-rainbow-fart"><span> 彩虹屁</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 兴趣爱好</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/Weidows/tags/music"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/Weidows/tags/movies"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page" href="/Weidows/tags/bangumis"><i class="fa-fw fas fa-bangumis"></i><span> 番剧</span></a></li><li><a class="site-page" href="/Weidows/tags/photos"><i class="fa-fw fas fa-bangumis"></i><span> 相册</span></a></li><li><a class="site-page" href="/Weidows/tags/games"><i class="fa-fw fas fa-bangum"></i><span> 游戏</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-heart"></i><span> 关于</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/Weidows/tags/about"><i class="fa-fw fas fa-user"></i><span> &lt;我&gt;</span></a></li><li><a class="site-page" href="/Weidows/tags/link"><i class="fa-fw fas fa-heart"></i><span> 友人帐</span></a></li><li><a class="site-page" href="/Weidows/tags/my_artitalk"><i class="fa-fw fa fa-comments-o"></i><span> 说 说</span></a></li><li><a class="site-page" href="/Weidows/tags/comment"><i class="fa-fw fas fa-bangumis"></i><span> 留言板</span></a></li></ul></div></div><span class="toggle-menu close"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="page_site-info"><h1 id="site_title">⭐&quot;Crosstalk-rainbow-fart&quot;仓库简介⭐</h1></div></header><main class="layout_page" id="content-inner"><div id="page"><div id="article-container"><!--
+ * @Author: Weidows
+ * @Date: 2020-07-02 10:44:33
+ * @LastEditors: Weidows
+ * @LastEditTime: 2020-08-23 14:41:37
+ * @FilePath: \Weidows\Website\source\repository\Crosstalk-rainbow-fart.md
+--> 
+<h1 align="center">
+ ⭐️ 相声🌈Rainbow-Fart语音包 ⭐️ 
+
+<p>  <a target="_blank" rel="noopener" href="https://github.com/Weidows/Crosstalk-rainbow-fart">GitHub /</a><a target="_blank" rel="noopener" href="https://gitee.com/Weidows2984539695/Crosstalk-rainbow-fart">/ Gitee</a> 中打开,此文章链接到Gitee<br>  <img src= "/Weidows/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/Weidows/Crosstalk-rainbow-fart/master/image/dark.jpg" alt="GuoDeGang"></p>
+</h1>
+<center>
+
+<h1 id="一-演示视频"><a href="#一-演示视频" class="headerlink" title="一.演示视频"></a><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1bi4y1G7kb">一.演示视频</a></h1>  <iframe src="//player.bilibili.com/player.html?aid=541127453&bvid=BV1bi4y1G7kb&cid=208071709&page=1" scrolling="no" border="1" frameborder="yes" framespacing="0" allowfullscreen="true" width="100%" height="600"> </iframe>  
+
+<p>  <a target="_blank" rel="noopener" href="https://gitee.com/Weidows2984539695/Crosstalk-rainbow-fart/tree/master/Crosstalk">音频文件</a>在这里面,裁减了一些相声中的名场面和经典语句等等…希望能给您的持盘之手些许慰藉:)<br>    视频发布在B站上了,可以看看是否喜欢和安装<br>    目前此语音包支持C/C++,Java,Python,Go,JavaScript等等语言</p>
+<h1 id="二-安装提要"><a href="#二-安装提要" class="headerlink" title="二.安装提要"></a>二.安装提要</h1></center>
+
+<pre><code>1.需要安装个VScode (其他IDE不太清楚有没有:)
+2.安装Rainbow Fart插件
+3.打开彩虹屁页面
+4.导入下载的.zip包,漱漱口准备开始笑</code></pre>
+<center>
+
+<h1 id="三-下载"><a href="#三-下载" class="headerlink" title="三.下载"></a>三.<a target="_blank" rel="noopener" href="https://gitee.com/Weidows2984539695/Crosstalk-rainbow-fart/tags">下载</a></h1></center>
+
+<ul>
+<li>已经提供了打包好的压缩包，在 <a target="_blank" rel="noopener" href="https://github.com/Weidows/Crosstalk-rainbow-fart/releases/tag/1.1">Releases</a> 中下载最新版 .zip文件</li>
+<li>下载然后导入语音包不需要解压那个zip文件</li>
+<li>需要注意的是要下载第一个叫Crosstalk-rainbow-fart.zip的,另外两个Source code无法直接导入</li>
+</ul>
+<center>
+
+<h1 id="N-反馈-amp-出处-Aboue-me-amp-Click-me"><a href="#N-反馈-amp-出处-Aboue-me-amp-Click-me" class="headerlink" title="#N.反馈 &amp; 出处 (Aboue me &amp; Click me)"></a>#N.<a href="http://weidows2984539695.gitee.io/weidows/about">反馈 &amp; 出处 (Aboue me &amp; Click me)</a></h1><pre><code>后续可能会更新,同时欢迎有兴趣的提出修改意见或共同整改!</code></pre>
+</center>
+</div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div><div class="comment-switch"><span class="first-comment">Valine</span><label><input id="switch-comments-btn" type="checkbox"/><span class="slider"></span></label><span class="second-comment">Disqus</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div><div><div id="disqus_thread"></div></div></div></div></div><div class="aside_content" id="aside_content"><div class="card-widget card-info"><div class="card-content"><div class="card-info-avatar is-center"><img class="avatar-img" data-lazy-src="/Weidows/images/img/avatar.jpg" onerror="this.onerror=null;this.src='/Weidows/images/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">Weidows</div><div class="author-info__description">ただWeidow's Websiteだけ</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/Weidows/archives"><div class="headline">文章</div><div class="length_num">8</div></a></div><div class="card-info-data-item is-center">      <a href="/Weidows/tags"><div class="headline">标签</div><div class="length_num">8</div></a></div><div class="card-info-data-item is-center"><a href="/Weidows/categories"><div class="headline">分类</div><div class="length_num">6</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Weidows"><i class="fab fa-github"></i><span>About Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/Weidows" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="/Weidows/UTsuKo27@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div></div><div class="card-widget card-announcement"><div class="card-content"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content"><center>欢迎你陌生人!<br>此站可以找到我所有经验&技术.<br>右上关于-我可以了解我<br>右上的仓库是我所有项目</center></div></div></div><div class="card-widget card-recent-post"><div class="card-content"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-recent-item"><div class="aside-recent-post"><a class="aside-post-cover" href="/Weidows/post/backup/Hexo-plugin/" title="淦翻Hexo各种插件安装+调试"><img class="aside-post-bg" data-lazy-src="https://gitee.com/Weidows2984539695/Weidows/raw/master/Website/public/images/post/Hexo-plugin.jpg" onerror="this.onerror=null;this.src='/Weidows/images/img/404.jpg'" alt="淦翻Hexo各种插件安装+调试"/></a><div class="aside-post-info"><a class="aside-post-title" href="/Weidows/post/backup/Hexo-plugin/" title="淦翻Hexo各种插件安装+调试">淦翻Hexo各种插件安装+调试</a><time class="aside-post_meta post-meta-updated" datetime="2020-08-26T14:21:40.695Z" title="更新于 2020-08-26 22:21:40">2020-08-26</time></div></div><div class="aside-recent-post"><a class="aside-post-cover" href="/Weidows/post/recommend/Vscode/" title="VScode实用插件推荐"><img class="aside-post-bg" data-lazy-src="https://gitee.com/Weidows2984539695/Weidows/raw/master/Website/public/images/post/VScode.jpg" onerror="this.onerror=null;this.src='/Weidows/images/img/404.jpg'" alt="VScode实用插件推荐"/></a><div class="aside-post-info"><a class="aside-post-title" href="/Weidows/post/recommend/Vscode/" title="VScode实用插件推荐">VScode实用插件推荐</a><time class="aside-post_meta post-meta-updated" datetime="2020-08-26T14:11:51.171Z" title="更新于 2020-08-26 22:11:51">2020-08-26</time></div></div><div class="aside-recent-post"><a class="aside-post-cover" href="/Weidows/post/GitHub/GitHub-Pages-deploy/" title="一篇扫清:GitHub-Pages自动化部署 + github/gitee选择"><img class="aside-post-bg" data-lazy-src="https://gitee.com/Weidows2984539695/Weidows/raw/master/Website/public/images/post/Hexo-Butteryfly.jpg" onerror="this.onerror=null;this.src='/Weidows/images/img/404.jpg'" alt="一篇扫清:GitHub-Pages自动化部署 + github/gitee选择"/></a><div class="aside-post-info"><a class="aside-post-title" href="/Weidows/post/GitHub/GitHub-Pages-deploy/" title="一篇扫清:GitHub-Pages自动化部署 + github/gitee选择">一篇扫清:GitHub-Pages自动化部署 + github/gitee选择</a><time class="aside-post_meta post-meta-updated" datetime="2020-08-26T14:11:38.930Z" title="更新于 2020-08-26 22:11:38">2020-08-26</time></div></div><div class="aside-recent-post"><a class="aside-post-cover" href="/Weidows/post/experience/yaml-experience/" title="仅仅是一篇关于yaml文件语法虐待我后的小诟病"><img class="aside-post-bg" data-lazy-src="https://gitee.com/Weidows2984539695/Weidows/raw/master/Website/public/images/post/yaml-experience.jpg" onerror="this.onerror=null;this.src='/Weidows/images/img/404.jpg'" alt="仅仅是一篇关于yaml文件语法虐待我后的小诟病"/></a><div class="aside-post-info"><a class="aside-post-title" href="/Weidows/post/experience/yaml-experience/" title="仅仅是一篇关于yaml文件语法虐待我后的小诟病">仅仅是一篇关于yaml文件语法虐待我后的小诟病</a><time class="aside-post_meta post-meta-updated" datetime="2020-08-26T14:11:27.653Z" title="更新于 2020-08-26 22:11:27">2020-08-26</time></div></div><div class="aside-recent-post"><a class="aside-post-cover" href="/Weidows/post/experience/PHP_interface/" title="关于在不会PHP的情况下调用PHP API"><img class="aside-post-bg" data-lazy-src="https://gitee.com/Weidows2984539695/Weidows/raw/master/Website/public/images/post/PHP_interface.jpg" onerror="this.onerror=null;this.src='/Weidows/images/img/404.jpg'" alt="关于在不会PHP的情况下调用PHP API"/></a><div class="aside-post-info"><a class="aside-post-title" href="/Weidows/post/experience/PHP_interface/" title="关于在不会PHP的情况下调用PHP API">关于在不会PHP的情况下调用PHP API</a><time class="aside-post_meta post-meta-updated" datetime="2020-08-26T14:11:01.853Z" title="更新于 2020-08-26 22:11:01">2020-08-26</time></div></div></div></div></div><div class="card-widget card-categories"><div class="card-content"><div class="item-headline"><i class="fas fa-folder-open"></i><span>分类</span></div><ul class="card-category-list">
+            <li class="card-category-list-item parent"><a class="card-category-list-link" href="/Weidows/categories/github/"><span class="card-category-list-name">GitHub</span><span class="card-category-list-count">1</span><i class="fas fa-caret-left "></i></a></li><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/Weidows/categories/github/GitHub-Pages/"><span class="card-category-list-name">GitHub-Pages</span><span class="card-category-list-count">1</span></a></li></ul><li class="card-category-list-item parent"><a class="card-category-list-link" href="/Weidows/categories/backup/"><span class="card-category-list-name">backup</span><span class="card-category-list-count">2</span><i class="fas fa-caret-left "></i></a></li><ul class="card-category-list child"><li class="card-category-list-item "><a class="card-category-list-link" href="/Weidows/categories/backup/Blog/"><span class="card-category-list-name">Blog</span><span class="card-category-list-count">1</span></a></li></ul><li class="card-category-list-item "><a class="card-category-list-link" href="/Weidows/categories/experience/"><span class="card-category-list-name">experience</span><span class="card-category-list-count">4</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/Weidows/categories/recommend/"><span class="card-category-list-name">recommend</span><span class="card-category-list-count">1</span></a></li>
+                       
+            </ul></div></div><div class="card-widget card-tags"><div class="card-content"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href='/Weidows/tags/hexo/' style='font-size:19px; color:rgb(126, 169, 164)'>Hexo</a><a href='/Weidows/tags/java/' style='font-size:20px; color:rgb(120, 144, 75)'>Java</a><a href='/Weidows/tags/php/' style='font-size:21px; color:rgb(88, 174, 24)'>PHP</a><a href='/Weidows/tags/vscode/' style='font-size:17px; color:rgb(160, 154, 78)'>VScode</a><a href='/Weidows/tags/website/' style='font-size:17px; color:rgb(77, 125, 151)'>Website</a><a href='/Weidows/tags/yaml/' style='font-size:19px; color:rgb(59, 72, 33)'>yaml</a><a href='/Weidows/tags/memorandum/' style='font-size:19px; color:rgb(11, 111, 62)'>备忘录</a><a href='/Weidows/tags/operating-system/' style='font-size:20px; color:rgb(146, 122, 49)'>计算机系统</a></div></div></div><div class="card-widget card-archives"><div class="card-content"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/Weidows/archives/2020/08/"><span class="card-archive-list-date">八月 2020</span><span class="card-archive-list-count">7</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/Weidows/archives/2020/05/"><span class="card-archive-list-date">五月 2020</span><span class="card-archive-list-count">1</span></a></li></ul></div></div><div class="card-widget card-webinfo"><div class="card-content"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="webinfo-article-name">文章数目 :</div><div class="webinfo-article-count">8</div></div><div class="webinfo-item"><div class="webinfo-runtime-name">已运行时间 :</div><div class="webinfo-runtime-count" id="webinfo-runtime-count" publish_date="2020/8/14 17:30">     </div></div><div class="webinfo-item"><div class="webinfo-site-wordcount-name">本站总字数 :</div><div class="webinfo-site-wordcount">8k</div></div><div class="webinfo-item">      <div class="webinfo-site-uv-name">本站访客数 :</div><div class="webinfo-site-uv-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="webinfo-site-name">本站总访问量 :</div><div class="webinfo-site-pv-count" id="busuanzi_value_site_pv"></div></div></div></div></div></div></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2020 By Weidows</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">⭐️ Thank U 4 Visiting My Mind ⭐️</div><div class="icp"><a><img class="icp-icon" src="/Weidows/images/img/icp.png"/><span></span></a></div></div></footer></div><section id="rightside"><div id="rightside-config-hide"><button id="translateLink" type="button" title="简繁转换">簡</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></section><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a target="_blank" rel="noopener" href="https://github.com/wzpan/hexo-generator-search" style="color:#49B1F5;">hexo-generator-search</a>
+ <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/Weidows/js/utils.js"></script><script src="/Weidows/js/main.js"></script><script src="/Weidows/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module" defer></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js" async></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.spacingElementById('content-inner')
+  else {
+    $.getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js', () => {
+      pangu.spacingElementById('content-inner')
+    })
+  }
+}
+
+function panguInit () {
+  if (true){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguFn)</script><script src="/Weidows/js/search/local-search.js"></script><script>var endLoading = function () {
+  document.body.style.overflow = 'auto';
+  document.getElementById('loading-box').classList.add("loaded")
+}
+window.addEventListener('load',endLoading)</script><div class="js-pjax"><script>function loadValine () {
+  function initValine () {
+    window.valine = new Valine({
+      el: '#vcomment',
+      appId: 'BbOLCoJcHWUHnNAeaCjiXNM5-gzGzoHsz',
+      appKey: '5YNqKnyUnC0MvAbhoxGj6z3B',
+      placeholder: '在7:00-23:59之间,扣下邮箱地址'应该'就会回复:)',
+      avatar: 'wavatar',
+      meta: 'nick,mail,link'.split(','),
+      pageSize: '10',
+      lang: 'zh-CN',
+      recordIP: true,
+      serverURLs: '',
+      emojiCDN: '',
+      emojiMaps: "",
+      enableQQ: true,
+      path: window.location.pathname,
+    });
+    if ('nick,mail') { valine.config.requiredFields= 'nick,mail'.split(',') }
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else $.getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js', initValine)
+}
+
+if ('Valine' === 'Valine' || !true) {
+  if (true) loadComment(document.querySelector('#vcomment'),loadValine)
+  else setTimeout(() => loadValine(), 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script><script>function loadDisqus () {
+  var disqus_config = function () {
+    this.page.url = 'http://weidows2984539695.gitee.io/weidows/categories/Crosstalk-rainbow-fart'
+    this.page.identifier = 'categories/Crosstalk-rainbow-fart.html'
+    this.page.title = '⭐"Crosstalk-rainbow-fart"仓库简介⭐'
+  };
+
+  window.disqusReset = () => {
+    DISQUS.reset({
+      reload: true,
+      config: disqus_config
+    })
+  }
+
+  if (window.DISQUS) disqusReset()
+  else {
+    (function() { 
+      var d = document, s = d.createElement('script');
+      s.src = 'https://.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  }
+}
+
+if ('Valine' === 'Disqus' || !true) {
+  if (true) loadComment(document.getElementById('disqus_thread'), loadDisqus)
+  else loadDisqus()
+} else {
+  function loadOtherComment () {
+    loadDisqus()
+  }
+}
+</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script src="./js/mine.js"></script><script src="../js/mine.js"></script><script src="../../js/mine.js"></script><canvas class="fireworks"></canvas><script src="https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js"></script><script src="/Weidows/js/third-party/fireworks.js"></script><script defer="defer" id="ribbon_piao" mobile="true" src="/Weidows/js/third-party/piao.js"></script><script src="/Weidows/js/third-party/activate-power-mode.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+document.body.addEventListener('input', POWERMODE);
+</script><script src="/Weidows/js/third-party/click_heart.js" async="async"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js"></script></div><script src="/Weidows/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/Weidows/live2dw/assets/assets/tororo.model.json"},"display":{"position":"left","width":180,"height":300},"mobile":{"show":false},"react":{"opacity":0.7},"log":false});</script></body></html>

@@ -2391,6 +2391,9 @@ blockquote footer cite:before {
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
 }
+#aside_content .card-categories .card-category-list > .parent + .child {
+  display: none;
+}
 #aside_content .card-webinfo .webinfo {
   padding: 0.2rem 1rem;
 }
@@ -4841,7 +4844,7 @@ img {
   background: var(--btn-hover-color);
 }
 #vcomment textarea {
-  background: url("/img/mao.gif") 100% 100% no-repeat;
+  background: url("/images/Humor/Cai.jpg") 100% 100% no-repeat;
 }
 #vcomment .vimg {
   -webkit-transition: all 0.3s;

@@ -15,11 +15,12 @@ timezone: ''
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://weidows2984539695.gitee.io/weidows/
 root: /Weidows/
-permalink: :year/:month/:day/:title/
+# 默认配置permalink: :year/:month/:day/:title/
+permalink: post/:title/
 permalink_defaults:
 pretty_urls:
-  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
-  trailing_html: true # Set to false to remove trailing '.html' from permalinks
+  trailing_index: false # Set to false to remove trailing 'index.html' from permalinks
+  trailing_html: false # Set to false to remove trailing '.html' from permalinks
 
 # Directory
 source_dir: source
@@ -29,7 +30,7 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-skip_render: navi/** # 这里会使navi下所有.md不被渲染
+skip_render: _post/skip_render/* # 这里会使.md不被渲染
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -66,10 +67,19 @@ index_generator:
   per_page: 10
   order_by: -date
 
-# Category & Tag
+# Category & Tag 用来修改对应目标
+  # 数据结构与算法: algorithm 
 default_category: uncategorized
 category_map:
+  GitHub: github
 tag_map:
+  备忘录: memorandum
+  计算机系统: operating_system
+  Hexo: hexo
+  Java: java
+  PHP: php
+  VScode: vscode
+  Website: website
 
 # Metadata elements
 ## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
@@ -115,15 +125,56 @@ live2d:
     width: 180
     height: 300
   mobile:
-    show: true
+    show: false
   react:
     opacity: 0.7
 
 bangumi:
-    enable: true 
-    path: /bangumis.html
-    vmid: 38283369  # 哔哩哔哩番剧页面的 vmid(uid)
-    title: '番 の 表'  # 页面的标题
-    quote: <h1 align="center">生命不息，追番不止！</h1> # 写在页面开头的一段话，支持 html 语法
-    show: 1 # 初始显示页面：0: 想看 , 1: 在看 , 2: 看过，默认为 1
-    loading: '/img/bangumi-loading.gif' # 图片加载完成前的 loading 图片
+  enable: true 
+  path: tags/bangumis.html
+  vmid: 38283369  # 哔哩哔哩番剧页面的 vmid(uid)
+  title: '番 の 表'  # 页面的标题
+  quote: <h1 align="center">生命不息，追番不止！</h1> # 写在页面开头的一段话，支持 html 语法
+  show: 1 # 初始显示页面：0: 想看 , 1: 在看 , 2: 看过，默认为 1
+  loading: '/images/img/bangumi-loading.gif' # 图片加载完成前的 loading 图片
+
+sitemap:
+  path: categories/sitemap.xml
+baidusitemap:
+  path: categories/baidusitemap.xml
+
+html_prettify:
+  enable: true
+  exclude:
+    - "*/**/test"
+  options:
+    indent_size: 2
+    indent_char: " "
+    max_preserve_newlines: "-1"
+    preserve_newlines: false
+    keep_array_indentation: true
+    break_chained_methods: false
+    indent_scripts: normal
+    brace_style: expand
+    space_before_conditional: true
+    unescape_strings: false
+    jslint_happy: true
+    end_with_newline: true
+    wrap_line_length: "0"
+    indent_inner_html: false
+    comma_first: false
+    e4x: false
+    indent_empty_lines: false
+
+steam:
+  enable: true 
+  steamId: '76561198321099712' # steam64位Id(需要放在引号里),将steam库设置为公开
+  path: tags/games.html # 页面路径，默认steamgames/index.html
+  title: ⭐️养鸡场⭐️ 
+  quote: 'Steam给爷爬!别让我家EPIC误会' # 写在页面开头的一段话,支持html语法
+  tab: all # all或recent, all: 所有游戏, recent: 最近游玩的游戏
+  length: 1000
+  imgUrl: 'http://weidows2984539695.gitee.io/weidows/images/img/avatar.jpg' # 图片链接，在quote下面放一张图片，图片链接到Steam个人资料，可留空
+  proxy: # 如果无法访问steam社区的话请使用代理
+    host: # 代理ip或域名
+    port: # 代理端口

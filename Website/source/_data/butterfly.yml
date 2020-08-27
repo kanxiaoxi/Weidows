@@ -789,7 +789,10 @@ fragment_cache: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-    - <link rel="stylesheet" href="https://gitee.com/Weidows2984539695/Weidows/raw/master/Website/public/css/mine.css">
+    - <link rel="stylesheet" href="./css/mine.css">
+    - <link rel="stylesheet" href="../css/mine.css">
+    - <link rel="stylesheet" href="../../css/mine.css">
+    - <link rel="stylesheet" href="../../../css/mine.css">
   bottom:
     - <script src="./js/mine.js"></script>
     - <script src="../js/mine.js"></script>

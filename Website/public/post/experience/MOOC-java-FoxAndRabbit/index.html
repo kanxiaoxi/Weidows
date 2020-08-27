@@ -1,218 +1,762 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="dark"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MOOC浙大翁凯教授Java第六章狐狸与兔子源代码 | ⭐️Weidows の Page⭐️</title><meta name="description" content="一.简介由于老师在课程中没给出源代码,有些知识点没有涉及到,需要源码作为参考,但是个人百度谷歌了半天没找到真正所需要的(甚至有人卖…) 这篇给出的是 6.3 的源码,如果 寻找第七章的或者其他的 可以去我的GitHub仓库上找,已经给出介绍了仓库地址 如果复制代码的话需要改一下Package和import 二.代码片段 Animal1234567891011121314151617181920"><meta name="keywords" content="Java"><meta name="author" content="Weidows"><meta name="copyright" content="Weidows"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/Weidows/images/img/favicon.png"><link rel="canonical" href="http://weidows2984539695.gitee.io/weidows/post/experience/MOOC-java-FoxAndRabbit/"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta property="og:type" content="article"><meta property="og:title" content="MOOC浙大翁凯教授Java第六章狐狸与兔子源代码"><meta property="og:url" content="http://weidows2984539695.gitee.io/weidows/post/experience/MOOC-java-FoxAndRabbit/"><meta property="og:site_name" content="⭐️Weidows の Page⭐️"><meta property="og:description" content="一.简介由于老师在课程中没给出源代码,有些知识点没有涉及到,需要源码作为参考,但是个人百度谷歌了半天没找到真正所需要的(甚至有人卖…) 这篇给出的是 6.3 的源码,如果 寻找第七章的或者其他的 可以去我的GitHub仓库上找,已经给出介绍了仓库地址 如果复制代码的话需要改一下Package和import 二.代码片段 Animal1234567891011121314151617181920"><meta property="og:image" content="https://raw.githubusercontent.com/Weidows/Weidows/master/java/src/main/java/twenty/july/my_interface/interface/Cells173751.png"><meta property="article:published_time" content="2020-08-23T12:54:56.096Z"><meta property="article:modified_time" content="2020-08-26T12:26:10.667Z"><meta name="twitter:card" content="summary"><script>var activateDarkMode = function () {
-  document.documentElement.setAttribute('data-theme', 'dark')
-  if (document.querySelector('meta[name="theme-color"]') !== null) {
-    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#000')
-  }
-}
-var activateLightMode = function () {
-  document.documentElement.setAttribute('data-theme', 'light')
-  if (document.querySelector('meta[name="theme-color"]') !== null) {
-    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff')
-  }
-}
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
 
-var getCookies = function (name) {
-  const value = `; ${document.cookie}`
-  const parts = value.split(`; ${name}=`)
-  if (parts.length === 2) return parts.pop().split(';').shift()
-}
-
-var autoChangeMode = 'false'
-var t = getCookies('theme')
-if (autoChangeMode === '1') {
-  var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
-  var isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
-  var isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
-  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
-
-  if (t === undefined) {
-    if (isLightMode) activateLightMode()
-    else if (isDarkMode) activateDarkMode()
-    else if (isNotSpecified || hasNoSupport) {
-      console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
-      var now = new Date()
-      var hour = now.getHours()
-      var isNight = hour <= 6 || hour >= 18
-      isNight ? activateDarkMode() : activateLightMode()
-    }
-    window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
-      if (Cookies.get('theme') === undefined) {
-        e.matches ? activateDarkMode() : activateLightMode()
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>MOOC浙大翁凯教授Java第六章狐狸与兔子源代码 | ⭐️Weidows の Page⭐️</title>
+  <meta name="description" content="一.简介由于老师在课程中没给出源代码,有些知识点没有涉及到,需要源码作为参考,但是个人百度谷歌了半天没找到真正所需要的(甚至有人卖…) 这篇给出的是 6.3 的源码,如果 寻找第七章的或者其他的 可以去我的GitHub仓库上找,已经给出介绍了仓库地址 如果复制代码的话需要改一下Package和import 二.代码片段 Animal1234567891011121314151617181920">
+  <meta name="keywords" content="Java">
+  <meta name="author" content="Weidows">
+  <meta name="copyright" content="Weidows">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="shortcut icon" href="/Weidows/images/img/favicon.png">
+  <link rel="canonical" href="http://weidows2984539695.gitee.io/weidows/post/experience/MOOC-java-FoxAndRabbit/">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+  <link rel="preconnect" href="//cdn.jsdelivr.net" />
+  <link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin" />
+  <link rel="preconnect" href="//busuanzi.ibruce.info" />
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="MOOC浙大翁凯教授Java第六章狐狸与兔子源代码">
+  <meta property="og:url" content="http://weidows2984539695.gitee.io/weidows/post/experience/MOOC-java-FoxAndRabbit/">
+  <meta property="og:site_name" content="⭐️Weidows の Page⭐️">
+  <meta property="og:description" content="一.简介由于老师在课程中没给出源代码,有些知识点没有涉及到,需要源码作为参考,但是个人百度谷歌了半天没找到真正所需要的(甚至有人卖…) 这篇给出的是 6.3 的源码,如果 寻找第七章的或者其他的 可以去我的GitHub仓库上找,已经给出介绍了仓库地址 如果复制代码的话需要改一下Package和import 二.代码片段 Animal1234567891011121314151617181920">
+  <meta property="og:image" content="https://raw.githubusercontent.com/Weidows/Weidows/master/java/src/main/java/twenty/july/my_interface/interface/Cells173751.png">
+  <meta property="article:published_time" content="2020-08-23T12:54:56.096Z">
+  <meta property="article:modified_time" content="2020-08-26T12:26:10.667Z">
+  <meta name="twitter:card" content="summary">
+  <script>
+    var activateDarkMode = function ()
+    {
+      document.documentElement.setAttribute('data-theme', 'dark')
+      if (document.querySelector('meta[name="theme-color"]') !== null)
+      {
+        document.querySelector('meta[name="theme-color"]').setAttribute('content', '#000')
       }
-    })
-  } else if (t === 'light') activateLightMode()
-  else activateDarkMode()
-} else if (autoChangeMode === '2') {
-  now = new Date()
-  hour = now.getHours()
-  isNight = hour <= 6 || hour >= 18
-  if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
-  else if (t === 'light') activateLightMode()
-  else activateDarkMode()
-} else {
-  if (t === 'dark') activateDarkMode()
-  else if (t === 'light') activateLightMode()
-}</script><link rel="stylesheet" href="/Weidows/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap"><script>var GLOBAL_CONFIG = { 
-  root: '/Weidows/',
-  hexoversion: '5.0.2',
-  algolia: undefined,
-  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
-  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
-  noticeOutdate: {"limitDay":365,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
-  copy: {
-    success: '复制成功',
-    error: '复制错误',
-    noSupport: '浏览器不支持'
-  },
-  bookmark: {
-    message_prev: '按',
-    message_next: '键将本页加入书签'
-  },
-  runtime_unit: '天',
-  runtime: true,
-  copyright: {"limitCount":10,"languages":{"author":"作者: Weidows","link":"链接: ","source":"来源: ⭐️Weidows の Page⭐️","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
-  ClickShowText: undefined,
-  medium_zoom: false,
-  fancybox: true,
-  Snackbar: undefined,
-  justifiedGallery: {
-    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
-    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
-  },
-  baiduPush: false,
-  highlightCopy: true,
-  highlightLang: true,
-  isPhotoFigcaption: false,
-  islazyload: true,
-  isanchor: false    
-}</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
-  isPost: true,
-  isHome: false,
-  isHighlightShrink: false,
-  isSidebar: true,
-  postUpdate: '2020-08-26 20:26:10'
-}</script><noscript><style>
-#nav {
-  opacity: 1
-}
-.justified-gallery img {
-  opacity: 1
-}
-</style></noscript><link rel="stylesheet" href="./css/mine.css"><link rel="stylesheet" href="../css/mine.css"><link rel="stylesheet" href="../../css/mine.css"><link rel="stylesheet" href="../../../css/mine.css"><meta name="generator" content="Hexo 5.0.2"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" data-lazy-src="/Weidows/images/img/avatar.jpg" onerror="onerror=null;src='/images/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/Weidows/archives/"><div class="headline">文章</div><div class="length_num">8</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/Weidows/tags/"><div class="headline">标签</div><div class="length_num">8</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/Weidows/categories/"><div class="headline">分类</div><div class="length_num">6</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/Weidows/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 博客三宝</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/Weidows/tags"><i class="fa-fw fas fa-tags"></i><span> 标 签</span></a></li><li><a class="site-page" href="/Weidows/categories"><i class="fa-fw fas fa-folder-open"></i><span> 分 类</span></a></li><li><a class="site-page" href="/Weidows/archives"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-link"></i><span> 代码仓库</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/Weidows/categories/Weidows"><span> 此网站</span></a></li><li><a class="site-page" href="/Weidows/categories/Crosstalk-rainbow-fart"><span> 彩虹屁</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 兴趣爱好</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/Weidows/tags/music"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/Weidows/tags/movies"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page" href="/Weidows/tags/bangumis"><i class="fa-fw fas fa-bangumis"></i><span> 番剧</span></a></li><li><a class="site-page" href="/Weidows/tags/photos"><i class="fa-fw fas fa-bangumis"></i><span> 相册</span></a></li><li><a class="site-page" href="/Weidows/tags/games"><i class="fa-fw fas fa-bangum"></i><span> 游戏</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-heart"></i><span> 关于</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/Weidows/tags/about"><i class="fa-fw fas fa-user"></i><span> &lt;我&gt;</span></a></li><li><a class="site-page" href="/Weidows/tags/link"><i class="fa-fw fas fa-heart"></i><span> 友人帐</span></a></li><li><a class="site-page" href="/Weidows/tags/my_artitalk"><i class="fa-fw fa fa-comments-o"></i><span> 说 说</span></a></li><li><a class="site-page" href="/Weidows/tags/comment"><i class="fa-fw fas fa-bangumis"></i><span> 留言板</span></a></li></ul></div></div></div></div><div id="body-wrap"><div id="web_bg" data-type="photo"></div><div id="sidebar"><i class="fas fa-arrow-right on" id="toggle-sidebar"></i><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%80-%E7%AE%80%E4%BB%8B"><span class="toc-number">1.</span> <span class="toc-text">一.简介</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BA%8C-%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5"><span class="toc-number">2.</span> <span class="toc-text">二.代码片段</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Animal"><span class="toc-number">3.</span> <span class="toc-text">Animal</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Fox"><span class="toc-number">4.</span> <span class="toc-text">Fox</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Rabbit"><span class="toc-number">5.</span> <span class="toc-text">Rabbit</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Cell"><span class="toc-number">6.</span> <span class="toc-text">Cell</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Field"><span class="toc-number">7.</span> <span class="toc-text">Field</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Location"><span class="toc-number">8.</span> <span class="toc-text">Location</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#View"><span class="toc-number">9.</span> <span class="toc-text">View</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#FoxAndRabbit"><span class="toc-number">10.</span> <span class="toc-text">FoxAndRabbit</span></a></li></ol></div></div></div><header class="post-bg" id="page-header" style="background-image: url(https://raw.githubusercontent.com/Weidows/Weidows/master/java/src/main/java/twenty/july/my_interface/interface/Cells173751.png)"><nav id="nav"><span class="pull-left" id="blog_name"><a class="blog_title" id="site-name" href="/Weidows/">⭐️Weidows の Page⭐️</a></span><span class="pull-right menus"><div id="search_button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/Weidows/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 博客三宝</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/Weidows/tags"><i class="fa-fw fas fa-tags"></i><span> 标 签</span></a></li><li><a class="site-page" href="/Weidows/categories"><i class="fa-fw fas fa-folder-open"></i><span> 分 类</span></a></li><li><a class="site-page" href="/Weidows/archives"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-link"></i><span> 代码仓库</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/Weidows/categories/Weidows"><span> 此网站</span></a></li><li><a class="site-page" href="/Weidows/categories/Crosstalk-rainbow-fart"><span> 彩虹屁</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 兴趣爱好</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/Weidows/tags/music"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/Weidows/tags/movies"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li><li><a class="site-page" href="/Weidows/tags/bangumis"><i class="fa-fw fas fa-bangumis"></i><span> 番剧</span></a></li><li><a class="site-page" href="/Weidows/tags/photos"><i class="fa-fw fas fa-bangumis"></i><span> 相册</span></a></li><li><a class="site-page" href="/Weidows/tags/games"><i class="fa-fw fas fa-bangum"></i><span> 游戏</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-heart"></i><span> 关于</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/Weidows/tags/about"><i class="fa-fw fas fa-user"></i><span> &lt;我&gt;</span></a></li><li><a class="site-page" href="/Weidows/tags/link"><i class="fa-fw fas fa-heart"></i><span> 友人帐</span></a></li><li><a class="site-page" href="/Weidows/tags/my_artitalk"><i class="fa-fw fa fa-comments-o"></i><span> 说 说</span></a></li><li><a class="site-page" href="/Weidows/tags/comment"><i class="fa-fw fas fa-bangumis"></i><span> 留言板</span></a></li></ul></div></div><span class="toggle-menu close"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="post-info"><div id="post-title"><div class="posttitle">MOOC浙大翁凯教授Java第六章狐狸与兔子源代码</div></div><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-08-23T12:54:56.096Z" title="发表于 2020-08-23 20:54:56">2020-08-23</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2020-08-26T12:26:10.667Z" title="更新于 2020-08-26 20:26:10">2020-08-26</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/Weidows/categories/experience/">experience</a></span></div><div class="meta-secondline"> <span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">2k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>11分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout_post" id="content-inner"><article id="post"><div class="post-content" id="article-container"><!--
+    }
+    var activateLightMode = function ()
+    {
+      document.documentElement.setAttribute('data-theme', 'light')
+      if (document.querySelector('meta[name="theme-color"]') !== null)
+      {
+        document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff')
+      }
+    }
+    var getCookies = function (name)
+    {
+      const value = `; ${document.cookie}`
+      const parts = value.split(`; ${name}=`)
+      if (parts.length === 2) return parts.pop().split(';').shift()
+    }
+    var autoChangeMode = 'false'
+    var t = getCookies('theme')
+    if (autoChangeMode === '1')
+    {
+      var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+      var isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+      var isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+      var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+      if (t === undefined)
+      {
+        if (isLightMode) activateLightMode()
+        else if (isDarkMode) activateDarkMode()
+        else if (isNotSpecified || hasNoSupport)
+        {
+          console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+          var now = new Date()
+          var hour = now.getHours()
+          var isNight = hour <= 6 || hour >= 18
+          isNight ? activateDarkMode() : activateLightMode()
+        }
+        window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e)
+        {
+          if (Cookies.get('theme') === undefined)
+          {
+            e.matches ? activateDarkMode() : activateLightMode()
+          }
+        })
+      }
+      else if (t === 'light') activateLightMode()
+      else activateDarkMode()
+    }
+    else if (autoChangeMode === '2')
+    {
+      now = new Date()
+      hour = now.getHours()
+      isNight = hour <= 6 || hour >= 18
+      if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+      else if (t === 'light') activateLightMode()
+      else activateDarkMode()
+    }
+    else
+    {
+      if (t === 'dark') activateDarkMode()
+      else if (t === 'light') activateLightMode()
+    }
+
+  </script>
+  <link rel="stylesheet" href="/Weidows/css/index.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap">
+  <script>
+    var GLOBAL_CONFIG = {
+      root: '/Weidows/',
+      hexoversion: '5.1.1',
+      algolia: undefined,
+      localSearch:
+      {
+        "path": "search.xml",
+        "languages":
+        {
+          "hits_empty": "找不到您查询的内容：${query}"
+        }
+      },
+      translate:
+      {
+        "defaultEncoding": 2,
+        "translateDelay": 0,
+        "msgToTraditionalChinese": "繁",
+        "msgToSimplifiedChinese": "簡"
+      },
+      noticeOutdate:
+      {
+        "limitDay": 365,
+        "position": "top",
+        "messagePrev": "It has been",
+        "messageNext": "days since the last update, the content of the article may be outdated."
+      },
+      copy:
+      {
+        success: '复制成功',
+        error: '复制错误',
+        noSupport: '浏览器不支持'
+      },
+      bookmark:
+      {
+        message_prev: '按',
+        message_next: '键将本页加入书签'
+      },
+      runtime_unit: '天',
+      runtime: true,
+      copyright:
+      {
+        "limitCount": 10,
+        "languages":
+        {
+          "author": "作者: Weidows",
+          "link": "链接: ",
+          "source": "来源: ⭐️Weidows の Page⭐️",
+          "info": "著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"
+        }
+      },
+      ClickShowText: undefined,
+      medium_zoom: false,
+      fancybox: true,
+      Snackbar: undefined,
+      justifiedGallery:
+      {
+        js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+        css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+      },
+      baiduPush: false,
+      highlightCopy: true,
+      highlightLang: true,
+      isPhotoFigcaption: false,
+      islazyload: true,
+      isanchor: false
+    }
+
+  </script>
+  <script id="config_change">
+    var GLOBAL_CONFIG_SITE = {
+      isPost: true,
+      isHome: false,
+      isHighlightShrink: false,
+      isSidebar: true,
+      postUpdate: '2020-08-26 20:26:10'
+    }
+
+  </script><noscript>
+    <style>
+      #nav
+      {
+        opacity: 1
+      }
+
+      .justified-gallery img
+      {
+        opacity: 1
+      }
+
+    </style>
+  </noscript>
+  <link rel="stylesheet" href="https://gitee.com/Weidows2984539695/Weidows/raw/master/Website/public/css/mine.css">
+  <meta name="generator" content="Hexo 5.1.1">
+</head>
+
+<body>
+  <div id="loading-box">
+    <div class="loading-left-bg"></div>
+    <div class="loading-right-bg"></div>
+    <div class="spinner-box">
+      <div class="configure-border-1">
+        <div class="configure-core"></div>
+      </div>
+      <div class="configure-border-2">
+        <div class="configure-core"></div>
+      </div>
+      <div class="loading-word">加载中...</div>
+    </div>
+  </div>
+  <div id="mobile-sidebar">
+    <div id="menu_mask"></div>
+    <div id="mobile-sidebar-menus">
+      <div class="mobile_author_icon"><img class="avatar-img" data-lazy-src="/Weidows/images/img/avatar.jpg" onerror="onerror=null;src='/images/img/friend_404.gif'" alt="avatar" /></div>
+      <div class="mobile_post_data">
+        <div class="mobile_data_item is-center">
+          <div class="mobile_data_link"><a href="/Weidows/archives/">
+              <div class="headline">文章</div>
+              <div class="length_num">9</div>
+            </a></div>
+        </div>
+        <div class="mobile_data_item is-center">
+          <div class="mobile_data_link"><a href="/Weidows/tags/">
+              <div class="headline">标签</div>
+              <div class="length_num">8</div>
+            </a></div>
+        </div>
+        <div class="mobile_data_item is-center">
+          <div class="mobile_data_link"><a href="/Weidows/categories/">
+              <div class="headline">分类</div>
+              <div class="length_num">6</div>
+            </a></div>
+        </div>
+      </div>
+      <hr />
+      <div class="menus_items">
+        <div class="menus_item"><a class="site-page" href="/Weidows/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div>
+        <div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 博客三宝</span><i class="fas fa-chevron-down expand"></i></a>
+          <ul class="menus_item_child">
+            <li><a class="site-page" href="/Weidows/tags"><i class="fa-fw fas fa-tags"></i><span> 标 签</span></a></li>
+            <li><a class="site-page" href="/Weidows/categories"><i class="fa-fw fas fa-folder-open"></i><span> 分 类</span></a></li>
+            <li><a class="site-page" href="/Weidows/archives"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></li>
+          </ul>
+        </div>
+        <div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-link"></i><span> 代码仓库</span><i class="fas fa-chevron-down expand"></i></a>
+          <ul class="menus_item_child">
+            <li><a class="site-page" href="/Weidows/categories/Weidows"><span> 此网站</span></a></li>
+            <li><a class="site-page" href="/Weidows/categories/Crosstalk-rainbow-fart"><span> 彩虹屁</span></a></li>
+          </ul>
+        </div>
+        <div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 兴趣爱好</span><i class="fas fa-chevron-down expand"></i></a>
+          <ul class="menus_item_child">
+            <li><a class="site-page" href="/Weidows/tags/games"><i class="fa-fw fas fa-bangum"></i><span> 游戏</span></a></li>
+            <li><a class="site-page" href="/Weidows/tags/bangumis"><i class="fa-fw fas fa-bangumis"></i><span> 番剧</span></a></li>
+            <li><a class="site-page" href="/Weidows/tags/gallery"><i class="fa-fw fas fa-bangumis"></i><span> 相册</span></a></li>
+            <li><a class="site-page" href="/Weidows/tags/music"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li>
+            <li><a class="site-page" href="/Weidows/movies"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li>
+            <li><a class="site-page" href="/Weidows/books"><i class="fa-fw fas fa-books"></i><span> 图书</span></a></li>
+          </ul>
+        </div>
+        <div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-heart"></i><span> 关于</span><i class="fas fa-chevron-down expand"></i></a>
+          <ul class="menus_item_child">
+            <li><a class="site-page" href="/Weidows/tags/about"><i class="fa-fw fas fa-user"></i><span> &lt;我&gt;</span></a></li>
+            <li><a class="site-page" href="/Weidows/tags/link"><i class="fa-fw fas fa-heart"></i><span> 友人帐</span></a></li>
+            <li><a class="site-page" href="/Weidows/tags/my_artitalk"><i class="fa-fw fa fa-comments-o"></i><span> 说 说</span></a></li>
+            <li><a class="site-page" href="/Weidows/tags/comment"><i class="fa-fw fas fa-bangumis"></i><span> 留言板</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="body-wrap">
+    <div id="web_bg" data-type="photo"></div>
+    <div id="sidebar"><i class="fas fa-arrow-right on" id="toggle-sidebar"></i>
+      <div class="sidebar-toc">
+        <div class="sidebar-toc__title">目录</div>
+        <div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span>
+          <div class="sidebar-toc__progress-bar"> </div>
+        </div>
+        <div class="sidebar-toc__content">
+          <ol class="toc">
+            <li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%80-%E7%AE%80%E4%BB%8B"><span class="toc-number">1.</span> <span class="toc-text">一.简介</span></a></li>
+            <li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BA%8C-%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5"><span class="toc-number">2.</span> <span class="toc-text">二.代码片段</span></a></li>
+            <li class="toc-item toc-level-1"><a class="toc-link" href="#Animal"><span class="toc-number">3.</span> <span class="toc-text">Animal</span></a></li>
+            <li class="toc-item toc-level-1"><a class="toc-link" href="#Fox"><span class="toc-number">4.</span> <span class="toc-text">Fox</span></a></li>
+            <li class="toc-item toc-level-1"><a class="toc-link" href="#Rabbit"><span class="toc-number">5.</span> <span class="toc-text">Rabbit</span></a></li>
+            <li class="toc-item toc-level-1"><a class="toc-link" href="#Cell"><span class="toc-number">6.</span> <span class="toc-text">Cell</span></a></li>
+            <li class="toc-item toc-level-1"><a class="toc-link" href="#Field"><span class="toc-number">7.</span> <span class="toc-text">Field</span></a></li>
+            <li class="toc-item toc-level-1"><a class="toc-link" href="#Location"><span class="toc-number">8.</span> <span class="toc-text">Location</span></a></li>
+            <li class="toc-item toc-level-1"><a class="toc-link" href="#View"><span class="toc-number">9.</span> <span class="toc-text">View</span></a></li>
+            <li class="toc-item toc-level-1"><a class="toc-link" href="#FoxAndRabbit"><span class="toc-number">10.</span> <span class="toc-text">FoxAndRabbit</span></a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <header class="post-bg" id="page-header" style="background-image: url(https://raw.githubusercontent.com/Weidows/Weidows/master/java/src/main/java/twenty/july/my_interface/interface/Cells173751.png)">
+      <nav id="nav"><span class="pull-left" id="blog_name"><a class="blog_title" id="site-name" href="/Weidows/">⭐️Weidows の Page⭐️</a></span><span class="pull-right menus">
+          <div id="search_button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div>
+          <div class="menus_items">
+            <div class="menus_item"><a class="site-page" href="/Weidows/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div>
+            <div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 博客三宝</span><i class="fas fa-chevron-down expand"></i></a>
+              <ul class="menus_item_child">
+                <li><a class="site-page" href="/Weidows/tags"><i class="fa-fw fas fa-tags"></i><span> 标 签</span></a></li>
+                <li><a class="site-page" href="/Weidows/categories"><i class="fa-fw fas fa-folder-open"></i><span> 分 类</span></a></li>
+                <li><a class="site-page" href="/Weidows/archives"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></li>
+              </ul>
+            </div>
+            <div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-link"></i><span> 代码仓库</span><i class="fas fa-chevron-down expand"></i></a>
+              <ul class="menus_item_child">
+                <li><a class="site-page" href="/Weidows/categories/Weidows"><span> 此网站</span></a></li>
+                <li><a class="site-page" href="/Weidows/categories/Crosstalk-rainbow-fart"><span> 彩虹屁</span></a></li>
+              </ul>
+            </div>
+            <div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 兴趣爱好</span><i class="fas fa-chevron-down expand"></i></a>
+              <ul class="menus_item_child">
+                <li><a class="site-page" href="/Weidows/tags/games"><i class="fa-fw fas fa-bangum"></i><span> 游戏</span></a></li>
+                <li><a class="site-page" href="/Weidows/tags/bangumis"><i class="fa-fw fas fa-bangumis"></i><span> 番剧</span></a></li>
+                <li><a class="site-page" href="/Weidows/tags/gallery"><i class="fa-fw fas fa-bangumis"></i><span> 相册</span></a></li>
+                <li><a class="site-page" href="/Weidows/tags/music"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li>
+                <li><a class="site-page" href="/Weidows/movies"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li>
+                <li><a class="site-page" href="/Weidows/books"><i class="fa-fw fas fa-books"></i><span> 图书</span></a></li>
+              </ul>
+            </div>
+            <div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-heart"></i><span> 关于</span><i class="fas fa-chevron-down expand"></i></a>
+              <ul class="menus_item_child">
+                <li><a class="site-page" href="/Weidows/tags/about"><i class="fa-fw fas fa-user"></i><span> &lt;我&gt;</span></a></li>
+                <li><a class="site-page" href="/Weidows/tags/link"><i class="fa-fw fas fa-heart"></i><span> 友人帐</span></a></li>
+                <li><a class="site-page" href="/Weidows/tags/my_artitalk"><i class="fa-fw fa fa-comments-o"></i><span> 说 说</span></a></li>
+                <li><a class="site-page" href="/Weidows/tags/comment"><i class="fa-fw fas fa-bangumis"></i><span> 留言板</span></a></li>
+              </ul>
+            </div>
+          </div><span class="toggle-menu close"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span>
+        </span></nav>
+      <div id="post-info">
+        <div id="post-title">
+          <div class="posttitle">MOOC浙大翁凯教授Java第六章狐狸与兔子源代码</div>
+        </div>
+        <div id="post-meta">
+          <div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-08-23T12:54:56.096Z" title="发表于 2020-08-23 20:54:56">2020-08-23</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2020-08-26T12:26:10.667Z" title="更新于 2020-08-26 20:26:10">2020-08-26</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/Weidows/categories/experience/">experience</a></span></div>
+          <div class="meta-secondline"> <span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">2k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>11分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div>
+        </div>
+      </div>
+    </header>
+    <main class="layout_post" id="content-inner">
+      <article id="post">
+        <div class="post-content" id="article-container">
+          <!--
  * @Author: Weidows
  * @Date: 2020-08-23 20:54:56
  * @LastEditors: Weidows
  * @LastEditTime: 2020-08-24 21:30:44
  * @FilePath: \Weidows\Website\source\_posts\MOOC-java-FoxAndRabbit.md
 -->
+          <h1 id="一-简介"><a href="#一-简介" class="headerlink" title="一.简介"></a>一.简介</h1>
+          <p>由于老师在课程中没给出源代码,有些知识点没有涉及到,需要源码作为参考,但是个人百度谷歌了半天没找到真正所需要的(甚至有人卖…)</p>
+          <p>这篇给出的是 <em>6.3</em> 的源码,如果 <strong>寻找第七章的或者其他的</strong> 可以去我的GitHub仓库上找,已经给出介绍了<br><a target="_blank" rel="noopener" href="https://github.com/2984539695/Weidows">仓库地址</a></p>
+          <p>如果复制代码的话需要改一下Package和import</p>
+          <h1 id="二-代码片段"><a href="#二-代码片段" class="headerlink" title="二.代码片段"></a>二.代码片段</h1>
+          <p><img src="/Weidows/img/loading.gif" data-lazy-src="https://img-blog.csdnimg.cn/20200727081719904.jpg#pic_center" alt="目录结构"></p>
+          <h1 id="Animal"><a href="#Animal" class="headerlink" title="Animal"></a>Animal</h1>
+          <figure class="highlight java">
+            <table>
+              <tr>
+                <td class="gutter">
+                  <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br></pre>
+                </td>
+                <td class="code">
+                  <pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * @Author: Weidows</span></span><br><span class="line"><span class="comment"> * @Date: 2020-07-20 14:25:10</span></span><br><span class="line"><span class="comment"> * @LastEditors: Weidows</span></span><br><span class="line"><span class="comment"> * @LastEditTime: 2020-07-25 17:40:28</span></span><br><span class="line"><span class="comment"> * @FilePath: \Weidows\Java\src\main\java\twenty\july\my_interface\animal\Animal.java</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">package</span> twenty.july.my_interface.animal;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.ArrayList;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> twenty.july.my_interface.field.Location;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="class"><span class="keyword">class</span> <span class="title">Animal</span> </span>&#123;</span><br><span class="line">  <span class="keyword">private</span> <span class="keyword">int</span> ageLimit;</span><br><span class="line">  <span class="keyword">private</span> <span class="keyword">int</span> breedableAge;</span><br><span class="line">  <span class="keyword">private</span> <span class="keyword">int</span> age;</span><br><span class="line">  <span class="keyword">private</span> <span class="keyword">boolean</span> isAlive = <span class="keyword">true</span>;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="title">Animal</span><span class="params">(<span class="keyword">int</span> ageLimit, <span class="keyword">int</span> breedableAge)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.ageLimit = ageLimit;</span><br><span class="line">    <span class="keyword">this</span>.breedableAge = breedableAge;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">protected</span> <span class="keyword">int</span> <span class="title">getAge</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> age;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">protected</span> <span class="keyword">double</span> <span class="title">getAgePercent</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> (<span class="keyword">double</span>) age / (<span class="keyword">double</span>) ageLimit;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> Animal <span class="title">breed</span><span class="params">()</span></span>;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">grow</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    age++;</span><br><span class="line">    <span class="keyword">if</span> (age &gt;= ageLimit)</span><br><span class="line">      die();</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">die</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    isAlive = <span class="keyword">false</span>;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isAlive</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> isAlive;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isBreedable</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> (age &gt;= breedableAge);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> Location <span class="title">move</span><span class="params">(Location[] freeAdj)</span> </span>&#123;</span><br><span class="line">    Location ret = <span class="keyword">null</span>;</span><br><span class="line">    <span class="keyword">if</span> (freeAdj.length &gt; <span class="number">0</span> &amp;&amp; Math.random() &lt; <span class="number">0.02</span>) &#123;</span><br><span class="line">      ret = freeAdj[(<span class="keyword">int</span>) (Math.random() * freeAdj.length)];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> ret;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="meta">@Override</span></span><br><span class="line">  <span class="function"><span class="keyword">public</span> String <span class="title">toString</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&quot;&quot;</span> + age + <span class="string">&quot;:&quot;</span> + (isAlive ? <span class="string">&quot;live&quot;</span> : <span class="string">&quot;dead&quot;</span>);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> Animal <span class="title">feed</span><span class="params">(ArrayList&lt;Animal&gt; neighbor)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">longerLife</span><span class="params">(<span class="keyword">int</span> inc)</span> </span>&#123;</span><br><span class="line">    ageLimit += inc;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre>
+                </td>
+              </tr>
+            </table>
+          </figure>
+          <h1 id="Fox"><a href="#Fox" class="headerlink" title="Fox"></a>Fox</h1>
+          <figure class="highlight java">
+            <table>
+              <tr>
+                <td class="gutter">
+                  <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre>
+                </td>
+                <td class="code">
+                  <pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * @Author: Weidows</span></span><br><span class="line"><span class="comment"> * @Date: 2020-07-20 14:31:09</span></span><br><span class="line"><span class="comment"> * @LastEditors: Weidows</span></span><br><span class="line"><span class="comment"> * @LastEditTime: 2020-07-25 17:40:18</span></span><br><span class="line"><span class="comment"> * @FilePath: \Weidows\Java\src\main\java\twenty\july\my_interface\animal\Fox.java</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">package</span> twenty.july.my_interface.animal;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.awt.Graphics;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.awt.Color;</span><br><span class="line"><span class="keyword">import</span> java.util.ArrayList;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> twenty.july.my_interface.cell.Cell;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * *Fox实现接口Cell,使Fox对象能间接传给Field</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Fox</span> <span class="keyword">extends</span> <span class="title">Animal</span> <span class="keyword">implements</span> <span class="title">Cell</span> </span>&#123;</span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="title">Fox</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">super</span>(<span class="number">20</span>, <span class="number">4</span>);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="meta">@Override</span> <span class="comment">// 实现接口Cell中的draw()</span></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">draw</span><span class="params">(Graphics g, <span class="keyword">int</span> x, <span class="keyword">int</span> y, <span class="keyword">int</span> size)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> alpha = (<span class="keyword">int</span>) ((<span class="number">1</span> - getAgePercent()) * <span class="number">255</span>);</span><br><span class="line">    g.setColor(<span class="keyword">new</span> Color(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, alpha));</span><br><span class="line">    g.fillRect(x, y, size, size);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="meta">@Override</span></span><br><span class="line">  <span class="function"><span class="keyword">public</span> Animal <span class="title">breed</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    Animal ret = <span class="keyword">null</span>;</span><br><span class="line">    <span class="keyword">if</span> (isBreedable() &amp;&amp; Math.random() &lt; <span class="number">0.05</span>) &#123;</span><br><span class="line">      ret = <span class="keyword">new</span> Fox();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> ret;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="meta">@Override</span></span><br><span class="line">  <span class="function"><span class="keyword">public</span> String <span class="title">toString</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> (<span class="string">&quot;Fox:&quot;</span> + <span class="keyword">super</span>.toString());</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="meta">@Override</span></span><br><span class="line">  <span class="function"><span class="keyword">public</span> Animal <span class="title">feed</span><span class="params">(ArrayList&lt;Animal&gt; neighbor)</span> </span>&#123;</span><br><span class="line">    Animal ret = <span class="keyword">null</span>;</span><br><span class="line">    <span class="keyword">if</span> (Math.random() &lt; <span class="number">0.2</span>) &#123;</span><br><span class="line">      ret = neighbor.get((<span class="keyword">int</span>) (Math.random() * neighbor.size()));</span><br><span class="line">      longerLife(<span class="number">2</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> ret;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre>
+                </td>
+              </tr>
+            </table>
+          </figure>
+          <h1 id="Rabbit"><a href="#Rabbit" class="headerlink" title="Rabbit"></a>Rabbit</h1>
+          <figure class="highlight java">
+            <table>
+              <tr>
+                <td class="gutter">
+                  <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre>
+                </td>
+                <td class="code">
+                  <pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * @Author: Weidows</span></span><br><span class="line"><span class="comment"> * @Date: 2020-07-20 18:49:07</span></span><br><span class="line"><span class="comment"> * @LastEditors: Weidows</span></span><br><span class="line"><span class="comment"> * @LastEditTime: 2020-07-25 17:40:09</span></span><br><span class="line"><span class="comment"> * @FilePath: \Weidows\Java\src\main\java\twenty\july\my_interface\animal\Rabbit.java</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">package</span> twenty.july.my_interface.animal;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.awt.Color;</span><br><span class="line"><span class="keyword">import</span> java.awt.Graphics;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> twenty.july.my_interface.cell.Cell;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Rabbit</span> <span class="keyword">extends</span> <span class="title">Animal</span> <span class="keyword">implements</span> <span class="title">Cell</span> </span>&#123;</span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="title">Rabbit</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">super</span>(<span class="number">10</span>, <span class="number">2</span>); <span class="comment">// *寿命&amp;&amp;生育年龄</span></span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="meta">@Override</span></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">draw</span><span class="params">(Graphics g, <span class="keyword">int</span> x, <span class="keyword">int</span> y, <span class="keyword">int</span> size)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> alpha = (<span class="keyword">int</span>) ((<span class="number">1</span> - getAgePercent()) * <span class="number">255</span>);</span><br><span class="line">    g.setColor(<span class="keyword">new</span> Color(<span class="number">255</span>, <span class="number">0</span>, <span class="number">0</span>, alpha));</span><br><span class="line">    g.fillRect(x, y, size, size);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="meta">@Override</span></span><br><span class="line">  <span class="function"><span class="keyword">public</span> Animal <span class="title">breed</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    Animal ret = <span class="keyword">null</span>;</span><br><span class="line">    <span class="keyword">if</span> (isBreedable() &amp;&amp; Math.random() &lt; <span class="number">0.12</span>) &#123;</span><br><span class="line">      ret = <span class="keyword">new</span> Rabbit();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> ret;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="meta">@Override</span></span><br><span class="line">  <span class="function"><span class="keyword">public</span> String <span class="title">toString</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&quot;Rabbit&quot;</span> + <span class="keyword">super</span>.toString();</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre>
+                </td>
+              </tr>
+            </table>
+          </figure>
+          <h1 id="Cell"><a href="#Cell" class="headerlink" title="Cell"></a>Cell</h1>
+          <figure class="highlight java">
+            <table>
+              <tr>
+                <td class="gutter">
+                  <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre>
+                </td>
+                <td class="code">
+                  <pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * @Author: Weidows</span></span><br><span class="line"><span class="comment"> * @Date: 2020-07-12 15:17:05</span></span><br><span class="line"><span class="comment"> * @LastEditors: Weidows</span></span><br><span class="line"><span class="comment"> * @LastEditTime: 2020-07-25 17:39:41</span></span><br><span class="line"><span class="comment"> * @FilePath: \Weidows\Java\src\main\java\twenty\july\my_interface\cell\Cell.java</span></span><br><span class="line"><span class="comment"> */</span> </span><br><span class="line"></span><br><span class="line"><span class="keyword">package</span> twenty.july.my_interface.cell;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.awt.Graphics;</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Cell</span> </span>&#123;<span class="comment">//注意这里不能写成interface class</span></span><br><span class="line">  <span class="comment">/**</span></span><br><span class="line"><span class="comment">   * *Cell是一个接口而非类</span></span><br><span class="line"><span class="comment">   * !这个接口就是为了实现Fox和Rabbit类new的对象能够传递给Field类</span></span><br><span class="line"><span class="comment">   * Field类中指明需要的对象的类是Cell而Cell是作为中间承接者</span></span><br><span class="line"><span class="comment">   * Fox和Rabbit类需要有implements Cell语句来实现接口</span></span><br><span class="line"><span class="comment">   */</span></span><br><span class="line">  <span class="comment">/**</span></span><br><span class="line"><span class="comment">   * !注意这里函数不用写函数前缀,只需要写返回值类型</span></span><br><span class="line"><span class="comment">   * ?抽象类无函数主体,只需声明函数原型,实现接口的类都必须Override</span></span><br><span class="line"><span class="comment">   */</span></span><br><span class="line">  <span class="function"><span class="keyword">void</span> <span class="title">draw</span><span class="params">(Graphics g, <span class="keyword">int</span> x, <span class="keyword">int</span> y, <span class="keyword">int</span> size)</span></span>;</span><br><span class="line">&#125;</span><br></pre>
+                </td>
+              </tr>
+            </table>
+          </figure>
+          <h1 id="Field"><a href="#Field" class="headerlink" title="Field"></a>Field</h1>
+          <figure class="highlight java">
+            <table>
+              <tr>
+                <td class="gutter">
+                  <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br></pre>
+                </td>
+                <td class="code">
+                  <pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * @Author: Weidows</span></span><br><span class="line"><span class="comment"> * @Date: 2020-07-12 15:17:00</span></span><br><span class="line"><span class="comment"> * @LastEditors: Weidows</span></span><br><span class="line"><span class="comment"> * @LastEditTime: 2020-07-24 22:20:12</span></span><br><span class="line"><span class="comment"> * @FilePath: \Weidows\Java\src\main\java\twenty\july\my_interface\field\Field.java</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">package</span> twenty.july.my_interface.field;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.ArrayList;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> twenty.july.my_interface.cell.Cell;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Field</span> </span>&#123;</span><br><span class="line">  <span class="keyword">private</span> <span class="keyword">int</span> width;</span><br><span class="line">  <span class="keyword">private</span> <span class="keyword">int</span> height;</span><br><span class="line">  <span class="keyword">private</span> Cell[][] field;<span class="comment">// 声明有这么个数组变量,但未承接任何对象</span></span><br><span class="line">  <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> Location[] adjacent = &#123; </span><br><span class="line">    <span class="keyword">new</span> Location(-<span class="number">1</span>, -<span class="number">1</span>), <span class="keyword">new</span> Location(-<span class="number">1</span>, <span class="number">0</span>), <span class="keyword">new</span> Location(-<span class="number">1</span>, <span class="number">1</span>),</span><br><span class="line">    <span class="keyword">new</span> Location(<span class="number">0</span>, -<span class="number">1</span>), <span class="keyword">new</span> Location(<span class="number">0</span>, <span class="number">0</span>), <span class="keyword">new</span> Location(<span class="number">0</span>, <span class="number">1</span>),</span><br><span class="line">    <span class="keyword">new</span> Location(<span class="number">1</span>, -<span class="number">1</span>), <span class="keyword">new</span> Location(<span class="number">1</span>, <span class="number">0</span>),<span class="keyword">new</span> Location(<span class="number">1</span>, <span class="number">1</span>),</span><br><span class="line">  &#125;;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="title">Field</span><span class="params">(<span class="keyword">int</span> width, <span class="keyword">int</span> height)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.width = width;</span><br><span class="line">    <span class="keyword">this</span>.height = height;</span><br><span class="line">    field = <span class="keyword">new</span> Cell[height][width];</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getWidth</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> width;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getHeight</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> height;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> Cell <span class="title">place</span><span class="params">(<span class="keyword">int</span> row, <span class="keyword">int</span> col, Cell cell)</span> </span>&#123;</span><br><span class="line">    <span class="comment">// !这里的Cell o并非Cell类的对象,而是实现了Cell接口的对象</span></span><br><span class="line">    field[row][col] = cell;</span><br><span class="line">    Cell ret = field[row][col];</span><br><span class="line">    <span class="keyword">return</span> ret;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> Cell <span class="title">get</span><span class="params">(<span class="keyword">int</span> row, <span class="keyword">int</span> col)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> field[row][col];</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">public</span> Cell[] getNeighbor(<span class="keyword">int</span> row, <span class="keyword">int</span> col) &#123;</span><br><span class="line">    ArrayList&lt;Cell&gt; list = <span class="keyword">new</span> ArrayList&lt;Cell&gt;();</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = -<span class="number">1</span>; i &lt; <span class="number">2</span>; i++) &#123;</span><br><span class="line">      <span class="keyword">for</span> (<span class="keyword">int</span> j = -<span class="number">1</span>; j &lt; <span class="number">2</span>; j++) &#123;</span><br><span class="line">        <span class="keyword">int</span> r = row + i;</span><br><span class="line">        <span class="keyword">int</span> c = col + j;</span><br><span class="line">        <span class="keyword">if</span> (r &gt; -<span class="number">1</span> &amp;&amp; r &lt; height &amp;&amp; c &gt; -<span class="number">1</span> &amp;&amp; c &lt; width &amp;&amp; !(r == row &amp;&amp; c == col)) &#123;</span><br><span class="line">          list.add(field[r][c]);</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> list.toArray(<span class="keyword">new</span> Cell[list.size()]);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">public</span> Location[] getFreeNeighbor(<span class="keyword">int</span> row, <span class="keyword">int</span> col) &#123;</span><br><span class="line">    ArrayList&lt;Location&gt; list = <span class="keyword">new</span> ArrayList&lt;Location&gt;();</span><br><span class="line">    <span class="keyword">for</span> (Location loc : adjacent) &#123;</span><br><span class="line">      <span class="keyword">int</span> r = row + loc.getRow();</span><br><span class="line">      <span class="keyword">int</span> c = col + loc.getCol();</span><br><span class="line">      <span class="keyword">if</span> (r &gt; -<span class="number">1</span> &amp;&amp; r &lt; height &amp;&amp; c &gt; -<span class="number">1</span> &amp;&amp; c &lt; width &amp;&amp; field[r][c] == <span class="keyword">null</span>) &#123;</span><br><span class="line">        list.add(<span class="keyword">new</span> Location(r, c));</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// !学着点</span></span><br><span class="line">    <span class="keyword">return</span> list.toArray(<span class="keyword">new</span> Location[list.size()]);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">placeRandomAdj</span><span class="params">(<span class="keyword">int</span> row, <span class="keyword">int</span> col, Cell cell)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">boolean</span> ret = <span class="keyword">false</span>;</span><br><span class="line">    Location[] freeAdj = getFreeNeighbor(row, col);</span><br><span class="line">    <span class="keyword">if</span> (freeAdj.length &gt; <span class="number">0</span>) &#123;</span><br><span class="line">      <span class="keyword">int</span> idx = (<span class="keyword">int</span>) (Math.random() * freeAdj.length);</span><br><span class="line">      field[freeAdj[idx].getRow()][freeAdj[idx].getCol()] = cell;</span><br><span class="line">      ret = <span class="keyword">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> ret;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">clear</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; height; i++) &#123;</span><br><span class="line">      <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; width; j++) &#123;</span><br><span class="line">        field[i][j] = <span class="keyword">null</span>;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">remove</span><span class="params">(Cell fed)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> row = <span class="number">0</span>; row &lt; height; row++) &#123;</span><br><span class="line">      <span class="keyword">for</span> (<span class="keyword">int</span> col = <span class="number">0</span>; col &lt; width; col++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (field[row][col] == fed) &#123;</span><br><span class="line">          field[row][col] = <span class="keyword">null</span>;</span><br><span class="line">          <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> Cell <span class="title">remove</span><span class="params">(<span class="keyword">int</span> row, <span class="keyword">int</span> col)</span> </span>&#123; <span class="comment">// *函数重构</span></span><br><span class="line">    field[row][col] = <span class="keyword">null</span>;</span><br><span class="line">    Cell ret = field[row][col];</span><br><span class="line">    <span class="keyword">return</span> ret;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">move</span><span class="params">(<span class="keyword">int</span> row, <span class="keyword">int</span> col, Location loc)</span> </span>&#123;</span><br><span class="line">    field[loc.getRow()][loc.getCol()] = field[row][col];</span><br><span class="line">    remove(row, col);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre>
+                </td>
+              </tr>
+            </table>
+          </figure>
+          <h1 id="Location"><a href="#Location" class="headerlink" title="Location"></a>Location</h1>
+          <figure class="highlight java">
+            <table>
+              <tr>
+                <td class="gutter">
+                  <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre>
+                </td>
+                <td class="code">
+                  <pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * @Author: Weidows</span></span><br><span class="line"><span class="comment"> * @Date: 2020-07-22 18:51:49</span></span><br><span class="line"><span class="comment"> * @LastEditors: Weidows</span></span><br><span class="line"><span class="comment"> * @LastEditTime: 2020-07-25 17:39:16</span></span><br><span class="line"><span class="comment"> * @FilePath: \Weidows\Java\src\main\java\twenty\july\my_interface\field\Location.java</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">package</span> twenty.july.my_interface.field;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Location</span> </span>&#123;</span><br><span class="line">  <span class="keyword">private</span> <span class="keyword">int</span> row;</span><br><span class="line">  <span class="keyword">private</span> <span class="keyword">int</span> col;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="title">Location</span><span class="params">(<span class="keyword">int</span> row, <span class="keyword">int</span> col)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.row = row;</span><br><span class="line">    <span class="keyword">this</span>.col = col;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getRow</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> row;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getCol</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> col;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre>
+                </td>
+              </tr>
+            </table>
+          </figure>
+          <h1 id="View"><a href="#View" class="headerlink" title="View"></a>View</h1>
+          <figure class="highlight java">
+            <table>
+              <tr>
+                <td class="gutter">
+                  <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre>
+                </td>
+                <td class="code">
+                  <pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * @Author: Weidows</span></span><br><span class="line"><span class="comment"> * @Date: 2020-07-12 15:17:00</span></span><br><span class="line"><span class="comment"> * @LastEditors: Weidows</span></span><br><span class="line"><span class="comment"> * @LastEditTime: 2020-07-24 11:06:21</span></span><br><span class="line"><span class="comment"> * @FilePath: \Weidows\Java\src\main\java\twenty\july\my_interface\field\View.java</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">package</span> twenty.july.my_interface.field;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.awt.Color;</span><br><span class="line"><span class="keyword">import</span> java.awt.Dimension;</span><br><span class="line"><span class="keyword">import</span> java.awt.Graphics;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> javax.swing.JPanel;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> twenty.july.my_interface.cell.Cell;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">View</span> <span class="keyword">extends</span> <span class="title">JPanel</span> </span>&#123;</span><br><span class="line">  <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">long</span> serialVersionUID = -<span class="number">2417015700213488315L</span>;</span><br><span class="line">  <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">int</span> GRID_SIZE = <span class="number">16</span>;</span><br><span class="line">  <span class="keyword">private</span> Field theField;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// *构造函数</span></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="title">View</span><span class="params">(Field field)</span> </span>&#123;</span><br><span class="line">    theField = field;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="meta">@Override</span></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">paint</span><span class="params">(Graphics g)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">super</span>.paint(g);</span><br><span class="line">    g.setColor(Color.GRAY);</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> row = <span class="number">0</span>; row &lt; theField.getHeight(); row++) </span><br><span class="line">      g.drawLine(<span class="number">0</span>, row * GRID_SIZE, theField.getWidth() * GRID_SIZE, row * GRID_SIZE);</span><br><span class="line">    <span class="keyword">for</span> ( <span class="keyword">int</span> col = <span class="number">0</span>; col&lt;theField.getWidth(); col++ )</span><br><span class="line">      g.drawLine(col * GRID_SIZE, <span class="number">0</span>, col * GRID_SIZE, theField.getHeight() * GRID_SIZE);</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> row = <span class="number">0</span>; row &lt; theField.getHeight(); row++) &#123;</span><br><span class="line">      <span class="keyword">for</span> (<span class="keyword">int</span> col = <span class="number">0</span>; col &lt; theField.getWidth(); col++) &#123;</span><br><span class="line">        Cell cell = theField.get(row, col);</span><br><span class="line">        <span class="keyword">if</span> (cell != <span class="keyword">null</span>) </span><br><span class="line">          cell.draw(g, col * GRID_SIZE, row * GRID_SIZE, GRID_SIZE);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="meta">@Override</span></span><br><span class="line">  <span class="function"><span class="keyword">public</span> Dimension <span class="title">getPreferredSize</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> Dimension(theField.getWidth() * GRID_SIZE + <span class="number">1</span>, theField.getHeight() * GRID_SIZE + <span class="number">1</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre>
+                </td>
+              </tr>
+            </table>
+          </figure>
+          <h1 id="FoxAndRabbit"><a href="#FoxAndRabbit" class="headerlink" title="FoxAndRabbit"></a>FoxAndRabbit</h1>
+          <figure class="highlight java">
+            <table>
+              <tr>
+                <td class="gutter">
+                  <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br></pre>
+                </td>
+                <td class="code">
+                  <pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * @Author: Weidows</span></span><br><span class="line"><span class="comment"> * @Date: 2020-07-20 18:40:10</span></span><br><span class="line"><span class="comment"> * @LastEditors: Weidows</span></span><br><span class="line"><span class="comment"> * @LastEditTime: 2020-07-24 13:23:07</span></span><br><span class="line"><span class="comment"> * @FilePath: \Weidows\Java\src\main\java\twenty\july\my_interface\fox_and_rabbit\FoxAndRabbit.java</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">package</span> twenty.july.my_interface.fox_and_rabbit;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.ArrayList;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> javax.swing.JFrame;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> twenty.july.my_interface.animal.*;</span><br><span class="line"><span class="keyword">import</span> twenty.july.my_interface.cell.Cell;</span><br><span class="line"><span class="keyword">import</span> twenty.july.my_interface.field.*;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">FoxAndRabbit</span> </span>&#123;</span><br><span class="line">  <span class="keyword">private</span> Field theField;</span><br><span class="line">  <span class="keyword">private</span> View theView;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="title">FoxAndRabbit</span><span class="params">(<span class="keyword">int</span> size)</span> </span>&#123;</span><br><span class="line">    theField = <span class="keyword">new</span> Field(size, size);</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> row = <span class="number">0</span>; row &lt; theField.getHeight(); row++) &#123;</span><br><span class="line">      <span class="keyword">for</span> (<span class="keyword">int</span> col = <span class="number">0</span>; col &lt; theField.getWidth(); col++) &#123;</span><br><span class="line">        <span class="keyword">double</span> probability = Math.random();</span><br><span class="line">        <span class="keyword">if</span> (probability &lt; <span class="number">0.05</span>) &#123;</span><br><span class="line">          theField.place(row, col, <span class="keyword">new</span> Fox());</span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (probability &lt; <span class="number">0.15</span>) &#123;</span><br><span class="line">          theField.place(row, col, <span class="keyword">new</span> Rabbit());</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    theView = <span class="keyword">new</span> View(theField);</span><br><span class="line">    JFrame frame = <span class="keyword">new</span> JFrame();</span><br><span class="line">    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);</span><br><span class="line">    frame.setResizable(<span class="keyword">false</span>);</span><br><span class="line">    frame.setTitle(<span class="string">&quot;Cells&quot;</span>);</span><br><span class="line">    frame.add(theView);</span><br><span class="line">    frame.pack();</span><br><span class="line">    frame.setVisible(<span class="keyword">true</span>);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">start</span><span class="params">(<span class="keyword">int</span> steps)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; steps; i++) &#123;</span><br><span class="line">      step();</span><br><span class="line">      theView.repaint();</span><br><span class="line">      <span class="keyword">try</span> &#123;</span><br><span class="line">        Thread.sleep(<span class="number">200</span>);</span><br><span class="line">      &#125; <span class="keyword">catch</span> (InterruptedException e) &#123;</span><br><span class="line">        e.printStackTrace();</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">step</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> row = <span class="number">0</span>; row &lt; theField.getHeight(); row++) &#123;</span><br><span class="line">      <span class="keyword">for</span> (<span class="keyword">int</span> col = <span class="number">0</span>; col &lt; theField.getWidth(); col++) &#123;</span><br><span class="line">        Cell cell = (Cell) theField.get(row, col);</span><br><span class="line">        <span class="keyword">if</span> (cell != <span class="keyword">null</span>) &#123;</span><br><span class="line">          Animal animal = (Animal) cell;</span><br><span class="line">          animal.grow();</span><br><span class="line">          <span class="keyword">if</span> (animal.isAlive()) &#123;</span><br><span class="line">            <span class="comment">// *move</span></span><br><span class="line">            Location loc = animal.move(theField.getFreeNeighbor(row, col));</span><br><span class="line">            <span class="keyword">if</span> (loc != <span class="keyword">null</span>)</span><br><span class="line">              theField.move(row, col, loc);</span><br><span class="line">            <span class="comment">// *eat</span></span><br><span class="line">            Cell[] neighbor = (Cell[]) theField.getNeighbor(row, col);</span><br><span class="line">            ArrayList&lt;Animal&gt; listRabbit = <span class="keyword">new</span> ArrayList&lt;Animal&gt;();</span><br><span class="line">            <span class="keyword">for</span> (Cell an : neighbor) &#123;</span><br><span class="line">              <span class="keyword">if</span> (an <span class="keyword">instanceof</span> Rabbit) &#123;</span><br><span class="line">                listRabbit.add((Rabbit) an);</span><br><span class="line">              &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> (!listRabbit.isEmpty()) &#123;</span><br><span class="line">              Animal fed = animal.feed(listRabbit);</span><br><span class="line">              <span class="keyword">if</span> (fed != <span class="keyword">null</span>)</span><br><span class="line">                theField.remove((Cell) fed);</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">// *breed</span></span><br><span class="line">            Animal baby = animal.breed();</span><br><span class="line">            <span class="keyword">if</span> (baby != <span class="keyword">null</span>) &#123;</span><br><span class="line">              theField.placeRandomAdj(row, col, (Cell) baby);</span><br><span class="line">            &#125;</span><br><span class="line">          &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            theField.remove(row, col);</span><br><span class="line">          &#125;</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">    FoxAndRabbit fnr = <span class="keyword">new</span> FoxAndRabbit(<span class="number">50</span>);</span><br><span class="line">    fnr.start(<span class="number">100</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre>
+                </td>
+              </tr>
+            </table>
+          </figure>
+        </div>
+        <div class="post-copyright">
+          <div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">Weidows</a></span></div>
+          <div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://weidows2984539695.gitee.io/weidows/post/experience/MOOC-java-FoxAndRabbit/">http://weidows2984539695.gitee.io/weidows/post/experience/MOOC-java-FoxAndRabbit/</a></span></div>
+          <div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://weidows2984539695.gitee.io/weidows" target="_blank">⭐️Weidows の Page⭐️</a>！</span></div>
+        </div>
+        <div class="tag_share">
+          <div class="post-meta__tag-list"><a class="post-meta__tags" href="/Weidows/tags/java/">Java</a></div>
+          <div class="post_share">
+            <div class="social-share" data-image="https://raw.githubusercontent.com/Weidows/Weidows/master/java/src/main/java/twenty/july/my_interface/interface/Cells173751.png" data-sites="facebook,twitter,wechat,weibo,qq"></div>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css">
+            <script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script>
+          </div>
+        </div>
+        <div class="post-reward">
+          <div class="reward-button"><i class="fas fa-qrcode"></i> 打赏<div class="reward-main">
+              <ul class="reward-all">
+                <li class="reward-item"><a href="https://gitee.com/Weidows2984539695/Weidows/raw/master/Website/source/images/QRcode/wechat_ful.jpg" target="_blank"><img class="post-qr-code-img" data-lazy-src="/Weidows/images/QRcode/wechat.jpg" alt="微信" /></a>
+                  <div class="post-qr-code-desc">微信</div>
+                </li>
+                <li class="reward-item"><a href="https://gitee.com/Weidows2984539695/Weidows/raw/master/Website/source/images/QRcode/alipay_ful.jpg" target="_blank"><img class="post-qr-code-img" data-lazy-src="/Weidows/images/QRcode/alipay.jpg" alt="支付宝" /></a>
+                  <div class="post-qr-code-desc">支付宝</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <nav class="pagination-post" id="pagination">
+          <div class="prev-post pull-left"><a href="/Weidows/post/backup/Hexo-plugin/"><img class="prev-cover" data-lazy-src="https://gitee.com/Weidows2984539695/Weidows/raw/master/Website/public/images/post/Hexo-plugin.jpg" onerror="onerror=null;src='/Weidows/images/img/404.jpg'">
+              <div class="pagination-info">
+                <div class="label">上一篇</div>
+                <div class="prev_info">淦翻Hexo各种插件安装+调试</div>
+              </div>
+            </a></div>
+          <div class="next-post pull-right"><a href="/Weidows/post/experience/about_system/"><img class="next-cover" data-lazy-src="https://gitee.com/Weidows2984539695/Weidows/raw/master/Website/public/images/post/about_system.png" onerror="onerror=null;src='/Weidows/images/img/404.jpg'">
+              <div class="pagination-info">
+                <div class="label">下一篇</div>
+                <div class="next_info">关于安装系统硬盘&amp;引导那些事</div>
+              </div>
+            </a></div>
+        </nav>
+        <hr />
+        <div id="post-comment">
+          <div class="comment-head">
+            <div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div>
+            <div class="comment-switch"><span class="first-comment">Valine</span><label><input id="switch-comments-btn" type="checkbox" /><span class="slider"></span></label><span class="second-comment">Disqus</span></div>
+          </div>
+          <div class="comment-wrap">
+            <div>
+              <div class="vcomment" id="vcomment"></div>
+            </div>
+            <div>
+              <div id="disqus_thread"></div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+    <footer id="footer" data-type="color">
+      <div id="footer-wrap">
+        <div class="copyright">&copy;2020 By Weidows</div>
+        <div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div>
+        <div class="footer_custom_text">⭐️ Thank U 4 Visiting My Mind ⭐️</div>
+        <div class="icp"><a><img class="icp-icon" src="/Weidows/images/img/icp.png" /><span></span></a></div>
+      </div>
+    </footer>
+  </div>
+  <section id="rightside">
+    <div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="font_plus" type="button" title="放大字体"><i class="fas fa-plus"></i></button><button id="font_minus" type="button" title="缩小字体"><i class="fas fa-minus"></i></button><button id="translateLink" type="button" title="简繁转换">簡</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div>
+    <div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div>
+  </section>
+  <div class="search-dialog" id="local-search">
+    <div class="search-dialog__title" id="local-search-title">本地搜索</div>
+    <div id="local-input-panel">
+      <div id="local-search-input">
+        <div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text" /></div>
+      </div>
+    </div>
+    <hr />
+    <div id="local-search-results">
+      <div id="local-hits"></div>
+      <div id="local-stats">
+        <div class="local-search-stats__hr" id="hr"><span>由</span> <a target="_blank" rel="noopener" href="https://github.com/wzpan/hexo-generator-search" style="color:#49B1F5;">hexo-generator-search</a>
+          <span>提供支持</span>
+        </div>
+      </div>
+    </div><span class="search-close-button"><i class="fas fa-times"></i></span>
+  </div>
+  <div id="search-mask"></div>
+  <div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script>
+    <script src="/Weidows/js/utils.js"></script>
+    <script src="/Weidows/js/main.js"></script>
+    <script src="/Weidows/js/tw_cn.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js" async></script>
+    <script>
+      function panguFn()
+      {
+        if (typeof pangu === 'object') pangu.spacingElementById('content-inner')
+        else
+        {
+          $.getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js', () =>
+          {
+            pangu.spacingElementById('content-inner')
+          })
+        }
+      }
 
-<h1 id="一-简介"><a href="#一-简介" class="headerlink" title="一.简介"></a>一.简介</h1><p>由于老师在课程中没给出源代码,有些知识点没有涉及到,需要源码作为参考,但是个人百度谷歌了半天没找到真正所需要的(甚至有人卖…)</p>
-<p>这篇给出的是 <em>6.3</em> 的源码,如果 <strong>寻找第七章的或者其他的</strong> 可以去我的GitHub仓库上找,已经给出介绍了<br><a target="_blank" rel="noopener" href="https://github.com/2984539695/Weidows">仓库地址</a></p>
-<p>如果复制代码的话需要改一下Package和import</p>
-<h1 id="二-代码片段"><a href="#二-代码片段" class="headerlink" title="二.代码片段"></a>二.代码片段</h1><p><img src= "/Weidows/img/loading.gif" data-lazy-src="https://img-blog.csdnimg.cn/20200727081719904.jpg#pic_center" alt="目录结构"></p>
-<h1 id="Animal"><a href="#Animal" class="headerlink" title="Animal"></a>Animal</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * @Author: Weidows</span></span><br><span class="line"><span class="comment"> * @Date: 2020-07-20 14:25:10</span></span><br><span class="line"><span class="comment"> * @LastEditors: Weidows</span></span><br><span class="line"><span class="comment"> * @LastEditTime: 2020-07-25 17:40:28</span></span><br><span class="line"><span class="comment"> * @FilePath: \Weidows\Java\src\main\java\twenty\july\my_interface\animal\Animal.java</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">package</span> twenty.july.my_interface.animal;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.ArrayList;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> twenty.july.my_interface.field.Location;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="class"><span class="keyword">class</span> <span class="title">Animal</span> </span>&#123;</span><br><span class="line">  <span class="keyword">private</span> <span class="keyword">int</span> ageLimit;</span><br><span class="line">  <span class="keyword">private</span> <span class="keyword">int</span> breedableAge;</span><br><span class="line">  <span class="keyword">private</span> <span class="keyword">int</span> age;</span><br><span class="line">  <span class="keyword">private</span> <span class="keyword">boolean</span> isAlive = <span class="keyword">true</span>;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="title">Animal</span><span class="params">(<span class="keyword">int</span> ageLimit, <span class="keyword">int</span> breedableAge)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.ageLimit = ageLimit;</span><br><span class="line">    <span class="keyword">this</span>.breedableAge = breedableAge;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">protected</span> <span class="keyword">int</span> <span class="title">getAge</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> age;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">protected</span> <span class="keyword">double</span> <span class="title">getAgePercent</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> (<span class="keyword">double</span>) age / (<span class="keyword">double</span>) ageLimit;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> Animal <span class="title">breed</span><span class="params">()</span></span>;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">grow</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    age++;</span><br><span class="line">    <span class="keyword">if</span> (age &gt;= ageLimit)</span><br><span class="line">      die();</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">die</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    isAlive = <span class="keyword">false</span>;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isAlive</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> isAlive;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isBreedable</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> (age &gt;= breedableAge);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> Location <span class="title">move</span><span class="params">(Location[] freeAdj)</span> </span>&#123;</span><br><span class="line">    Location ret = <span class="keyword">null</span>;</span><br><span class="line">    <span class="keyword">if</span> (freeAdj.length &gt; <span class="number">0</span> &amp;&amp; Math.random() &lt; <span class="number">0.02</span>) &#123;</span><br><span class="line">      ret = freeAdj[(<span class="keyword">int</span>) (Math.random() * freeAdj.length)];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> ret;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="meta">@Override</span></span><br><span class="line">  <span class="function"><span class="keyword">public</span> String <span class="title">toString</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&quot;&quot;</span> + age + <span class="string">&quot;:&quot;</span> + (isAlive ? <span class="string">&quot;live&quot;</span> : <span class="string">&quot;dead&quot;</span>);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> Animal <span class="title">feed</span><span class="params">(ArrayList&lt;Animal&gt; neighbor)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">longerLife</span><span class="params">(<span class="keyword">int</span> inc)</span> </span>&#123;</span><br><span class="line">    ageLimit += inc;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      function panguInit()
+      {
+        if (true)
+        {
+          GLOBAL_CONFIG_SITE.isPost && panguFn()
+        }
+        else
+        {
+          panguFn()
+        }
+      }
+      document.addEventListener('DOMContentLoaded', panguFn)
 
-<h1 id="Fox"><a href="#Fox" class="headerlink" title="Fox"></a>Fox</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * @Author: Weidows</span></span><br><span class="line"><span class="comment"> * @Date: 2020-07-20 14:31:09</span></span><br><span class="line"><span class="comment"> * @LastEditors: Weidows</span></span><br><span class="line"><span class="comment"> * @LastEditTime: 2020-07-25 17:40:18</span></span><br><span class="line"><span class="comment"> * @FilePath: \Weidows\Java\src\main\java\twenty\july\my_interface\animal\Fox.java</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">package</span> twenty.july.my_interface.animal;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.awt.Graphics;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.awt.Color;</span><br><span class="line"><span class="keyword">import</span> java.util.ArrayList;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> twenty.july.my_interface.cell.Cell;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * *Fox实现接口Cell,使Fox对象能间接传给Field</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Fox</span> <span class="keyword">extends</span> <span class="title">Animal</span> <span class="keyword">implements</span> <span class="title">Cell</span> </span>&#123;</span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="title">Fox</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">super</span>(<span class="number">20</span>, <span class="number">4</span>);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="meta">@Override</span> <span class="comment">// 实现接口Cell中的draw()</span></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">draw</span><span class="params">(Graphics g, <span class="keyword">int</span> x, <span class="keyword">int</span> y, <span class="keyword">int</span> size)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> alpha = (<span class="keyword">int</span>) ((<span class="number">1</span> - getAgePercent()) * <span class="number">255</span>);</span><br><span class="line">    g.setColor(<span class="keyword">new</span> Color(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, alpha));</span><br><span class="line">    g.fillRect(x, y, size, size);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="meta">@Override</span></span><br><span class="line">  <span class="function"><span class="keyword">public</span> Animal <span class="title">breed</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    Animal ret = <span class="keyword">null</span>;</span><br><span class="line">    <span class="keyword">if</span> (isBreedable() &amp;&amp; Math.random() &lt; <span class="number">0.05</span>) &#123;</span><br><span class="line">      ret = <span class="keyword">new</span> Fox();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> ret;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="meta">@Override</span></span><br><span class="line">  <span class="function"><span class="keyword">public</span> String <span class="title">toString</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> (<span class="string">&quot;Fox:&quot;</span> + <span class="keyword">super</span>.toString());</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="meta">@Override</span></span><br><span class="line">  <span class="function"><span class="keyword">public</span> Animal <span class="title">feed</span><span class="params">(ArrayList&lt;Animal&gt; neighbor)</span> </span>&#123;</span><br><span class="line">    Animal ret = <span class="keyword">null</span>;</span><br><span class="line">    <span class="keyword">if</span> (Math.random() &lt; <span class="number">0.2</span>) &#123;</span><br><span class="line">      ret = neighbor.get((<span class="keyword">int</span>) (Math.random() * neighbor.size()));</span><br><span class="line">      longerLife(<span class="number">2</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> ret;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+    </script>
+    <script src="/Weidows/js/search/local-search.js"></script>
+    <script>
+      var endLoading = function ()
+      {
+        document.body.style.overflow = 'auto';
+        document.getElementById('loading-box').classList.add("loaded")
+      }
+      window.addEventListener('load', endLoading)
 
-<h1 id="Rabbit"><a href="#Rabbit" class="headerlink" title="Rabbit"></a>Rabbit</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * @Author: Weidows</span></span><br><span class="line"><span class="comment"> * @Date: 2020-07-20 18:49:07</span></span><br><span class="line"><span class="comment"> * @LastEditors: Weidows</span></span><br><span class="line"><span class="comment"> * @LastEditTime: 2020-07-25 17:40:09</span></span><br><span class="line"><span class="comment"> * @FilePath: \Weidows\Java\src\main\java\twenty\july\my_interface\animal\Rabbit.java</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">package</span> twenty.july.my_interface.animal;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.awt.Color;</span><br><span class="line"><span class="keyword">import</span> java.awt.Graphics;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> twenty.july.my_interface.cell.Cell;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Rabbit</span> <span class="keyword">extends</span> <span class="title">Animal</span> <span class="keyword">implements</span> <span class="title">Cell</span> </span>&#123;</span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="title">Rabbit</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">super</span>(<span class="number">10</span>, <span class="number">2</span>); <span class="comment">// *寿命&amp;&amp;生育年龄</span></span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="meta">@Override</span></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">draw</span><span class="params">(Graphics g, <span class="keyword">int</span> x, <span class="keyword">int</span> y, <span class="keyword">int</span> size)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> alpha = (<span class="keyword">int</span>) ((<span class="number">1</span> - getAgePercent()) * <span class="number">255</span>);</span><br><span class="line">    g.setColor(<span class="keyword">new</span> Color(<span class="number">255</span>, <span class="number">0</span>, <span class="number">0</span>, alpha));</span><br><span class="line">    g.fillRect(x, y, size, size);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="meta">@Override</span></span><br><span class="line">  <span class="function"><span class="keyword">public</span> Animal <span class="title">breed</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    Animal ret = <span class="keyword">null</span>;</span><br><span class="line">    <span class="keyword">if</span> (isBreedable() &amp;&amp; Math.random() &lt; <span class="number">0.12</span>) &#123;</span><br><span class="line">      ret = <span class="keyword">new</span> Rabbit();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> ret;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="meta">@Override</span></span><br><span class="line">  <span class="function"><span class="keyword">public</span> String <span class="title">toString</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&quot;Rabbit&quot;</span> + <span class="keyword">super</span>.toString();</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+    </script>
+    <div class="js-pjax">
+      <script>
+        if (document.getElementsByClassName('mermaid').length)
+        {
+          if (window.mermaidJsLoad) mermaid.init()
+          else
+          {
+            $.getScript('https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js', function ()
+            {
+              window.mermaidJsLoad = true
+              mermaid.initialize(
+              {
+                theme: 'forest',
+              })
+              false && mermaid.init()
+            })
+          }
+        }
 
-<h1 id="Cell"><a href="#Cell" class="headerlink" title="Cell"></a>Cell</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * @Author: Weidows</span></span><br><span class="line"><span class="comment"> * @Date: 2020-07-12 15:17:05</span></span><br><span class="line"><span class="comment"> * @LastEditors: Weidows</span></span><br><span class="line"><span class="comment"> * @LastEditTime: 2020-07-25 17:39:41</span></span><br><span class="line"><span class="comment"> * @FilePath: \Weidows\Java\src\main\java\twenty\july\my_interface\cell\Cell.java</span></span><br><span class="line"><span class="comment"> */</span> </span><br><span class="line"></span><br><span class="line"><span class="keyword">package</span> twenty.july.my_interface.cell;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.awt.Graphics;</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Cell</span> </span>&#123;<span class="comment">//注意这里不能写成interface class</span></span><br><span class="line">  <span class="comment">/**</span></span><br><span class="line"><span class="comment">   * *Cell是一个接口而非类</span></span><br><span class="line"><span class="comment">   * !这个接口就是为了实现Fox和Rabbit类new的对象能够传递给Field类</span></span><br><span class="line"><span class="comment">   * Field类中指明需要的对象的类是Cell而Cell是作为中间承接者</span></span><br><span class="line"><span class="comment">   * Fox和Rabbit类需要有implements Cell语句来实现接口</span></span><br><span class="line"><span class="comment">   */</span></span><br><span class="line">  <span class="comment">/**</span></span><br><span class="line"><span class="comment">   * !注意这里函数不用写函数前缀,只需要写返回值类型</span></span><br><span class="line"><span class="comment">   * ?抽象类无函数主体,只需声明函数原型,实现接口的类都必须Override</span></span><br><span class="line"><span class="comment">   */</span></span><br><span class="line">  <span class="function"><span class="keyword">void</span> <span class="title">draw</span><span class="params">(Graphics g, <span class="keyword">int</span> x, <span class="keyword">int</span> y, <span class="keyword">int</span> size)</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      </script>
+      <script>
+        function loadValine()
+        {
+          function initValine()
+          {
+            window.valine = new Valine(
+            {
+              el: '#vcomment',
+              appId: 'BbOLCoJcHWUHnNAeaCjiXNM5-gzGzoHsz',
+              appKey: '5YNqKnyUnC0MvAbhoxGj6z3B',
+              placeholder: '在7:00-23:59之间,扣下邮箱地址应该就会回复:)',
+              avatar: 'wavatar',
+              meta: 'nick,mail,link'.split(','),
+              pageSize: '10',
+              lang: 'zh-CN',
+              recordIP: true,
+              serverURLs: '',
+              emojiCDN: '',
+              emojiMaps: "",
+              enableQQ: true,
+              path: window.location.pathname,
+            });
+            if ('nick')
+            {
+              valine.config.requiredFields = 'nick'.split(',')
+            }
+          }
+          if (typeof Valine === 'function') initValine()
+          else $.getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js', initValine)
+        }
+        if ('Valine' === 'Valine' || !true)
+        {
+          if (true) loadComment(document.querySelector('#vcomment'), loadValine)
+          else setTimeout(() => loadValine(), 0)
+        }
+        else
+        {
+          function loadOtherComment()
+          {
+            loadValine()
+          }
+        }
 
-<h1 id="Field"><a href="#Field" class="headerlink" title="Field"></a>Field</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * @Author: Weidows</span></span><br><span class="line"><span class="comment"> * @Date: 2020-07-12 15:17:00</span></span><br><span class="line"><span class="comment"> * @LastEditors: Weidows</span></span><br><span class="line"><span class="comment"> * @LastEditTime: 2020-07-24 22:20:12</span></span><br><span class="line"><span class="comment"> * @FilePath: \Weidows\Java\src\main\java\twenty\july\my_interface\field\Field.java</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">package</span> twenty.july.my_interface.field;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.ArrayList;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> twenty.july.my_interface.cell.Cell;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Field</span> </span>&#123;</span><br><span class="line">  <span class="keyword">private</span> <span class="keyword">int</span> width;</span><br><span class="line">  <span class="keyword">private</span> <span class="keyword">int</span> height;</span><br><span class="line">  <span class="keyword">private</span> Cell[][] field;<span class="comment">// 声明有这么个数组变量,但未承接任何对象</span></span><br><span class="line">  <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> Location[] adjacent = &#123; </span><br><span class="line">    <span class="keyword">new</span> Location(-<span class="number">1</span>, -<span class="number">1</span>), <span class="keyword">new</span> Location(-<span class="number">1</span>, <span class="number">0</span>), <span class="keyword">new</span> Location(-<span class="number">1</span>, <span class="number">1</span>),</span><br><span class="line">    <span class="keyword">new</span> Location(<span class="number">0</span>, -<span class="number">1</span>), <span class="keyword">new</span> Location(<span class="number">0</span>, <span class="number">0</span>), <span class="keyword">new</span> Location(<span class="number">0</span>, <span class="number">1</span>),</span><br><span class="line">    <span class="keyword">new</span> Location(<span class="number">1</span>, -<span class="number">1</span>), <span class="keyword">new</span> Location(<span class="number">1</span>, <span class="number">0</span>),<span class="keyword">new</span> Location(<span class="number">1</span>, <span class="number">1</span>),</span><br><span class="line">  &#125;;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="title">Field</span><span class="params">(<span class="keyword">int</span> width, <span class="keyword">int</span> height)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.width = width;</span><br><span class="line">    <span class="keyword">this</span>.height = height;</span><br><span class="line">    field = <span class="keyword">new</span> Cell[height][width];</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getWidth</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> width;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getHeight</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> height;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> Cell <span class="title">place</span><span class="params">(<span class="keyword">int</span> row, <span class="keyword">int</span> col, Cell cell)</span> </span>&#123;</span><br><span class="line">    <span class="comment">// !这里的Cell o并非Cell类的对象,而是实现了Cell接口的对象</span></span><br><span class="line">    field[row][col] = cell;</span><br><span class="line">    Cell ret = field[row][col];</span><br><span class="line">    <span class="keyword">return</span> ret;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> Cell <span class="title">get</span><span class="params">(<span class="keyword">int</span> row, <span class="keyword">int</span> col)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> field[row][col];</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">public</span> Cell[] getNeighbor(<span class="keyword">int</span> row, <span class="keyword">int</span> col) &#123;</span><br><span class="line">    ArrayList&lt;Cell&gt; list = <span class="keyword">new</span> ArrayList&lt;Cell&gt;();</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = -<span class="number">1</span>; i &lt; <span class="number">2</span>; i++) &#123;</span><br><span class="line">      <span class="keyword">for</span> (<span class="keyword">int</span> j = -<span class="number">1</span>; j &lt; <span class="number">2</span>; j++) &#123;</span><br><span class="line">        <span class="keyword">int</span> r = row + i;</span><br><span class="line">        <span class="keyword">int</span> c = col + j;</span><br><span class="line">        <span class="keyword">if</span> (r &gt; -<span class="number">1</span> &amp;&amp; r &lt; height &amp;&amp; c &gt; -<span class="number">1</span> &amp;&amp; c &lt; width &amp;&amp; !(r == row &amp;&amp; c == col)) &#123;</span><br><span class="line">          list.add(field[r][c]);</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> list.toArray(<span class="keyword">new</span> Cell[list.size()]);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">public</span> Location[] getFreeNeighbor(<span class="keyword">int</span> row, <span class="keyword">int</span> col) &#123;</span><br><span class="line">    ArrayList&lt;Location&gt; list = <span class="keyword">new</span> ArrayList&lt;Location&gt;();</span><br><span class="line">    <span class="keyword">for</span> (Location loc : adjacent) &#123;</span><br><span class="line">      <span class="keyword">int</span> r = row + loc.getRow();</span><br><span class="line">      <span class="keyword">int</span> c = col + loc.getCol();</span><br><span class="line">      <span class="keyword">if</span> (r &gt; -<span class="number">1</span> &amp;&amp; r &lt; height &amp;&amp; c &gt; -<span class="number">1</span> &amp;&amp; c &lt; width &amp;&amp; field[r][c] == <span class="keyword">null</span>) &#123;</span><br><span class="line">        list.add(<span class="keyword">new</span> Location(r, c));</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// !学着点</span></span><br><span class="line">    <span class="keyword">return</span> list.toArray(<span class="keyword">new</span> Location[list.size()]);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">placeRandomAdj</span><span class="params">(<span class="keyword">int</span> row, <span class="keyword">int</span> col, Cell cell)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">boolean</span> ret = <span class="keyword">false</span>;</span><br><span class="line">    Location[] freeAdj = getFreeNeighbor(row, col);</span><br><span class="line">    <span class="keyword">if</span> (freeAdj.length &gt; <span class="number">0</span>) &#123;</span><br><span class="line">      <span class="keyword">int</span> idx = (<span class="keyword">int</span>) (Math.random() * freeAdj.length);</span><br><span class="line">      field[freeAdj[idx].getRow()][freeAdj[idx].getCol()] = cell;</span><br><span class="line">      ret = <span class="keyword">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> ret;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">clear</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; height; i++) &#123;</span><br><span class="line">      <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; width; j++) &#123;</span><br><span class="line">        field[i][j] = <span class="keyword">null</span>;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">remove</span><span class="params">(Cell fed)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> row = <span class="number">0</span>; row &lt; height; row++) &#123;</span><br><span class="line">      <span class="keyword">for</span> (<span class="keyword">int</span> col = <span class="number">0</span>; col &lt; width; col++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (field[row][col] == fed) &#123;</span><br><span class="line">          field[row][col] = <span class="keyword">null</span>;</span><br><span class="line">          <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> Cell <span class="title">remove</span><span class="params">(<span class="keyword">int</span> row, <span class="keyword">int</span> col)</span> </span>&#123; <span class="comment">// *函数重构</span></span><br><span class="line">    field[row][col] = <span class="keyword">null</span>;</span><br><span class="line">    Cell ret = field[row][col];</span><br><span class="line">    <span class="keyword">return</span> ret;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">move</span><span class="params">(<span class="keyword">int</span> row, <span class="keyword">int</span> col, Location loc)</span> </span>&#123;</span><br><span class="line">    field[loc.getRow()][loc.getCol()] = field[row][col];</span><br><span class="line">    remove(row, col);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      </script>
+      <script>
+        function loadDisqus()
+        {
+          var disqus_config = function ()
+          {
+            this.page.url = 'http://weidows2984539695.gitee.io/weidows/post/experience/MOOC-java-FoxAndRabbit/'
+            this.page.identifier = 'post/experience/MOOC-java-FoxAndRabbit/'
+            this.page.title = 'MOOC浙大翁凯教授Java第六章狐狸与兔子源代码'
+          };
+          window.disqusReset = () =>
+          {
+            DISQUS.reset(
+            {
+              reload: true,
+              config: disqus_config
+            })
+          }
+          if (window.DISQUS) disqusReset()
+          else
+          {
+            (function ()
+            {
+              var d = document,
+                s = d.createElement('script');
+              s.src = 'https://.disqus.com/embed.js';
+              s.setAttribute('data-timestamp', +new Date());
+              (d.head || d.body).appendChild(s);
+            })();
+          }
+        }
+        if ('Valine' === 'Disqus' || !true)
+        {
+          if (true) loadComment(document.getElementById('disqus_thread'), loadDisqus)
+          else loadDisqus()
+        }
+        else
+        {
+          function loadOtherComment()
+          {
+            loadDisqus()
+          }
+        }
 
-<h1 id="Location"><a href="#Location" class="headerlink" title="Location"></a>Location</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * @Author: Weidows</span></span><br><span class="line"><span class="comment"> * @Date: 2020-07-22 18:51:49</span></span><br><span class="line"><span class="comment"> * @LastEditors: Weidows</span></span><br><span class="line"><span class="comment"> * @LastEditTime: 2020-07-25 17:39:16</span></span><br><span class="line"><span class="comment"> * @FilePath: \Weidows\Java\src\main\java\twenty\july\my_interface\field\Location.java</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">package</span> twenty.july.my_interface.field;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Location</span> </span>&#123;</span><br><span class="line">  <span class="keyword">private</span> <span class="keyword">int</span> row;</span><br><span class="line">  <span class="keyword">private</span> <span class="keyword">int</span> col;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="title">Location</span><span class="params">(<span class="keyword">int</span> row, <span class="keyword">int</span> col)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.row = row;</span><br><span class="line">    <span class="keyword">this</span>.col = col;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getRow</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> row;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getCol</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> col;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      </script>
+      <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    </div>
+    <script src="./js/mine.js"></script>
+    <script src="../js/mine.js"></script>
+    <script src="../../js/mine.js"></script><canvas class="fireworks"></canvas>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js"></script>
+    <script src="/Weidows/js/third-party/fireworks.js"></script>
+    <script defer="defer" id="ribbon_piao" mobile="true" src="/Weidows/js/third-party/piao.js"></script>
+    <script src="/Weidows/js/third-party/activate-power-mode.js"></script>
+    <script>
+      POWERMODE.colorful = true;
+      POWERMODE.shake = true;
+      document.body.addEventListener('input', POWERMODE);
 
-<h1 id="View"><a href="#View" class="headerlink" title="View"></a>View</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * @Author: Weidows</span></span><br><span class="line"><span class="comment"> * @Date: 2020-07-12 15:17:00</span></span><br><span class="line"><span class="comment"> * @LastEditors: Weidows</span></span><br><span class="line"><span class="comment"> * @LastEditTime: 2020-07-24 11:06:21</span></span><br><span class="line"><span class="comment"> * @FilePath: \Weidows\Java\src\main\java\twenty\july\my_interface\field\View.java</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">package</span> twenty.july.my_interface.field;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.awt.Color;</span><br><span class="line"><span class="keyword">import</span> java.awt.Dimension;</span><br><span class="line"><span class="keyword">import</span> java.awt.Graphics;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> javax.swing.JPanel;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> twenty.july.my_interface.cell.Cell;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">View</span> <span class="keyword">extends</span> <span class="title">JPanel</span> </span>&#123;</span><br><span class="line">  <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">long</span> serialVersionUID = -<span class="number">2417015700213488315L</span>;</span><br><span class="line">  <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">int</span> GRID_SIZE = <span class="number">16</span>;</span><br><span class="line">  <span class="keyword">private</span> Field theField;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// *构造函数</span></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="title">View</span><span class="params">(Field field)</span> </span>&#123;</span><br><span class="line">    theField = field;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="meta">@Override</span></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">paint</span><span class="params">(Graphics g)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">super</span>.paint(g);</span><br><span class="line">    g.setColor(Color.GRAY);</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> row = <span class="number">0</span>; row &lt; theField.getHeight(); row++) </span><br><span class="line">      g.drawLine(<span class="number">0</span>, row * GRID_SIZE, theField.getWidth() * GRID_SIZE, row * GRID_SIZE);</span><br><span class="line">    <span class="keyword">for</span> ( <span class="keyword">int</span> col = <span class="number">0</span>; col&lt;theField.getWidth(); col++ )</span><br><span class="line">      g.drawLine(col * GRID_SIZE, <span class="number">0</span>, col * GRID_SIZE, theField.getHeight() * GRID_SIZE);</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> row = <span class="number">0</span>; row &lt; theField.getHeight(); row++) &#123;</span><br><span class="line">      <span class="keyword">for</span> (<span class="keyword">int</span> col = <span class="number">0</span>; col &lt; theField.getWidth(); col++) &#123;</span><br><span class="line">        Cell cell = theField.get(row, col);</span><br><span class="line">        <span class="keyword">if</span> (cell != <span class="keyword">null</span>) </span><br><span class="line">          cell.draw(g, col * GRID_SIZE, row * GRID_SIZE, GRID_SIZE);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="meta">@Override</span></span><br><span class="line">  <span class="function"><span class="keyword">public</span> Dimension <span class="title">getPreferredSize</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> Dimension(theField.getWidth() * GRID_SIZE + <span class="number">1</span>, theField.getHeight() * GRID_SIZE + <span class="number">1</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h1 id="FoxAndRabbit"><a href="#FoxAndRabbit" class="headerlink" title="FoxAndRabbit"></a>FoxAndRabbit</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> * @Author: Weidows</span></span><br><span class="line"><span class="comment"> * @Date: 2020-07-20 18:40:10</span></span><br><span class="line"><span class="comment"> * @LastEditors: Weidows</span></span><br><span class="line"><span class="comment"> * @LastEditTime: 2020-07-24 13:23:07</span></span><br><span class="line"><span class="comment"> * @FilePath: \Weidows\Java\src\main\java\twenty\july\my_interface\fox_and_rabbit\FoxAndRabbit.java</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">package</span> twenty.july.my_interface.fox_and_rabbit;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.ArrayList;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> javax.swing.JFrame;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> twenty.july.my_interface.animal.*;</span><br><span class="line"><span class="keyword">import</span> twenty.july.my_interface.cell.Cell;</span><br><span class="line"><span class="keyword">import</span> twenty.july.my_interface.field.*;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">FoxAndRabbit</span> </span>&#123;</span><br><span class="line">  <span class="keyword">private</span> Field theField;</span><br><span class="line">  <span class="keyword">private</span> View theView;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="title">FoxAndRabbit</span><span class="params">(<span class="keyword">int</span> size)</span> </span>&#123;</span><br><span class="line">    theField = <span class="keyword">new</span> Field(size, size);</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> row = <span class="number">0</span>; row &lt; theField.getHeight(); row++) &#123;</span><br><span class="line">      <span class="keyword">for</span> (<span class="keyword">int</span> col = <span class="number">0</span>; col &lt; theField.getWidth(); col++) &#123;</span><br><span class="line">        <span class="keyword">double</span> probability = Math.random();</span><br><span class="line">        <span class="keyword">if</span> (probability &lt; <span class="number">0.05</span>) &#123;</span><br><span class="line">          theField.place(row, col, <span class="keyword">new</span> Fox());</span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (probability &lt; <span class="number">0.15</span>) &#123;</span><br><span class="line">          theField.place(row, col, <span class="keyword">new</span> Rabbit());</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    theView = <span class="keyword">new</span> View(theField);</span><br><span class="line">    JFrame frame = <span class="keyword">new</span> JFrame();</span><br><span class="line">    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);</span><br><span class="line">    frame.setResizable(<span class="keyword">false</span>);</span><br><span class="line">    frame.setTitle(<span class="string">&quot;Cells&quot;</span>);</span><br><span class="line">    frame.add(theView);</span><br><span class="line">    frame.pack();</span><br><span class="line">    frame.setVisible(<span class="keyword">true</span>);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">start</span><span class="params">(<span class="keyword">int</span> steps)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; steps; i++) &#123;</span><br><span class="line">      step();</span><br><span class="line">      theView.repaint();</span><br><span class="line">      <span class="keyword">try</span> &#123;</span><br><span class="line">        Thread.sleep(<span class="number">200</span>);</span><br><span class="line">      &#125; <span class="keyword">catch</span> (InterruptedException e) &#123;</span><br><span class="line">        e.printStackTrace();</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">step</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> row = <span class="number">0</span>; row &lt; theField.getHeight(); row++) &#123;</span><br><span class="line">      <span class="keyword">for</span> (<span class="keyword">int</span> col = <span class="number">0</span>; col &lt; theField.getWidth(); col++) &#123;</span><br><span class="line">        Cell cell = (Cell) theField.get(row, col);</span><br><span class="line">        <span class="keyword">if</span> (cell != <span class="keyword">null</span>) &#123;</span><br><span class="line">          Animal animal = (Animal) cell;</span><br><span class="line">          animal.grow();</span><br><span class="line">          <span class="keyword">if</span> (animal.isAlive()) &#123;</span><br><span class="line">            <span class="comment">// *move</span></span><br><span class="line">            Location loc = animal.move(theField.getFreeNeighbor(row, col));</span><br><span class="line">            <span class="keyword">if</span> (loc != <span class="keyword">null</span>)</span><br><span class="line">              theField.move(row, col, loc);</span><br><span class="line">            <span class="comment">// *eat</span></span><br><span class="line">            Cell[] neighbor = (Cell[]) theField.getNeighbor(row, col);</span><br><span class="line">            ArrayList&lt;Animal&gt; listRabbit = <span class="keyword">new</span> ArrayList&lt;Animal&gt;();</span><br><span class="line">            <span class="keyword">for</span> (Cell an : neighbor) &#123;</span><br><span class="line">              <span class="keyword">if</span> (an <span class="keyword">instanceof</span> Rabbit) &#123;</span><br><span class="line">                listRabbit.add((Rabbit) an);</span><br><span class="line">              &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> (!listRabbit.isEmpty()) &#123;</span><br><span class="line">              Animal fed = animal.feed(listRabbit);</span><br><span class="line">              <span class="keyword">if</span> (fed != <span class="keyword">null</span>)</span><br><span class="line">                theField.remove((Cell) fed);</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">// *breed</span></span><br><span class="line">            Animal baby = animal.breed();</span><br><span class="line">            <span class="keyword">if</span> (baby != <span class="keyword">null</span>) &#123;</span><br><span class="line">              theField.placeRandomAdj(row, col, (Cell) baby);</span><br><span class="line">            &#125;</span><br><span class="line">          &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            theField.remove(row, col);</span><br><span class="line">          &#125;</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">    FoxAndRabbit fnr = <span class="keyword">new</span> FoxAndRabbit(<span class="number">50</span>);</span><br><span class="line">    fnr.start(<span class="number">100</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</div><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">Weidows</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://weidows2984539695.gitee.io/weidows/post/experience/MOOC-java-FoxAndRabbit/">http://weidows2984539695.gitee.io/weidows/post/experience/MOOC-java-FoxAndRabbit/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://weidows2984539695.gitee.io/weidows" target="_blank">⭐️Weidows の Page⭐️</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/Weidows/tags/java/">Java</a></div><div class="post_share"><div class="social-share" data-image="https://raw.githubusercontent.com/Weidows/Weidows/master/java/src/main/java/twenty/july/my_interface/interface/Cells173751.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏<div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://gitee.com/Weidows2984539695/Weidows/raw/master/Website/source/images/QRcode/wechat_ful.jpg" target="_blank"><img class="post-qr-code-img" data-lazy-src="/Weidows/images/QRcode/wechat.jpg" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://gitee.com/Weidows2984539695/Weidows/raw/master/Website/source/images/QRcode/alipay_ful.jpg" target="_blank"><img class="post-qr-code-img" data-lazy-src="/Weidows/images/QRcode/alipay.jpg" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/Weidows/post/backup/Hexo-plugin/"><img class="prev-cover" data-lazy-src="https://gitee.com/Weidows2984539695/Weidows/raw/master/Website/public/images/post/Hexo-plugin.jpg" onerror="onerror=null;src='/Weidows/images/img/404.jpg'"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">淦翻Hexo各种插件安装+调试</div></div></a></div><div class="next-post pull-right"><a href="/Weidows/post/experience/about_system/"><img class="next-cover" data-lazy-src="https://gitee.com/Weidows2984539695/Weidows/raw/master/Website/public/images/post/about_system.png" onerror="onerror=null;src='/Weidows/images/img/404.jpg'"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">关于安装系统硬盘&amp;引导那些事</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div><div class="comment-switch"><span class="first-comment">Valine</span><label><input id="switch-comments-btn" type="checkbox"/><span class="slider"></span></label><span class="second-comment">Disqus</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div><div><div id="disqus_thread"></div></div></div></div></article></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2020 By Weidows</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">⭐️ Thank U 4 Visiting My Mind ⭐️</div><div class="icp"><a><img class="icp-icon" src="/Weidows/images/img/icp.png"/><span></span></a></div></div></footer></div><section id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="font_plus" type="button" title="放大字体"><i class="fas fa-plus"></i></button><button id="font_minus" type="button" title="缩小字体"><i class="fas fa-minus"></i></button><button id="translateLink" type="button" title="简繁转换">簡</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></section><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a target="_blank" rel="noopener" href="https://github.com/wzpan/hexo-generator-search" style="color:#49B1F5;">hexo-generator-search</a>
- <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/Weidows/js/utils.js"></script><script src="/Weidows/js/main.js"></script><script src="/Weidows/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module" defer></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js" async></script><script>function panguFn () {
-  if (typeof pangu === 'object') pangu.spacingElementById('content-inner')
-  else {
-    $.getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js', () => {
-      pangu.spacingElementById('content-inner')
-    })
-  }
-}
-
-function panguInit () {
-  if (true){
-    GLOBAL_CONFIG_SITE.isPost && panguFn()
-  } else {
-    panguFn()
-  }
-}
-
-document.addEventListener('DOMContentLoaded', panguFn)</script><script src="/Weidows/js/search/local-search.js"></script><script>var endLoading = function () {
-  document.body.style.overflow = 'auto';
-  document.getElementById('loading-box').classList.add("loaded")
-}
-window.addEventListener('load',endLoading)</script><div class="js-pjax"><script>function loadValine () {
-  function initValine () {
-    window.valine = new Valine({
-      el: '#vcomment',
-      appId: 'BbOLCoJcHWUHnNAeaCjiXNM5-gzGzoHsz',
-      appKey: '5YNqKnyUnC0MvAbhoxGj6z3B',
-      placeholder: '在7:00-23:59之间,扣下邮箱地址'应该'就会回复:)',
-      avatar: 'wavatar',
-      meta: 'nick,mail,link'.split(','),
-      pageSize: '10',
-      lang: 'zh-CN',
-      recordIP: true,
-      serverURLs: '',
-      emojiCDN: '',
-      emojiMaps: "",
-      enableQQ: true,
-      path: window.location.pathname,
+    </script>
+    <script src="/Weidows/js/third-party/click_heart.js" async="async"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js"></script>
+  </div>
+  <script src="/Weidows/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script>
+  <script>
+    L2Dwidget.init(
+    {
+      "pluginRootPath": "live2dw/",
+      "pluginJsPath": "lib/",
+      "pluginModelPath": "assets/",
+      "tagMode": false,
+      "debug": false,
+      "model":
+      {
+        "jsonPath": "/Weidows/live2dw/assets/assets/tororo.model.json"
+      },
+      "display":
+      {
+        "position": "left",
+        "width": 180,
+        "height": 300
+      },
+      "mobile":
+      {
+        "show": false
+      },
+      "react":
+      {
+        "opacity": 0.7
+      },
+      "log": false
     });
-    if ('nick,mail') { valine.config.requiredFields= 'nick,mail'.split(',') }
-  }
 
-  if (typeof Valine === 'function') initValine() 
-  else $.getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js', initValine)
-}
+  </script>
+</body>
 
-if ('Valine' === 'Valine' || !true) {
-  if (true) loadComment(document.querySelector('#vcomment'),loadValine)
-  else setTimeout(() => loadValine(), 0)
-} else {
-  function loadOtherComment () {
-    loadValine()
-  }
-}</script><script>function loadDisqus () {
-  var disqus_config = function () {
-    this.page.url = 'http://weidows2984539695.gitee.io/weidows/post/experience/MOOC-java-FoxAndRabbit/'
-    this.page.identifier = 'post/experience/MOOC-java-FoxAndRabbit/'
-    this.page.title = 'MOOC浙大翁凯教授Java第六章狐狸与兔子源代码'
-  };
-
-  window.disqusReset = () => {
-    DISQUS.reset({
-      reload: true,
-      config: disqus_config
-    })
-  }
-
-  if (window.DISQUS) disqusReset()
-  else {
-    (function() { 
-      var d = document, s = d.createElement('script');
-      s.src = 'https://.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
-    })();
-  }
-}
-
-if ('Valine' === 'Disqus' || !true) {
-  if (true) loadComment(document.getElementById('disqus_thread'), loadDisqus)
-  else loadDisqus()
-} else {
-  function loadOtherComment () {
-    loadDisqus()
-  }
-}
-</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script src="./js/mine.js"></script><script src="../js/mine.js"></script><script src="../../js/mine.js"></script><canvas class="fireworks"></canvas><script src="https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js"></script><script src="/Weidows/js/third-party/fireworks.js"></script><script defer="defer" id="ribbon_piao" mobile="true" src="/Weidows/js/third-party/piao.js"></script><script src="/Weidows/js/third-party/activate-power-mode.js"></script><script>POWERMODE.colorful = true;
-POWERMODE.shake = true;
-document.body.addEventListener('input', POWERMODE);
-</script><script src="/Weidows/js/third-party/click_heart.js" async="async"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js"></script></div><script src="/Weidows/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/Weidows/live2dw/assets/assets/tororo.model.json"},"display":{"position":"left","width":180,"height":300},"mobile":{"show":false},"react":{"opacity":0.7},"log":false});</script></body></html>
+</html>

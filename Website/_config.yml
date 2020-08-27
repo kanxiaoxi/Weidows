@@ -134,7 +134,7 @@ bangumi:
   path: tags/bangumis.html
   vmid: 38283369  # 哔哩哔哩番剧页面的 vmid(uid)
   title: '番 の 表'  # 页面的标题
-  quote: <h1 align="center">生命不息，追番不止！</h1> # 写在页面开头的一段话，支持 html 语法
+  quote: <h1 align="center">看看有新娶来几个老婆~!</h1> # 写在页面开头的一段话，支持 html 语法
   show: 1 # 初始显示页面：0: 想看 , 1: 在看 , 2: 看过，默认为 1
   loading: '/images/img/bangumi-loading.gif' # 图片加载完成前的 loading 图片
 
@@ -170,7 +170,7 @@ steam:
   enable: true 
   steamId: '76561198321099712' # steam64位Id(需要放在引号里),将steam库设置为公开
   path: tags/games.html # 页面路径，默认steamgames/index.html
-  title: ⭐️养鸡场⭐️ 
+  title: ⭐️养G场⭐️ 
   quote: 'Steam给爷爬!别让我家EPIC误会' # 写在页面开头的一段话,支持html语法
   tab: all # all或recent, all: 所有游戏, recent: 最近游玩的游戏
   length: 1000
@@ -178,3 +178,17 @@ steam:
   proxy: # 如果无法访问steam社区的话请使用代理
     host: # 代理ip或域名
     port: # 代理端口
+
+douban:
+  user: 222366733
+  builtin: true
+  timeout: 10000 
+  book:
+    title: 'My book title'
+    quote: 'My book quote'
+  movie:
+    title: 'My movie title'
+    quote: 'My movie quote'
+  # game:
+  #   title: 'My game title'
+  #   quote: 'My game quote'

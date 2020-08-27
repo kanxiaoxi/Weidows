@@ -13,7 +13,7 @@ cover: https://gitee.com/Weidows2984539695/Weidows/raw/master/Website/public/ima
  * @Author: Weidows
  * @Date: 2020-08-25 00:05:52
  * @LastEditors: Weidows
- * @LastEditTime: 2020-08-27 00:13:26
+ * @LastEditTime: 2020-08-28 01:16:39
  * @FilePath: \Weidows\Website\source\_posts\backup\Hexo-plugin.md
 -->
 
@@ -39,16 +39,64 @@ cover: https://gitee.com/Weidows2984539695/Weidows/raw/master/Website/public/ima
   ```
 ---
 
-# 注意事项
+# 注意事项 & 常见问题
   * 注意如果repo命名时没加.github.io的后缀,那么只能deploy到gh-pages分支(否则出错)
 
   * workflow作用只是把public/ deploy到gh-pages分支上,generate出public/仍需要在本地进行
     
-  * 如果打开Hexo Server后报错(extends includes/layout.pug block content #recent-posts.recent-posts include includes/recent-posts.pug include includes/pagination.pug)
-      cnpm install hexo-renderer-pug hexo-renderer-stylus --save
-
+  * 如果打开Hexo Server后报错(extends includes/layout.pug block content #recent-posts.recent-posts include includes/recent-posts.pug include includes/pagination.pug)是因为没有安装渲染插件:
+    ```
+    cnpm install hexo-renderer-pug hexo-renderer-stylus --save
+    ```
   * 导航栏中的项目不能打tag和categories(编译报错),也不能进行cover更改(无效)
   * 注意修改source的css或者js后进行generate不会刷新状态,需要删掉重新generate
+  * theme/xxx/_config.yml可以放在source/_data/xxx.yml来当主题配置文件,原先的可以删去
+---
+
+# 添加tags/categories/link页面
+  ## tags
+  ```
+  hexo new page tags
+  ```
+  ## categories
+  ```
+  hexo new page categories
+  ```
+  ## link
+  ```
+  hexo new page link
+  ```
+  * 另外还需要在source/_data/link.yml里添加数据,如:
+    ```
+    - class_name: 友情鏈接
+      class_desc: 那些人，那些事
+      link_list:
+        - name: JerryC
+          link: https://jerryc.me/
+          avatar: https://jerryc.me/image/avatar.png
+          descr: 今日事,今日畢
+        - name: Hexo
+          link: https://hexo.io/zh-tw/
+          avatar: https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg
+          descr: 快速、簡單且強大的網誌框架
+
+    - class_name: 網站
+      class_desc: 值得推薦的網站
+      link_list:
+        - name: Youtube
+          link: https://www.youtube.com/
+          avatar: https://i.loli.net/2020/05/14/9ZkGg8v3azHJfM1.png
+          descr: 視頻網站
+        - name: Weibo
+          link: https://www.weibo.com/
+          avatar: https://i.loli.net/2020/05/14/TLJBum386vcnI1P.png
+          descr: 中國最大社交分享平台
+        - name: Twitter
+          link: https://twitter.com/
+          avatar: https://i.loli.net/2020/05/14/5VyHPQqR6LWF39a.png
+          descr: 社交分享平台
+    ```
+  * 最后,还可以在link.md中自定义样式(写的内容显示在友链下方)
 ---
 
 # 安装Live2D (不能用cnpm 这俩二选一)
@@ -67,7 +115,7 @@ cover: https://gitee.com/Weidows2984539695/Weidows/raw/master/Website/public/ima
 
 # 启用comment && search && 字数统计
   ``` 
-    npm install valine --save
+    cnpm install valine --save
     cnpm install hexo-generator-search --save
     cnpm i --save hexo-wordcount
     然后把主题里的_config.yml改改
@@ -89,9 +137,11 @@ cover: https://gitee.com/Weidows2984539695/Weidows/raw/master/Website/public/ima
       cover: # 封面图片,注意不能用../命令,双引号有无均可
       comments: # 评论开关 true/false
       top_img: # 文章banner图,如果有cover的话默认用的是cover(这个可以给_post之外的用)
-    #以下是没用过或无效的
-      subtitle: # 网站副标题,无效
+      date: # 创建时间
+      updated:  # 更新时间
       description: # 网站描述
+      aside: # 侧边栏开关
+    #以下是没用过或无效的
       keywords: # 网站关键词
       author: # 网站作者
       language: # 语言, 一般填 'zh-CN'
@@ -230,4 +280,45 @@ cover: https://gitee.com/Weidows2984539695/Weidows/raw/master/Website/public/ima
   ```
   * 生成的内容复制到`root/node_modules/hexo-steam-games/data/games.json`
   * 这个不用new页面(但是数据文件路径无法改)
+---
+
+# 安装音乐aplayer
+  ## 安装
+  ```
+  cnpm install --save hexo-tag-aplayer
+  ```
+  ## 使用
+  * 在需要开启的页面Front-matter添加
+    ```
+    aplayer: true
+    ```
+---
+
+# 安装豆瓣电影
+  ## 安装
+  ```
+  cnpm install hexo-douban --save
+  ```
+  ## 使用
+  ```
+  douban:
+    user: userID
+    builtin: true
+    timeout: 10000 
+    book:
+      title: 'My book title'
+      quote: 'My book quote'
+    movie:
+      title: 'My movie title'
+      quote: 'My movie quote'
+    game:
+      title: 'My game title'
+      quote: 'My game quote'
+  ```
+  * user: 你的豆瓣ID.打开豆瓣，登入账户，然后在右上角点击 "个人主页" ，这时候地址栏的URL大概是这样："https://www.douban.com/people/xxxxxx/" ，其中的"xxxxxx"就是你的个人ID了。
+  * builtin: 是否将生成页面的功能嵌入hexo s和hexo g中，默认是false,另一可选项为true(1.x.x版本新增配置项)。
+  * title: 该页面的标题.
+  * quote: 写在页面开头的一段话,支持html语法.
+  * timeout: 爬取数据的超时时间，默认是 10000ms ,如果在使用时发现报了超时的错(ETIMEOUT)可以把这个数据设置的大一点。
+  * 如果只想显示某一个页面(比如movie)，那就把其他的配置项注释掉即可。
 ---

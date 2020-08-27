@@ -1,18 +1,20 @@
 ---
-title: ⭐ 关于我的联系方式 ⭐
+title: ⭐ 听说你找我? ⭐
 ---
 <!--
  * @Author: Weidows
  * @Date: 2020-07-24 14:07:43
  * @LastEditors: Weidows
- * @LastEditTime: 2020-08-26 21:31:31
+ * @LastEditTime: 2020-08-28 00:30:00
  * @FilePath: \Weidows\Website\source\tags\about.md
 -->
-
-<h2 align="center">
+<h1 align="center">
   ⭐️ Weidow's 🌈Info ⭐️
   
   ---
+</h1>
+
+<h2 align="center">
 
   [*邮箱: UTsuKo27@qq.com*](https://mail.qq.com)
 

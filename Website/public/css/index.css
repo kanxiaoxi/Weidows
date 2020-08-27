@@ -4843,9 +4843,6 @@ img {
 #vcomment .vbtn:hover {
   background: var(--btn-hover-color);
 }
-#vcomment textarea {
-  background: url("/images/Humor/Cai.jpg") 100% 100% no-repeat;
-}
 #vcomment .vimg {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;

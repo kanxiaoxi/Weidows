@@ -7,26 +7,25 @@
 #   name || link || icon
 
 menu: #导航栏
-  主页: / || fas fa-home
-  博客三宝||:
+  博客三宝|| fas fa-home:
     - 标 签 || tags || fas fa-tags
     - 分 类 || categories || fas fa-folder-open
     - 时间轴 || archives || fas fa-archive
-  代码仓库||fas fa-link:
-    - 此网站 || categories/Weidows
-    - 彩虹屁 || categories/Crosstalk-rainbow-fart
+  代码仓库||fas fa-bars:
+    - 此网站 || categories/Weidows || fas fa-circle
+    - 彩虹屁 || categories/Crosstalk-rainbow-fart || fas fa-coffee
   兴趣爱好||fas fa-list:
-    - 游戏 || tags/games || fas fa-bangum
-    - 番剧 || tags/bangumis || fas fa-bangumis
-    - 相册 || tags/gallery || fas fa-bangumis
+    - 游戏 || tags/games || fas fa-gamepad
+    - 番剧 || tags/bangumis || fas fa-laptop
+    - 相册 || tags/gallery || fas fa-camera
     - 音乐 || tags/music || fas fa-music
     - 电影 || movies || fas fa-video
-    - 图书 || books || fas fa-books
+    - 图书 || books || fas fa-book
   关于||fas fa-heart:
     - <我> || tags/about || fas fa-user
-    - 友人帐 || tags/link || fas fa-heart
-    - 说 说 || tags/my_artitalk || fa fa-comments-o
-    - 留言板 || tags/comment || fas fa-bangumis
+    - 友人帐 || tags/link || fas fa-link
+    - 说 说 || tags/my_artitalk || fa fa-comment
+    - 留言板 || tags/comment || fas fa-comments
 
 # Code Blocks (代碼相關)
 # --------------------------------------
@@ -43,7 +42,7 @@ copy:
   enable: true
   copyright:
     enable: true
-    limit_count: 10
+    limit_count: 100
 
 # social settings (社交圖標設置)
 # formal:
@@ -552,8 +551,9 @@ display_mode: dark
 beautify:
   enable: true
   field: site # site/post
-  title-prefix-icon: '\f0c1'
-  title-prefix-icon-color: '#F47466'
+  # title-prefix-icon: '\f0c1'
+  title-prefix-icon: '🌈'
+  title-prefix-icon-color: '#00ff63'
 
 # Global font settings
 # Don't modify the following settings unless you know how they work (非必要不要修改)
@@ -698,7 +698,7 @@ fancybox: true
 mermaid:
   enable: true
   # built-in themes: default/forest/dark/neutral
-  theme: forest
+  theme: default
 
 # Note (Bootstrap Callout)
 note:

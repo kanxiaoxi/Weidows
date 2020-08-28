@@ -14,7 +14,7 @@ cover: https://gitee.com/Weidows2984539695/Weidows/raw/master/Website/public/ima
  * @Author: Weidows
  * @Date: 2020-08-27 01:13:03
  * @LastEditors: Weidows
- * @LastEditTime: 2020-08-28 00:05:10
+ * @LastEditTime: 2020-08-28 21:46:41
  * @FilePath: \Weidows\Website\source\_posts\backup\Hexo-fansy.md
 -->
 
@@ -145,6 +145,7 @@ cover: https://gitee.com/Weidows2984539695/Weidows/raw/master/Website/public/ima
   爷是:
   Weidows
   {% endhideToggle %}
+  * tag-hide 内的标签外挂 content 内都不建议有 h1 - h6 等标题。因为 Toc 会把隐藏内容标题也显示出来，而且当滚动屏幕时，如果隐藏内容没有显示出来，会导致 Toc 的滚动出现异常。
 ---
 
 # mermaid
@@ -174,6 +175,8 @@ cover: https://gitee.com/Weidows2984539695/Weidows/raw/master/Website/public/ima
         "Magnesium" : 10.01
         "Iron" :  5
     {% endmermaid %}
+  * mermaid 标籤不允许嵌套于一些隐藏属性的标籤外挂，例如: tag-hide 内的标籤外挂和 tabs 标籤外挂，这会导致 mermaid 图示无法正常显示，使用时请留意。
+  * 请不要压缩 html 代码，不然会导致 mermaid 显示异常
 ---
 
 # tabs(标签块)
@@ -269,4 +272,10 @@ cover: https://gitee.com/Weidows2984539695/Weidows/raw/master/Website/public/ima
     {% btn 'http://www.jerryc.me',JerryC,far fa-hand-point-right,outline purple larger %}
     {% btn 'http://www.jerryc.me',JerryC,far fa-hand-point-right,outline orange larger %}
     {% btn 'http://www.jerryc.me',JerryC,far fa-hand-point-right,outline green larger %}
+---
+
+# _config.yml
+  * 这里面inject js/css功能只能插入本地的,而且必须是./形式
+  * css的inject在head,js的inject在body,不能改变位置(失效)
+  * valine设置处的placeholder不能写带单引号的内容,会导致整个valine评论崩溃不显示
 ---

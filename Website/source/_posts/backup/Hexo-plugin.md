@@ -13,7 +13,7 @@ cover: https://gitee.com/Weidows2984539695/Weidows/raw/master/Website/public/ima
  * @Author: Weidows
  * @Date: 2020-08-25 00:05:52
  * @LastEditors: Weidows
- * @LastEditTime: 2020-08-28 01:16:39
+ * @LastEditTime: 2020-08-28 19:16:32
  * @FilePath: \Weidows\Website\source\_posts\backup\Hexo-plugin.md
 -->
 
@@ -118,8 +118,9 @@ cover: https://gitee.com/Weidows2984539695/Weidows/raw/master/Website/public/ima
     cnpm install valine --save
     cnpm install hexo-generator-search --save
     cnpm i --save hexo-wordcount
-    然后把主题里的_config.yml改改
   ```
+  * 然后把主题里的_config.yml改改
+  * 需要注意comment插件有些主题自带,不需要安装(butterfly)
 ---
 
 # Hexo文章标题 & 格式
@@ -207,40 +208,7 @@ cover: https://gitee.com/Weidows2984539695/Weidows/raw/master/Website/public/ima
   ```
 ---
 
-# 页面美化
-  ## 安装:
-  ```
-  npm install hexo-html-prettify --save-dev
-  ```
-  
-  ## 启用:
-  ```
-  html_prettify:
-    enable: true
-    exclude:
-        - "*/**/test"
-    options:
-        indent_size: 2
-        indent_char: " "
-        max_preserve_newlines: "-1"
-        preserve_newlines: false
-        keep_array_indentation: true
-        break_chained_methods: false
-        indent_scripts: normal
-        brace_style: expand
-        space_before_conditional: true
-        unescape_strings: false
-        jslint_happy: true
-        end_with_newline: true
-        wrap_line_length: "0"
-        indent_inner_html: false
-        comma_first: false
-        e4x: false
-        indent_empty_lines: false
-  ```
----
-
-# Steam游戏页面
+# Steam游戏页面(经常被其他插件干扰误删)
   ## 安装
   ```
   cnpm install hexo-steam-games --save

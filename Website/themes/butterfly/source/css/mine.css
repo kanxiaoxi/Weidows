@@ -120,7 +120,7 @@ i:hover {
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: right;
-	background-color: rgba(255, 70, 70, 0.849);
+	background-color: rgba(255, 0, 191, 0.3);
 	resize: vertical
 }
 #veditor:focus{

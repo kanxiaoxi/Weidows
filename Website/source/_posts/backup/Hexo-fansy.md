@@ -14,7 +14,7 @@ cover: https://gitee.com/Weidows2984539695/Weidows/raw/master/Website/public/ima
  * @Author: Weidows
  * @Date: 2020-08-27 01:13:03
  * @LastEditors: Weidows
- * @LastEditTime: 2020-08-28 21:46:41
+ * @LastEditTime: 2020-08-30 10:26:43
  * @FilePath: \Weidows\Website\source\_posts\backup\Hexo-fansy.md
 -->
 
@@ -275,7 +275,9 @@ cover: https://gitee.com/Weidows2984539695/Weidows/raw/master/Website/public/ima
 ---
 
 # _config.yml
-  * 这里面inject js/css功能只能插入本地的,而且必须是./形式
-  * css的inject在head,js的inject在body,不能改变位置(失效)
-  * valine设置处的placeholder不能写带单引号的内容,会导致整个valine评论崩溃不显示
+  * 合并:把themes/xxx/_config.yml移动到source/_data/里,并改名为xxx.yml
+  * 我所遇到的各种问题
+    * 这里面inject js/css功能只能插入本地的,而且必须是./形式
+    * css的inject在head,js的inject在body,不能改变位置(失效)
+    * valine设置处的placeholder不能写带单引号的内容,会导致整个valine评论崩溃不显示
 ---

@@ -13,7 +13,7 @@ cover: https://gitee.com/Weidows2984539695/Weidows/raw/master/Website/public/ima
  * @Author: Weidows
  * @Date: 2020-08-25 00:05:52
  * @LastEditors: Weidows
- * @LastEditTime: 2020-08-28 19:16:32
+ * @LastEditTime: 2020-08-30 11:18:51
  * @FilePath: \Weidows\Website\source\_posts\backup\Hexo-plugin.md
 -->
 
@@ -121,6 +121,13 @@ cover: https://gitee.com/Weidows2984539695/Weidows/raw/master/Website/public/ima
   ```
   * 然后把主题里的_config.yml改改
   * 需要注意comment插件有些主题自带,不需要安装(butterfly)
+  * 在source/data/里新建valine.json,里面可以添加表情包了,格式如下:
+  ```
+  {
+    "表情1": "URL",
+    "表情2": "URL"
+  }
+  ```
 ---
 
 # Hexo文章标题 & 格式
@@ -256,10 +263,12 @@ cover: https://gitee.com/Weidows2984539695/Weidows/raw/master/Website/public/ima
   cnpm install --save hexo-tag-aplayer
   ```
   ## 使用
-  * 在需要开启的页面Front-matter添加
+  * 如果per_page关了的话在需要开启的页面Front-matter添加
     ```
     aplayer: true
     ```
+  ## 全局吸底mini播放器
+  需要导入js并通过导入css修改Aplayer缩进样式
 ---
 
 # 安装豆瓣电影

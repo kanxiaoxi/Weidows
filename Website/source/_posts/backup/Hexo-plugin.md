@@ -13,7 +13,7 @@ cover: https://gitee.com/Weidows2984539695/Weidows/raw/master/Website/public/ima
  * @Author: Weidows
  * @Date: 2020-08-25 00:05:52
  * @LastEditors: Weidows
- * @LastEditTime: 2020-08-30 11:18:51
+ * @LastEditTime: 2020-08-31 11:07:28
  * @FilePath: \Weidows\Website\source\_posts\backup\Hexo-plugin.md
 -->
 
@@ -53,7 +53,7 @@ cover: https://gitee.com/Weidows2984539695/Weidows/raw/master/Website/public/ima
   * theme/xxx/_config.yml可以放在source/_data/xxx.yml来当主题配置文件,原先的可以删去
 ---
 
-# 添加tags/categories/link页面
+# 添加标签tags/分类categories/友链link页面
   ## tags
   ```
   hexo new page tags
@@ -144,7 +144,7 @@ cover: https://gitee.com/Weidows2984539695/Weidows/raw/master/Website/public/ima
       type: "" # 指定这个页面的类型(比如categories/tags)
       cover: # 封面图片,注意不能用../命令,双引号有无均可
       comments: # 评论开关 true/false
-      top_img: # 文章banner图,如果有cover的话默认用的是cover(这个可以给_post之外的用)
+      top_img: # 文章banner图,如果有cover的话默认用的是cover(这个可以给_post之外的用),其隐藏前缀目录为Website/public/注意格式应为:images/xxx,但是这样会使_posts里文章的相关文章封面失效,需要用URL
       date: # 创建时间
       updated:  # 更新时间
       description: # 网站描述
@@ -268,7 +268,26 @@ cover: https://gitee.com/Weidows2984539695/Weidows/raw/master/Website/public/ima
     aplayer: true
     ```
   ## 全局吸底mini播放器
-  需要导入js并通过导入css修改Aplayer缩进样式
+  * 需要导入js并通过导入css修改Aplayer缩进样式
+  * 在_config.yml里修改有一定限制,inject只能搞腚source中文章的其中某一层目录,多层需要不同层级目录各引用一次,如下:
+  ```
+  inject:
+    head:
+      # - <link rel="stylesheet" href="./css/mine.css">
+    bottom:
+      # - <script src="./js/mine.js"></script>
+      # - <script src="../js/mine.js"></script>
+      # - <script src="../../js/mine.js"></script>
+      # - <script src="../../../js/mine_post.js"></script>
+  ```
+  * 这里介绍另一种全局inject的方法:
+    * 找到theme/xxx/layout/includes/layout.pug
+    * 在最后添加如下字段:
+    ```
+    script(src='js/mine.js')
+    link(rel='stylesheet', href='css/mine.css')
+    ```
+    * 按照上面可以自行修改JS/CSS的引入,全局生效(注意有可能PJAX会使这种引入的Js无效化)
 ---
 
 # 安装豆瓣电影

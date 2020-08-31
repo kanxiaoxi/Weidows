@@ -1,12 +1,13 @@
 ---
 title: ⭐"Crosstalk-rainbow-fart"仓库简介⭐
+top_img: https://raw.githubusercontent.com/Weidows/Crosstalk-rainbow-fart/master/image/dark.jpg
 ---
 <!--
  * @Author: Weidows
  * @Date: 2020-07-02 10:44:33
  * @LastEditors: Weidows
- * @LastEditTime: 2020-08-23 14:41:37
- * @FilePath: \Weidows\Website\source\repository\Crosstalk-rainbow-fart.md
+ * @LastEditTime: 2020-08-31 11:01:11
+ * @FilePath: \Weidows\Website\source\categories\Crosstalk-rainbow-fart.md
 --> 
 <h1 align="center">
  ⭐️ 相声🌈Rainbow-Fart语音包 ⭐️ 

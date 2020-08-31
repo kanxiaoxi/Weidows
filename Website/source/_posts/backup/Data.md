@@ -8,7 +8,7 @@ cover: https://gitee.com/Weidows2984539695/Weidows/raw/master/Website/public/ima
  * @Author: Weidows
  * @Date: 2020-08-19 00:38:26
  * @LastEditors: Weidows
- * @LastEditTime: 2020-08-26 22:09:32
+ * @LastEditTime: 2020-08-30 19:20:27
  * @FilePath: \Weidows\Website\source\_posts\backup\Data.md
 -->
 
@@ -155,3 +155,13 @@ cover: https://gitee.com/Weidows2984539695/Weidows/raw/master/Website/public/ima
     `http://api.k780.com:88/?app=qr.get&data=`
   * QR Code Generator(https接口)
     `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=`
+    
+  ## 鼠标点击/跟随特效js
+    * 小心心特效
+    `https://cdn.jsdelivr.net/gh/Sanarous/files@1.151/js/clicklove.js`
+    * 社会主义核心价值观
+    `https://cdn.jsdelivr.net/gh/Sanarous/files@1.151/js/clicksocialvalue.js`
+    * 花花特效
+    `https://cdn.jsdelivr.net/gh/Sanarous/files@1.151/js/click.min.js`
+    * 跟随特效
+    `https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/js/mouse_snow.min.js`

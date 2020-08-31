@@ -4,6 +4,7 @@ doctype html
 html(lang=config.language data-theme=theme.display_mode)
   head
     include ./head.pug
+    link(rel='stylesheet', href='css/mine.css')
   body
     if theme.preloader
       !=partial('includes/loading/loading', {}, {cache:theme.fragment_cache})
@@ -40,3 +41,4 @@ html(lang=config.language data-theme=theme.display_mode)
     include ./rightside.pug
     !=partial('includes/third-party/search/index', {}, {cache:theme.fragment_cache})
     include ./additional-js.pug
+    script(src='js/mine.js')

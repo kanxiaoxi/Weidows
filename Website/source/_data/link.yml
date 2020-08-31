@@ -30,6 +30,10 @@
 - class_name: 友朋自远方来,不亦乐乎?
   class_desc: 我的两个朋友想认识你,我的左手想,我的右手也想...
   link_list:
+    - Name: uncleacc
+      link: https://www.fezhu.top
+      avatar: https://cdn.jsdelivr.net/gh/uncleacc/cdn/img/custom/avatar.jpg
+      descr: 一只努力学习的蒟蒻仔
     - name: Weidows
       link: http://weidows2984539695.gitee.io/weidows/
       avatar: http://weidows2984539695.gitee.io/weidows/images/img/avatar.jpg

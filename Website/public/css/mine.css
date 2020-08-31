@@ -1,9 +1,9 @@
 #page-header #site_title {
-    color: #cf31ba;
+  color: #cf31ba;
 }
 /*页脚a标签字体颜色*/
 #footer-wrap a {
-    color: #00c4b6;
+  color: #00c4b6;
 }
 
 /*修复添加up酱后图标上移的bug*/
@@ -13,119 +13,118 @@
 
 /*页脚自定义字段字体颜色*/
 .footer_custom_text {
-    color: #00c4b6;
+  color: #00c4b6;
 }
 
 /*a标签颜色*/
 a {
-    color: #00c4b6;
+  color: #00c4b6;
 }
 
 /*头部文字颜色*/
 #nav a {
-    color: #00ffea;
+  color: #00ffea;
 }
 
 /*文章透明*/
-.layout_post>#post {
-    background: rgba(0, 45, 35, 0.5);
+.layout_post > #post {
+  background: rgba(0, 45, 35, 0.5);
 }
 
-
 /* 鼠标图标 */
-  body {
-      cursor: url(https://cdn.jsdelivr.net/gh/lete114/CDN@1.0/Use/Jkll8I.png), auto;
-  }
+body {
+  cursor: url(https://cdn.jsdelivr.net/gh/lete114/CDN@1.0/Use/Jkll8I.png), auto;
+}
 
+/*a标签*/
 
-  /*a标签*/
+a:hover {
+  cursor: url(https://cdn.jsdelivr.net/gh/lete114/CDN@1.0/Use/JkuClT.png), auto;
+}
 
-  a:hover {
-      cursor: url(https://cdn.jsdelivr.net/gh/lete114/CDN@1.0/Use/JkuClT.png), auto;
-  }
+/*按钮*/
 
+button:hover {
+  cursor: url(https://cdn.jsdelivr.net/gh/lete114/CDN@1.0/Use/JkuClT.png), auto;
+}
 
-  /*按钮*/
+/*i标签*/
 
-  button:hover {
-      cursor: url(https://cdn.jsdelivr.net/gh/lete114/CDN@1.0/Use/JkuClT.png), auto;
-  }
+i:hover {
+  cursor: url(https://cdn.jsdelivr.net/gh/lete114/CDN@1.0/Use/JkuClT.png), auto;
+}
 
+/*up酱*/
 
-  /*i标签*/
+#upj:hover {
+  cursor: url(https://cdn.jsdelivr.net/gh/lete114/CDN@1.0/Use/JkuClT.png), auto;
+}
 
-  i:hover {
-      cursor: url(https://cdn.jsdelivr.net/gh/lete114/CDN@1.0/Use/JkuClT.png), auto;
-  }
+/*页脚a标签*/
 
+#footer-wrap a:hover {
+  text-decoration: none;
+  cursor: url(https://cdn.jsdelivr.net/gh/lete114/CDN@1.0/Use/JkuClT.png), auto;
+}
 
-  /*up酱*/
+/*分页器*/
 
-  #upj:hover {
-      cursor: url(https://cdn.jsdelivr.net/gh/lete114/CDN@1.0/Use/JkuClT.png), auto;
-  }
+#pagination .page-number:hover {
+  cursor: url(https://cdn.jsdelivr.net/gh/lete114/CDN@1.0/Use/JkuClT.png), auto;
+}
 
+/*头部的导航栏*/
 
-  /*页脚a标签*/
-
-  #footer-wrap a:hover {
-      text-decoration: none;
-      cursor: url(https://cdn.jsdelivr.net/gh/lete114/CDN@1.0/Use/JkuClT.png), auto;
-  }
-
-
-  /*分页器*/
-
-  #pagination .page-number:hover {
-      cursor: url(https://cdn.jsdelivr.net/gh/lete114/CDN@1.0/Use/JkuClT.png), auto;
-  }
-
-
-  /*头部的导航栏*/
-
-  #nav .site-page:hover {
-      cursor: url(https://cdn.jsdelivr.net/gh/lete114/CDN@1.0/Use/JkuClT.png), auto;
-  }
-
+#nav .site-page:hover {
+  cursor: url(https://cdn.jsdelivr.net/gh/lete114/CDN@1.0/Use/JkuClT.png), auto;
+}
 
 /* 滚动条 */
-  ::-webkit-scrollbar {
-      width: 10px;
-      height: 10px;
-  }
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
 
-  ::-webkit-scrollbar-thumb {
-      background-color: #83c9d1;
-      background-image: -webkit-linear-gradient( 45deg, rgba(255, 0, 0, 0.78) 25%, transparent 25%, transparent 50%, rgba(255, 86, 232, 0.815) 50%, rgba(0, 76, 255, 0.4) 75%, transparent 75%, transparent);
-      border-radius: 2em;
-  }
+::-webkit-scrollbar-thumb {
+  background-color: #83c9d1;
+  background-image: -webkit-linear-gradient(
+    45deg,
+    rgba(255, 0, 0, 0.78) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 86, 232, 0.815) 50%,
+    rgba(0, 76, 255, 0.4) 75%,
+    transparent 75%,
+    transparent
+  );
+  border-radius: 2em;
+}
 
-  ::-webkit-scrollbar-corner {
-      background-color: transparent;
-  }
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
 
-  ::-moz-selection {
-      color: #fff;
-      background-color: #ce70b9;
-  }
+::-moz-selection {
+  color: #fff;
+  background-color: #ce70b9;
+}
 
 /* valine美化 */
-  #veditor {
-    background-image: url(https://gitee.com/Weidows2984539695/Weidows/raw/master/Website/public/images/img/mao.gif);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right;
-    background-color: rgba(255, 0, 191, 0.3);
-    resize: vertical
-  }
-  #veditor:focus{
-    background-position-y: 200px;
-    transition: all 0.2s ease-in-out 0s;
-  }
-
+#veditor {
+  background-image: url(https://gitee.com/Weidows2984539695/Weidows/raw/master/Website/public/images/img/mao.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-color: rgba(255, 0, 191, 0.3);
+  resize: vertical;
+}
+#veditor:focus {
+  background-position-y: 200px;
+  transition: all 0.2s ease-in-out 0s;
+}
 
 /* footer渐变色滚动动画 */
-  /* @-webkit-keyframes Gradient {
+/* @-webkit-keyframes Gradient {
       0% {
           background-position: 0 50%;
       }
@@ -184,12 +183,12 @@ a {
       background-color: rgba(0, 0, 0, 0);
   } */
 
-/* Aplayer缩进 */
-  .aplayer.aplayer-fixed.aplayer-narrow 
-    .aplayer-body{
-      left: -66px !important
-    }
-    .aplayer-body:hover{
-      left: 0px !important
-    }
-    
+/* Aplayer样式改进 */
+.aplayer.aplayer-fixed.aplayer-narrow 
+.aplayer-body {
+  left: -66px !important;
+  top: -66px !important;
+}
+.aplayer-lrc {
+  width: 700px;
+}

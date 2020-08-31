@@ -18,14 +18,13 @@ menu: #导航栏
     - 游戏 || tags/games || fas fa-gamepad
     - 番剧 || tags/bangumis || fas fa-laptop
     - 相册 || tags/gallery || fas fa-camera
-    - 音乐 || tags/music || fas fa-music
     - 电影 || movies || fas fa-video
     - 图书 || books || fas fa-book
   关于||fas fa-heart:
     - <我> || tags/about || fas fa-user
     - 友人帐 || tags/link || fas fa-link
-    - 说 说 || tags/my_artitalk || fa fa-comment
     - 留言板 || tags/comment || fas fa-comments
+    - 说 说 || tags/my_artitalk || fa fa-comment
 
 # Code Blocks (代碼相關)
 # --------------------------------------
@@ -263,7 +262,7 @@ comments:
   text: true # Display the comment name next to the button
   # lazyload: The comment system will be load when comment element enters the browser's viewport.
   # If you set it to true, the comment count will be invalid
-  lazyload: true
+  lazyload: false
   count: true # Display comment count in top_img
 
 # disqus
@@ -486,7 +485,7 @@ tag_ui:  # 留空或 index
 background: url(https://gitee.com/Weidows2984539695/Weidows/raw/master/Website/source/images/Fantasy/FiringBook.jpg)
 
 # Show the footer background image (same as top_img)
-footer_bg: false
+footer_bg: true
 
 # the position of bottom right button/default unit: px (右下角按鈕距離底部的距離/默認單位為px)
 rightside-bottom: 150
@@ -592,7 +591,7 @@ subtitle:
   # 如果有英文雙引號' " ',請使用轉義字元 &quot;
   # 開頭不允許轉義字元，如需要，請把整個句子用雙引號包住
   # 如果關閉打字效果，subtitle只會顯示sub的第一行文字
-  sub: 骚话结束,操练技术.
+  sub: 骚话结束、操练技术。
 
 # Loading Animation (加載動畫)
 preloader: true
@@ -720,18 +719,13 @@ note:
 # Pjax [Beta]
 # It may contain bugs and unstable, give feedback when you find the bugs.
 # https://github.com/MoOx/pjax
-pjax: false
+# 目前只知道它可以让Aplayer在切换页面时音乐不会中断
+pjax: true
 
 # Inject the css and script (aplayer/meting)
 aplayerInject:
-  enable: true
+  enable: false
   per_page: false
-  meting: true # 引入 MetingJS 后，播放器将支持对于 QQ音乐、网易云音乐、虾米、酷狗、百度等平台的音乐播放。
-  cdn:                # 引用 APlayer.js 外部 CDN 地址 (默认不开启)
-  style_cdn:                                    # 引用 APlayer.css 外部 CDN 地址 (默认不开启)
-  meting_api:                 # 自定义 Meting API 地址
-  meting_cdn:            # 引用 Meting.js 外部 CDN 地址 (默认不开启)
-  asset_inject: true                            # 自动插入 Aplayer.js 与 Meting.js 资源脚本, 默认开启
 
 # Snackbar (Toast Notification 彈窗)
 # https://github.com/polonel/SnackBar
@@ -789,15 +783,9 @@ fragment_cache: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-    - <link rel="stylesheet" href="./css/mine.css">
-    - <link rel="stylesheet" href="../css/mine.css">
-    - <link rel="stylesheet" href="../../css/mine.css">
-    - <link rel="stylesheet" href="../../../css/mine.css">
+
   bottom:
-    - <script src="./js/mine.js"></script>
-    - <script src="../js/mine.js"></script>
-    - <script src="../../js/mine.js"></script>
-    - <script src="../../../js/mine_post.js"></script>
+    
 # CDN
 # Don't modify the following settings unless you know how they work
 # 非必要請不要修改

@@ -2,7 +2,6 @@
 title: 一篇扫清:GitHub-Pages自动化部署 + github/gitee选择
 category: 
   - GitHub
-  - GitHub-Pages
 tag:
   - 备忘录
   - Hexo
@@ -13,7 +12,7 @@ cover: https://gitee.com/Weidows2984539695/Weidows/raw/master/Website/public/ima
  * @Author: Weidows
  * @Date: 2020-08-23 10:54:41
  * @LastEditors: Weidows
- * @LastEditTime: 2020-08-26 22:11:37
+ * @LastEditTime: 2020-08-31 09:18:44
  * @FilePath: \Weidows\Website\source\_posts\GitHub\GitHub-Pages-deploy.md
 -->
 # 历史-2020-8: (如果你在找教程最好了解下历史:)

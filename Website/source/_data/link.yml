@@ -17,26 +17,43 @@
       link: https://cungudafa.top
       avatar: https://cdn.jsdelivr.net/gh/cungudafa/cdn/img/custom/cungudafa.jpg
       descr: 一个学习记录者
+    - name: Mashiro
+      link: https://2heng.xin
+      avatar: https://view.moezx.cc/images/2018/03/27/avatar.jpg
+      descr: 樱花庄的白猫
 
 - class_name: 路宇同行客
   class_desc: 不管有没有转弯,那些路标实实在在的在窗里窗外出现过..
   link_list:
     - name: Weidows
       link: http://weidows2984539695.gitee.io/weidows/
-      avatar: http://weidows2984539695.gitee.io/weidows/images/img/avatar.jpg
+      avatar: /images/ComicExpression/avatar.jpg
       descr: 此人没有其他朋友了
 
 
 - class_name: 友朋自远方来,不亦乐乎?
   class_desc: 我的两个朋友想认识你,我的左手想,我的右手也想...
   link_list:
-    - Name: uncleacc
+    - name: uncleacc
       link: https://www.fezhu.top
       avatar: https://cdn.jsdelivr.net/gh/uncleacc/cdn/img/custom/avatar.jpg
       descr: 一只努力学习的蒟蒻仔
+    - name: Uncle_drew
+      link: https://cndrew.cn
+      avatar: https://cdn.jsdelivr.net/gh/drew233/cdn/dreww.webp
+      descr: Hand down,man down
+    - name: 云玩家
+      link: https://yunist.cn
+      avatar: https://cdn.jsdelivr.net/gh/cnyist/blog/img/avatar.svg
+      descr: 虽于果壳内, 我亦无限王.
+    - name: 超逸の技术博客
+      link: https://yangchaoyi.vip/
+      avatar: https://cdn.jsdelivr.net/gh/Chocolate1999/cdn/img/avatar.png
+      descr: 不是只会写业务代码の前端攻城狮
+
     - name: Weidows
       link: http://weidows2984539695.gitee.io/weidows/
-      avatar: http://weidows2984539695.gitee.io/weidows/images/img/avatar.jpg
+      avatar: /images/ComicExpression/avatar.jpg
       descr: 此人没有其他朋友了
 
 

@@ -2,7 +2,7 @@
  * @Author: Weidows
  * @Date: 2020-07-27 10:28:29
  * @LastEditors: Weidows
- * @LastEditTime: 2020-08-23 18:43:54
+ * @LastEditTime: 2020-09-01 11:00:28
  * @FilePath: \Weidows\README.md
  * 这个markdown是显示在github-profile界面上的
 --> 
@@ -22,6 +22,6 @@
 
 <h2 align="center">
 
-  ![大叔](https://raw.githubusercontent.com/Weidows/Weidows/master/Website/source/images/ComicExpression/2e1bda8504501a52c6b952b993167217abb6b22f.png) [*My Website /*](http://weidows2984539695.gitee.io/weidows)[*/ Repo Show /*](http://weidows2984539695.gitee.io/weidows/repository/Weidows)[*/ About Me*](http://weidows2984539695.gitee.io/weidows/about) ![戳脸](https://raw.githubusercontent.com/Weidows/Weidows/master/Website/source/images/ComicExpression/74ef2ed780ee230c08866adfa01dbe297b5467b4.png)
+  ![大叔](https://raw.githubusercontent.com/Weidows/Weidows/master/Website/source/images/ComicExpression/2e1bda8504501a52c6b952b993167217abb6b22f.png) [*My Website /*](http://weidows2984539695.gitee.io/weidows)[*/ Repo Show /*](http://weidows2984539695.gitee.io/weidows/categories/Weidows)[*/ About Me*](http://weidows2984539695.gitee.io/weidows/tags/about) ![戳脸](https://raw.githubusercontent.com/Weidows/Weidows/master/Website/source/images/ComicExpression/74ef2ed780ee230c08866adfa01dbe297b5467b4.png)
 
 <h2>

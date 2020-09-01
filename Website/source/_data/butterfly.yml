@@ -93,11 +93,11 @@ katex:
 # --------------------------------------
 
 # Favicon（網站圖標）
-favicon: /images/img/favicon.png
+favicon: /images/ComicExpression/favicon.png
 
 # Avatar (頭像)
 avatar:
-  img: /images/img/avatar.jpg
+  img: /images/ComicExpression/avatar.jpg
   effect: false
 
 # the banner image of home page

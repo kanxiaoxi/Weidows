@@ -8,7 +8,7 @@ top_img: images/post/What-do-you-do-when-your-best-friend-breaks-your-heart_.png
  * @Author: Weidows
  * @Date: 2020-08-22 20:18:14
  * @LastEditors: Weidows
- * @LastEditTime: 2020-08-31 10:25:03
+ * @LastEditTime: 2020-09-01 20:44:59
  * @FilePath: \Weidows\Website\source\tags\link.md
 -->
 
@@ -18,7 +18,7 @@ top_img: images/post/What-do-you-do-when-your-best-friend-breaks-your-heart_.png
   ```
   - name: Weidows
     link: http://weidows2984539695.gitee.io/weidows/
-    avatar: http://weidows2984539695.gitee.io/weidows/images/img/avatar.jpg
+    avatar: http://weidows2984539695.gitee.io/weidows/images/ComicExpression/avatar.jpg
     descr: ただ Weidow's Website だけ
   ```
 

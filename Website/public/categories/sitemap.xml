@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://weidows2984539695.gitee.io/weidows/tags/link</loc>
+    
+    <lastmod>2020-09-01</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://weidows2984539695.gitee.io/weidows/post/experience/inject_method/</loc>
     
     <lastmod>2020-08-31</lastmod>
@@ -45,13 +52,6 @@
   
   <url>
     <loc>http://weidows2984539695.gitee.io/weidows/tags/my_artitalk</loc>
-    
-    <lastmod>2020-08-31</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://weidows2984539695.gitee.io/weidows/tags/link</loc>
     
     <lastmod>2020-08-31</lastmod>
     
@@ -137,7 +137,7 @@
 
   <url>
     <loc>http://weidows2984539695.gitee.io/weidows</loc>
-    <lastmod>2020-08-31</lastmod>
+    <lastmod>2020-09-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -145,63 +145,63 @@
   
   <url>
     <loc>http://weidows2984539695.gitee.io/weidows/tags/memorandum/</loc>
-    <lastmod>2020-08-31</lastmod>
+    <lastmod>2020-09-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://weidows2984539695.gitee.io/weidows/tags/Hexo/</loc>
-    <lastmod>2020-08-31</lastmod>
+    <lastmod>2020-09-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://weidows2984539695.gitee.io/weidows/tags/Website/</loc>
-    <lastmod>2020-08-31</lastmod>
+    <lastmod>2020-09-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://weidows2984539695.gitee.io/weidows/tags/Java/</loc>
-    <lastmod>2020-08-31</lastmod>
+    <lastmod>2020-09-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://weidows2984539695.gitee.io/weidows/tags/PHP/</loc>
-    <lastmod>2020-08-31</lastmod>
+    <lastmod>2020-09-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://weidows2984539695.gitee.io/weidows/tags/operating-system/</loc>
-    <lastmod>2020-08-31</lastmod>
+    <lastmod>2020-09-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://weidows2984539695.gitee.io/weidows/tags/yaml/</loc>
-    <lastmod>2020-08-31</lastmod>
+    <lastmod>2020-09-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://weidows2984539695.gitee.io/weidows/tags/VScode/</loc>
-    <lastmod>2020-08-31</lastmod>
+    <lastmod>2020-09-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://weidows2984539695.gitee.io/weidows/tags/Pjax/</loc>
-    <lastmod>2020-08-31</lastmod>
+    <lastmod>2020-09-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -210,35 +210,35 @@
   
   <url>
     <loc>http://weidows2984539695.gitee.io/weidows/categories/backup/</loc>
-    <lastmod>2020-08-31</lastmod>
+    <lastmod>2020-09-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://weidows2984539695.gitee.io/weidows/categories/GitHub/</loc>
-    <lastmod>2020-08-31</lastmod>
+    <lastmod>2020-09-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://weidows2984539695.gitee.io/weidows/categories/experience/</loc>
-    <lastmod>2020-08-31</lastmod>
+    <lastmod>2020-09-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://weidows2984539695.gitee.io/weidows/categories/backup/Blog/</loc>
-    <lastmod>2020-08-31</lastmod>
+    <lastmod>2020-09-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://weidows2984539695.gitee.io/weidows/categories/recommend/</loc>
-    <lastmod>2020-08-31</lastmod>
+    <lastmod>2020-09-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
